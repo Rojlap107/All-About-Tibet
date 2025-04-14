@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - All About Tibet</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <style>
+        /* Contact Page Specific Styles */
+        body {
+            background-color: #fff6d1;
+        }
+        
+        .contact-section {
+            padding: 120px 5% 80px;
+        }
+        
+        .contact-section h1 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+        
+        .contact-description {
+            max-width: 700px;
+            margin-bottom: 40px;
+        }
+        
+        .contact-description p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #444;
+        }
+        
+        .contact-container {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+        
+        .contact-form-container {
+            background-color: var(--primary);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            color: var(--white);
+        }
+        
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        
+        .form-group label {
+            font-weight: 600;
+            color: var(--white);
+        }
+        
+        .required::after {
+            content: " *";
+            color: #ff4c4c;
+            font-weight: bold;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus {
+            border-color: var(--primary);
+            outline: none;
+        }
+        
+        .form-group textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+        
+        .submit-button {
+            padding: 15px 25px;
+            background-color: var(--white);
+            color: var(--primary);
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            align-self: flex-start;
+        }
+        
+        .submit-button:hover {
+            background-color: var(--secondary-1);
+            color: var(--black);
+        }
+        
+        .contact-info-container {
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 40px;
+            border-radius: 8px;
+        }
+        
+        .contact-info-container h2 {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            color: var(--secondary-1);
+        }
+        
+        .contact-info-list {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+        
+        .contact-info-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+        }
+        
+        .contact-info-item i {
+            font-size: 1.5rem;
+            color: var(--secondary-1);
+            min-width: 30px;
+        }
+        
+        .contact-info-item div h3 {
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+        }
+        
+        .contact-info-item div p,
+        .contact-info-item div a {
+            color: rgba(255, 255, 255, 0.9);
+            line-height: 1.6;
+        }
+        
+        .contact-info-item div a:hover {
+            color: var(--secondary-1);
+        }
+        
+        /* Responsive styles */
+        @media screen and (min-width: 768px) {
+            .contact-container {
+                flex-direction: row;
+            }
+            
+            .contact-form-container {
+                flex: 2;
+            }
+            
+            .contact-info-container {
+                flex: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../images/AAT_Logo_website.png" alt="All About Tibet Logo">
+            </a>
+        </div>
+        <div class="menu-toggle">
+            <div class="hamburger"></div>
+        </div>
+        <nav class="overlay-menu">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="dropdown">
+                    <a href="#">Our Initiatives</a>
+                    <ul class="submenu">
+                        <li><a href="heroes/index.html">Heroes of Tibet</a></li>
+                        <li><a href="blog/index.html">Blog</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Newsletter</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <h1>Newsletter Subscription</h1>
+            <div class="contact-description">
+                <p>Subscribe to our newsletter to receive the latest updates about Tibet's culture, history, and current events. Stay informed and connected with our community.</p>
+            </div>
+            
+            <div class="contact-container">
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <form class="contact-form" id="newsletter-form">
+                        <div class="form-group">
+                            <label for="firstName" class="required">First Name</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="lastName" class="required">Last Name</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="required">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Contact Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="consent" name="consent" required>
+                            <label for="consent" class="required">I agree to receive newsletters from All About Tibet and understand that my information will be handled as described in the Privacy Policy. I can unsubscribe at any time.</label>
+                        </div>
+                        
+                        <div id="form-status" class="form-status"></div>
+                        
+                        <p style="color: #ff4c4c; font-size: 0.85rem; margin-top: 0;">* Required fields</p>
+                        <button type="submit" class="submit-button">Subscribe</button>
+                    </form>
+                </div>
+                
+                <!-- Contact Information -->
+                <div class="contact-info-container">
+                    <h2>Newsletter Benefits</h2>
+                    <div class="contact-info-list">
+                        <div class="contact-info-item">
+                            <i class="fas fa-newspaper"></i>
+                            <div>
+                                <h3>Latest Updates</h3>
+                                <p>Receive the latest articles, stories, and news about Tibetan culture, history, and current events.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            <div>
+                                <h3>Event Notifications</h3>
+                                <p>Be the first to know about upcoming events, webinars, and cultural celebrations related to Tibet.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-item">
+                            <i class="fas fa-user-shield"></i>
+                            <div>
+                                <h3>Data Privacy</h3>
+                                <p>We respect your privacy and will never share your personal information with third parties without your consent.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-item">
+                            <i class="fas fa-paper-plane"></i>
+                            <div>
+                                <h3>Frequency</h3>
+                                <p>Our newsletter is sent monthly, with occasional special editions for important announcements.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Contact Us</h3>
+                <p>Email: <a href="mailto:allabouttibet@norzinconsultancy.com">allabouttibet@norzinconsultancy.com</a></p>
+            </div>
+            <div class="social-links">
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 All About Tibet. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('newsletter-form');
+            const formStatus = document.getElementById('form-status');
+            
+            // Check if we have a saved Google Form URL
+            const googleFormUrl = localStorage.getItem('google_form_url');
+            
+            if (googleFormUrl && form) {
+                // Replace the newsletter form with a button to redirect to Google Form
+                const formContainer = document.querySelector('.contact-form-container');
+                if (formContainer) {
+                    formContainer.innerHTML = `
+                        <div class="google-form-container">
+                            <h2>Subscribe to our Newsletter</h2>
+                            <p>Click the button below to open our newsletter signup form.</p>
+                            <a href="${googleFormUrl}" target="_blank" class="submit-button" style="margin-top: 20px; display: inline-block;">
+                                Subscribe Now
+                            </a>
+                        </div>
+                    `;
+                }
+            } else if (form) {
+                // Use default form behavior with localStorage as fallback
+                form.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Collect form data
+                    const firstName = document.getElementById('firstName').value;
+                    const lastName = document.getElementById('lastName').value;
+                    const email = document.getElementById('email').value;
+                    const phone = document.getElementById('phone').value;
+                    const consent = document.getElementById('consent').checked;
+                    
+                    if (!consent) {
+                        formStatus.innerHTML = '<p class="error-message">Please agree to the terms before subscribing.</p>';
+                        return;
+                    }
+                    
+                    // Create data object
+                    const subscriberData = {
+                        firstName,
+                        lastName,
+                        email,
+                        phone,
+                        subscriptionDate: new Date().toLocaleString(),
+                        consent: consent ? 'Yes' : 'No'
+                    };
+                    
+                    // Store in localStorage as fallback since Google Form isn't set up yet
+                    formStatus.innerHTML = '<p class="error-message">Google Form for newsletter subscription is not set up yet. Please contact administrator.</p>';
+                }); 
+            }
+        });
+    </script>
+    <style>
+        .checkbox-group {
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        
+        .checkbox-group input {
+            margin-top: 5px;
+        }
+        
+        .checkbox-group label {
+            flex: 1;
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+        
+        .form-status {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 4px;
+        }
+        
+        .success-message {
+            color: #155724;
+            background-color: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        
+        .error-message {
+            color: #721c24;
+            background-color: #f8d7da;
+            border: 1px solid #f5c6cb;
+            padding: 10px;
+            border-radius: 4px;
+        }
+    </style>
+</body>
+</html>

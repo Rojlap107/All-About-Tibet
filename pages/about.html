@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - All About Tibet</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <style>
+        /* About Page Specific Styles */
+        body {
+            background-color: #fff6d1;
+        }
+        
+        .about-section {
+            padding: 120px 5% 80px;
+        }
+        
+        .about-section h1 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 30px;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .vision-container {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            margin-bottom: 60px;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .vision-content {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        
+        .section-title {
+            font-size: 2rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+        
+        .vision-image {
+            width: 100%;
+            max-width: 500px;
+            overflow: hidden;
+            aspect-ratio: 16 / 9;
+            position: relative;
+        }
+        
+        .vision-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        
+        .background-container {
+            margin-bottom: 60px;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .background-content {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+        
+        .background-item {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .background-text {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .background-text p {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .background-image {
+            width: 100%;
+            max-width: 400px;
+            overflow: hidden;
+            aspect-ratio: 16 / 9;
+            position: relative;
+        }
+        
+        .background-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        
+        .approach-container {
+            margin-bottom: 40px;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .approach-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+        
+        .approach-card {
+            background-color: #025946;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            color: white;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%; /* Make all cards same height */
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .approach-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        .approach-card h3 {
+            color: var(--secondary-1);
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+        
+        /* Responsive styles */
+        @media screen and (min-width: 768px) {
+            .vision-content {
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+            }
+            
+            .vision-image {
+                flex: 2;
+                margin-right: 0px;
+            }
+            
+            .vision-text {
+                flex: 3;
+            }
+            
+            .background-item {
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+            }
+            
+            .background-item:nth-child(even) {
+                flex-direction: row-reverse;
+            }
+            
+            .background-item:nth-child(even) .background-image {
+                margin-right: 10px;
+                margin-left: 0;
+            }
+            
+            .background-item:nth-child(odd) .background-image {
+                margin-right: 0px;
+                margin-left: 0;
+            }
+            
+            .background-text {
+                flex: 3;
+                padding: 0; /* Ensure no extra padding */
+            }
+            
+            .background-image {
+                flex: 2;
+            }
+            
+            .approach-content {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media screen and (min-width: 1024px) {
+            .approach-content {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../images/AAT_Logo_website.png" alt="All About Tibet Logo">
+            </a>
+        </div>
+        <div class="menu-toggle">
+            <div class="hamburger"></div>
+        </div>
+        <nav class="overlay-menu">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="dropdown">
+                    <a href="#">Our Initiatives</a>
+                    <ul class="submenu">
+                        <li><a href="heroes/index.html">Heroes of Tibet</a></li>
+                        <li><a href="blog/index.html">Blog</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Newsletter</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about-section">
+            <h1>About All About Tibet</h1>
+            
+            <!-- Our Vision Section -->
+            <div class="vision-container">
+                <h2 class="section-title">Our Vision</h2>
+                <div class="vision-content">
+                    <div class="vision-image fade-in">
+                        <img src="../images/vision.png" alt="Our Vision">
+                    </div>
+                    <div class="vision-text fade-in">
+                        <p>To create a centralized, accessible, and authentic platform housing credible information on Tibet's history, politics, culture, religion, exile experience, business, cuisine, language, and current affairs. Our mission is to inform, inspire, and connect Tibetan and global audiences through comprehensive and reliable content that showcases the richness and diversity of Tibetan heritage.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Background and Rationale Section -->
+            <div class="background-container">
+                <h2 class="section-title">Background and Rationale</h2>
+                <div class="background-content">
+                    <div class="background-item fade-in">
+                        <div class="background-text">
+                            <p>The information landscape on Tibet is fragmented and often misrepresentative. Authentic Tibetan narratives are dispersed across various platforms, making it challenging for individuals seeking comprehensive and reliable information. This fragmentation has created a gap in accessible knowledge resources that accurately represent Tibetan perspectives.</p>
+                        </div>
+                        <div class="background-image">
+                            <img src="../images/background1.png" alt="Background">
+                        </div>
+                    </div>
+                    
+                    <div class="background-item fade-in">
+                        <div class="background-text">
+                            <p>External narratives often dominate discourse on Tibet, sometimes overshadowing the lived experiences and insights of Tibetans themselves. There is a pressing need for a platform that centralizes authentic Tibetan voices and provides a comprehensive resource on Tibetan history, culture, and contemporary issues.</p>
+                        </div>
+                        <div class="background-image">
+                            <img src="../images/background2.png" alt="Background">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Our Approach Section -->
+            <div class="approach-container">
+                <h2 class="section-title">Our Approach</h2>
+                <div class="approach-content">
+                    <div class="approach-card fade-in">
+                        <h3>Digital Knowledge Hub</h3>
+                        <p>Developing a comprehensive digital platform that serves as a centralized resource for authentic information on Tibet, covering various aspects of Tibetan life, history, and culture.</p>
+                    </div>
+                    
+                    <div class="approach-card fade-in">
+                        <h3>Content Creation</h3>
+                        <p>Producing high-quality, accurate, and engaging content that showcases the richness of Tibetan heritage and addresses contemporary issues affecting the Tibetan community.</p>
+                    </div>
+                    
+                    <div class="approach-card fade-in">
+                        <h3>Outreach & Engagement</h3>
+                        <p>Implementing strategic outreach initiatives to connect with both Tibetan and global audiences, fostering dialogue and understanding across cultural boundaries.</p>
+                    </div>
+                    
+                    <div class="approach-card fade-in">
+                        <h3>Research Methodology</h3>
+                        <p>Employing rigorous research methodologies to ensure the accuracy and credibility of all content, drawing from reliable sources and expert insights.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Contact Us</h3>
+                <p>Email: <a href="mailto:allabouttibet@norzinconsultancy.com">allabouttibet@norzinconsultancy.com</a></p>
+            </div>
+            <div class="social-links">
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 All About Tibet. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

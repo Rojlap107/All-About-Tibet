@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - All About Tibet</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <style>
+        .admin-section {
+            padding: 120px 5% 80px;
+        }
+        
+        .admin-section h1 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 30px;
+        }
+        
+        .login-container {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: var(--white);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .admin-container {
+            display: none;
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: var(--white);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            font-weight: 600;
+            color: #444;
+        }
+        
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            border-color: var(--primary);
+            outline: none;
+        }
+        
+        .form-group small {
+            color: #777;
+            font-size: 0.85rem;
+            margin-top: 5px;
+        }
+        
+        .login-button,
+        .action-button {
+            padding: 15px 25px;
+            background-color: var(--primary);
+            color: var(--white);
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            align-self: flex-start;
+        }
+        
+        .login-button:hover,
+        .action-button:hover {
+            background-color: var(--secondary-1);
+            color: var(--black);
+        }
+        
+        .status-message {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 4px;
+        }
+        
+        .success-message {
+            color: #155724;
+            background-color: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        
+        .error-message {
+            color: #721c24;
+            background-color: #f8d7da;
+            border: 1px solid #f5c6cb;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        
+        .admin-actions {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .tab-button {
+            padding: 10px 20px;
+            background-color: var(--secondary-2);
+            color: #333;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        .tab-button.active {
+            background-color: var(--primary);
+            color: var(--white);
+        }
+        
+        .tab-button:hover:not(.active) {
+            background-color: var(--secondary-1);
+            color: var(--black);
+        }
+        
+        .admin-tab {
+            display: none;
+            margin-top: 20px;
+        }
+        
+        .admin-tab.active {
+            display: block;
+        }
+        
+        .logout-btn {
+            margin-left: auto;
+        }
+        
+        .subscribers-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        
+        .subscribers-table th, 
+        .subscribers-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        
+        .subscribers-table th {
+            background-color: var(--primary);
+            color: var(--white);
+        }
+        
+        .subscribers-table tr:nth-child(even) {
+            background-color: var(--secondary-2);
+        }
+        
+        .subscribers-table tr:hover {
+            background-color: var(--secondary-2);
+        }
+        
+        .content-form {
+            margin-top: 20px;
+        }
+        
+        .preview-container {
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background-color: var(--secondary-2);
+        }
+        
+        .preview-container h4 {
+            margin-bottom: 10px;
+            color: var(--primary);
+        }
+        
+        .newsletter-form-container {
+            margin-top: 20px;
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 4px;
+        }
+        
+        .newsletter-form-input {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        
+        /* Responsive adjustments */
+        @media screen and (max-width: 768px) {
+            .admin-actions {
+                flex-direction: column;
+            }
+            
+            .logout-btn {
+                margin-left: 0;
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/AAT_Logo_website.png" alt="All About Tibet Logo">
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="admin-section">
+            <h1>Admin Dashboard</h1>
+            
+            <!-- Login Form -->
+            <div id="login-container" class="login-container">
+                <h2>Login</h2>
+                <form id="login-form">
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    
+                    <div id="login-status" class="status-message"></div>
+                    
+                    <button type="submit" class="login-button">Login</button>
+                </form>
+            </div>
+            
+            <!-- Admin Dashboard (Hidden by default) -->
+            <div id="admin-container" class="admin-container">
+                <h2>Admin Dashboard</h2>
+                
+                <div class="admin-actions">
+                    <button id="subscribers-tab-btn" class="tab-button active">Newsletter</button>
+                    <button id="blogs-list-tab-btn" class="tab-button">Manage Blogs</button>
+                    <button id="heroes-list-tab-btn" class="tab-button">Manage Heroes</button>
+                    <button id="logout-button" class="action-button logout-btn">Logout</button>
+                </div>
+                
+                <!-- Subscribers Tab -->
+                <div id="subscribers-tab" class="admin-tab active">
+                    <h3>Newsletter Setup</h3>
+                    <p>Set up the Google Form for newsletter subscription.</p>
+                    
+                    <div class="newsletter-form-container">
+                        <h4>Google Forms Integration</h4>
+                        <p>Enter the Google Form embed code or link below:</p>
+                        
+                        <div class="form-group">
+                            <label for="google-form-url">Google Form URL</label>
+                            <input type="text" id="google-form-url" class="newsletter-form-input" placeholder="https://forms.gle/your-form-id">
+                            <small>The URL of your Google Form for newsletter subscriptions</small>
+                        </div>
+                        
+                        <button id="save-google-form" class="action-button">Save Form URL</button>
+                        <div id="google-form-status" class="status-message"></div>
+                        
+                        <div style="margin-top: 20px;">
+                            <h4>How to set up a Google Form for newsletter subscriptions:</h4>
+                            <ol>
+                                <li>Go to <a href="https://forms.google.com" target="_blank">Google Forms</a></li>
+                                <li>Create a new form with fields for first name, last name, email, etc.</li>
+                                <li>Get the form URL by clicking "Send" and copy the link</li>
+                                <li>Paste the URL above and click "Save Form URL"</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Blogs List Tab -->
+                <div id="blogs-list-tab" class="admin-tab">
+                    <h3>Manage Blog Posts</h3>
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                        <p>Select a blog post to edit</p>
+                        <button id="refresh-blogs-btn" class="action-button">Refresh Blog List</button>
+                    </div>
+                    <div id="blogs-list">
+                        <table class="subscribers-table">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Title</th>
+                                    <th>Author</th>
+                                    <th>Date</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="blogs-table-body">
+                                <!-- Will be populated by JavaScript -->
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="blog-edit-container" style="display: none; margin-top: 20px;">
+                        <h4>Edit Blog Post</h4>
+                        <form id="blog-edit-form" class="content-form">
+                            <input type="hidden" id="edit-blog-id">
+                            <div class="form-group">
+                                <label for="edit-blog-title">Title</label>
+                                <input type="text" id="edit-blog-title" name="edit-blog-title" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="edit-blog-excerpt">Excerpt (Brief Summary)</label>
+                                <textarea id="edit-blog-excerpt" name="edit-blog-excerpt" rows="3" required></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="edit-blog-image-upload">Blog Image</label>
+                                <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                                    <img id="edit-blog-current-img" src="" alt="Current Image" style="max-width: 150px; max-height: 150px; margin-right: 10px;">
+                                    <span style="color: #777;">(Current image)</span>
+                                </div>
+                                <input type="file" id="edit-blog-image-upload" name="edit-blog-image-upload" accept="image/*">
+                                <div id="edit-blog-image-preview" style="margin-top: 10px; display: none;">
+                                    <img id="edit-blog-preview-img" src="" alt="New Image Preview" style="max-width: 200px; max-height: 200px;">
+                                    <button type="button" id="remove-edit-blog-image" class="action-button" style="background-color: #d9534f; margin-left: 10px;">Cancel</button>
+                                </div>
+                                <input type="hidden" id="edit-blog-image" name="edit-blog-image" required>
+                                <div class="upload-status" id="edit-blog-upload-status"></div>
+                                <small>Upload a new image only if you want to change the current one</small>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="edit-blog-author">Author</label>
+                                <input type="text" id="edit-blog-author" name="edit-blog-author" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="edit-blog-author-bio">Author Bio</label>
+                                <textarea id="edit-blog-author-bio" name="edit-blog-author-bio" rows="3"></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="edit-blog-date">Publication Date</label>
+                                <input type="text" id="edit-blog-date" name="edit-blog-date" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="edit-blog-tags">Tags (comma-separated)</label>
+                                <input type="text" id="edit-blog-tags" name="edit-blog-tags" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="edit-blog-content">Content (HTML Format)</label>
+                                <textarea id="edit-blog-content" name="edit-blog-content" rows="15" required></textarea>
+                            </div>
+                            
+                            <div id="blog-edit-status" class="status-message"></div>
+                            
+                            <div style="display: flex; gap: 10px;">
+                                <button type="submit" class="action-button">Save Changes</button>
+                                <button type="button" id="cancel-blog-edit" class="action-button" style="background-color: #ccc;">Cancel</button>
+                                <button type="button" id="delete-blog" class="action-button" style="background-color: #d9534f; margin-left: auto;">Delete Blog</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- Heroes List Tab -->
+                <div id="heroes-list-tab" class="admin-tab">
+                    <h3>Manage Heroes</h3>
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                        <p>Select a hero to edit</p>
+                        <button id="refresh-heroes-btn" class="action-button">Refresh Heroes List</button>
+                    </div>
+                    <div id="heroes-list">
+                        <table class="subscribers-table">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Lifespan</th>
+                                    <th>Province</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="heroes-table-body">
+                                <!-- Will be populated by JavaScript -->
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="hero-edit-container" style="display: none; margin-top: 20px;">
+                        <h4>Edit Hero</h4>
+                        <form id="hero-edit-form" class="content-form">
+                            <input type="hidden" id="edit-hero-id">
+                            <div class="form-group">
+                                <label for="edit-hero-name">Name</label>
+                                <input type="text" id="edit-hero-name" name="edit-hero-name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="edit-hero-lifespan">Lifespan</label>
+                                <input type="text" id="edit-hero-lifespan" name="edit-hero-lifespan" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="edit-hero-province">Province</label>
+                                <select id="edit-hero-province" name="edit-hero-province" required>
+                                    <option value="Ü-Tsang">Ü-Tsang</option>
+                                    <option value="Kham">Kham</option>
+                                    <option value="Amdo">Amdo</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="edit-hero-brief">Brief Introduction</label>
+                                <textarea id="edit-hero-brief" name="edit-hero-brief" rows="3" required></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="edit-hero-image-upload">Hero Image</label>
+                                <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                                    <img id="edit-hero-current-img" src="" alt="Current Image" style="max-width: 150px; max-height: 150px; margin-right: 10px;">
+                                    <span style="color: #777;">(Current image)</span>
+                                </div>
+                                <input type="file" id="edit-hero-image-upload" name="edit-hero-image-upload" accept="image/*">
+                                <div id="edit-hero-image-preview" style="margin-top: 10px; display: none;">
+                                    <img id="edit-hero-preview-img" src="" alt="New Image Preview" style="max-width: 200px; max-height: 200px;">
+                                    <button type="button" id="remove-edit-hero-image" class="action-button" style="background-color: #d9534f; margin-left: 10px;">Cancel</button>
+                                </div>
+                                <input type="hidden" id="edit-hero-image" name="edit-hero-image" required>
+                                <div class="upload-status" id="edit-hero-upload-status"></div>
+                                <small>Upload a new image only if you want to change the current one</small>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="edit-hero-early-life">Early Life (HTML Format)</label>
+                                <textarea id="edit-hero-early-life" name="edit-hero-early-life" rows="5" required></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="edit-hero-impact">Impact (HTML Format)</label>
+                                <textarea id="edit-hero-impact" name="edit-hero-impact" rows="5" required></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="edit-hero-legacy">Legacy (HTML Format)</label>
+                                <textarea id="edit-hero-legacy" name="edit-hero-legacy" rows="5" required></textarea>
+                            </div>
+                            
+                            <div id="hero-edit-status" class="status-message"></div>
+                            
+                            <div style="display: flex; gap: 10px;">
+                                <button type="submit" class="action-button">Save Changes</button>
+                                <button type="button" id="cancel-hero-edit" class="action-button" style="background-color: #ccc;">Cancel</button>
+                                <button type="button" id="delete-hero" class="action-button" style="background-color: #d9534f; margin-left: auto;">Delete Hero</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const loginForm = document.getElementById('login-form');
+            const loginStatus = document.getElementById('login-status');
+            const loginContainer = document.getElementById('login-container');
+            const adminContainer = document.getElementById('admin-container');
+            const logoutButton = document.getElementById('logout-button');
+            
+            // Google Form elements
+            const googleFormUrl = document.getElementById('google-form-url');
+            const saveGoogleForm = document.getElementById('save-google-form');
+            const googleFormStatus = document.getElementById('google-form-status');
+            
+            // Image upload elements
+            const editBlogImageUpload = document.getElementById('edit-blog-image-upload');
+            const editBlogCurrentImg = document.getElementById('edit-blog-current-img');
+            const editBlogImagePreview = document.getElementById('edit-blog-image-preview');
+            const editBlogPreviewImg = document.getElementById('edit-blog-preview-img');
+            const editBlogImage = document.getElementById('edit-blog-image');
+            const removeEditBlogImage = document.getElementById('remove-edit-blog-image');
+            const editBlogUploadStatus = document.getElementById('edit-blog-upload-status');
+            
+            const editHeroImageUpload = document.getElementById('edit-hero-image-upload');
+            const editHeroCurrentImg = document.getElementById('edit-hero-current-img');
+            const editHeroImagePreview = document.getElementById('edit-hero-image-preview');
+            const editHeroPreviewImg = document.getElementById('edit-hero-preview-img');
+            const editHeroImage = document.getElementById('edit-hero-image');
+            const removeEditHeroImage = document.getElementById('remove-edit-hero-image');
+            const editHeroUploadStatus = document.getElementById('edit-hero-upload-status');
+            
+            // Tab navigation elements
+            const tabButtons = document.querySelectorAll('.tab-button');
+            const adminTabs = document.querySelectorAll('.admin-tab');
+            const subscribersTabBtn = document.getElementById('subscribers-tab-btn');
+            const blogsListTabBtn = document.getElementById('blogs-list-tab-btn');
+            const heroesListTabBtn = document.getElementById('heroes-list-tab-btn');
+            
+            // Admin credentials (in a real app, this would be handled securely on the server)
+            const adminUsername = 'admin';
+            const adminPassword = 'password';
+            
+            // Check if already logged in
+            if (sessionStorage.getItem('adminLoggedIn') === 'true') {
+                showAdminDashboard();
+            }
+            
+            // Load saved Google Form URL if exists
+            if (googleFormUrl) {
+                const savedFormUrl = localStorage.getItem('google_form_url');
+                if (savedFormUrl) {
+                    googleFormUrl.value = savedFormUrl;
+                }
+            }
+            
+            // Save Google Form URL
+            if (saveGoogleForm) {
+                saveGoogleForm.addEventListener('click', function() {
+                    const url = googleFormUrl.value.trim();
+                    
+                    if (!url) {
+                        googleFormStatus.innerHTML = '<p class="error-message">Please enter a Google Form URL.</p>';
+                        return;
+                    }
+                    
+                    // Simple validation - check if it's a Google Forms URL
+                    if (!url.includes('forms.gle') && !url.includes('forms.google.com')) {
+                        googleFormStatus.innerHTML = '<p class="error-message">This doesn\'t look like a valid Google Forms URL.</p>';
+                        return;
+                    }
+                    
+                    // Save to localStorage
+                    localStorage.setItem('google_form_url', url);
+                    googleFormStatus.innerHTML = '<p class="success-message">Google Form URL saved successfully!</p>';
+                });
+            }
+            
+            // Functions to handle image uploads
+            function setupImageUpload() {
+                // Edit blog image upload
+                if (editBlogImageUpload) {
+                    editBlogImageUpload.addEventListener('change', function(e) {
+                        const file = e.target.files[0];
+                        if (file) {
+                            // Preview image
+                            const reader = new FileReader();
+                            reader.onload = function(event) {
+                                editBlogPreviewImg.src = event.target.result;
+                                editBlogImagePreview.style.display = 'flex';
+                            };
+                            reader.readAsDataURL(file);
+                            
+                            // Upload image
+                            uploadImage(file, 'blog', function(imagePath) {
+                                editBlogImage.value = imagePath;
+                                editBlogUploadStatus.innerHTML = '<p class="success-message">New image uploaded successfully!</p>';
+                            });
+                        }
+                    });
+                }
+                
+                // Remove edit blog image preview
+                if (removeEditBlogImage) {
+                    removeEditBlogImage.addEventListener('click', function() {
+                        editBlogImageUpload.value = '';
+                        editBlogImagePreview.style.display = 'none';
+                        // Don't clear the hidden input value as we want to keep the original image
+                        editBlogUploadStatus.innerHTML = '';
+                    });
+                }
+                
+                // Edit hero image upload
+                if (editHeroImageUpload) {
+                    editHeroImageUpload.addEventListener('change', function(e) {
+                        const file = e.target.files[0];
+                        if (file) {
+                            // Preview image
+                            const reader = new FileReader();
+                            reader.onload = function(event) {
+                                editHeroPreviewImg.src = event.target.result;
+                                editHeroImagePreview.style.display = 'flex';
+                            };
+                            reader.readAsDataURL(file);
+                            
+                            // Upload image
+                            uploadImage(file, 'heroes', function(imagePath) {
+                                editHeroImage.value = imagePath;
+                                editHeroUploadStatus.innerHTML = '<p class="success-message">New image uploaded successfully!</p>';
+                            });
+                        }
+                    });
+                }
+                
+                // Remove edit hero image preview
+                if (removeEditHeroImage) {
+                    removeEditHeroImage.addEventListener('click', function() {
+                        editHeroImageUpload.value = '';
+                        editHeroImagePreview.style.display = 'none';
+                        // Don't clear the hidden input value as we want to keep the original image
+                        editHeroUploadStatus.innerHTML = '';
+                    });
+                }
+            }
+            
+            // Function to upload image to server
+            function uploadImage(file, type, callback) {
+                console.log('Preparing to upload file:', file.name, 'of type:', file.type);
+                
+                const formData = new FormData();
+                formData.append('image', file);
+                
+                // Show "uploading" status
+                const statusElement = type === 'blog' ? 
+                    (editBlogImageUpload && editBlogImageUpload.files.length > 0 ? editBlogUploadStatus : null) : 
+                    (editHeroImageUpload && editHeroImageUpload.files.length > 0 ? editHeroUploadStatus : null);
+                
+                if (statusElement) {
+                    statusElement.innerHTML = '<p style="color: #0066cc;">Uploading image, please wait...</p>';
+                }
+                
+                // Output FormData contents for debugging
+                console.log('FormData entries:');
+                for (let pair of formData.entries()) {
+                    console.log(pair[0] + ': ' + (pair[1] instanceof File ? pair[1].name : pair[1]));
+                }
+                
+                fetch(`/api/upload/${type}`, {
+                    method: 'POST',
+                    body: formData
+                })
+                .then(response => {
+                    console.log('Upload response status:', response.status);
+                    if (!response.ok) {
+                        return response.json().then(err => {
+                            console.error('Error response:', err);
+                            throw new Error(err.message || 'Image upload failed');
+                        });
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    console.log('Upload response data:', data);
+                    if (data.success && data.filePath) {
+                        if (statusElement) {
+                            statusElement.innerHTML = '<p class="success-message">Image uploaded successfully!</p>';
+                        }
+                        callback(data.filePath);
+                    } else {
+                        throw new Error(data.message || 'Image upload failed');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error uploading image:', error);
+                    if (statusElement) {
+                        statusElement.innerHTML = `<p class="error-message">Error uploading image: ${error.message}</p>`;
+                    }
+                });
+            }
+            
+            // Tab switching functionality
+            tabButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons and tabs
+                    tabButtons.forEach(btn => btn.classList.remove('active'));
+                    adminTabs.forEach(tab => tab.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    // Show corresponding tab
+                    if (this.id === 'subscribers-tab-btn') {
+                        document.getElementById('subscribers-tab').classList.add('active');
+                    } else if (this.id === 'blogs-list-tab-btn') {
+                        document.getElementById('blogs-list-tab').classList.add('active');
+                        loadBlogsList();
+                    } else if (this.id === 'heroes-list-tab-btn') {
+                        document.getElementById('heroes-list-tab').classList.add('active');
+                        loadHeroesList();
+                    }
+                });
+            });
+            
+            if (loginForm) {
+                loginForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    const username = document.getElementById('username').value;
+                    const password = document.getElementById('password').value;
+                    
+                    if (username === adminUsername && password === adminPassword) {
+                        // Successful login
+                        sessionStorage.setItem('adminLoggedIn', 'true');
+                        showAdminDashboard();
+                    } else {
+                        // Failed login
+                        loginStatus.innerHTML = '<p class="error-message">Invalid username or password.</p>';
+                    }
+                });
+            }
+            
+            if (logoutButton) {
+                logoutButton.addEventListener('click', function() {
+                    sessionStorage.removeItem('adminLoggedIn');
+                    loginContainer.style.display = 'block';
+                    adminContainer.style.display = 'none';
+                    loginForm.reset();
+                    loginStatus.innerHTML = '';
+                });
+            }
+            
+            // Refresh buttons for blog and hero lists
+            const refreshBlogsBtn = document.getElementById('refresh-blogs-btn');
+            if (refreshBlogsBtn) {
+                refreshBlogsBtn.addEventListener('click', function() {
+                    loadBlogsList();
+                });
+            }
+            
+            const refreshHeroesBtn = document.getElementById('refresh-heroes-btn');
+            if (refreshHeroesBtn) {
+                refreshHeroesBtn.addEventListener('click', function() {
+                    loadHeroesList();
+                });
+            }
+            
+            function showAdminDashboard() {
+                loginContainer.style.display = 'none';
+                adminContainer.style.display = 'block';
+                
+                // Set up image upload functionality
+                setupImageUpload();
+            }
+            
+            // Load blogs list for management
+            function loadBlogsList() {
+                // Show loading state
+                const blogsTableBody = document.getElementById('blogs-table-body');
+                blogsTableBody.innerHTML = '<tr><td colspan="5">Loading blogs...</td></tr>';
+                
+                // Get blogs from JSON file via API
+                fetch('/api/blogs')
+                    .then(response => response.json())
+                    .then(data => {
+                        blogsTableBody.innerHTML = '';
+                        
+                        if (!data.blogs || data.blogs.length === 0) {
+                            blogsTableBody.innerHTML = '<tr><td colspan="5">No blog posts found</td></tr>';
+                            return;
+                        }
+                        
+                        // Add rows for each blog
+                        data.blogs.forEach(blog => {
+                            const row = document.createElement('tr');
+                            
+                            row.innerHTML = `
+                                <td>${blog.id}</td>
+                                <td>${blog.title}</td>
+                                <td>${blog.author}</td>
+                                <td>${blog.date}</td>
+                                <td>
+                                    <button class="edit-blog-btn action-button" data-id="${blog.id}">Edit</button>
+                                </td>
+                            `;
+                            
+                            blogsTableBody.appendChild(row);
+                        });
+                        
+                        // Add event listeners to edit buttons
+                        document.querySelectorAll('.edit-blog-btn').forEach(button => {
+                            button.addEventListener('click', function() {
+                                const blogId = this.getAttribute('data-id');
+                                loadBlogForEdit(blogId);
+                            });
+                        });
+                    })
+                    .catch(error => {
+                        console.error('Error loading blogs:', error);
+                        blogsTableBody.innerHTML = 
+                            '<tr><td colspan="5">Error loading blogs. Please try again.</td></tr>';
+                    });
+            }
+            
+            // Load a specific blog for editing
+            function loadBlogForEdit(blogId) {
+                // Show loading state
+                document.getElementById('blog-edit-container').style.display = 'none';
+                
+                // Get blog data from API
+                fetch(`/api/blogs?id=${blogId}`)
+                    .then(response => response.json())
+                    .then(data => {
+                        const blog = data.blogs.find(b => b.id == blogId);
+                        
+                        if (!blog) {
+                            alert('Blog post not found.');
+                            return;
+                        }
+                        
+                        // Populate the edit form
+                        document.getElementById('edit-blog-id').value = blog.id;
+                        document.getElementById('edit-blog-title').value = blog.title;
+                        document.getElementById('edit-blog-excerpt').value = blog.excerpt;
+                        // Load current image
+                        document.getElementById('edit-blog-image').value = blog.image;
+                        document.getElementById('edit-blog-current-img').src = blog.image;
+                        document.getElementById('edit-blog-author').value = blog.author;
+                        document.getElementById('edit-blog-author-bio').value = blog.authorBio || '';
+                        document.getElementById('edit-blog-date').value = blog.date;
+                        document.getElementById('edit-blog-tags').value = blog.tags.join(', ');
+                        document.getElementById('edit-blog-content').value = blog.content;
+                        
+                        // Show the edit form
+                        document.getElementById('blog-edit-container').style.display = 'block';
+                        
+                        // Scroll to edit form
+                        document.getElementById('blog-edit-container').scrollIntoView({ behavior: 'smooth' });
+                    })
+                    .catch(error => {
+                        console.error('Error loading blog for edit:', error);
+                        alert('Error loading blog for edit. Please try again.');
+                    });
+            }
+            
+            // Setup blog edit form
+            const blogEditForm = document.getElementById('blog-edit-form');
+            if (blogEditForm) {
+                blogEditForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    const blogId = document.getElementById('edit-blog-id').value;
+                    const title = document.getElementById('edit-blog-title').value;
+                    const excerpt = document.getElementById('edit-blog-excerpt').value;
+                    const image = document.getElementById('edit-blog-image').value;
+                    const author = document.getElementById('edit-blog-author').value;
+                    const authorBio = document.getElementById('edit-blog-author-bio').value;
+                    const date = document.getElementById('edit-blog-date').value;
+                    const tagsInput = document.getElementById('edit-blog-tags').value;
+                    const content = document.getElementById('edit-blog-content').value;
+                    
+                    // Get and process tags
+                    const tags = tagsInput.split(',').map(tag => tag.trim()).filter(tag => tag !== '');
+                    
+                    // Create updated blog object
+                    const updatedBlog = {
+                        id: parseInt(blogId),
+                        title: title,
+                        excerpt: excerpt,
+                        image: image,
+                        author: author,
+                        authorBio: authorBio,
+                        date: date,
+                        tags: tags,
+                        content: content,
+                        url: `post.html?id=${blogId}` // Ensure URL is preserved
+                    };
+                    
+                    // Show loading state
+                    document.getElementById('blog-edit-status').innerHTML = 
+                        '<p style="color: #0066cc;">Saving changes...</p>';
+                    
+                    // Send update to server
+                    fetch(`/api/blogs/${blogId}`, {
+                        method: 'PUT',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(updatedBlog)
+                    })
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error('Failed to update blog');
+                        }
+                        return response.json();
+                    })
+                    .then(data => {
+                        // Show success message
+                        document.getElementById('blog-edit-status').innerHTML = 
+                            '<p class="success-message">Blog post updated successfully!</p>';
+                        
+                        // Reload blogs list
+                        loadBlogsList();
+                    })
+                    .catch(error => {
+                        console.error('Error updating blog:', error);
+                        document.getElementById('blog-edit-status').innerHTML = 
+                            '<p class="error-message">Error updating blog post. Please try again.</p>';
+                    });
+                });
+                
+                // Cancel blog edit
+                document.getElementById('cancel-blog-edit').addEventListener('click', function() {
+                    document.getElementById('blog-edit-container').style.display = 'none';
+                    document.getElementById('blog-edit-status').innerHTML = '';
+                });
+                
+                // Delete blog
+                document.getElementById('delete-blog').addEventListener('click', function() {
+                    if (!confirm('Are you sure you want to delete this blog post? This action cannot be undone.')) {
+                        return;
+                    }
+                    
+                    const blogId = document.getElementById('edit-blog-id').value;
+                    
+                    // Send delete request to server
+                    fetch(`/api/blogs/${blogId}`, {
+                        method: 'DELETE'
+                    })
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error('Failed to delete blog');
+                        }
+                        return response.json();
+                    })
+                    .then(data => {
+                        // Hide edit form
+                        document.getElementById('blog-edit-container').style.display = 'none';
+                        
+                        // Show success message
+                        alert('Blog post deleted successfully!');
+                        
+                        // Reload blogs list
+                        loadBlogsList();
+                    })
+                    .catch(error => {
+                        console.error('Error deleting blog:', error);
+                        alert('Error deleting blog post. Please try again.');
+                    });
+                });
+            }
+            
+            // Load heroes list for management
+            function loadHeroesList() {
+                // Show loading state
+                const heroesTableBody = document.getElementById('heroes-table-body');
+                heroesTableBody.innerHTML = '<tr><td colspan="5">Loading heroes...</td></tr>';
+                
+                // Get heroes from JSON file via API
+                fetch('/api/heroes')
+                    .then(response => response.json())
+                    .then(data => {
+                        heroesTableBody.innerHTML = '';
+                        
+                        if (!data.heroes || data.heroes.length === 0) {
+                            heroesTableBody.innerHTML = '<tr><td colspan="5">No heroes found</td></tr>';
+                            return;
+                        }
+                        
+                        // Add rows for each hero
+                        data.heroes.forEach(hero => {
+                            const row = document.createElement('tr');
+                            
+                            row.innerHTML = `
+                                <td>${hero.id}</td>
+                                <td>${hero.name}</td>
+                                <td>${hero.lifespan}</td>
+                                <td>${hero.province}</td>
+                                <td>
+                                    <button class="edit-hero-btn action-button" data-id="${hero.id}">Edit</button>
+                                </td>
+                            `;
+                            
+                            heroesTableBody.appendChild(row);
+                        });
+                        
+                        // Add event listeners to edit buttons
+                        document.querySelectorAll('.edit-hero-btn').forEach(button => {
+                            button.addEventListener('click', function() {
+                                const heroId = this.getAttribute('data-id');
+                                loadHeroForEdit(heroId);
+                            });
+                        });
+                    })
+                    .catch(error => {
+                        console.error('Error loading heroes:', error);
+                        heroesTableBody.innerHTML = 
+                            '<tr><td colspan="5">Error loading heroes. Please try again.</td></tr>';
+                    });
+            }
+            
+            // Load a specific hero for editing
+            function loadHeroForEdit(heroId) {
+                // Show loading state
+                document.getElementById('hero-edit-container').style.display = 'none';
+                
+                // Get hero data from API
+                fetch(`/api/heroes?id=${heroId}`)
+                    .then(response => response.json())
+                    .then(data => {
+                        const hero = data.heroes.find(h => h.id == heroId);
+                        
+                        if (!hero) {
+                            alert('Hero not found.');
+                            return;
+                        }
+                        
+                        // Populate the edit form
+                        document.getElementById('edit-hero-id').value = hero.id;
+                        document.getElementById('edit-hero-name').value = hero.name;
+                        document.getElementById('edit-hero-lifespan').value = hero.lifespan;
+                        document.getElementById('edit-hero-province').value = hero.province;
+                        document.getElementById('edit-hero-brief').value = hero.brief;
+                        // Load current image
+                        document.getElementById('edit-hero-image').value = hero.image;
+                        document.getElementById('edit-hero-current-img').src = hero.image;
+                        document.getElementById('edit-hero-early-life').value = hero.background.earlyLife;
+                        document.getElementById('edit-hero-impact').value = hero.background.impact;
+                        document.getElementById('edit-hero-legacy').value = hero.background.legacy;
+                        
+                        // Show the edit form
+                        document.getElementById('hero-edit-container').style.display = 'block';
+                        
+                        // Scroll to edit form
+                        document.getElementById('hero-edit-container').scrollIntoView({ behavior: 'smooth' });
+                    })
+                    .catch(error => {
+                        console.error('Error loading hero for edit:', error);
+                        alert('Error loading hero for edit. Please try again.');
+                    });
+            }
+            
+            // Setup hero edit form
+            const heroEditForm = document.getElementById('hero-edit-form');
+            if (heroEditForm) {
+                heroEditForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    const heroId = document.getElementById('edit-hero-id').value;
+                    const name = document.getElementById('edit-hero-name').value;
+                    const lifespan = document.getElementById('edit-hero-lifespan').value;
+                    const province = document.getElementById('edit-hero-province').value;
+                    const brief = document.getElementById('edit-hero-brief').value;
+                    const image = document.getElementById('edit-hero-image').value;
+                    const earlyLife = document.getElementById('edit-hero-early-life').value;
+                    const impact = document.getElementById('edit-hero-impact').value;
+                    const legacy = document.getElementById('edit-hero-legacy').value;
+                    
+                    // Create updated hero object
+                    const updatedHero = {
+                        id: parseInt(heroId),
+                        name: name,
+                        lifespan: lifespan,
+                        province: province,
+                        brief: brief,
+                        image: image,
+                        background: {
+                            earlyLife: earlyLife,
+                            impact: impact,
+                            legacy: legacy
+                        }
+                    };
+                    
+                    // Show loading state
+                    document.getElementById('hero-edit-status').innerHTML = 
+                        '<p style="color: #0066cc;">Saving changes...</p>';
+                    
+                    // Send update to server
+                    fetch(`/api/heroes/${heroId}`, {
+                        method: 'PUT',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(updatedHero)
+                    })
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error('Failed to update hero');
+                        }
+                        return response.json();
+                    })
+                    .then(data => {
+                        // Show success message
+                        document.getElementById('hero-edit-status').innerHTML = 
+                            '<p class="success-message">Hero updated successfully!</p>';
+                        
+                        // Reload heroes list
+                        loadHeroesList();
+                    })
+                    .catch(error => {
+                        console.error('Error updating hero:', error);
+                        document.getElementById('hero-edit-status').innerHTML = 
+                            '<p class="error-message">Error updating hero. Please try again.</p>';
+                    });
+                });
+                
+                // Cancel hero edit
+                document.getElementById('cancel-hero-edit').addEventListener('click', function() {
+                    document.getElementById('hero-edit-container').style.display = 'none';
+                    document.getElementById('hero-edit-status').innerHTML = '';
+                });
+                
+                // Delete hero
+                document.getElementById('delete-hero').addEventListener('click', function() {
+                    if (!confirm('Are you sure you want to delete this hero? This action cannot be undone.')) {
+                        return;
+                    }
+                    
+                    const heroId = document.getElementById('edit-hero-id').value;
+                    
+                    // Send delete request to server
+                    fetch(`/api/heroes/${heroId}`, {
+                        method: 'DELETE'
+                    })
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error('Failed to delete hero');
+                        }
+                        return response.json();
+                    })
+                    .then(data => {
+                        // Hide edit form
+                        document.getElementById('hero-edit-container').style.display = 'none';
+                        
+                        // Show success message
+                        alert('Hero deleted successfully!');
+                        
+                        // Reload heroes list
+                        loadHeroesList();
+                    })
+                    .catch(error => {
+                        console.error('Error deleting hero:', error);
+                        alert('Error deleting hero. Please try again.');
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post - All About Tibet</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="../../images/favicon.ico" type="image/x-icon">
+    <style>
+        /* Blog Post Page Specific Styles */
+        body {
+            background-color: #fff6d1;
+        }
+        
+        .blog-post-section {
+            padding: 120px 5% 80px;
+        }
+        
+        .blog-post-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .blog-post-header {
+            margin-bottom: 40px;
+        }
+        
+        .blog-post-header h1 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+        
+        .blog-post-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            color: #777;
+            font-size: 0.9rem;
+        }
+        
+        .blog-post-meta .author-date {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .blog-post-image {
+            width: 100%;
+            overflow: hidden;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            position: relative;
+            aspect-ratio: 16 / 9;
+        }
+        
+        .blog-post-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        
+        .blog-post-content {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #333;
+        }
+        
+        .blog-post-content p {
+            margin-bottom: 20px;
+        }
+        
+        .blog-post-content h2 {
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin: 40px 0 20px;
+        }
+        
+        .blog-post-content h3 {
+            font-size: 1.4rem;
+            color: var(--primary);
+            margin: 30px 0 15px;
+        }
+        
+        .blog-post-content ul, 
+        .blog-post-content ol {
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+        
+        .blog-post-content li {
+            margin-bottom: 10px;
+        }
+        
+        .blog-post-content blockquote {
+            border-left: 4px solid var(--secondary-1);
+            padding-left: 20px;
+            font-style: italic;
+            margin: 30px 0;
+            color: #555;
+        }
+        
+        .author-bio {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid #eee;
+            display: flex;
+            gap: 20px;
+        }
+        
+        .author-image {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        
+        .author-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .author-info h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: var(--primary);
+        }
+        
+        .author-info p {
+            font-size: 0.95rem;
+            color: #555;
+        }
+        
+        .share-post {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: var(--secondary-2);
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .share-post h3 {
+            margin-bottom: 15px;
+            color: var(--primary);
+        }
+        
+        .share-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        
+        .share-links a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            background-color: var(--primary);
+            color: var(--white);
+            border-radius: 50%;
+            transition: background-color 0.3s ease;
+        }
+        
+        .share-links a:hover {
+            background-color: var(--secondary-1);
+            color: var(--black);
+        }
+        
+        .related-posts {
+            margin-top: 60px;
+        }
+        
+        .related-posts h2 {
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin-bottom: 30px;
+        }
+        
+        .related-posts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .related-post-card {
+            background-color: var(--white);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .related-post-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .related-post-image {
+            overflow: hidden;
+            position: relative;
+            aspect-ratio: 16 / 9;
+        }
+        
+        .related-post-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        
+        .related-post-content {
+            padding: 15px;
+        }
+        
+        .related-post-content h3 {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            color: var(--primary);
+        }
+        
+        .related-post-content .post-meta {
+            font-size: 0.8rem;
+            color: #777;
+        }
+        
+        .loading-indicator {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 60px 0;
+        }
+        
+        .spinner {
+            width: 40px;
+            height: 40px;
+            border: 4px solid rgba(2, 89, 70, 0.1);
+            border-radius: 50%;
+            border-top-color: var(--primary);
+            animation: spin 1s ease-in-out infinite;
+            margin-bottom: 15px;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        
+        .error-message {
+            text-align: center;
+            padding: 40px 0;
+            color: #d32f2f;
+        }
+        
+        /* Responsive styles */
+        @media screen and (max-width: 768px) {
+            .blog-post-header h1 {
+                font-size: 2rem;
+            }
+            
+            .blog-post-image {
+                height: 250px;
+            }
+            
+            .author-bio {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="logo">
+            <a href="../../index.html">
+                <img src="../../images/AAT_Logo_website.png" alt="All About Tibet Logo">
+            </a>
+        </div>
+        <div class="menu-toggle">
+            <div class="hamburger"></div>
+        </div>
+        <nav class="overlay-menu">
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li class="dropdown">
+                    <a href="#">Our Initiatives</a>
+                    <ul class="submenu">
+                        <li><a href="../heroes/index.html">Heroes of Tibet</a></li>
+                        <li><a href="index.html">Blog</a></li>
+                    </ul>
+                </li>
+                <li><a href="../contact.html">Newsletter</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="blog-post-section">
+            <div class="blog-post-container">
+                <!-- Blog Post Content (will be populated dynamically) -->
+                <div id="blog-post-container">
+                    <div class="loading-indicator">
+                        <div class="spinner"></div>
+                        <p>Loading article...</p>
+                    </div>
+                </div>
+                
+                <!-- Related Posts -->
+                <div id="related-posts" class="related-posts">
+                    <h2>Related Articles</h2>
+                    <div id="related-posts-grid" class="related-posts-grid">
+                        <!-- Will be populated dynamically -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Contact Us</h3>
+                <p>Email: <a href="mailto:allabouttibet@norzinconsultancy.com">allabouttibet@norzinconsultancy.com</a></p>
+            </div>
+            <div class="social-links">
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 All About Tibet. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get post ID from URL parameter (e.g., post.html?id=1)
+            const urlParams = new URLSearchParams(window.location.search);
+            const postId = urlParams.get('id');
+            
+            if (!postId) {
+                document.getElementById('blog-post-container').innerHTML = `
+                    <div class="error-message">
+                        <p>No post ID specified. Please return to the <a href="index.html">blog page</a>.</p>
+                    </div>
+                `;
+                return;
+            }
+            
+            // First try to get blog data from localStorage (for admin-added blogs)
+            const localBlogs = JSON.parse(localStorage.getItem('blogs_data'));
+            
+            // If no local blogs data, fetch from API
+            const loadBlogs = localBlogs ? Promise.resolve(localBlogs) : 
+                fetch('/api/blogs')
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error('Network response was not ok');
+                        }
+                        return response.json();
+                    });
+            
+            loadBlogs
+                .then(data => {
+                    // Find the requested post
+                    const post = data.blogs.find(blog => blog.id == postId);
+                    
+                    if (!post) {
+                        document.getElementById('blog-post-container').innerHTML = `
+                            <div class="error-message">
+                                <p>Post not found. Please return to the <a href="index.html">blog page</a>.</p>
+                            </div>
+                        `;
+                        return;
+                    }
+                    
+                    // Update document title
+                    document.title = `${post.title} - All About Tibet`;
+                    
+                    // Calculate reading time if not already provided
+                    let readTime = post.readTime;
+                    if (post.content && (!post.readTime || post.readTime === '')) {
+                        // Calculate based on average reading speed of 200 words per minute
+                        const wordCount = post.content.replace(/<[^>]*>/g, '').split(/\s+/).length;
+                        const minutes = Math.ceil(wordCount / 200);
+                        readTime = `${minutes} min read`;
+                    }
+                    
+                    // Populate the blog post content
+                    document.getElementById('blog-post-container').innerHTML = `
+                        <div class="blog-post-header">
+                            <h1>${post.title}</h1>
+                            <div class="blog-post-meta">
+                                <div class="author-date">
+                                    <span>By ${post.author}</span>
+                                    <span>${post.date}</span>
+                                </div>
+                                <span>${readTime}</span>
+                            </div>
+                        </div>
+                        
+                        <div class="blog-post-image">
+                            <img src="../../${post.image}" alt="${post.title}">
+                        </div>
+                        
+                        <div class="blog-post-content">
+                            ${post.content || `<p>${post.excerpt}</p><p>Full article content will be displayed here. This is a placeholder for the complete post content.</p>`}
+                        </div>
+                        
+                        <div class="author-bio">
+                            <div class="author-image">
+                                <img src="../../images/author-placeholder.jpg" alt="${post.author}">
+                            </div>
+                            <div class="author-info">
+                                <h3>${post.author}</h3>
+                                <p>${post.authorBio || 'Author bio information will be displayed here. This is a placeholder for the author biography.'}</p>
+                            </div>
+                        </div>
+                        
+                        <div class="share-post">
+                            <h3>Share This Article</h3>
+                            <div class="share-links">
+                                <a href="#" aria-label="Share on Facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" aria-label="Share on Twitter"><i class="fab fa-twitter"></i></a>
+                                <a href="#" aria-label="Share on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" aria-label="Share via Email"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    `;
+                    
+                    // Populate related posts (excluding current post)
+                    const relatedPosts = data.blogs
+                        .filter(blog => blog.id != postId)
+                        .slice(0, 3);  // Get up to 3 related posts
+                    
+                    const relatedPostsHTML = relatedPosts.map(relatedPost => `
+                        <div class="related-post-card">
+                            <div class="related-post-image">
+                                <a href="post.html?id=${relatedPost.id}">
+                                    <img src="../../${relatedPost.image}" alt="${relatedPost.title}">
+                                </a>
+                            </div>
+                            <div class="related-post-content">
+                                <h3><a href="post.html?id=${relatedPost.id}">${relatedPost.title}</a></h3>
+                                <div class="post-meta">
+                                    <span>${relatedPost.date}</span>
+                                </div>
+                            </div>
+                        </div>
+                    `).join('');
+                    
+                    document.getElementById('related-posts-grid').innerHTML = relatedPostsHTML;
+                    
+                    // If no related posts, hide the section
+                    if (relatedPosts.length === 0) {
+                        document.getElementById('related-posts').style.display = 'none';
+                    }
+                })
+                .catch(error => {
+                    console.error('Error fetching blog data:', error);
+                    document.getElementById('blog-post-container').innerHTML = `
+                        <div class="error-message">
+                            <p>Unable to load blog post. Please try again later.</p>
+                        </div>
+                    `;
+                });
+        });
+    </script>
+</body>
+</html>
