@@ -49,13 +49,17 @@
             padding: 0;
             overflow: hidden;
             position: relative;
-            background-image: url('../images/MaWongPa Banner.jpg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
             display: flex;
             align-items: center;
             justify-content: center;
+            background-color: #fff6d1; /* Match page background color */
+        }
+        
+        .banner-image {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
         }
         
         .content-container {
@@ -243,8 +247,13 @@
             }
             
             .banner-container {
-                height: 70vh;
-                min-height: 400px;
+                height: auto;
+                min-height: 300px;
+                padding: 70px 0 0;
+            }
+            
+            .banner-image {
+                max-height: 60vh;
             }
             
             .detail-row {
@@ -288,7 +297,7 @@
     <main>
         <section class="mawongpa-section">
             <div class="banner-container">
-                <!-- Banner is set as background image in CSS -->
+                <img src="../images/MaWongPa Banner.jpg" alt="Mawongpa Essay Campaign Banner" class="banner-image">
             </div>
             
             <div class="content-container">
