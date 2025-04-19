@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Post - All About Tibet</title>
     <link rel="stylesheet" href="../../css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="apple-touch-icon" sizes="180x180" href="../../images/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../../images/favicon_io/favicon-16x16.png">
@@ -236,6 +236,100 @@
             color: #777;
         }
         
+        /* Comments Section Styles */
+        .comments-section {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 1px solid #eee;
+        }
+        
+        .comments-section h3 {
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin-bottom: 30px;
+        }
+        
+        .comment {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        
+        .comment-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        
+        .comment-date {
+            color: #777;
+            font-size: 0.9rem;
+        }
+        
+        .comment-body p {
+            margin: 0;
+        }
+        
+        .no-comments {
+            color: #777;
+            font-style: italic;
+        }
+        
+        .comment-form {
+            margin-top: 40px;
+            background-color: var(--secondary-2);
+            padding: 20px;
+            border-radius: 8px;
+        }
+        
+        .comment-form h4 {
+            margin-bottom: 20px;
+            color: var(--primary);
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: var(--primary);
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        
+        .submit-button {
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .submit-button:hover {
+            background-color: var(--secondary-1);
+            color: var(--black);
+        }
+        
         .loading-indicator {
             width: 100%;
             display: flex;
@@ -337,14 +431,16 @@
         <div class="footer-content">
             <div class="contact-info">
                 <h3>Contact Us</h3>
-                <p>Email: <a href="mailto:allabouttibet@norzinconsultancy.com">allabouttibet@norzinconsultancy.com</a></p>
+                <p>Email: <a href="mailto:contact@allabouttibet.com">contact@allabouttibet.com</a></p>
             </div>
             <div class="social-links">
-                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com/AATibet" aria-label="Instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/AATibet/" aria-label="Facebook" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/company/AATibet" aria-label="LinkedIn" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://x.com/AATibet" aria-label="X" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.youtube.com/@AATibet" aria-label="YouTube" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.threads.net/@AATibet" aria-label="Threads" target="_blank"><i class="fa-brands fa-threads"></i></a>
+                <a href="https://truthsocial.com/@AATibet" aria-label="Truth Social" target="_blank"><i class="fa-solid fa-t"></i></a>
             </div>
             <div class="copyright">
                 <p>&copy; 2025 All About Tibet. All rights reserved.</p>
@@ -368,18 +464,14 @@
                 return;
             }
             
-            // First try to get blog data from localStorage (for admin-added blogs)
-            const localBlogs = JSON.parse(localStorage.getItem('blogs_data'));
-            
-            // If no local blogs data, fetch from API
-            const loadBlogs = localBlogs ? Promise.resolve(localBlogs) : 
-                fetch('/api/blogs')
-                    .then(response => {
-                        if (!response.ok) {
-                            throw new Error('Network response was not ok');
-                        }
-                        return response.json();
-                    });
+            // Load blog data from JSON file
+            const loadBlogs = fetch('../../data/blogs.json')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                });
             
             loadBlogs
                 .then(data => {
@@ -407,6 +499,10 @@
                         readTime = `${minutes} min read`;
                     }
                     
+                    // Get current page URL for sharing
+                    const currentPageUrl = encodeURIComponent(window.location.href);
+                    const pageTitle = encodeURIComponent(post.title);
+                    
                     // Populate the blog post content
                     document.getElementById('blog-post-container').innerHTML = `
                         <div class="blog-post-header">
@@ -430,7 +526,7 @@
                         
                         <div class="author-bio">
                             <div class="author-image">
-                                <img src="../../images/author-placeholder.jpg" alt="${post.author}">
+                                <img src="../../images/blog/blog1.jpg" alt="${post.author}">
                             </div>
                             <div class="author-info">
                                 <h3>${post.author}</h3>
@@ -441,10 +537,31 @@
                         <div class="share-post">
                             <h3>Share This Article</h3>
                             <div class="share-links">
-                                <a href="#" aria-label="Share on Facebook"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#" aria-label="Share on Twitter"><i class="fab fa-twitter"></i></a>
-                                <a href="#" aria-label="Share on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="#" aria-label="Share via Email"><i class="fas fa-envelope"></i></a>
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=${currentPageUrl}" aria-label="Share on Facebook" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="https://twitter.com/intent/tweet?url=${currentPageUrl}&text=${pageTitle}" aria-label="Share on X" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                                <a href="https://www.linkedin.com/sharing/share-offsite/?url=${currentPageUrl}" aria-label="Share on LinkedIn" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="mailto:?subject=${pageTitle} - All About Tibet&body=Check out this article: ${currentPageUrl}" aria-label="Share via Email"><i class="fa-solid fa-envelope"></i></a>
+                            </div>
+                        </div>
+                        
+                        <div id="comments-section" class="comments-section">
+                            <h3>Comments</h3>
+                            <div id="comments-container">
+                                <!-- Comments will be displayed here -->
+                            </div>
+                            <div class="comment-form">
+                                <h4>Leave a Comment</h4>
+                                <form id="comment-form">
+                                    <div class="form-group">
+                                        <label for="commenter-name">Name</label>
+                                        <input type="text" id="commenter-name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="comment-text">Comment</label>
+                                        <textarea id="comment-text" required></textarea>
+                                    </div>
+                                    <button type="submit" class="submit-button">Post Comment</button>
+                                </form>
                             </div>
                         </div>
                     `;
@@ -476,6 +593,9 @@
                     if (relatedPosts.length === 0) {
                         document.getElementById('related-posts').style.display = 'none';
                     }
+                    
+                    // Set up comment functionality
+                    setupCommentSystem(postId);
                 })
                 .catch(error => {
                     console.error('Error fetching blog data:', error);
@@ -485,6 +605,76 @@
                         </div>
                     `;
                 });
+                
+            // Comment system functionality
+            function setupCommentSystem(postId) {
+                const commentForm = document.getElementById('comment-form');
+                if (!commentForm) return;
+                
+                // Load and display existing comments
+                displayComments(postId);
+                
+                // Add event listener for comment form submission
+                commentForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    const name = document.getElementById('commenter-name').value.trim();
+                    const text = document.getElementById('comment-text').value.trim();
+                    const date = new Date().toLocaleDateString('en-US', { 
+                        year: 'numeric', 
+                        month: 'long', 
+                        day: 'numeric' 
+                    });
+                    
+                    if (!name || !text) return;
+                    
+                    // Create new comment object
+                    const newComment = { name, text, date };
+                    
+                    // Get existing comments from localStorage or initialize empty array
+                    let blogComments = JSON.parse(localStorage.getItem(`blog_${postId}_comments`)) || [];
+                    
+                    // Add new comment
+                    blogComments.push(newComment);
+                    
+                    // Save to localStorage
+                    localStorage.setItem(`blog_${postId}_comments`, JSON.stringify(blogComments));
+                    
+                    // Display the updated comments
+                    displayComments(postId);
+                    
+                    // Reset form
+                    commentForm.reset();
+                });
+            }
+            
+            // Function to display comments for a specific post
+            function displayComments(postId) {
+                const commentsContainer = document.getElementById('comments-container');
+                if (!commentsContainer) return;
+                
+                // Get comments from localStorage
+                const comments = JSON.parse(localStorage.getItem(`blog_${postId}_comments`)) || [];
+                
+                if (comments.length === 0) {
+                    commentsContainer.innerHTML = '<p class="no-comments">No comments yet. Be the first to share your thoughts!</p>';
+                    return;
+                }
+                
+                const commentsHTML = comments.map(comment => `
+                    <div class="comment">
+                        <div class="comment-header">
+                            <strong>${comment.name}</strong>
+                            <span class="comment-date">${comment.date}</span>
+                        </div>
+                        <div class="comment-body">
+                            <p>${comment.text}</p>
+                        </div>
+                    </div>
+                `).join('');
+                
+                commentsContainer.innerHTML = commentsHTML;
+            }
         });
     </script>
 </body>

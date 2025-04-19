@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - All About Tibet</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon_io/favicon-16x16.png">
@@ -212,37 +212,11 @@
             <div class="contact-container">
                 <!-- Contact Form -->
                 <div class="contact-form-container">
-                    <form class="contact-form" id="newsletter-form">
-                        <div class="form-group">
-                            <label for="firstName" class="required">First Name</label>
-                            <input type="text" id="firstName" name="firstName" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="lastName" class="required">Last Name</label>
-                            <input type="text" id="lastName" name="lastName" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="email" class="required">Email Address</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="phone">Contact Number</label>
-                            <input type="tel" id="phone" name="phone">
-                        </div>
-                        
-                        <div class="form-group checkbox-group">
-                            <input type="checkbox" id="consent" name="consent" required>
-                            <label for="consent" class="required">I agree to receive newsletters from All About Tibet and understand that my information will be handled as described in the Privacy Policy. I can unsubscribe at any time.</label>
-                        </div>
-                        
-                        <div id="form-status" class="form-status"></div>
-                        
-                        <p style="color: #ff4c4c; font-size: 0.85rem; margin-top: 0;">* Required fields</p>
-                        <button type="submit" class="submit-button">Subscribe</button>
-                    </form>
+                    <iframe id="google-form-iframe" src="https://docs.google.com/forms/d/e/1FAIpQLSeSWNlzn4acmAm1ifHpzIklyXvFZ6gIjZFJoXv8y9q_yl7gnw/viewform?embedded=true" 
+                        frameborder="0" marginheight="0" marginwidth="0" 
+                        style="width: 100%; height: 600px; border: none;">
+                        Loading…
+                    </iframe>
                 </div>
                 
                 <!-- Contact Information -->
@@ -291,14 +265,16 @@
         <div class="footer-content">
             <div class="contact-info">
                 <h3>Contact Us</h3>
-                <p>Email: <a href="mailto:allabouttibet@norzinconsultancy.com">allabouttibet@norzinconsultancy.com</a></p>
+                <p>Email: <a href="mailto:contact@allabouttibet.com">contact@allabouttibet.com</a></p>
             </div>
             <div class="social-links">
-                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com/AATibet" aria-label="Instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/AATibet/" aria-label="Facebook" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/company/AATibet" aria-label="LinkedIn" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://x.com/AATibet" aria-label="X" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.youtube.com/@AATibet" aria-label="YouTube" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.threads.net/@AATibet" aria-label="Threads" target="_blank"><i class="fa-brands fa-threads"></i></a>
+                <a href="https://truthsocial.com/@AATibet" aria-label="Truth Social" target="_blank"><i class="fa-solid fa-t"></i></a>
             </div>
             <div class="copyright">
                 <p>&copy; 2025 All About Tibet. All rights reserved.</p>
@@ -308,58 +284,21 @@
 
     <script src="../js/main.js"></script>
     <script>
+        // No additional JavaScript needed as Google Form handles all the form processing
         document.addEventListener('DOMContentLoaded', function() {
-            const form = document.getElementById('newsletter-form');
-            const formStatus = document.getElementById('form-status');
-            
-            // Check if we have a saved Google Form URL
-            const googleFormUrl = localStorage.getItem('google_form_url');
-            
-            if (googleFormUrl && form) {
-                // Replace the newsletter form with a button to redirect to Google Form
-                const formContainer = document.querySelector('.contact-form-container');
-                if (formContainer) {
-                    formContainer.innerHTML = `
-                        <div class="google-form-container">
-                            <h2>Subscribe to our Newsletter</h2>
-                            <p>Click the button below to open our newsletter signup form.</p>
-                            <a href="${googleFormUrl}" target="_blank" class="submit-button" style="margin-top: 20px; display: inline-block;">
-                                Subscribe Now
-                            </a>
-                        </div>
-                    `;
+            // Adjust iframe height if needed for responsiveness
+            function adjustIframeHeight() {
+                const iframe = document.getElementById('google-form-iframe');
+                if (iframe && window.innerWidth < 768) {
+                    iframe.style.height = '700px'; // Increase height on mobile
+                } else if (iframe) {
+                    iframe.style.height = '600px';
                 }
-            } else if (form) {
-                // Use default form behavior with localStorage as fallback
-                form.addEventListener('submit', function(e) {
-                    e.preventDefault();
-                    
-                    // Collect form data
-                    const firstName = document.getElementById('firstName').value;
-                    const lastName = document.getElementById('lastName').value;
-                    const email = document.getElementById('email').value;
-                    const phone = document.getElementById('phone').value;
-                    const consent = document.getElementById('consent').checked;
-                    
-                    if (!consent) {
-                        formStatus.innerHTML = '<p class="error-message">Please agree to the terms before subscribing.</p>';
-                        return;
-                    }
-                    
-                    // Create data object
-                    const subscriberData = {
-                        firstName,
-                        lastName,
-                        email,
-                        phone,
-                        subscriptionDate: new Date().toLocaleString(),
-                        consent: consent ? 'Yes' : 'No'
-                    };
-                    
-                    // Store in localStorage as fallback since Google Form isn't set up yet
-                    formStatus.innerHTML = '<p class="error-message">Google Form for newsletter subscription is not set up yet. Please contact administrator.</p>';
-                }); 
             }
+            
+            // Call on load and on resize
+            adjustIframeHeight();
+            window.addEventListener('resize', adjustIframeHeight);
         });
     </script>
     <style>

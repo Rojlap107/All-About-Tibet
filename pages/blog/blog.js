@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
             displayBlogPosts(data.blogs);
             initializeTopics(data.blogs);
             initializeSearch();
+            displayTrendingPosts(data.blogs);
         })
         .catch(error => {
             console.error('Error initializing blog page:', error);
@@ -264,6 +265,47 @@ document.addEventListener('DOMContentLoaded', function() {
                     displayBlogPosts(allBlogData.blogs);
                 });
             }
+        });
+    }
+    
+    // Function to display trending posts
+    function displayTrendingPosts(posts) {
+        const trendingPostsContainer = document.querySelector('.trending-posts');
+        if (!trendingPostsContainer) return;
+        
+        // Sort posts by date (newest first)
+        const sortedPosts = [...posts].sort((a, b) => {
+            const dateA = new Date(a.date);
+            const dateB = new Date(b.date);
+            return dateB - dateA;
+        });
+        
+        // Take the 3 most recent posts
+        const recentPosts = sortedPosts.slice(0, 3);
+        
+        // Clear existing content
+        trendingPostsContainer.innerHTML = '';
+        
+        // Add trending posts
+        recentPosts.forEach(post => {
+            const trendingPost = document.createElement('div');
+            trendingPost.className = 'trending-post';
+            
+            trendingPost.innerHTML = `
+                <div class="trending-post-image">
+                    <a href="${post.url}">
+                        <img src="../../${post.image}" alt="${post.title}">
+                    </a>
+                </div>
+                <div class="trending-post-content">
+                    <h4><a href="${post.url}" title="${post.title}">${post.title}</a></h4>
+                    <div class="post-meta">
+                        <span>${post.date}</span>
+                    </div>
+                </div>
+            `;
+            
+            trendingPostsContainer.appendChild(trendingPost);
         });
     }
     

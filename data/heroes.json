@@ -3,66 +3,40 @@
     {
       "id": 1,
       "name": "Gendun Chopel",
-      "lifespan": "1900-1980",
-      "province": "Ü-Tsang",
-      "brief": "Brief introduction about this Tibetan hero and their contribution to the Tibetan cause and culture.",
+      "lifespan": "1903-1951",
+      "province": "Amdo",
+      "brief": "Gendun Chomphel was a Tibetan scholar, writer, translator, linguist, artist, and intellectual who is widely regarded as one of the most important Tibetan thinkers of the 20th century. He challenged traditional Tibetan customs and institutions while advocating for reform and modernization during a pivotal period in Tibetan history.",
       "image": "images/heroes/hero1.jpg",
       "background": {
-        "earlyLife": "<p>This section contains information about the hero's early life and formative experiences. Where and when they were born, their family background, education, and any significant childhood events that shaped their future path.</p><p>Ut cursus, nulla ac ultricies tempor, sapien massa placerat metus, at finibus massa arcu quis magna. Vestibulum vel magna in elit maximus facilisis vel sit amet eros. Nulla facilisi. In hac habitasse platea dictumst.</p><p>Quisque porta cursus ligula, sit amet lacinia neque laoreet id. Morbi eleifend fringilla enim, vel commodo risus ultrices et. Vivamus elementum neque at quam sagittis aliquam.</p>",
-        "impact": "<p>This section details the hero's specific contributions to the Tibetan cause, their role in the struggle for preservation of Tibetan identity, and the lasting impact they have had on Tibetan history and culture.</p><p>Donec in auctor sapien, ac consequat mauris. Pellentesque bibendum lacus sit amet mauris facilisis bibendum. Suspendisse pellentesque eros at est egestas dictum. Quisque eget velit vel arcu molestie tincidunt quis sed justo.</p><p>Integer porta mattis odio, eget imperdiet dolor consequat quis. Suspendisse ac risus neque. Phasellus ac odio id justo fermentum maximus. Nullam a semper lectus, et rhoncus sapien.</p>",
-        "legacy": "<p>This section explores how the hero is remembered today, their ongoing influence on Tibetan society, and any tributes, monuments, or institutional recognitions that honor their memory and contributions.</p><p>Quisque urna dolor, bibendum eget ornare nec, pretium et odio. Nunc quis vehicula nulla. Suspendisse in justo eu nulla efficitur ullamcorper. Mauris vitae vehicula augue. Morbi lacinia orci id ex vestibulum sollicitudin.</p><p>Cras euismod convallis felis, non pretium lectus convallis id. Fusce faucibus tellus eget leo convallis, sit amet convallis turpis finibus. Aenean pellentesque mauris vel nisl dapibus, eu scelerisque arcu dignissim.</p>"
+        "earlyLife": "Born in 1903 in the Rebkong region of Amdo, Gendun Chomphel received a traditional monastic education at Labrang Monastery, where he excelled in Buddhist philosophy, debate, and traditional arts. His exceptional intelligence and questioning nature were evident from an early age. In 1927, he traveled to central Tibet and entered Drepung Monastery near Lhasa, where he further developed his scholarly abilities. </p><p> His life took a dramatic turn when he met the Indian scholar Rahul Sankrityayan in 1934. He left his monastic life behind and traveled to India with Sankrityayan, where he was exposed to modern ideas, foreign languages, and secular education. During his time in India (1934-1945), he learned English, Hindi, Sanskrit, and Pali, conducted research on Tibetan history, and traveled extensively throughout the subcontinent.",
+        "impact": "<p>Gendun Chomphel's impact on Tibetan intellectual life was profound and far-reaching. His most famous work, \"The White Annals\" (Deb ther dkar po)(དེབ་ཐེར་དཀར་པོ།), revolutionized Tibetan historiography by applying critical methodology and incorporating archaeological evidence, challenging established historical narratives and attempting to write a more accurate history of Tibet free from religious and political biases.</p><p>As a gifted translator, Chomphel bridged worlds by rendering important Sanskrit texts into Tibetan and introducing Western scientific concepts to Tibetan readers, creating crucial connections between traditional knowledge and modern ideas. Through his writings and activities, he became a voice for modernization and reform, recognizing earlier than most the necessity for Tibet to engage with the outside world while still honoring its cultural heritage.</p><p>Beyond his scholarly pursuits, Chomphel distinguished himself as an accomplished artist and poet who skillfully integrated new techniques and themes into traditional Tibetan artistic forms. His pioneering spirit extended to creating the first modern travel guide written in Tibetan, \"Guidebook to India\" (rgya gar lam yig)(རྒྱ་གར་ལམ་ཡིག), and producing the first comprehensive work on sexuality in Tibetan literature through his illustrated Kāmasūtra translation—works that broke new ground in Tibetan literature and demonstrated his remarkable intellectual versatility.</p>",
+        "legacy": "<p>Gendun Chopel's legacy is characterized by intellectual courage, innovation, and an unwavering commitment to truth. Despite facing persecution and misunderstanding during his lifetime, he is now celebrated as one of Tibet's most important modern intellectuals. His contributions to philosophy, history, linguistics, and translation have left a lasting impact on Tibetan culture.</p><p>Gendun Chopel's life symbolizes the struggle for intellectual freedom and the pursuit of truth amid adversity. His works continue to inspire scholars and reformists aiming to modernize Tibetan society while preserving its unique heritage. The centennial celebrations of his birth in 2003 underscored his global scholarly impact, with international conferences discussing his life and work.</p><p>Today, he is remembered not only for his intellectual achievements but also for his courage in challenging societal norms. His writings remain a testament to his brilliance and vision, ensuring his influence endures across generations.</p>"
       }
     },
     {
       "id": 2,
       "name": "Adrung Gonpo Tashi",
-      "lifespan": "1920-1990",
+      "lifespan": "1905-1964",
       "province": "Kham",
-      "brief": "Brief introduction about this Tibetan hero and their significant contributions to Tibetan culture and resistance.",
+      "brief": "Founder and leader of the Chushi Gangdruk (\"Four Rivers, Six Ranges\") resistance movement against Chinese occupation of Tibet. A wealthy businessman turned resistance leader who played a crucial role in organizing the Dalai Lama's escape to India in 1959. His leadership in guerrilla warfare against Chinese forces from 1956 to 1974 marks him as a pivotal figure in modern Tibetan history.",
       "image": "images/heroes/hero2.jpg",
       "background": {
-        "earlyLife": "<p>This section contains information about the hero's early life and formative experiences. Where and when they were born, their family background, education, and any significant childhood events that shaped their future path.</p><p>Ut cursus, nulla ac ultricies tempor, sapien massa placerat metus, at finibus massa arcu quis magna. Vestibulum vel magna in elit maximus facilisis vel sit amet eros. Nulla facilisi. In hac habitasse platea dictumst.</p>",
-        "impact": "<p>This section details the hero's specific contributions to the Tibetan cause, their role in the struggle for preservation of Tibetan identity, and the lasting impact they have had on Tibetan history and culture.</p><p>Donec in auctor sapien, ac consequat mauris. Pellentesque bibendum lacus sit amet mauris facilisis bibendum. Suspendisse pellentesque eros at est egestas dictum. Quisque eget velit vel arcu molestie tincidunt quis sed justo.</p>",
-        "legacy": "<p>This section explores how the hero is remembered today, their ongoing influence on Tibetan society, and any tributes, monuments, or institutional recognitions that honor their memory and contributions.</p><p>Quisque urna dolor, bibendum eget ornare nec, pretium et odio. Nunc quis vehicula nulla. Suspendisse in justo eu nulla efficitur ullamcorper. Mauris vitae vehicula augue.</p>"
+        "earlyLife": "<p>Born in 1905 in Litang County, Kham Province of Eastern Tibet. Before becoming a resistance leader, he established himself as a successful and charismatic merchant in the region. His commercial success provided him with resources, connections, and influence that would later prove invaluable to organizing resistance.</p><p>The people of Kham were historically recognized for their bravery and independent spirit, characteristics that likely influenced his resolve. The 1950 surrender of Kham province to the Chinese People's Liberation Army was a turning point that transformed him from a successful businessman into a determined resistance organizer.</p>",
+        "impact": "<p>Founded and led the Chushi Gangdruk (\"Four Rivers, Six Ranges\" or National Volunteer Defence Army - NVDA) resistance movement, established June 16, 1958. Organized and directed sustained guerrilla warfare against Chinese forces from 1956 until his death (the movement continued until 1974).</p><p>Played an instrumental role in ensuring the safe escape of the 14th Dalai Lama to India in March 1959. Financed initial resistance efforts and established military laws for the volunteers. Gained control over significant areas in Southern Tibet initially.</p><p>Received the highest military rank of Dzasak from the Dalai Lama. Continued resistance from a base in Mustang, Nepal, with CIA support after fleeing Tibet. His leadership was driven by Tibetan nationalism, anti-communism, and the desire to protect Tibetan Buddhism, culture, and unity under the Dalai Lama.</p>",
+        "legacy": "<p>Remembered as a key figure and powerful symbol of Tibetan resistance against Chinese occupation. The Dhokham Chushi Gangdruk organization continues as a charity with chapters in New York City, India, and other countries, supporting survivors of the resistance movement.</p><p>Regular commemorations are held, including the 61st founding anniversary celebrated in Switzerland in 2019. His work extends beyond military resistance to encompass cultural preservation and identity maintenance for Tibetans in exile.</p><p>Symbolizes courage, determination, and resilience in the face of immense adversity. His book remains a crucial primary source on the Khampa resistance movement. The Chushi Gangdruk he founded is recognized as the first and most substantial organized armed resistance movement within Tibet against the Chinese PLA.</p>"
       }
     },
     {
       "id": 3,
-      "name": "Hero Name 3",
-      "lifespan": "1930-2010",
-      "province": "Amdo",
-      "brief": "Brief introduction about this Tibetan hero and their important work preserving Tibetan identity and culture.",
+      "name": "Pamo Kusang",
+      "lifespan": "Early 20th century-1969",
+      "province": "Utsang",
+      "brief": "Pamo Kusang, also known as Kundeling Kunsang, was a prominent Tibetan activist and a leader of the Tibetan Women's Uprising Day on March 12, 1959. She was the niece of Tsarong Dasang Dadul, a notable figure in Tibetan politics. Before her activism, she lived in Lhasa, worked at the Tsarong household, and married Gurteng Lobsang Tashi, a senior steward of Kundeling Monastery. They had a daughter, Tseten Yangkyi, born in 1954.",
       "image": "images/heroes/hero3.jpg",
       "background": {
-        "earlyLife": "<p>This section contains information about the hero's early life and formative experiences. Where and when they were born, their family background, education, and any significant childhood events that shaped their future path.</p>",
-        "impact": "<p>This section details the hero's specific contributions to the Tibetan cause, their role in the struggle for preservation of Tibetan identity, and the lasting impact they have had on Tibetan history and culture.</p>",
-        "legacy": "<p>This section explores how the hero is remembered today, their ongoing influence on Tibetan society, and any tributes, monuments, or institutional recognitions that honor their memory and contributions.</p>"
-      }
-    },
-    {
-      "id": 4,
-      "name": "Hero Name 4",
-      "lifespan": "1940-2015",
-      "province": "Ü-Tsang",
-      "brief": "Brief introduction about this Tibetan hero and their pivotal role in preserving Tibetan cultural heritage.",
-      "image": "images/heroes/hero4.jpg",
-      "background": {
-        "earlyLife": "<p>This section contains information about the hero's early life and formative experiences. Where and when they were born, their family background, education, and any significant childhood events that shaped their future path.</p>",
-        "impact": "<p>This section details the hero's specific contributions to the Tibetan cause, their role in the struggle for preservation of Tibetan identity, and the lasting impact they have had on Tibetan history and culture.</p>",
-        "legacy": "<p>This section explores how the hero is remembered today, their ongoing influence on Tibetan society, and any tributes, monuments, or institutional recognitions that honor their memory and contributions.</p>"
-      }
-    },
-    {
-      "id": 5,
-      "name": "Hero Name 5",
-      "lifespan": "1950-Present",
-      "province": "Kham",
-      "brief": "Brief introduction about this living Tibetan hero and their ongoing efforts to preserve Tibetan culture.",
-      "image": "images/heroes/hero5.jpg",
-      "background": {
-        "earlyLife": "<p>This section contains information about the hero's early life and formative experiences. Where and when they were born, their family background, education, and any significant childhood events that shaped their future path.</p>",
-        "impact": "<p>This section details the hero's specific contributions to the Tibetan cause, their role in the struggle for preservation of Tibetan identity, and the lasting impact they have had on Tibetan history and culture.</p>",
-        "legacy": "<p>This section explores how the hero's work continues to influence Tibetan society today, and their ongoing contributions to the preservation of Tibetan culture and identity.</p>"
+        "earlyLife": "<p>Pamo Kusang was born into the influential Kundeling family in Lhasa, which provided her with connections to both the aristocracy and the monastic elite. Her familial ties to Tsarong Dasang Dadul, a significant political figure, and her marriage into the Kundeling Monastery's leadership positioned her within the social and political fabric of Tibetan society prior to the Chinese occupation.</p>",
+        "impact": "<p>Pamo Kusang's most significant impact was her leadership of the Tibetan Women's Uprising on March 12, 1959. Under her guidance, thousands of women gathered in a non-violent demonstration in front of the Potala Palace, marking the beginning of the Tibetan women's movement for independence. This protest became a pivotal moment in Tibetan resistance history, symbolizing the active role of women in the struggle against Chinese occupation.</p><p>After her arrest during the 1959 crackdown, Kusang endured years of imprisonment and torture. Despite severe physical and psychological abuse, she continued to resist, organizing anti-Chinese demonstrations within prison in 1970. Her defiance, including taking sole responsibility for protests to protect fellow inmates, led to her execution by firing squad near Sera Monastery. Kusang's martyrdom solidified her legacy as a symbol of courage and sacrifice in the Tibetan resistance movement.</p>",
+        "legacy": "<p>Her story continues to inspire Tibetan activists, especially women, and is commemorated annually on Tibetan Women's Uprising Day. Her actions demonstrated the power of non-violent protest and the critical role of women in national movements.</p>"
       }
     }
   ]
