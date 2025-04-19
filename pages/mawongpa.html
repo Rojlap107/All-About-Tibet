@@ -134,13 +134,21 @@
         }
         
         .section-container ul {
-            padding-left: 20px;
+            padding-left: 30px;
             margin-bottom: 20px;
+            list-style-type: disc;
         }
         
         .section-container li {
-            margin-bottom: 10px;
+            margin-bottom: 15px;
             line-height: 1.7;
+            position: relative;
+            padding-left: 5px;
+        }
+        
+        .section-container li::marker {
+            color: var(--primary);
+            font-size: 1.2em;
         }
         
         .theme-container {
