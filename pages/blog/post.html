@@ -110,24 +110,10 @@
         }
         
         .author-bio {
-            margin-top: 50px;
+            margin-top: 40px;
             padding-top: 30px;
             border-top: 1px solid #eee;
-            display: flex;
-            gap: 20px;
-        }
-        
-        .author-image {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            overflow: hidden;
-        }
-        
-        .author-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+            margin-bottom: 30px;
         }
         
         .author-info h3 {
@@ -139,6 +125,7 @@
         .author-info p {
             font-size: 0.95rem;
             color: #555;
+            line-height: 1.6;
         }
         
         .share-post {
@@ -236,99 +223,6 @@
             color: #777;
         }
         
-        /* Comments Section Styles */
-        .comments-section {
-            margin-top: 60px;
-            padding-top: 30px;
-            border-top: 1px solid #eee;
-        }
-        
-        .comments-section h3 {
-            font-size: 1.8rem;
-            color: var(--primary);
-            margin-bottom: 30px;
-        }
-        
-        .comment {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            margin-bottom: 15px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-        }
-        
-        .comment-header {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 10px;
-        }
-        
-        .comment-date {
-            color: #777;
-            font-size: 0.9rem;
-        }
-        
-        .comment-body p {
-            margin: 0;
-        }
-        
-        .no-comments {
-            color: #777;
-            font-style: italic;
-        }
-        
-        .comment-form {
-            margin-top: 40px;
-            background-color: var(--secondary-2);
-            padding: 20px;
-            border-radius: 8px;
-        }
-        
-        .comment-form h4 {
-            margin-bottom: 20px;
-            color: var(--primary);
-        }
-        
-        .form-group {
-            margin-bottom: 15px;
-        }
-        
-        .form-group label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: bold;
-            color: var(--primary);
-        }
-        
-        .form-group input,
-        .form-group textarea {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            font-size: 1rem;
-        }
-        
-        .form-group textarea {
-            min-height: 120px;
-            resize: vertical;
-        }
-        
-        .submit-button {
-            background-color: var(--primary);
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 4px;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-        
-        .submit-button:hover {
-            background-color: var(--secondary-1);
-            color: var(--black);
-        }
         
         .loading-indicator {
             width: 100%;
@@ -368,12 +262,6 @@
             .blog-post-image {
                 height: 250px;
             }
-            
-            .author-bio {
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-            }
         }
     </style>
 </head>
@@ -397,6 +285,7 @@
                     <ul class="submenu">
                         <li><a href="../heroes/index.html">Heroes of Tibet</a></li>
                         <li><a href="index.html">Blog</a></li>
+                        <li><a href="../mawongpa.html">Mawongpa Essay Campaign</a></li>
                     </ul>
                 </li>
                 <li><a href="../contact.html">Newsletter</a></li>
@@ -525,9 +414,6 @@
                         </div>
                         
                         <div class="author-bio">
-                            <div class="author-image">
-                                <img src="../../images/blog/blog1.jpg" alt="${post.author}">
-                            </div>
                             <div class="author-info">
                                 <h3>${post.author}</h3>
                                 <p>${post.authorBio || 'Author bio information will be displayed here. This is a placeholder for the author biography.'}</p>
@@ -544,26 +430,6 @@
                             </div>
                         </div>
                         
-                        <div id="comments-section" class="comments-section">
-                            <h3>Comments</h3>
-                            <div id="comments-container">
-                                <!-- Comments will be displayed here -->
-                            </div>
-                            <div class="comment-form">
-                                <h4>Leave a Comment</h4>
-                                <form id="comment-form">
-                                    <div class="form-group">
-                                        <label for="commenter-name">Name</label>
-                                        <input type="text" id="commenter-name" required>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="comment-text">Comment</label>
-                                        <textarea id="comment-text" required></textarea>
-                                    </div>
-                                    <button type="submit" class="submit-button">Post Comment</button>
-                                </form>
-                            </div>
-                        </div>
                     `;
                     
                     // Populate related posts (excluding current post)
@@ -593,9 +459,6 @@
                     if (relatedPosts.length === 0) {
                         document.getElementById('related-posts').style.display = 'none';
                     }
-                    
-                    // Set up comment functionality
-                    setupCommentSystem(postId);
                 })
                 .catch(error => {
                     console.error('Error fetching blog data:', error);
@@ -606,75 +469,6 @@
                     `;
                 });
                 
-            // Comment system functionality
-            function setupCommentSystem(postId) {
-                const commentForm = document.getElementById('comment-form');
-                if (!commentForm) return;
-                
-                // Load and display existing comments
-                displayComments(postId);
-                
-                // Add event listener for comment form submission
-                commentForm.addEventListener('submit', function(e) {
-                    e.preventDefault();
-                    
-                    const name = document.getElementById('commenter-name').value.trim();
-                    const text = document.getElementById('comment-text').value.trim();
-                    const date = new Date().toLocaleDateString('en-US', { 
-                        year: 'numeric', 
-                        month: 'long', 
-                        day: 'numeric' 
-                    });
-                    
-                    if (!name || !text) return;
-                    
-                    // Create new comment object
-                    const newComment = { name, text, date };
-                    
-                    // Get existing comments from localStorage or initialize empty array
-                    let blogComments = JSON.parse(localStorage.getItem(`blog_${postId}_comments`)) || [];
-                    
-                    // Add new comment
-                    blogComments.push(newComment);
-                    
-                    // Save to localStorage
-                    localStorage.setItem(`blog_${postId}_comments`, JSON.stringify(blogComments));
-                    
-                    // Display the updated comments
-                    displayComments(postId);
-                    
-                    // Reset form
-                    commentForm.reset();
-                });
-            }
-            
-            // Function to display comments for a specific post
-            function displayComments(postId) {
-                const commentsContainer = document.getElementById('comments-container');
-                if (!commentsContainer) return;
-                
-                // Get comments from localStorage
-                const comments = JSON.parse(localStorage.getItem(`blog_${postId}_comments`)) || [];
-                
-                if (comments.length === 0) {
-                    commentsContainer.innerHTML = '<p class="no-comments">No comments yet. Be the first to share your thoughts!</p>';
-                    return;
-                }
-                
-                const commentsHTML = comments.map(comment => `
-                    <div class="comment">
-                        <div class="comment-header">
-                            <strong>${comment.name}</strong>
-                            <span class="comment-date">${comment.date}</span>
-                        </div>
-                        <div class="comment-body">
-                            <p>${comment.text}</p>
-                        </div>
-                    </div>
-                `).join('');
-                
-                commentsContainer.innerHTML = commentsHTML;
-            }
         });
     </script>
 </body>
