@@ -1,5 +1,8 @@
 // Wait for the DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', function() {
+    // Initialize back to top button
+    initBackToTopButton();
+
     // Typing animation for hero text
     const typingText = document.querySelector('.typing-text');
     if (typingText) {
@@ -306,5 +309,36 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
             }
         }
+    }
+
+    // Function to initialize back to top button
+    function initBackToTopButton() {
+        // Create the back to top button element
+        const backToTopButton = document.createElement('a');
+        backToTopButton.className = 'back-to-top';
+        backToTopButton.innerHTML = '<i class="fa-solid fa-arrow-up"></i>';
+        backToTopButton.setAttribute('aria-label', 'Back to top');
+        backToTopButton.setAttribute('role', 'button');
+
+        // Append to body
+        document.body.appendChild(backToTopButton);
+
+        // Show/hide button based on scroll position
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('show');
+            } else {
+                backToTopButton.classList.remove('show');
+            }
+        });
+
+        // Scroll to top when clicked
+        backToTopButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
     }
 });
