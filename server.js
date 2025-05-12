@@ -405,6 +405,10 @@ app.get('/index.html', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
 
+app.get('/pages/mawongpa', (req, res) => {
+  res.sendFile(path.join(__dirname, 'pages/mawongpa.html'));
+});
+
 // Catch-all route for other pages
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
