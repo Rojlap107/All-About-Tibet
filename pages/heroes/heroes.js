@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function() {
             heroSection.dataset.province = hero.province.toLowerCase().replace(/[^\w\s]/gi, '');
             
             // Link to full profile
-            const heroLink = `hero.html?id=${hero.id}`;
+            const heroLink = `hero?id=${hero.id}`;
             
             // Create content structure with image on alternating sides
             heroSection.innerHTML = `

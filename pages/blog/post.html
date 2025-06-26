@@ -356,7 +356,7 @@
             if (!postId) {
                 document.getElementById('blog-post-container').innerHTML = `
                     <div class="error-message">
-                        <p>No post ID specified. Please return to the <a href="index.html">blog page</a>.</p>
+                        <p>No post ID specified. Please return to the <a href=".">blog page</a>.</p>
                     </div>
                 `;
                 return;
@@ -379,7 +379,7 @@
                     if (!post) {
                         document.getElementById('blog-post-container').innerHTML = `
                             <div class="error-message">
-                                <p>Post not found. Please return to the <a href="index.html">blog page</a>.</p>
+                                <p>Post not found. Please return to the <a href=".">blog page</a>.</p>
                             </div>
                         `;
                         return;
@@ -449,12 +449,12 @@
                     const relatedPostsHTML = relatedPosts.map(relatedPost => `
                         <div class="related-post-card">
                             <div class="related-post-image">
-                                <a href="post.html?id=${relatedPost.id}">
+                                <a href="post?id=${relatedPost.id}">
                                     <img src="../../${relatedPost.image}" alt="${relatedPost.title}">
                                 </a>
                             </div>
                             <div class="related-post-content">
-                                <h3><a href="post.html?id=${relatedPost.id}">${relatedPost.title}</a></h3>
+                                <h3><a href="post?id=${relatedPost.id}">${relatedPost.title}</a></h3>
                                 <div class="post-meta">
                                     <span>${relatedPost.date}</span>
                                 </div>

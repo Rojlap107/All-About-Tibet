@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     heroProfile.className = 'hero-profile';
                     
                     heroProfile.innerHTML = `
-                        <a href="pages/heroes/hero.html?id=${hero.id}">
+                        <a href="pages/heroes/hero?id=${hero.id}">
                             <div class="image-container">
                                 <img src="${hero.image}" alt="${hero.name}">
                             </div>
