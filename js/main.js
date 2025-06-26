@@ -89,8 +89,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Clear existing content
                 heroesGallery.innerHTML = '';
                 
-                // Sort heroes by ID
-                const allHeroes = data.heroes.sort((a, b) => (a.id > b.id) ? 1 : -1);
+                // Sort heroes by ID (highest to lowest)
+                const allHeroes = data.heroes.sort((a, b) => (a.id > b.id) ? -1 : 1);
                 
                 // Display up to 10 heroes in the gallery
                 const featuredHeroes = allHeroes.slice(0, 10);
