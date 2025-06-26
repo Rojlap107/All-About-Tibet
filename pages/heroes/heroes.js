@@ -272,6 +272,8 @@ document.addEventListener('DOMContentLoaded', function() {
                         const yearB = parseInt(b.lifespan.split('-')[0]);
                         return yearA - yearB;
                     });
+                } else if (selectedSort === 'recent') {
+                    filteredHeroes.sort((a, b) => b.id - a.id);
                 }
                 
                 // Update display with sorted heroes
