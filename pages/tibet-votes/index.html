@@ -1,0 +1,2409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QQQZNDHKSZ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-QQQZNDHKSZ');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tibet Votes - All About Tibet</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../images/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="../../images/favicon_io/site.webmanifest">
+    <link rel="icon" href="../../images/favicon_io/favicon.ico" type="image/x-icon">
+    <style>
+        /* Tibet Votes Page Specific Styles */
+        body {
+            background-color: #000;
+            color: var(--white);
+            margin: 0;
+            padding: 0;
+            /* Scroll Snap Implementation */
+            scroll-snap-type: y mandatory;
+            overflow-y: scroll;
+            height: 100vh;
+        }
+
+        header {
+            background-color: transparent;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        /* Hero Video Section - Fixed Background */
+        .hero-video-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            width: 100%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 0;
+        }
+
+        .hero-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .video-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: absolute;
+            z-index: 2;
+            text-align: center;
+            max-width: 800px;
+            padding: 0 20px;
+        }
+
+        .hero-content h1 {
+            font-size: 4.5rem;
+            margin-bottom: 20px;
+            color: var(--secondary-1);
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+        }
+
+        .hero-content p {
+            font-size: 1.2 rem;
+            line-height: 1.1;
+            color: rgb(215, 215, 215);
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+
+        /* Spacer to push content below hero */
+        .hero-spacer {
+            height: 100vh;
+            width: 100%;
+            scroll-snap-align: start;
+        }
+
+        /* Content Section */
+        .content-section {
+            padding: 60px 20px;
+            position: relative;
+            z-index: 10;
+            backdrop-filter: blur(2px);
+            scroll-snap-align: start;
+        }
+
+        .content-wrapper {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        /* Tab Navigation Styles */
+        .tab-navigation {
+            display: flex;
+            gap: 40px;
+            justify-content: center;
+            margin-bottom: 40px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            padding: 5px 0;
+            backdrop-filter: blur(10px);
+        }
+
+        .tab-button {
+            padding: 15px 40px;
+            font-size: 1.4rem;
+            font-weight: 500;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            background-color: transparent;
+            color: var(--secondary-1);
+            position: relative;
+            z-index: 2;
+        }
+
+        .tab-button.active {
+            color: var(--secondary-1);
+        }
+
+        .tab-button:hover:not(.active) {
+            background-color: rgba(255, 177, 0, 0.1);
+        }
+
+        /* Animated background slider */
+        .tab-slider {
+            position: absolute;
+            height: 100%;
+            background-color: rgba(128, 128, 128, 0.8);
+            border-radius: 50px;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: 1;
+            top: 0;
+        }
+
+        /* Tab Content Container */
+        .tab-content-wrapper {
+            border: 3px solid var(--secondary-1);
+            border-radius: 12px;
+            padding: 40px;
+            background-color: rgba(20, 20, 20, 0.85);
+            min-height: 500px;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        /* Candidates Section Specific Styles */
+        .filters-heading {
+            font-size: 1.5rem;
+            color: var(--secondary-1);
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        /* Search Bar */
+        .search-bar {
+            margin-bottom: 20px;
+        }
+
+        .search-bar input {
+            width: 100%;
+            padding: 15px 20px;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 177, 0, 0.3);
+            background-color: rgba(40, 40, 40, 0.7);
+            color: var(--white);
+            font-size: 1rem;
+            font-weight: 400;
+            transition: all 0.3s ease;
+        }
+
+        .search-bar input:focus {
+            outline: none;
+            border-color: var(--secondary-1);
+            background-color: rgba(40, 40, 40, 0.9);
+        }
+
+        .search-bar input::placeholder {
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        /* Clear Search Button */
+        .clear-search-btn {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 1.2rem;
+            cursor: pointer;
+            padding: 5px 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            z-index: 10;
+        }
+
+        .clear-search-btn:hover {
+            color: var(--secondary-1);
+            transform: translateY(-50%) scale(1.1);
+        }
+
+        .search-bar button:hover {
+            background-color: var(--secondary-1);
+            color: var(--black);
+            border-color: var(--secondary-1);
+            transform: scale(1.02);
+        }
+
+        .search-bar button:active {
+            transform: scale(0.98);
+        }
+
+        .filter-bar {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+            padding: 30px;
+            background-color: rgba(40, 40, 40, 0.7);
+            border-radius: 12px;
+        }
+
+        .filter-group {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .filter-group select {
+            width: 100%;
+            padding: 12px 18px;
+            border-radius: 8px;
+            border: none;
+            background-color: rgba(128, 128, 128, 0.7);
+            color: var(--white);
+            font-size: 1rem;
+            font-weight: 400;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .filter-group select:hover {
+            background-color: rgba(128, 128, 128, 0.9);
+        }
+
+        /* Custom Dropdown Styling */
+        .custom-dropdown {
+            position: relative;
+            width: 100%;
+        }
+
+        .dropdown-header {
+            width: 100%;
+            padding: 12px 18px;
+            border-radius: 8px;
+            border: none;
+            background-color: rgba(128, 128, 128, 0.7);
+            color: var(--white);
+            font-size: 1rem;
+            font-weight: 400;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .dropdown-header:hover {
+            background-color: rgba(128, 128, 128, 0.9);
+        }
+
+        .dropdown-header i {
+            transition: transform 0.3s ease;
+            font-size: 0.9rem;
+        }
+
+        .dropdown-header.active i {
+            transform: rotate(180deg);
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            top: calc(100% + 5px);
+            left: 0;
+            width: 100%;
+            max-height: 300px;
+            overflow-y: auto;
+            background-color: rgba(40, 40, 40, 0.95);
+            border: 1px solid rgba(255, 177, 0, 0.3);
+            border-radius: 8px;
+            padding: 10px;
+            display: none;
+            z-index: 1000;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .dropdown-menu.active {
+            display: block;
+        }
+
+        .dropdown-menu::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .dropdown-menu::-webkit-scrollbar-track {
+            background: rgba(20, 20, 20, 0.5);
+            border-radius: 4px;
+        }
+
+        .dropdown-menu::-webkit-scrollbar-thumb {
+            background: var(--secondary-1);
+            border-radius: 4px;
+        }
+
+        .dropdown-menu::-webkit-scrollbar-thumb:hover {
+            background: var(--secondary-2);
+        }
+
+        .checkbox-option {
+            display: flex;
+            align-items: center;
+            padding: 10px 12px;
+            cursor: pointer;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+            color: var(--white);
+            margin-bottom: 4px;
+        }
+
+        .checkbox-option:hover {
+            background-color: rgba(255, 177, 0, 0.2);
+        }
+
+        .checkbox-option input[type="checkbox"] {
+            margin-right: 12px;
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+            accent-color: var(--secondary-1);
+        }
+
+        .checkbox-option span {
+            font-size: 0.95rem;
+            user-select: none;
+        }
+
+        /* Search Button */
+        .search-filter-btn {
+            width: 100%;
+            padding: 12px 20px;
+            background-color: var(--secondary-1);
+            border: none;
+            border-radius: 8px;
+            color: var(--primary-2);
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 1rem;
+        }
+
+        .search-filter-btn:hover {
+            background-color: var(--secondary-2);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(255, 177, 0, 0.4);
+        }
+
+        .search-filter-btn i {
+            margin-right: 8px;
+        }
+
+        /* Clear Filter Button (Inline with Search) */
+        .clear-filter-btn-inline {
+            width: auto;
+            padding: 12px 16px;
+            background-color: rgba(128, 128, 128, 0.7);
+            border: none;
+            border-radius: 8px;
+            color: var(--white);
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .clear-filter-btn-inline:hover {
+            background-color: rgba(128, 128, 128, 0.9);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(128, 128, 128, 0.4);
+        }
+
+        .clear-filter-btn-inline i {
+            margin: 0;
+        }
+
+        /* Mobile Clear Filter Button */
+        .clear-filter-btn-mobile {
+            display: none;
+        }
+
+        /* Filter Toggle Button (Mobile Only) */
+        .filter-toggle-btn {
+            display: none;
+            padding: 15px 25px;
+            background-color: rgba(255, 177, 0, 0.2);
+            border: 1px solid rgba(255, 177, 0, 0.3);
+            border-radius: 8px;
+            color: var(--secondary-1);
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+            font-size: 1rem;
+        }
+
+        .filter-toggle-btn:hover {
+            background-color: rgba(255, 177, 0, 0.3);
+        }
+
+        .filter-toggle-btn i {
+            margin-right: 8px;
+        }
+
+        /* Clear Filter Button */
+
+        .candidates-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        /* Pagination Styles */
+        #pagination-controls {
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .pagination-btn {
+            padding: 10px 16px;
+            border: 1px solid rgba(255, 177, 0, 0.3);
+            background-color: rgba(40, 40, 40, 0.8);
+            color: var(--secondary-1);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .pagination-btn:hover:not(:disabled) {
+            background-color: var(--secondary-1);
+            color: var(--primary-2);
+            border-color: var(--secondary-1);
+            transform: translateY(-2px);
+        }
+
+        .pagination-btn.active {
+            background-color: var(--secondary-1);
+            color: var(--primary-2);
+            border-color: var(--secondary-1);
+        }
+
+        .pagination-btn:disabled {
+            opacity: 0.4;
+            cursor: not-allowed;
+        }
+
+        .pagination-ellipsis {
+            color: var(--secondary-1);
+            padding: 0 5px;
+        }
+
+        .candidate-card {
+            border-radius: 12px;
+            padding: 30px 20px;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .candidate-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(255, 177, 0, 0.3);
+        }
+
+        .candidate-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: rgba(40, 40, 40, 0.8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(255, 177, 0, 0.3);
+            font-size: 3rem;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        .candidate-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .candidate-info {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .candidate-name {
+            font-size: 1.5rem;
+            color: var(--secondary-1);
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .candidate-badges {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .candidate-badge {
+            background-color: var(--secondary-1);
+            color: var(--black);
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 700;
+        }
+
+        .candidate-details {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 20px;
+            width: 100%;
+            text-align: left;
+        }
+
+        .detail-row {
+            display: flex;
+            gap: 8px;
+            font-size: 0.95rem;
+        }
+
+        .detail-label {
+            color: var(--secondary-1);
+            font-weight: 700;
+            min-width: 100px;
+        }
+
+        .detail-value {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .candidate-brief {
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.6;
+            font-size: 0.9rem;
+            font-style: italic;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .know-more-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 10px 30px;
+            background-color: var(--secondary-1);
+            color: var(--black);
+            text-decoration: none;
+            border: none;
+            border-radius: 25px;
+            font-weight: 700;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            margin-top: auto;
+            cursor: pointer;
+        }
+
+        .know-more-btn:hover {
+            background-color: var(--white);
+            transform: scale(1.05);
+        }
+
+        /* Modal Styles */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.85);
+            z-index: 2000;
+            overflow-y: auto;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .modal-overlay.active {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 40px 20px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .modal-content {
+            background-color: rgba(40, 40, 40, 0.95);
+            border: 2px solid var(--secondary-1);
+            border-radius: 12px;
+            max-width: 900px;
+            width: 100%;
+            position: relative;
+            animation: slideUp 0.3s ease;
+            margin: auto;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 40px;
+            height: 40px;
+            background-color: var(--secondary-1);
+            color: var(--black);
+            border: none;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            z-index: 10;
+        }
+
+        .modal-close:hover {
+            background-color: var(--white);
+            transform: rotate(90deg);
+        }
+
+        .modal-header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px 40px 30px;
+            border-bottom: 2px solid rgba(255, 177, 0, 0.3);
+        }
+
+        .modal-photo {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            background-color: rgba(60, 60, 60, 0.8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(255, 177, 0, 0.3);
+            font-size: 4rem;
+            overflow: hidden;
+            margin-bottom: 25px;
+            border: 3px solid var(--secondary-1);
+        }
+
+        .modal-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .modal-name {
+            font-size: 2.5rem;
+            color: var(--secondary-1);
+            margin-bottom: 15px;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .modal-badges {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .modal-badge {
+            background-color: var(--secondary-1);
+            color: var(--black);
+            padding: 8px 18px;
+            border-radius: 20px;
+            font-size: 1rem;
+            font-weight: 700;
+        }
+
+        .modal-quick-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .modal-info-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 15px;
+            background-color: rgba(60, 60, 60, 0.5);
+            border-radius: 6px;
+        }
+
+        .modal-info-label {
+            color: var(--secondary-1);
+            font-weight: 700;
+        }
+
+        .modal-info-value {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .modal-body {
+            padding: 40px;
+        }
+
+        .modal-section {
+            margin-bottom: 35px;
+        }
+
+        .modal-section:last-child {
+            margin-bottom: 0;
+        }
+
+        .modal-section h3 {
+            color: var(--secondary-1);
+            font-size: 1.6rem;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .modal-section h3 i {
+            font-size: 1.4rem;
+        }
+
+        .modal-section p {
+            color: rgba(255, 255, 255, 0.9);
+            line-height: 1.8;
+            font-size: 1.05rem;
+        }
+
+        /* Common scrollable content for all tabs */
+        .tab-scroll-content {
+            overflow-y: auto;
+            height: calc(100vh - 300px);
+            min-height: 600px;
+            padding-right: 15px;
+        }
+
+        /* Custom scrollbar styling for tab content */
+        .tab-scroll-content::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        .tab-scroll-content::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .tab-scroll-content::-webkit-scrollbar-thumb {
+            background: rgba(255, 177, 0, 0.6);
+            border-radius: 5px;
+        }
+
+        .tab-scroll-content::-webkit-scrollbar-thumb:hover {
+            background: var(--secondary-1);
+        }
+
+        /* Voter Education Section */
+        .education-layout {
+            display: flex;
+            gap: 30px;
+            height: calc(100vh - 300px);
+            min-height: 600px;
+        }
+
+        .education-sidebar {
+            width: 280px;
+            flex-shrink: 0;
+            background-color: rgba(40, 40, 40, 0.6);
+            border-radius: 8px;
+            padding: 20px;
+            height: fit-content;
+            max-height: 100%;
+            overflow-y: auto;
+        }
+
+        /* Custom scrollbar for sidebar if needed */
+        .education-sidebar::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .education-sidebar::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .education-sidebar::-webkit-scrollbar-thumb {
+            background: rgba(255, 177, 0, 0.4);
+            border-radius: 4px;
+        }
+
+        .education-sidebar::-webkit-scrollbar-thumb:hover {
+            background: rgba(255, 177, 0, 0.6);
+        }
+
+        .education-sidebar h3 {
+            color: var(--secondary-1);
+            font-size: 1.2rem;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .education-sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .education-sidebar li {
+            margin-bottom: 4px;
+        }
+
+        .education-sidebar a {
+            display: block;
+            padding: 8px 12px;
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+            line-height: 1.3;
+        }
+
+        .education-sidebar a:hover {
+            background-color: rgba(255, 177, 0, 0.2);
+            color: var(--secondary-1);
+            padding-left: 18px;
+        }
+
+        .education-sidebar a.active {
+            background-color: var(--secondary-1);
+            color: var(--black);
+            font-weight: 600;
+        }
+
+        .education-main-content {
+            flex: 1;
+            overflow-y: auto;
+            padding-right: 15px;
+            color: rgba(255, 255, 255, 0.9);
+            line-height: 1.8;
+            scroll-padding-top: 20px;
+        }
+
+        /* Custom scrollbar styling for education content */
+        .education-main-content::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        .education-main-content::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .education-main-content::-webkit-scrollbar-thumb {
+            background: rgba(255, 177, 0, 0.6);
+            border-radius: 5px;
+        }
+
+        .education-main-content::-webkit-scrollbar-thumb:hover {
+            background: var(--secondary-1);
+        }
+
+        .education-section {
+            margin-bottom: 50px;
+            padding-top: 0;
+        }
+
+        .education-section:first-child {
+            padding-top: 0;
+        }
+
+        .education-section h3 {
+            color: var(--secondary-1);
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .education-section h4 {
+            color: var(--secondary-1);
+            font-size: 1.3rem;
+            margin-top: 25px;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .education-section p {
+            margin-bottom: 15px;
+            font-size: 1.05rem;
+        }
+
+        .education-section ul {
+            margin-left: 25px;
+            margin-bottom: 20px;
+        }
+
+        .education-section li {
+            margin-bottom: 10px;
+            font-size: 1.05rem;
+        }
+
+        .source-link {
+            font-size: 0.9rem;
+            color: rgba(255, 177, 0, 0.7);
+            margin-top: 15px;
+        }
+
+        .source-link a {
+            color: var(--secondary-1);
+            text-decoration: none;
+        }
+
+        .source-link a:hover {
+            text-decoration: underline;
+        }
+
+        /* Important Dates Section - Simplified */
+        .dates-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .date-item {
+            padding-bottom: 15px;
+        }
+
+        .date-item h3 {
+            color: var(--secondary-1);
+            font-size: 1.3rem;
+            margin-bottom: 6px;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+
+        .date-item .date-value {
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.9);
+            font-weight: 400;
+            line-height: 1.5;
+        }
+
+        .date-item p {
+            font-size: 0.9rem;
+            margin-top: 6px;
+            line-height: 1.5;
+        }
+
+        /* Compare Section Styles */
+        .compare-heading {
+            font-size: 2rem;
+            color: var(--secondary-1);
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .compare-description {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+        }
+
+        .compare-selectors {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+
+        .selector-group {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .selector-group label {
+            display: block;
+            font-size: 1.1rem;
+            color: var(--secondary-1);
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .selector-with-clear {
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .selector-group select {
+            flex: 1;
+            padding: 15px 20px;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 177, 0, 0.3);
+            background-color: rgba(40, 40, 40, 0.7);
+            color: var(--white);
+            font-size: 1rem;
+            font-weight: 400;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .selector-group select:focus {
+            outline: none;
+            border-color: var(--secondary-1);
+            background-color: rgba(40, 40, 40, 0.9);
+        }
+
+        .clear-btn {
+            width: 45px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(255, 177, 0, 0.2);
+            border: 1px solid rgba(255, 177, 0, 0.3);
+            border-radius: 8px;
+            color: var(--secondary-1);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 1.2rem;
+        }
+
+        .clear-btn:hover {
+            background-color: var(--secondary-1);
+            color: var(--black);
+            border-color: var(--secondary-1);
+            transform: scale(1.05);
+        }
+
+        .clear-btn:active {
+            transform: scale(0.95);
+        }
+
+        .comparison-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            min-height: 400px;
+        }
+
+        .comparison-placeholder {
+            grid-column: 1 / -1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 60px 20px;
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 1.2rem;
+        }
+
+        .candidate-compare-card {
+            background-color: rgba(40, 40, 40, 0.6);
+            border: 2px solid rgba(255, 177, 0, 0.3);
+            border-radius: 12px;
+            padding: 30px;
+            transition: all 0.3s ease;
+        }
+
+        .candidate-compare-card:hover {
+            border-color: var(--secondary-1);
+        }
+
+        .compare-card-header {
+            text-align: center;
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid rgba(255, 177, 0, 0.3);
+        }
+
+        .compare-card-header h3 {
+            font-size: 1.8rem;
+            color: var(--secondary-1);
+            margin-bottom: 10px;
+        }
+
+        .compare-representing {
+            display: inline-block;
+            background-color: var(--secondary-1);
+            color: var(--black);
+            padding: 6px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 700;
+        }
+
+        .compare-details {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .compare-detail-row {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .compare-detail-label {
+            color: var(--secondary-1);
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .compare-detail-value {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: rgba(0, 0, 0, 0.5);
+            position: relative;
+            z-index: 10;
+            backdrop-filter: blur(2px);
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 3rem;
+            }
+
+            .hero-content p {
+                font-size: 0.9rem;
+            }
+
+            .tab-navigation {
+                gap: 8px;
+                padding: 10px 15px;
+                overflow-x: auto;
+                overflow-y: hidden;
+                justify-content: flex-start;
+                -webkit-overflow-scrolling: touch;
+                scrollbar-width: none;
+            }
+
+            .tab-navigation::-webkit-scrollbar {
+                display: none;
+            }
+
+            .tab-button {
+                padding: 10px 18px;
+                font-size: 0.95rem;
+                white-space: nowrap;
+                flex-shrink: 0;
+                border-radius: 25px;
+            }
+
+            .tab-slider {
+                border-radius: 25px;
+            }
+
+            .tab-content-wrapper {
+                padding: 25px;
+            }
+
+            .candidates-grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+
+            .candidate-photo {
+                width: 120px;
+                height: 120px;
+                font-size: 2.5rem;
+            }
+
+            .search-bar {
+                flex-direction: row !important;
+                gap: 10px !important;
+            }
+
+            /* Show filter toggle button on mobile */
+            .filter-toggle-btn {
+                display: block;
+            }
+
+            /* Hide filter bar by default on mobile */
+            .filter-bar {
+                flex-direction: column;
+                display: none;
+                max-height: 0;
+                overflow: hidden;
+                transition: all 0.3s ease;
+                padding: 0;
+                margin-bottom: 0;
+            }
+
+            /* Show filter bar when active */
+            .filter-bar.active {
+                display: flex;
+                max-height: 1000px;
+                padding: 20px;
+                margin-bottom: 20px;
+            }
+
+            .filter-group {
+                min-width: 100%;
+            }
+
+            /* Hide inline clear button on mobile */
+            .clear-filter-btn-inline {
+                display: none;
+            }
+
+            /* Show mobile clear button */
+            .clear-filter-btn-mobile {
+                display: block;
+                width: 100%;
+                padding: 12px 20px;
+                background-color: rgba(220, 53, 69, 0.8);
+                border: none;
+                border-radius: 8px;
+                color: var(--white);
+                font-weight: 600;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                font-size: 1rem;
+                margin-top: 15px;
+            }
+
+            .clear-filter-btn-mobile:hover {
+                background-color: rgba(220, 53, 69, 1);
+            }
+
+            .clear-filter-btn-mobile i {
+                margin-right: 8px;
+            }
+
+            .comparison-container {
+                grid-template-columns: 1fr;
+            }
+
+            .selector-group {
+                min-width: 100%;
+            }
+
+            .tab-scroll-content {
+                height: calc(100vh - 250px);
+                min-height: 500px;
+            }
+
+            .education-layout {
+                flex-direction: column;
+                height: calc(100vh - 250px);
+                min-height: 500px;
+            }
+
+            .education-sidebar {
+                width: 100%;
+                max-height: 200px;
+                overflow-y: auto;
+            }
+
+            .education-main-content {
+                flex: 1;
+                overflow-y: auto;
+                padding-right: 10px;
+            }
+        }
+
+        @media screen and (max-width: 576px) {
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .tab-scroll-content {
+                height: calc(100vh - 220px);
+                min-height: 400px;
+                padding-right: 5px;
+            }
+
+            .education-layout {
+                height: calc(100vh - 220px);
+                min-height: 400px;
+            }
+
+            .education-sidebar {
+                max-height: 150px;
+            }
+
+            .education-main-content {
+                padding-right: 5px;
+            }
+
+            .tab-button {
+                padding: 8px 15px;
+                font-size: 0.85rem;
+            }
+
+            .tab-navigation {
+                gap: 6px;
+                padding: 8px 10px;
+                flex-wrap: nowrap;
+            }
+
+            .tab-slider {
+                border-radius: 25px;
+            }
+
+            .modal-overlay {
+                padding: 20px 10px;
+            }
+
+            .modal-header {
+                padding: 40px 20px 20px;
+            }
+
+            .modal-photo {
+                width: 140px;
+                height: 140px;
+                font-size: 3rem;
+            }
+
+            .modal-name {
+                font-size: 1.8rem;
+            }
+
+            .modal-body {
+                padding: 25px 20px;
+            }
+
+            .modal-section h3 {
+                font-size: 1.3rem;
+            }
+
+            .modal-section p {
+                font-size: 0.95rem;
+            }
+
+            .modal-quick-info {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="logo">
+            <a href="../../">
+                <img src="../../images/AAT_Logo_website.png" alt="All About Tibet Logo">
+            </a>
+        </div>
+        <div class="menu-toggle">
+            <div class="hamburger"></div>
+        </div>
+        <nav class="overlay-menu">
+            <ul>
+                <li><a href="../../">Home</a></li>
+                <li><a href="../about">About</a></li>
+                <li class="dropdown">
+                    <a href="#">Our Initiatives</a>
+                    <ul class="submenu">
+                        <li><a href="../heroes/">Heroes of Tibet</a></li>
+                        <li><a href="../blog/">Blog</a></li>
+                        <li><a href="./">Tibet Votes</a></li>
+                    </ul>
+                </li>
+                <li><a href="../contact">Newsletter</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Video Section -->
+        <div class="hero-video-container">
+            <video class="hero-video" autoplay muted loop playsinline>
+                <source src="../../images/Waving Tibetan Flag.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-overlay"></div>
+            <div class="hero-content">
+                <img src="../../images/Tibet Votes Logo.png" alt="Tibet Votes"
+                    style="max-width: 700px; width: 100%; height: auto; margin-bottom: 20px;">
+                <p>Tibet Votes is a non-partisan voter education and information initiative by All About Tibet. It is
+                    designed to make clear and accessible information about the Tibetan elections in exile available in
+                    one place. We do not endorse any candidate. <br><br>Our goal is simple, to help every Tibetan voter,
+                    supporter, and observer understand the how, who, and why of the Tibetan democratic process,
+                    empowering informed participation and strengthening the institutions that uphold Tibetan democracy
+                    in exile. </p>
+            </div>
+        </div>
+
+        <!-- Spacer to push content below hero -->
+        <div class="hero-spacer"></div>
+
+        <!-- Content Section with Tabs -->
+        <section class="content-section">
+            <div class="content-wrapper">
+
+                <!-- Tab Navigation -->
+                <div class="tab-navigation">
+                    <div class="tab-slider"></div>
+                    <button class="tab-button active" onclick="switchTab('candidates', event)"
+                        data-tab="candidates">Candidates</button>
+                    <button class="tab-button" onclick="switchTab('education', event)" data-tab="education">Voter
+                        Education</button>
+                    <button class="tab-button" onclick="switchTab('dates', event)" data-tab="dates">Important
+                        Dates</button>
+                    <button class="tab-button" onclick="switchTab('compare', event)" data-tab="compare">Compare</button>
+                </div>
+
+                <!-- Tab Content Wrapper -->
+                <div class="tab-content-wrapper">
+
+                    <!-- Candidates Tab Content -->
+                    <div class="tab-content active" id="candidates-tab">
+                        <div class="tab-scroll-content">
+                            <!-- Search Bar -->
+                            <div class="search-bar-container">
+                                <div class="search-bar" style="display: flex; gap: 15px; align-items: center;">
+                                    <div style="position: relative; flex: 1;">
+                                        <input type="text" id="name-search" placeholder="Search by candidate name..."
+                                            onkeypress="if(event.key === 'Enter') applyFilters()"
+                                            oninput="toggleClearButton()"
+                                            style="width: 100%; padding-right: 40px;">
+                                        <button id="clear-search-btn" class="clear-search-btn" onclick="clearSearchInput()" style="display: none;">
+                                            <i class="fas fa-times"></i>
+                                        </button>
+                                    </div>
+                                    <!-- Filter Toggle Button (Mobile Only) -->
+                                    <button id="filter-toggle-btn" class="filter-toggle-btn" onclick="toggleFilters()">
+                                        <i class="fas fa-filter"></i> Filters
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Filter Bar -->
+                            <div class="filter-bar" id="filter-bar">
+                                <!-- Representation Filter -->
+                                <div class="filter-group">
+                                    <div class="custom-dropdown">
+                                        <div class="dropdown-header" onclick="toggleDropdown('representing-dropdown')">
+                                            <span id="representing-label">Representation</span>
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                        <div class="dropdown-menu" id="representing-dropdown">
+                                            <label class="checkbox-option">
+                                                <input type="checkbox" value="Dotoe" onchange="updateFilterLabel('representing')">
+                                                <span>Dotoe</span>
+                                            </label>
+                                            <label class="checkbox-option">
+                                                <input type="checkbox" value="Dhomey" onchange="updateFilterLabel('representing')">
+                                                <span>Dhomey</span>
+                                            </label>
+                                            <label class="checkbox-option">
+                                                <input type="checkbox" value="Utsang" onchange="updateFilterLabel('representing')">
+                                                <span>Utsang</span>
+                                            </label>
+                                            <label class="checkbox-option">
+                                                <input type="checkbox" value="Nyingma" onchange="updateFilterLabel('representing')">
+                                                <span>Nyingma</span>
+                                            </label>
+                                            <label class="checkbox-option">
+                                                <input type="checkbox" value="Kagyu" onchange="updateFilterLabel('representing')">
+                                                <span>Kagyu</span>
+                                            </label>
+                                            <label class="checkbox-option">
+                                                <input type="checkbox" value="Sakya" onchange="updateFilterLabel('representing')">
+                                                <span>Sakya</span>
+                                            </label>
+                                            <label class="checkbox-option">
+                                                <input type="checkbox" value="Gelug" onchange="updateFilterLabel('representing')">
+                                                <span>Gelug</span>
+                                            </label>
+                                            <label class="checkbox-option">
+                                                <input type="checkbox" value="Bon" onchange="updateFilterLabel('representing')">
+                                                <span>Bon</span>
+                                            </label>
+                                            <label class="checkbox-option">
+                                                <input type="checkbox" value="North and South Americas" onchange="updateFilterLabel('representing')">
+                                                <span>North and South Americas</span>
+                                            </label>
+                                            <label class="checkbox-option">
+                                                <input type="checkbox" value="Europe and Africa" onchange="updateFilterLabel('representing')">
+                                                <span>Europe and Africa</span>
+                                            </label>
+                                            <label class="checkbox-option">
+                                                <input type="checkbox" value="Australia & Asia" onchange="updateFilterLabel('representing')">
+                                                <span>Australia & Asia</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Age Group Filter -->
+                                <div class="filter-group">
+                                    <div class="custom-dropdown">
+                                        <div class="dropdown-header" onclick="toggleDropdown('age-dropdown')">
+                                            <span id="age-label">Age Group</span>
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                        <div class="dropdown-menu" id="age-dropdown">
+                                            <label class="checkbox-option">
+                                                <input type="checkbox" value="25-35" onchange="updateFilterLabel('age')">
+                                                <span>25-35</span>
+                                            </label>
+                                            <label class="checkbox-option">
+                                                <input type="checkbox" value="36-45" onchange="updateFilterLabel('age')">
+                                                <span>36-45</span>
+                                            </label>
+                                            <label class="checkbox-option">
+                                                <input type="checkbox" value="46-55" onchange="updateFilterLabel('age')">
+                                                <span>46-55</span>
+                                            </label>
+                                            <label class="checkbox-option">
+                                                <input type="checkbox" value="Above 55" onchange="updateFilterLabel('age')">
+                                                <span>Above 55</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Gender Filter -->
+                                <div class="filter-group">
+                                    <div class="custom-dropdown">
+                                        <div class="dropdown-header" onclick="toggleDropdown('gender-dropdown')">
+                                            <span id="gender-label">Gender</span>
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                        <div class="dropdown-menu" id="gender-dropdown">
+                                            <label class="checkbox-option">
+                                                <input type="checkbox" value="Male" onchange="updateFilterLabel('gender')">
+                                                <span>Male</span>
+                                            </label>
+                                            <label class="checkbox-option">
+                                                <input type="checkbox" value="Female" onchange="updateFilterLabel('gender')">
+                                                <span>Female</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Search Button -->
+                                <div class="filter-group">
+                                    <button class="search-filter-btn" onclick="applyFilters()">
+                                        <i class="fas fa-search"></i> Search
+                                    </button>
+                                </div>
+
+                                <!-- Clear Filter Button -->
+                                <div class="filter-group">
+                                    <button class="clear-filter-btn-inline" onclick="clearAllFilters()">
+                                        <i class="fas fa-filter-circle-xmark"></i>
+                                    </button>
+                                </div>
+
+                                <!-- Mobile Clear Filter Button (inside collapsible section) -->
+                                <button class="clear-filter-btn-mobile" onclick="clearAllFilters()">
+                                    <i class="fas fa-filter-circle-xmark"></i> Clear Filters
+                                </button>
+                            </div>
+
+                            <div class="candidates-grid" id="candidates-grid">
+                                <!-- Candidates will be loaded here dynamically -->
+                            </div>
+
+                            <!-- Pagination Controls -->
+                            <div id="pagination-controls"></div>
+                        </div>
+                    </div>
+
+                    <!-- Voter Education Tab Content -->
+                    <div class="tab-content" id="education-tab">
+                        <div class="education-layout">
+                            <!-- Sidebar Index -->
+                            <nav class="education-sidebar">
+                                <h3>Contents</h3>
+                                <ul>
+                                    <li><a href="#intro" onclick="scrollToSection(event, 'intro')">Introduction</a></li>
+                                    <li><a href="#election-commission"
+                                            onclick="scrollToSection(event, 'election-commission')">Election
+                                            Commission</a></li>
+                                    <li><a href="#powers" onclick="scrollToSection(event, 'powers')">Powers &
+                                            Responsibilities</a></li>
+                                    <li><a href="#leadership" onclick="scrollToSection(event, 'leadership')">Current
+                                            Leadership</a></li>
+                                    <li><a href="#charter" onclick="scrollToSection(event, 'charter')">Charter of
+                                            Tibetans</a></li>
+                                    <li><a href="#sikyong-eligibility"
+                                            onclick="scrollToSection(event, 'sikyong-eligibility')">Sikyong
+                                            Eligibility</a></li>
+                                    <li><a href="#mp-eligibility" onclick="scrollToSection(event, 'mp-eligibility')">MP
+                                            Eligibility</a></li>
+                                    <li><a href="#guidelines" onclick="scrollToSection(event, 'guidelines')">Candidate
+                                            Guidelines</a></li>
+                                    <li><a href="#voter-qualifications"
+                                            onclick="scrollToSection(event, 'voter-qualifications')">Voter
+                                            Qualifications</a></li>
+                                    <li><a href="#voter-assistance"
+                                            onclick="scrollToSection(event, 'voter-assistance')">Voter Assistance</a>
+                                    </li>
+                                    <li><a href="#composition"
+                                            onclick="scrollToSection(event, 'composition')">Parliament Composition</a>
+                                    </li>
+                                </ul>
+                            </nav>
+
+                            <!-- Content Area -->
+                            <div class="education-main-content" id="education-scroll-content">
+                                <section id="intro" class="education-section">
+                                    <h3>Introduction</h3>
+                                    <p>The Tibetan democratic system, built under the visionary leadership of His
+                                        Holiness the 14th Dalai Lama, remains one of the greatest achievements of the
+                                        Tibetan community in exile. Yet, for many, finding accurate and up-to-date
+                                        information about the elections, candidates, and procedures can be challenging.
+                                        Tibet Votes bridges this gap by gathering information from official and credible
+                                        sources, presenting it clearly and neutrally for public use.</p>
+                                </section>
+
+                                <section id="election-commission" class="education-section">
+                                    <h3>Election Commission</h3>
+                                    <p>Soon after coming into exile in 1959, the spiritual and temporal leader of the
+                                        Tibetan people, H.H. the 14th Dalai Lama democratized the Tibetan political
+                                        system as He strongly believed that no system of governance can ensure stability
+                                        and progress if it depended solely on one person without support and
+                                        participation of the people in the political process. Therefore, it is said that
+                                        Tibetan democracy was gifted by H.H. the Dalai Lama, unlike other democracies
+                                        which often takes birth after prolonged public uprisings and protests, even at
+                                        the expense of sacrifice of people's lives.</p>
+                                    <p>In 1974, H.H. the Dalai Lama introduced the first ever Tibetan Electoral Rules.
+                                        Later, in 1990, the Special Conference of the Tibetan People passed a resolution
+                                        to revise the Tibetan Electoral Rules. The charter for Tibetans-in-exile was
+                                        also drafted in the same year. In 1991, the 11th Tibetan Parliament-in-exile
+                                        adopted the Charter for Tibetans in exile. Consequently, the three pillars of
+                                        democracy viz, the Kashag (executive), Tibetan Parliament-in-exile (legislature)
+                                        and Tibetan Supreme Justice Commission (judiciary) came into existence.
+                                        Similarly, the autonomous bodies of a democratic government namely, the Election
+                                        Commission, Public Service Commission and Audit Commission were formed.</p>
+                                    <p>The Election Commission is an autonomous constitutional authority responsible for
+                                        administering the elections of Sikyong, the Head of the Tibetan Administration,
+                                        the Speaker, Deputy Speaker and members of the Tibetan Parliament-in-exile,
+                                        Settlement Officers, Local Tibetan Assemblies, members of the Tibetan Freedom
+                                        movement and any major Tibetan election. The Election Commission is headed by
+                                        the Election Commissioner who is appointed by the Tibetan Parliament in exile
+                                        for a tenure of 5 years or until he/she attains the age of 65 whichever comes
+                                        first. The Tibetan Parliament also appoints two additional Election
+                                        Commissioners when Tibetan people go into polls every 5 years.</p>
+                                    <p class="source-link"><em>Source: <a
+                                                href="https://tibetanelection.net/en/introduction-2/"
+                                                target="_blank">tibetanelection.net</a></em></p>
+                                </section>
+
+                                <section id="powers" class="education-section">
+                                    <h3>Power and Responsibilities of the Election Commission</h3>
+                                    <ul>
+                                        <li>The Election Commission has the full authority to the administration of
+                                            electoral affairs of the Central Tibetan Administration.</li>
+                                        <li>It has the authority to deal with any electoral disputes and take decision
+                                            accordingly.</li>
+                                        <li>It shall draft the electoral rules and also revise it if needed before
+                                            putting it up with the Tibetan Parliament-in-exile for its approval</li>
+                                        <li>It shall appoint the Regional Election Commissioner and Assistant Regional
+                                            Election Commissioner</li>
+                                        <li>The Chief Election Commissioner shall discuss with the Kashag on the
+                                            appointment and transfer of its office staff by Kashag</li>
+                                        <li>The Chief Election Commissioner shall control the annual budget and accounts
+                                            of the office.</li>
+                                        <li>Staff of the Election Commission shall seek the Chief's approval for any
+                                            official tour</li>
+                                        <li>The Chief Election Commission shall seek his/her official tour approval from
+                                            Standing Committee of the Tibetan Parliament-in-exile.</li>
+                                    </ul>
+                                    <p class="source-link"><em>Source: <a
+                                                href="https://tibetanelection.net/en/power-and-responsibilities-of-the-election-commission/"
+                                                target="_blank">tibetanelection.net</a></em></p>
+                                </section>
+
+                                <section id="leadership" class="education-section">
+                                    <h3>Current Leadership of the Election Commission</h3>
+
+                                    <h4>Lobsang Yeshi - Chief Election Commissioner</h4>
+                                    <p>Lobsang Yeshi is an alumnus of SFF Tibetan School in Herbertpur. He earned his
+                                        B.A./B.Ed. degree from Punjab University in Chandigarh in 1992. During his
+                                        college years, he served as General Secretary of the Regional Tibetan Freedom
+                                        Movement, President of the Regional Tibetan Youth Congress, and Vice President
+                                        of the Foreign Students' Association in Chandigarh. Following his graduation,
+                                        Yeshi taught at CST Paonta Sahib School for two years. He then worked as a
+                                        researcher and translator at the Tibetan Affairs Monitor and Research Unit in
+                                        Delhi for six years. Subsequently, he taught at Sera Jey Secondary School in
+                                        Bylakuppe for seven years while also serving as Secretary of the Central
+                                        Executive Committee of the Tibetan Youth Congress (TYC) and later as its Vice
+                                        President. From 2007 to 2013, he was involved with CHOICE HIV/AIDS Initiatives
+                                        as a board member, coordinator, and HIV trainer. He is also an independent
+                                        researcher, producing papers and articles on Sino-Indo-Tibetan affairs. Yeshi
+                                        was elected to the 15th and 16th Tibetan Parliament-in-Exile, serving two
+                                        consecutive terms from 2011 to 2021. During his tenure, he was a member of the
+                                        Standing Committee and the Public Accounts Committee, actively participating in
+                                        two World Parliamentarians Conventions and the Tibetan Special General Meeting,
+                                        among others. Additionally, he served as the Tibetan Settlement Officer for
+                                        Lugsam Tibetan Settlement in Bylakuppe for one year.</p>
+                                    <p class="source-link"><em>Source: <a
+                                                href="https://tibet.net/new-election-commissioner-and-member-of-the-public-service-commission-sworn-in-today/"
+                                                target="_blank">tibet.net</a></em></p>
+
+                                    <h4>Nangsa Choedon - Additional Election Commissioner</h4>
+                                    <p>Nangsa Choedon, born in 1954 in Kyirong (Ch: Jilong), Tibet, is a seasoned
+                                        Tibetan administrator and former Secretary of the Central Tibetan
+                                        Administration. She holds a Master's degree in International Public
+                                        Administration. She completed her primary and secondary education at Sambhota
+                                        Tibetan School in Mussoorie (then called Central School for Tibetans) and
+                                        pursued higher education at Punjab University. Her career in the Central Tibetan
+                                        Administration began on 1 July 1977 as an English Secretary at the Paonta
+                                        Cholsum Tibetan Settlement Office, starting in the position of Junior Clerk.
+                                        From 1978 to 1990, she served as Accountant cum Office Secretary at the Chauntra
+                                        Nangchen Tibetan Settlement Office, holding the position of Senior Clerk. After
+                                        being promoted to Under Secretary, she took on the responsibility of Tibetan
+                                        Settlement Officer of Bir Boetsog Tibetan Settlement (also known as Bir Tibetan
+                                        Society) from 1990 to 1993. From 1993 to 1997, Nangsa Choedon served as Planning
+                                        Officer and head of the Scholarship Section of the Department of Education.
+                                        During this period, she was promoted from Under Secretary to Joint Secretary.
+                                        Between 1997 and 1999, she furthered her studies in the United States through
+                                        the Tibetan Fulbright Scholarship Programme. After returning to the CTA in
+                                        November 1999, she continued her service at the Department of Education until
+                                        her appointment as Secretary of the Public Service Commission in 2004. Following
+                                        ten years of service at the Public Service Commission, she was appointed
+                                        Representative of His Holiness the Dalai Lama to Africa at the Office of Tibet
+                                        in Pretoria, South Africa, in 2014. On 1 January 2017, she was appointed
+                                        Secretary of the Department of Education. After more than 40 years of dedicated
+                                        service to the Central Tibetan Administration, she retired on 1 July 2017. She
+                                        currently serves as Director of the Tibetan Nuns Project, a non-governmental
+                                        organisation, and was elected as Additional Election Commissioner during the
+                                        tenth session of the 17th Tibetan Parliament-in-Exile.</p>
+                                    <p class="source-link"><em>Source: <a
+                                                href="https://tibet.net/nangsa-choedon-and-tsering-youdon-sworn-in-as-new-additional-election-commissioners-of-cta/"
+                                                target="_blank">tibet.net</a></em></p>
+
+                                    <h4>Tsering Youdon - Additional Election Commissioner</h4>
+                                    <p>Tsering Youdon was born in 1963 in Dehradun, Northern India. She completed her
+                                        primary and secondary education at SFF/CST Herbertpur and pursued secretarial
+                                        studies in Bangalore. She holds a Master's degree in Political Science from the
+                                        University of Mysore. From 1982 to 1991, Tsering Youdon worked at MYRADA, a
+                                        non-governmental organisation in Mysore, serving as a secretary for three years,
+                                        a project manager for another three years, and then working in the computer and
+                                        sponsorship sections for the remaining three years. Between 1991 and 2000, she
+                                        served as Project Officer at Rabgyeling Tibetan Settlement in Hunsur. During
+                                        this period, she was actively involved in local governance and community
+                                        organisations. She was a member of the local Tibetan Election Commission from
+                                        1991 to 1994 and again from 1998 to 2005. She chaired the local Tibetan Women's
+                                        Association from 1995 to 1997 and served as President of the regional Domey
+                                        Association's executive committee for three years. Her career also includes
+                                        serving as Chair of the local Parents' Association from 2001 to 2004, as well as
+                                        being an executive committee member of the Regional Tibetan Youth Congress for
+                                        two terms. In the Regional Tibetan Youth Congress, she served as cashier from
+                                        2001 to 2004 and later as Vice President starting in June 2004. Known for
+                                        initiating and implementing innovative activities with notable success, she was
+                                        elected in April 2005 as Director of Rabgyeling Settlement's Cooperative Society
+                                        by the residents. From 2006 to 2021, Tsering Youdon was elected for three terms
+                                        as a member of the Tibetan Parliament-in-Exile. On 18 September 2025, she was
+                                        elected as Additional Election Commissioner by the 17th Tibetan
+                                        Parliament-in-Exile during its 10th session.</p>
+                                    <p class="source-link"><em>Source: <a
+                                                href="https://tibet.net/nangsa-choedon-and-tsering-youdon-sworn-in-as-new-additional-election-commissioners-of-cta/"
+                                                target="_blank">tibet.net</a></em></p>
+
+                                    <h4>Lobsang Choedak - Secretary of the Election Commission</h4>
+                                    <p>Lobsang Choedak joined the Central Tibetan Administration on 11 February 2003 as
+                                        Under Secretary at the Tibetan Settlement Office in Dharamshala, where he served
+                                        as secretary of both the Settlement Office and the Indo-Tibetan Friendship
+                                        Association. After completing his probation period, he was made a permanent
+                                        staff member on 30 August 2003, continuing in the same role. On 17 February
+                                        2006, he was transferred to the Paonta Cholsum Tibetan Settlement Office and
+                                        then to the Department of Information and International Relations on 20 January
+                                        2007. At the Department of Information and International Relations, he was
+                                        promoted to Deputy Secretary on 21 January 2009 and later to Joint Secretary on
+                                        9 September 2013. On 1 January 2017, he was transferred to the Office of Tibet
+                                        in Japan (the Liaison Office of His Holiness the Dalai Lama, Tibet House). On 17
+                                        August 2020, he was promoted to Additional Secretary and transferred to the
+                                        Kashag (Cabinet) Secretariat before being appointed as the Secretary of the
+                                        Election Commission on 2 December 2024.</p>
+                                    <p class="source-link"><em>Source: <a
+                                                href="https://tibet.net/secretary-lobsang-choedak-assumes-charge-as-new-secretary-of-the-election-commission/"
+                                                target="_blank">tibet.net</a></em></p>
+                                </section>
+
+                                <section id="charter" class="education-section">
+                                    <h3>Charter of the Tibetans in Exile</h3>
+                                    <p>The Charter of the Tibetans in Exile is the supreme law governing the functions
+                                        of the CTA. It was drafted by the Constitution Redrafting Committee and referred
+                                        to the Tibetan Parliament-in-Exile for approval. The parliament, in turn,
+                                        adopted the Charter on 14 June 1991.</p>
+                                    <p>Based on the spirit of the UN Universal Declaration of Human Rights, the Charter
+                                        guarantees to all Tibetans equality before the law and enjoyment of rights and
+                                        freedom without discrimination on the basis of sex, religion, race, language and
+                                        social origin. It provides for a clear separation of power among the three
+                                        organs of the administration: judiciary, legislature and executive.</p>
+                                    <p>Before the Charter came into being, the Central Tibetan Administration functioned
+                                        roughly along the lines of the draft democratic constitution for future Tibet,
+                                        promulgated by His Holiness the Dalai Lama on 10 March 1963.</p>
+                                    <p>Over the years, the charter was amended on a regular basis. After the devolution
+                                        of political leadership by His Holiness the Dalai Lama, the Charter was yet
+                                        again amended accordingly to distribute the powers within the three bodies i.e
+                                        Executive, Legislative and Judiciary.</p>
+                                    <p>On 14 March 2011, amendment to the Charter was made where His Holiness devolved
+                                        the full political authority to the popularly elected leadership- Sikyong. The
+                                        English version here is the official translation approved during the 10th
+                                        session of the 16th Tibetan Parliament-in-Exile.</p>
+                                    <p class="source-link"><em>For the official Tibetan version of the Charter, please
+                                            visit <a href="https://tibetanelection.net/en/tibetan-charter/"
+                                                target="_blank">tibetanelection.net</a></em></p>
+                                </section>
+
+                                <section id="sikyong-eligibility" class="education-section">
+                                    <h3>Eligibility Requirements for Sikyong Candidate</h3>
+                                    <ul>
+                                        <li>Candidate must be a citizen of Tibet</li>
+                                        <li>Candidate must have completed 35 years of age</li>
+                                        <li>Candidate must not be declared mentally unsound either by a qualified doctor
+                                            or court of law</li>
+                                        <li>Candidate must not have unsettled public dues or debt</li>
+                                        <li>Candidate must not be a convict or found guilty by the court of law</li>
+                                        <li>Candidate must not be declared disqualified to be Sikyong or Kalon by
+                                            two-third majority of the Tibetan Parliament-in-Exile.</li>
+                                        <li>Candidate must not be the Sikyong or Kalon in service for 2 consecutive
+                                            terms.</li>
+                                        <li>Candidate must not had been impeached as Sikyong or Kalon according to
+                                            Article 29 (3a) and 4.</li>
+                                        <li>Candidate must not be entrusted with task, entitled with any rank or
+                                            position, granted with cash or kind by any other country to harm or work
+                                            against the interest of Tibetan people.</li>
+                                        <li>Candidate must not be an official of CTA</li>
+                                        <li>Candidate must not have violated the Election rules and regulations passed
+                                            by the Tibetan Parliament-in-Exile</li>
+                                        <li>Candidate must not be someone who have no faith and trust in the Charter of
+                                            Tibetans-in-Exile and he or she mustn't be the one who has been proved to be
+                                            working against the Tibetan cause directly or indirectly.</li>
+                                    </ul>
+                                    <p class="source-link"><em>Source: <a
+                                                href="https://tibetanelection.net/en/eligibility-requirements-for-sikyong-candidate/"
+                                                target="_blank">tibetanelection.net</a></em></p>
+                                </section>
+
+                                <section id="mp-eligibility" class="education-section">
+                                    <h3>Eligibility Requirements for a Member of Tibetan Parliament-in-exile</h3>
+                                    <ul>
+                                        <li>Candidate must be a citizen of Tibet</li>
+                                        <li>Candidate must have completed 25 years of age</li>
+                                        <li>Candidate must not have been declared mentally unsound either by a qualified
+                                            doctor or court of law</li>
+                                        <li>Candidate must not have unsettled public dues or debt</li>
+                                        <li>Candidate must not be a convict or found guilty by the court of law</li>
+                                        <li>Candidate mustn't be CTA employee. CTA employee refers to permanent staff,
+                                            contractual staff or special appointee of any office under the jurisdiction
+                                            of CTA. If any of these staff happens to be a nominee and wishes to stand in
+                                            election, he or she must have resigned from the current post.</li>
+                                        <li>Candidate must not be entrusted with task, entitled with any rank or
+                                            position, granted with cash or kind by any other country to harm or work
+                                            against the interest of Tibetan people.</li>
+                                        <li>Candidate's nomination mustn't be against any electoral rules finalised by
+                                            the Tibetan Parliament-in-Exile</li>
+                                        <li>Candidate must have full faith and trust in the Charter of Tibetans-in-Exile
+                                            and he or she mustn't be the one who has been proved to be working against
+                                            the Tibetan cause directly or indirectly.</li>
+                                    </ul>
+                                    <p class="source-link"><em>Source: <a
+                                                href="https://tibetanelection.net/en/qualifications-of-members-of-tibetan-parliament-in-exile/"
+                                                target="_blank">tibetanelection.net</a></em></p>
+                                </section>
+
+                                <section id="guidelines" class="education-section">
+                                    <h3>Guidelines for the Candidates</h3>
+                                    <ul>
+                                        <li>Candidates for the election of Sikyong and the 18th Tibetan Parliament in
+                                            Exile cannot use pictures of His Holiness the Dalai Lama, Tibetan national
+                                            flag, the emblem of the Central Tibetan Administration and map of Tibet, for
+                                            their election campaign.</li>
+                                        <li>By adhering both in letter and spirit to the Charter and the Election Rules
+                                            and Regulations, CTA, candidates must strictly follow the model code of
+                                            conduct and guidelines issued by the Election Commission for the electoral
+                                            process.</li>
+                                        <li>Although candidates may conduct their election campaigns through speeches,
+                                            correspondence, publications, and personal websites, they cannot make
+                                            personal criticisms, actions causing discord, religious and regional
+                                            divisions, bribery, or any form of inducements.</li>
+                                        <li>The fundamental rights of individual voters must be protected. Exerting
+                                            coercion or pressurising someone to vote or not to vote is strictly
+                                            prohibited. Furthermore, no candidate, supporter, or anyone may solicit
+                                            support or assistance related to election matters from official staff of the
+                                            Central Tibetan Administration, particularly election officials, by
+                                            exploiting their positions or seeking favour.</li>
+                                        <li>Candidates are not allowed to disseminate false information or distribute
+                                            materials about the electoral procedures of the Central Election Commission
+                                            to the public or media outlets.</li>
+                                        <li>Candidates must respect the local laws of their respective places of
+                                            residence. Those candidates based in politically sensitive regions must
+                                            exercise caution and vigilance. They must comply with guidelines of the
+                                            Election Commission. In particular, candidates and their supporters must not
+                                            cause obstructions or hindrance to campaign events of other candidates.</li>
+                                        <li>As stipulated in Article 24 (7) of the Election Regulations, all provincial
+                                            or regional associations, religious institutions and NGOs are prohibited
+                                            from releasing nominations and endorsing candidates for the elections of
+                                            Sikyong and members of Tibetan Parliament.</li>
+                                        <li>Campaign materials such as announcements, leaflets, and banners for any
+                                            candidate must clearly display the name and address of the person
+                                            responsible for printing these materials.</li>
+                                        <li>In accordance with the electoral rules and regulations, no electoral
+                                            campaign activities are allowed in schools.</li>
+                                        <li>Candidates must remain vigilant against disinformation and rumors on social
+                                            media platforms etc.</li>
+                                        <li>Candidates must inform the Regional Election Commission for any election
+                                            campaign activities that they undertake in their respective areas.</li>
+                                        <li>Candidates may carry out campaign activities during both preliminary as well
+                                            as final elections. However, in accordance with Article 24(7-b), they shall
+                                            cease their campaign activities two days prior to the election day until the
+                                            announcement of the results.</li>
+                                        <li>As specified in Article 16 (5) of the Election Rules and Regulations,
+                                            disputes related to local election matters must be investigated and resolved
+                                            by the Regional Election Commission. Therefore, individual candidates or
+                                            their supporters may approach the Regional Election Commission to resolve
+                                            disputes, rather than directly approaching the Central Election Commission.
+                                            However, if anyone is dissatisfied with the judgment of the Regional
+                                            Election Commission, they can appeal to the Central Election Commission.
+                                        </li>
+                                        <li>If anyone is found guilty of violating the above-mentioned guidelines,
+                                            penalties will be imposed in accordance with the severity of the violation
+                                            as per the provisions of Article 25 of the Election Rules and Regulations.
+                                        </li>
+                                    </ul>
+                                    <p class="source-link"><em>Source: <a
+                                                href="https://tibetanelection.net/en/ec-guidelines/"
+                                                target="_blank">tibetanelection.net</a></em></p>
+                                </section>
+
+                                <section id="voter-qualifications" class="education-section">
+                                    <h3>Voter Qualifications</h3>
+                                    <h4>Who can vote:</h4>
+                                    <ul>
+                                        <li>A Citizen of Tibet who has completed 18 years of age</li>
+                                        <li>A voter should not have violated any law enshrined in the Charter of Tibetan
+                                            people in exile</li>
+                                        <li>Should have already registered as a voter</li>
+                                    </ul>
+
+                                    <h4>People who are deprived of voting rights and cannot register to vote:</h4>
+                                    <ul>
+                                        <li>Who is not a citizen of Tibet and who has not reached the voting age</li>
+                                        <li>Who has been declared as mentally unsound by the doctor or court of law</li>
+                                        <li>Whose right to vote has been disenfranchised by the court of law for
+                                            breaching election rules and regulations</li>
+                                        <li>Who hasn't paid the green book dues up to date</li>
+                                    </ul>
+                                    <p class="source-link"><em>Source: <a
+                                                href="https://tibetanelection.net/en/qualification-of-the-voters/"
+                                                target="_blank">tibetanelection.net</a></em></p>
+                                </section>
+
+                                <section id="voter-assistance" class="education-section">
+                                    <h3>Voter Assistance</h3>
+                                    <p>Voters with disabilities, who cannot write or tick the candidate's name and
+                                        illiterate voters can bring their trusted company to the polling booth to help
+                                        them cast their vote during the preliminary election. However, at the time of
+                                        final election, only visually impaired people and those whose both hands are
+                                        impaired can bring their company to the polling booth. Illiterate voters cannot
+                                        bring in their company to help them vote. Those who accompany voters with
+                                        disabilities cannot help more than one person. But, they can help more than one
+                                        illiterate voter and voter with disabilities belonging to the same family.</p>
+                                    <p class="source-link"><em>Source: <a
+                                                href="https://tibetanelection.net/en/assistance-to-illiterate-voters-and-voters-with-disabilities/"
+                                                target="_blank">tibetanelection.net</a></em></p>
+                                </section>
+
+                                <section id="composition" class="education-section">
+                                    <h3>Composition and Number of Chithues</h3>
+                                    <ul>
+                                        <li>10 members each elected from the three provinces of Tibet with a minimum of
+                                            2 women candidates from each regional constituency.</li>
+                                        <li>2 members each from the four Buddhist schools namely, Nyingma, Kagyu, Sakya
+                                            & Gelug and Bon religion.</li>
+                                        <li>2 members elected by Tibetan community in North and South Americas</li>
+                                        <li>2 members elected by Tibetan community in Europe and Africa</li>
+                                        <li>1 member elected by Tibetan community in Asia (excluding India, Nepal &
+                                            Bhutan) and Australia.</li>
+                                    </ul>
+                                    <p>The total number of members of Parliament should be 45. Tibetan people living in
+                                        foreign countries (excluding India, Nepal & Bhutan) cannot either stand in
+                                        election or cast vote for provincial and religious elections.</p>
+                                    <p class="source-link"><em>Source: <a
+                                                href="https://tibetanelection.net/en/composition-and-number-of-chithue/"
+                                                target="_blank">tibetanelection.net</a></em></p>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Important Dates Tab Content -->
+                    <div class="tab-content" id="dates-tab">
+                        <div class="tab-scroll-content">
+                            <div
+                                style="background-color: rgba(255, 177, 0, 0.1); padding: 20px; border-radius: 8px; margin-bottom: 30px; border-left: 4px solid var(--secondary-1);">
+                                <p
+                                    style="margin: 0; font-size: 1rem; color: rgba(255, 255, 255, 0.9); line-height: 1.6;">
+                                    <strong style="color: var(--secondary-1);">Official Source:</strong> The following
+                                    schedule is extracted from the Election Commission Office for the 2025-2026 18th
+                                    Tibetan Parliament-in-Exile elections.
+                                </p>
+                            </div>
+
+                            <div class="dates-list">
+                                <!-- Phase 1: Preparation -->
+                                <div class="date-item">
+                                    <h3>1. Distribution of Election Schedule</h3>
+                                    <div class="date-value">January 2, 2026</div>
+                                    <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.95rem; margin-top: 8px;">
+                                        Date for sending the schedule of election procedures and timelines to
+                                        settlements.</p>
+                                </div>
+
+                                <div class="date-item">
+                                    <h3>2. Receipt of Instructions at Settlements</h3>
+                                    <div class="date-value">January 3 - 12, 2026 (10 days)</div>
+                                    <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.95rem; margin-top: 8px;">
+                                        Time allocated for instructions to arrive at settlements.</p>
+                                </div>
+
+                                <div class="date-item">
+                                    <h3>3. Public Gatherings & Announcements</h3>
+                                    <div class="date-value">January 13 - 22, 2026 (10 days)</div>
+                                    <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.95rem; margin-top: 8px;">
+                                        Scheduled time for public gatherings and announcements in settlements.</p>
+                                </div>
+
+                                <div class="date-item">
+                                    <h3>4. Candidate Nomination Submission</h3>
+                                    <div class="date-value">January 23 - 25, 2026 (3 days)</div>
+                                    <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.95rem; margin-top: 8px;">
+                                        Deadline for submitting nomination forms and applications for voluntary
+                                        candidates to local election offices.</p>
+                                </div>
+
+                                <div class="date-item">
+                                    <h3>5. Eligibility Examination</h3>
+                                    <div class="date-value">January 26 - 27, 2026 (2 days)</div>
+                                    <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.95rem; margin-top: 8px;">
+                                        Local election commissions will examine the eligibility of independent
+                                        candidates according to specified conditions.</p>
+                                </div>
+
+                                <div class="date-item">
+                                    <h3>6. Voluntary Withdrawal Period</h3>
+                                    <div class="date-value">January 28 - 29, 2026 (2 days)</div>
+                                    <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.95rem; margin-top: 8px;">
+                                        Period during which a candidate can voluntarily withdraw from the candidate
+                                        list.</p>
+                                </div>
+
+                                <!-- Phase 2: Preliminary Election -->
+                                <div class="date-item"
+                                    style="border-top: 2px solid rgba(255, 177, 0, 0.3); padding-top: 15px; margin-top: 10px;">
+                                    <h3 style="color: var(--secondary-1); font-size: 1.5rem;">7. PRELIMINARY ELECTION
+                                        DATE</h3>
+                                    <div class="date-value" style="font-size: 1.1rem; font-weight: 700;">February 1,
+                                        2026</div>
+                                    <p
+                                        style="color: rgba(255, 255, 255, 0.9); font-size: 0.9rem; margin-top: 6px; background-color: rgba(255, 177, 0, 0.1); padding: 8px; border-radius: 6px;">
+                                        <strong>Important:</strong> Campaigning must cease two days before the election
+                                        date (January 30) until the election is concluded, as per Article 24(7)(b) of
+                                        the Election Act.
+                                    </p>
+                                </div>
+
+                                <div class="date-item">
+                                    <h3>8. Vote Counting (Preliminary)</h3>
+                                    <div class="date-value">February 3, 2026</div>
+                                    <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.95rem; margin-top: 8px;">
+                                        Counting of votes after the end of preliminary elections in each constituency.
+                                    </p>
+                                </div>
+
+                                <div class="date-item">
+                                    <h3>9. Results Submission to Central Commission</h3>
+                                    <div class="date-value">February 4 - 11, 2026 (8 days)</div>
+                                    <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.95rem; margin-top: 8px;">
+                                        Deadline for submitting results, including candidate lists, vote counts, and
+                                        preliminary vote results to the Central Election Commission.</p>
+                                </div>
+
+                                <div class="date-item">
+                                    <h3>10. Compilation Period</h3>
+                                    <div class="date-value">February 12 - 14, 2026 (3 days)</div>
+                                    <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.95rem; margin-top: 8px;">
+                                        Central office will wait for the final compilation of candidates from various
+                                        locations.</p>
+                                </div>
+
+                                <div class="date-item">
+                                    <h3>11. Central Vote Counting (Preliminary)</h3>
+                                    <div class="date-value">February 15 - 24, 2026 (10 days)</div>
+                                    <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.95rem; margin-top: 8px;">The
+                                        Central Election Commission will count the preliminary votes.</p>
+                                </div>
+
+                                <div class="date-item">
+                                    <h3>12. Preliminary Candidate List Announcement</h3>
+                                    <div class="date-value">February 25, 2026</div>
+                                    <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.95rem; margin-top: 8px;">The
+                                        Central Election Commission announces the preliminary list of candidates.</p>
+                                </div>
+
+                                <!-- Phase 3: Preparation for Final Election -->
+                                <div class="date-item">
+                                    <h3>13. Candidate Documentation Period</h3>
+                                    <div class="date-value">February 26 - March 27, 2026 (30 days)</div>
+                                    <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.95rem; margin-top: 8px;">
+                                        Local election offices must collect candidate history and recent color
+                                        photographs and submit them to the Central Election Commission. Deadline for
+                                        resignation letters from those who do not wish to be candidates.</p>
+                                </div>
+
+                                <div class="date-item">
+                                    <h3>14. Final Candidate List Preparation</h3>
+                                    <div class="date-value">March 28 - April 2, 2026 (6 days)</div>
+                                    <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.95rem; margin-top: 8px;">The
+                                        Central Election Commission will prepare to announce the final list of
+                                        candidates.</p>
+                                </div>
+
+                                <div class="date-item">
+                                    <h3>15. Official Candidate Announcement</h3>
+                                    <div class="date-value">April 3, 2026</div>
+                                    <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.95rem; margin-top: 8px;">
+                                        Scheduled date for the Central Election Commission to announce the official
+                                        candidates.</p>
+                                </div>
+
+                                <div class="date-item">
+                                    <h3>16. Official Campaign Period</h3>
+                                    <div class="date-value">April 4 - 23, 2026 (20 days)</div>
+                                    <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.95rem; margin-top: 8px;">
+                                        Official campaign period for final candidates as stipulated by the rules.</p>
+                                </div>
+
+                                <!-- Phase 4: Final Election -->
+                                <div class="date-item"
+                                    style="border-top: 2px solid rgba(255, 177, 0, 0.3); padding-top: 15px; margin-top: 10px;">
+                                    <h3 style="color: var(--secondary-1); font-size: 1.5rem;">17. FINAL ELECTION DATE
+                                    </h3>
+                                    <div class="date-value" style="font-size: 1.1rem; font-weight: 700;">April 26, 2026
+                                    </div>
+                                    <p
+                                        style="color: rgba(255, 255, 255, 0.9); font-size: 0.9rem; margin-top: 6px; background-color: rgba(255, 177, 0, 0.1); padding: 8px; border-radius: 6px;">
+                                        <strong>Important:</strong> Campaigning must cease two days before the election
+                                        date (April 24) until the election is concluded, as per Article 24(7)(b) of the
+                                        Election Act.
+                                    </p>
+                                </div>
+
+                                <div class="date-item">
+                                    <h3>18. Local Vote Counting Begins</h3>
+                                    <div class="date-value">April 28, 2026</div>
+                                    <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.95rem; margin-top: 8px;">
+                                        Period for concluding local elections and commencing vote counting.</p>
+                                </div>
+
+                                <div class="date-item">
+                                    <h3>19. Final Results Submission</h3>
+                                    <div class="date-value">April 29 - May 5, 2026 (7 days)</div>
+                                    <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.95rem; margin-top: 8px;">
+                                        Final vote counting at each location. Summary of vote counts, status of votes
+                                        received/spent/remaining, and results must be submitted to the Central Election
+                                        Commission.</p>
+                                </div>
+
+                                <div class="date-item">
+                                    <h3>20. Central Final Vote Counting</h3>
+                                    <div class="date-value">May 6 - 12, 2026 (7 days)</div>
+                                    <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.95rem; margin-top: 8px;">The
+                                        Central Election Commission will count votes and announce the final vote count.
+                                    </p>
+                                </div>
+
+                                <!-- Phase 5: Results & Inauguration -->
+                                <div class="date-item"
+                                    style="border-top: 2px solid rgba(255, 177, 0, 0.3); padding-top: 15px; margin-top: 10px;">
+                                    <h3 style="color: var(--secondary-1); font-size: 1.5rem;">21. Press Announcement of
+                                        Elected Members</h3>
+                                    <div class="date-value" style="font-size: 1.1rem; font-weight: 700;">May 13, 2026
+                                    </div>
+                                    <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.9rem; margin-top: 6px;">
+                                        Official press announcement of the names of elected members.</p>
+                                </div>
+
+                                <div class="date-item">
+                                    <h3>22. Appointment of Elected Members</h3>
+                                    <div class="date-value">May 14, 2026</div>
+                                    <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.95rem; margin-top: 8px;">
+                                        Date of official appointment of elected members.</p>
+                                </div>
+
+                                <div class="date-item">
+                                    <h3>23. Arrival in Dharamsala</h3>
+                                    <div class="date-value">May 30, 2026</div>
+                                    <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.95rem; margin-top: 8px;">
+                                        Arrival date of elected members for oath-taking ceremony in Dharamsala.</p>
+                                </div>
+
+                                <div class="date-item">
+                                    <h3 style="color: var(--secondary-1); font-size: 1.5rem;">24. SWEARING-IN CEREMONY
+                                    </h3>
+                                    <div class="date-value" style="font-size: 1.1rem; font-weight: 700;">May 31, 2026
+                                    </div>
+                                    <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.9rem; margin-top: 6px;">The
+                                        swearing-in ceremony of the 18th Tibetan Parliament-in-Exile.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Compare Tab Content -->
+                    <div class="tab-content" id="compare-tab">
+                        <div class="tab-scroll-content">
+                            <h2 class="compare-heading">Compare Candidates</h2>
+                            <p class="compare-description">Select two candidates to compare their profiles side by side
+                            </p>
+
+                            <!-- Candidate Selectors -->
+                            <div class="compare-selectors">
+                                <div class="selector-group">
+                                    <label for="candidate-1">Candidate 1</label>
+                                    <div class="selector-with-clear">
+                                        <select id="candidate-1" onchange="updateComparison()">
+                                            <option value="">-- Select Candidate --</option>
+                                        </select>
+                                        <button class="clear-btn" onclick="clearCandidate(1)" title="Clear selection">
+                                            <i class="fas fa-times"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="selector-group">
+                                    <label for="candidate-2">Candidate 2</label>
+                                    <div class="selector-with-clear">
+                                        <select id="candidate-2" onchange="updateComparison()">
+                                            <option value="">-- Select Candidate --</option>
+                                        </select>
+                                        <button class="clear-btn" onclick="clearCandidate(2)" title="Clear selection">
+                                            <i class="fas fa-times"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Comparison Display -->
+                            <div class="comparison-container" id="comparison-container">
+                                <div class="comparison-placeholder">
+                                    <i class="fas fa-user-friends"
+                                        style="font-size: 4rem; color: var(--secondary-1); margin-bottom: 20px;"></i>
+                                    <p>Select two candidates to begin comparison</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Candidate Detail Modal -->
+        <div class="modal-overlay" id="candidateModal">
+            <div class="modal-content">
+                <button class="modal-close" onclick="closeModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div id="modalContentArea">
+                    <!-- Modal content will be loaded dynamically -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Contact Us</h3>
+                <p>Email: <a href="mailto:contact@allabouttibet.com">contact@allabouttibet.com</a></p>
+            </div>
+            <div class="social-links">
+                <a href="https://www.instagram.com/AATibet" aria-label="Instagram" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/AATibet/" aria-label="Facebook" target="_blank"><i
+                        class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/company/AATibet" aria-label="LinkedIn" target="_blank"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://x.com/AATibet" aria-label="X" target="_blank"><i
+                        class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.youtube.com/@AATibet" aria-label="YouTube" target="_blank"><i
+                        class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.threads.net/@AATibet" aria-label="Threads" target="_blank"><i
+                        class="fa-brands fa-threads"></i></a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 All About Tibet. All rights reserved.</p>
+                <p>Website Developed by <a href="https://norzinconsultancy.com/" target="_blank" rel="noopener">Norzin
+                        Consultancy</a>.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+    <script src="tibet-votes.js"></script>
+</body>
+
+</html>
