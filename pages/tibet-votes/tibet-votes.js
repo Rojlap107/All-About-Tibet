@@ -157,6 +157,7 @@ function displayCandidates() {
 
                 <div class="candidate-badges">
                     <div class="candidate-badge">${candidate.representing}</div>
+                    ${candidate.status ? `<div class="candidate-badge status-badge">${candidate.status}</div>` : ''}
                 </div>
 
                 <div class="candidate-details">

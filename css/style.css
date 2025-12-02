@@ -347,6 +347,122 @@ header.scrolled .logo img {
     padding: 0 5%;
 }
 
+/* Tibet Votes Section */
+.tibet-votes-section {
+    position: relative;
+    padding: 100px 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    color: var(--white);
+}
+
+.tibet-votes-video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.tibet-votes-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.tibet-votes-content {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+}
+
+.tibet-votes-logo {
+    width: 400px;
+    max-width: 100%;
+}
+
+.tibet-votes-logo img {
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.5));
+}
+
+.tibet-votes-text {
+    width: 100%;
+}
+
+.tibet-votes-text h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: var(--secondary-1);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.tibet-votes-text p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.tibet-votes-text .cta-button {
+    background-color: var(--secondary-1);
+    color: var(--black);
+}
+
+.tibet-votes-text .cta-button:hover {
+    background-color: var(--white);
+}
+
+/* Responsive Design for Tibet Votes Section */
+@media screen and (max-width: 768px) {
+    .tibet-votes-logo {
+        width: 300px;
+    }
+
+    .tibet-votes-text h2 {
+        font-size: 2.5rem;
+    }
+
+    .tibet-votes-text p {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .tibet-votes-section {
+        padding: 60px 0;
+    }
+
+    .tibet-votes-logo {
+        width: 300px;
+    }
+
+    .tibet-votes-text h2 {
+        font-size: 2rem;
+    }
+
+    .tibet-votes-text p {
+        font-size: 1rem;
+    }
+}
+
 /* Heroes of Tibet Section */
 .heroes-section {
     position: relative;

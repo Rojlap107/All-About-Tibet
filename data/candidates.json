@@ -7,13 +7,14 @@
       "ageGroup": "46-55",
       "gender": "Male",
       "origin": "Rekhe, Kham (Tibet)",
-      "currentAddress": "Dharamsala, Himachal Pradesh, India",
+      "currentAddress": "Dharamshala",
       "occupation": "Speaker, 17th TPiE",
       "representing": "Nyingma",
       "briefBio": "Born 18 July 1974 in Rxekhe, Kham. Joined monastic life early, fled to India in 1993, studied at Ngagyur Nyingma Institute, Bylakuppe. Elected to the 14th, 15th, 16th & now 17th Parliament; served as Deputy Speaker before becoming Speaker.",
       "educationalBackground": "- Higher Secondary\n- Bachelor’s & Master’s in Buddhist Philosophy from Ngagyur Nyingma Institute\n- Doctorate in Buddhist Philosophy (2011).",
       "workExperience": "- Teacher/disciplianarian at Namdroling monastery\n- Parliamentary roles\n- currently Speaker.",
-      "otherInformation": "- Nyingma religious school."
+      "otherInformation": "- Nyingma religious school.",
+      "status": "Current MP"
     },
     {
       "id": 2,
@@ -22,13 +23,14 @@
       "ageGroup": "36-45",
       "gender": "Male",
       "origin": "Minyak, Tibet",
-      "currentAddress": "—",
+      "currentAddress": "Kollegal",
       "occupation": "MP, 17th TPiE",
       "representing": "Nyingma",
       "briefBio": "Born 1982 Minyak; studied Larung Gar; abbot Dzogchen Monastery; MP (16th & 17th).",
       "educationalBackground": "- Advanced monastic education (Serta Larung Gar).",
       "workExperience": "- Teaching/administration Dzogchen Monastery.",
-      "otherInformation": "- Published two books\n- charitable aid."
+      "otherInformation": "- Published two books\n- charitable aid.",
+      "status": "Current MP"
     },
     {
       "id": 3,
@@ -37,13 +39,14 @@
       "ageGroup": "36-45",
       "gender": "Male",
       "origin": "Derge (Kham), Tibet",
-      "currentAddress": "Dharamsala, Himachal Pradesh, India",
+      "currentAddress": "Bodhgaya",
       "occupation": "MP, 17th TPiE",
       "representing": "Kagyu",
       "briefBio": "Born 1980 Derge Jondha; studied at Tergar Monastery; MP for 17th TPiE.",
       "educationalBackground": "- Monastic studies (Tergar).",
       "workExperience": "- Teacher & monastery administrator.",
-      "otherInformation": "- Youth ethics advocate."
+      "otherInformation": "- Youth ethics advocate.",
+      "status": "Current MP"
     },
     {
       "id": 4,
@@ -52,13 +55,14 @@
       "ageGroup": "46-55",
       "gender": "Male",
       "origin": "Kham (Eastern Tibet)",
-      "currentAddress": "India (exile)",
+      "currentAddress": "Dharamshala",
       "occupation": "MP, 17th TPiE",
       "representing": "Kagyu",
       "briefBio": "Tibetan monk-politician from Kham; studied at Sera Je Monastic University and Sarah Institute; previously edited monastic history.",
       "educationalBackground": "- Monastic studies\n- Sarah Institute (2004‑2008).",
       "workExperience": "- Editor at CTA Religious & Cultural Dept\n- MP.",
-      "otherInformation": "- Known for reformist outlook."
+      "otherInformation": "- Known for reformist outlook.",
+      "status": "Current MP"
     },
     {
       "id": 5,
@@ -67,13 +71,14 @@
       "ageGroup": "36-45",
       "gender": "Male",
       "origin": "Markham, Tibet",
-      "currentAddress": "—",
+      "currentAddress": "Rajpur, Dehradun",
       "occupation": "MP, 17th TPiE",
       "representing": "Sakya",
       "briefBio": "Born 1980 Markham; monk since 8; escaped 2000; studied Sakya Centre/Institute; MP (16th & 17th).",
       "educationalBackground": "- Kachupa & Lopon degrees.",
       "workExperience": "- Teacher Sakya Institute\n- settlement admin\n- editor.",
-      "otherInformation": "- Committee member & Tibet outreach."
+      "otherInformation": "- Committee member & Tibet outreach.",
+      "status": "Current MP"
     },
     {
       "id": 6,
@@ -82,13 +87,14 @@
       "ageGroup": "46-55",
       "gender": "Male",
       "origin": "Karze (Kham), Tibet",
-      "currentAddress": "Bylakuppe, Karnataka, India",
+      "currentAddress": "Chauntra",
       "occupation": "MP, 17th TPiE",
       "representing": "Sakya",
       "briefBio": "Born 1979 Karze; taught in Tibet; studied at Dzongsar Institute; received Karam‑pa and Kachu‑pa degrees; MP.",
       "educationalBackground": "- Buddhist degrees (Karam‑pa, Kachu‑pa).",
       "workExperience": "- Teaching and monastic education.",
-      "otherInformation": "- Culture & language promotion."
+      "otherInformation": "- Culture & language promotion.",
+      "status": "Current MP"
     },
     {
       "id": 7,
@@ -97,13 +103,14 @@
       "ageGroup": "46-55",
       "gender": "Male",
       "origin": "Kham Bathang, Tibet",
-      "currentAddress": "—",
+      "currentAddress": "Mundgod",
       "occupation": "MP, 17th TPiE",
       "representing": "Gelug",
       "briefBio": "Born 1977; Ba Zingon Monastery; exile 1992; Drepung Loseling; Geshe Lharampa; community leader; MP (16th & 17th).",
       "educationalBackground": "- Geshe Lharampa.",
       "workExperience": "- Leadership Mundgod communities\n- committee service.",
-      "otherInformation": "- Public Accounts Committee member."
+      "otherInformation": "- Public Accounts Committee member.",
+      "status": "Current MP"
     },
     {
       "id": 8,
@@ -112,13 +119,14 @@
       "ageGroup": "46-55",
       "gender": "Male",
       "origin": "Lithang, Tibet",
-      "currentAddress": "Dharamsala, Himachal Pradesh, India",
+      "currentAddress": "Mundgod",
       "occupation": "MP, 17th TPiE",
       "representing": "Gelug",
       "briefBio": "Born 1972 Lithang; joined monastery (1983); exile (1991); Drepung Gomang; Geshe Lharampa (2015).",
       "educationalBackground": "- Geshe Lharampa (PhD-equivalent).",
       "workExperience": "- Teacher/scholar\n- Drepung Gomang.",
-      "otherInformation": "- Focus on youth ethics."
+      "otherInformation": "- Focus on youth ethics.",
+      "status": "Current MP"
     },
     {
       "id": 9,
@@ -127,13 +135,14 @@
       "ageGroup": "36-45",
       "gender": "Male",
       "origin": "Kham (Tibet)",
-      "currentAddress": "—",
+      "currentAddress": "Dharamshala",
       "occupation": "MP, 17th TPiE",
       "representing": "Bon",
       "briefBio": "Born 23 July 1981 in Drachen, Kham. Studied Tibetan medicine & rituals; fled to India 2005; studied Sutra & Tantra (Bön) at Menri Monastery; elected MP representing the Bön faith.",
       "educationalBackground": "- Geshe degree (Bön studies, equivalent to Ph.D.).",
       "workExperience": "- Teacher & scholar in Bön tradition\n- parliamentary service\n- diaspora advocacy.",
-      "otherInformation": "- Represents Bön tradition in Parliament\n- active in Europe and Africa advocacy."
+      "otherInformation": "- Represents Bön tradition in Parliament\n- active in Europe and Africa advocacy.",
+      "status": "Current MP"
     },
     {
       "id": 10,
@@ -142,13 +151,14 @@
       "ageGroup": "Above 55",
       "gender": "Male",
       "origin": "Khyungpo Thingchen, Eastern Tibet",
-      "currentAddress": "—",
+      "currentAddress": "Darjeeling",
       "occupation": "MP, 17th TPiE",
       "representing": "Bon",
       "briefBio": "Born 1 Nov 1968 in Khyungpo Thingchen, Tibet. Studied Bon scriptures, tantra & mind-training; came to exile 1992; studied at Pal Shenten Menriling; served 6 years as Chant Master of Menri Sangha Assembly.",
       "educationalBackground": "- Geshe degree (Bon tradition).",
       "workExperience": "- Advisor & teacher for Bon scholars\n- editor/proof-reader of major Bon works\n- parliamentary service.",
-      "otherInformation": "- Represents Bon tradition\n- active in cultural preservation & outreach."
+      "otherInformation": "- Represents Bon tradition\n- active in cultural preservation & outreach.",
+      "status": "Current MP"
     },
     {
       "id": 11,
@@ -163,7 +173,8 @@
       "briefBio": "Born 1 July 1956 at Dagne, Tibet. Completed bachelor’s and teacher‑training; Taught 26 years in Tibetan schools; Fulbright scholar (USA, 2001). President of U‑Tsang Central Executive Committee; Deputy Speaker since 2021.",
       "educationalBackground": "- Bachelor’s degree\n- teacher‑training\n- Fulbright scholarship (USA, 2001).",
       "workExperience": "- 26 years teaching\n- leadership in U‑Tsang committee\n- long parliamentary service.",
-      "otherInformation": "- Elected from U‑Tsang\n- advocate for education and women."
+      "otherInformation": "- Elected from U‑Tsang\n- advocate for education and women.",
+      "status": "Current MP"
     },
     {
       "id": 12,
@@ -172,13 +183,14 @@
       "ageGroup": "Above 55",
       "gender": "Male",
       "origin": "Thoding, Ngari Province, Tibet",
-      "currentAddress": "—",
+      "currentAddress": "Hunsur",
       "occupation": "MP, 17th TPiE",
       "representing": "Utsang",
       "briefBio": "Born 1 Jan 1953 Thoding (Ngari); joined CTA (1976); served 37 yrs — Chief Rep Ladakh, Secretary Dalai Lama’s Bureau, Rep UK & South Africa, Kadrung Cabinet Secy; MP (16th & 17th).",
       "educationalBackground": "- Graduation (1975).",
       "workExperience": "- CTA service 1976–2013\n- various senior roles & diplomatic posts.",
-      "otherInformation": "- Deep experience in CTA & diplomatic service."
+      "otherInformation": "- Deep experience in CTA & diplomatic service.",
+      "status": "Current MP"
     },
     {
       "id": 13,
@@ -187,13 +199,14 @@
       "ageGroup": "Above 55",
       "gender": "Male",
       "origin": "Tibet",
-      "currentAddress": "Dharamsala, Himachal Pradesh, India",
+      "currentAddress": "Bylakuppe, Karnataka, India",
       "occupation": "MP, 17th TPiE",
       "representing": "Utsang",
       "briefBio": "Born 1956; long CTA and UN service career; elected MP.",
       "educationalBackground": "- Modern education (CTA-supported).",
       "workExperience": "- Administrative/development service.",
-      "otherInformation": "- Known for administrative leadership."
+      "otherInformation": "- Known for administrative leadership.",
+      "status": "Current MP"
     },
     {
       "id": 14,
@@ -202,13 +215,14 @@
       "ageGroup": "36-45",
       "gender": "Male",
       "origin": "Dharamsala (exile‑born)",
-      "currentAddress": "Dharamsala, Himachal Pradesh, India",
+      "currentAddress": "Bylakuppe, Karnataka, India",
       "occupation": "MP, 17th TPiE",
       "representing": "Utsang",
       "briefBio": "Born 22 Jun 1982 Dharamsala; UTCV alumnus; B.Sc (Comp Sci) Loyola College (Gold Medalist); Software Engg London Met Univ. Leader in digital security & diaspora tech; member WIRED Smart List 2021.",
       "educationalBackground": "- B.Sc (Comp Sci), Loyola College Chennai\n- Software Engg, London Met Univ.",
       "workExperience": "- Tech lead\n- advisor Citizen Clinic UC Berkeley (2018‑20)\n- cyber security activist.",
-      "otherInformation": "- Diaspora tech innovator & youth advocate."
+      "otherInformation": "- Diaspora tech innovator & youth advocate.",
+      "status": "Current MP"
     },
     {
       "id": 15,
@@ -217,13 +231,14 @@
       "ageGroup": "36-45",
       "gender": "Female",
       "origin": "Ü‑Tsang (Tibet)",
-      "currentAddress": "Dharamsala, Himachal Pradesh, India",
+      "currentAddress": "Bylakuppe, Karnataka, India",
       "occupation": "MP, 17th TPiE",
       "representing": "Utsang",
       "briefBio": "Elected from Ü‑Tsang; part of Standing Committee.",
       "educationalBackground": "- —",
       "workExperience": "- —",
-      "otherInformation": "- Community representative."
+      "otherInformation": "- Community representative.",
+      "status": "Current MP"
     },
     {
       "id": 16,
@@ -232,13 +247,14 @@
       "ageGroup": "36-45",
       "gender": "Male",
       "origin": "—",
-      "currentAddress": "—",
+      "currentAddress": "Bangalore",
       "occupation": "MP, 17th TPiE",
       "representing": "Utsang",
       "briefBio": "Listed as MP from U‑Tsang in the 17th TPiE Directory. Further details not publicly available.",
       "educationalBackground": "- —",
       "workExperience": "- —",
-      "otherInformation": "- Profile information incomplete."
+      "otherInformation": "- Profile information incomplete.",
+      "status": "Current MP"
     },
     {
       "id": 17,
@@ -253,7 +269,8 @@
       "briefBio": "Born 1986 in Dharamsala; first Tibetan woman to obtain Indian citizenship (2011); political activist and human rights advocate.",
       "educationalBackground": "- Master’s in English Literature.",
       "workExperience": "- Teacher\n- Gu‑Chu‑Sum Association president\n- MP.",
-      "otherInformation": "- Focus on youth and women empowerment."
+      "otherInformation": "- Focus on youth and women empowerment.",
+      "status": "Current MP"
     },
     {
       "id": 18,
@@ -268,7 +285,8 @@
       "briefBio": "Born 1954 Tibet; fled to India; founder of Yongling School; twice Dharamsala Settlement Officer; veteran MP.",
       "educationalBackground": "- Schooling at C.S.T. Dalhousie & Shimla.",
       "workExperience": "- Settlement Officer\n- educator\n- relief work.",
-      "otherInformation": "- Long public service career."
+      "otherInformation": "- Long public service career.",
+      "status": "Current MP"
     },
     {
       "id": 19,
@@ -277,13 +295,14 @@
       "ageGroup": "25-35",
       "gender": "Female",
       "origin": "Dharamshala, India",
-      "currentAddress": "—",
+      "currentAddress": "Dharamshala",
       "occupation": "MP, 17th TPiE",
       "representing": "Utsang",
       "briefBio": "Schooling TCV; BA Madras College; MA JNU; Executive Director Active Nonviolence Education Center; youngest MP.",
       "educationalBackground": "- BA English\n- MA English\n- Leadership (StFX/Coady).",
       "workExperience": "- Career Centre, TWA, ANEC.",
-      "otherInformation": "- Trainer of 5000+ youth."
+      "otherInformation": "- Trainer of 5000+ youth.",
+      "status": "Current MP"
     },
     {
       "id": 20,
@@ -298,7 +317,8 @@
       "briefBio": "Graduated B.Com from Teresian College, Mysore (1992). 23 years service in Bylakuppe. Assistant Accountant (1993‑94), Auditor (1995‑97), Manager at Lugsung Samdupling Co‑op (1998–present). Sworn in replacing former MP Dawa Phunkyi.",
       "educationalBackground": "- B.Com (Teresian College, Mysore)",
       "workExperience": "- Auditor\n- Manager, Lugsung Samdupling Co‑op\n- CTA finance background.",
-      "otherInformation": "- Women’s advocacy & finance leadership."
+      "otherInformation": "- Women’s advocacy & finance leadership.",
+      "status": "Current MP"
     },
     {
       "id": 21,
@@ -307,13 +327,14 @@
       "ageGroup": "36-45",
       "gender": "Male",
       "origin": "Bir, Himachal Pradesh, India",
-      "currentAddress": "—",
+      "currentAddress": "Nangchen, Bir",
       "occupation": "MP, 17th TPiE",
       "representing": "Dotoe",
       "briefBio": "Born 1983; international activist; Director Students for a Free Tibet Intl.; MP (16th & 17th).",
       "educationalBackground": "- —",
       "workExperience": "- Director SFT International\n- activism.",
-      "otherInformation": "- Youth mobilization focus."
+      "otherInformation": "- Youth mobilization focus.",
+      "status": "Current MP"
     },
     {
       "id": 22,
@@ -322,13 +343,14 @@
       "ageGroup": "46-55",
       "gender": "Female",
       "origin": "—",
-      "currentAddress": "—",
+      "currentAddress": "Gangtok",
       "occupation": "MP, 17th TPiE",
       "representing": "Dotoe",
       "briefBio": "Four‑term MP; 22 years in Tibetan NGOs; Reagan‑Fascell Democracy Fellow (2021).",
       "educationalBackground": "- MA (Fletcher School)\n- MA (JNU)\n- BA (LSR DU).",
       "workExperience": "- Leadership TWA, TCHRD, EVP.",
-      "otherInformation": "- Focus on democracy & rights."
+      "otherInformation": "- Focus on democracy & rights.",
+      "status": "Current MP"
     },
     {
       "id": 23,
@@ -337,13 +359,14 @@
       "ageGroup": "46-55",
       "gender": "Female",
       "origin": "Bylakuppe, India",
-      "currentAddress": "—",
+      "currentAddress": "Chauntra",
       "occupation": "MP, 17th TPiE",
       "representing": "Dotoe",
       "briefBio": "Born 1972; MP since 2001 (13th–17th); visited North and South Americas, Russia, Australia; committee roles; Vice‑President Dege Gyalyong Lhentsok.",
       "educationalBackground": "- —",
       "workExperience": "- Parliamentarian\n- committee leadership.",
-      "otherInformation": "- Public grievance work and outreach."
+      "otherInformation": "- Public grievance work and outreach.",
+      "status": "Current MP"
     },
     {
       "id": 24,
@@ -352,13 +375,14 @@
       "ageGroup": "36-45",
       "gender": "Male",
       "origin": "Dharamsala, India",
-      "currentAddress": "—",
+      "currentAddress": "Nangchen, Bir",
       "occupation": "MP, 17th TPiE",
       "representing": "Dotoe",
       "briefBio": "Born 1982; educated in India & UK; Director Intl. Tibet Network; human‑rights trainer (ISHR Geneva).",
       "educationalBackground": "- BA (UK)\n- MSc Computer Science (Madras Univ).",
       "workExperience": "- Leadership SFT UK/India\n- Advisor Tibet Action Inst.",
-      "otherInformation": "- Focus on non‑violence and tech advocacy."
+      "otherInformation": "- Focus on non‑violence and tech advocacy.",
+      "status": "Current MP"
     },
     {
       "id": 25,
@@ -367,13 +391,14 @@
       "ageGroup": "46-55",
       "gender": "Male",
       "origin": "Serta (Kham), Tibet",
-      "currentAddress": "—",
+      "currentAddress": "Nangchen, Bir",
       "occupation": "MP, 17th TPiE",
       "representing": "Dotoe",
       "briefBio": "Born 1978 Serta; former CTA editor; Founder Khawa Karpo Tibet Culture Centre; Editor Bod‑kyi‑Bangchen.",
       "educationalBackground": "- Traditional & Transit School education.",
       "workExperience": "- Editor CTA Religion Dept\n- Research Norbulingka.",
-      "otherInformation": "- Writer and cultural activist."
+      "otherInformation": "- Writer and cultural activist.",
+      "status": "Current MP"
     },
     {
       "id": 26,
@@ -382,13 +407,14 @@
       "ageGroup": "Above 55",
       "gender": "Male",
       "origin": "Bylakuppe, India",
-      "currentAddress": "—",
+      "currentAddress": "Bylakuppe, Karnataka, India",
       "occupation": "MP, 17th TPiE",
       "representing": "Dotoe",
       "briefBio": "Born 1967 Bylakuppe; BA + Diploma Mass Media (Christ College); former RTYC President; MP.",
       "educationalBackground": "- BA\n- Diploma Mass Media.",
       "workExperience": "- Youth leadership\n- media engagement.",
-      "otherInformation": "- Focus on youth development."
+      "otherInformation": "- Focus on youth development.",
+      "status": "Current MP"
     },
     {
       "id": 27,
@@ -403,7 +429,8 @@
       "briefBio": "Born 1978 Shillong; BA NEHU; led RTYC & TWA Shillong; Chair Local Tibetan Assembly; MP.",
       "educationalBackground": "- BA (NEHU).",
       "workExperience": "- Youth & women’s leadership\n- community governance.",
-      "otherInformation": "- NE India community mobilizer."
+      "otherInformation": "- NE India community mobilizer.",
+      "status": "Current MP"
     },
     {
       "id": 28,
@@ -412,13 +439,14 @@
       "ageGroup": "36-45",
       "gender": "Male",
       "origin": "Minyak, Tibet",
-      "currentAddress": "—",
+      "currentAddress": "Dharamsala, Himachal Pradesh, India",
       "occupation": "MP, 17th TPiE",
       "representing": "Dotoe",
       "briefBio": "Born 1989 Minyak; schooling in Tibet; BA Tibetan language (Sarah College); MP (17th).",
       "educationalBackground": "- BA Tibetan Language (Sarah College).",
       "workExperience": "- Education & community service.",
-      "otherInformation": "- Young generation representative."
+      "otherInformation": "- Young generation representative.",
+      "status": "Current MP"
     },
     {
       "id": 29,
@@ -433,7 +461,8 @@
       "briefBio": "General Secretary Intl. Maitreya Foundation; MP (16th, 17th); Standing Committee member.",
       "educationalBackground": "- —",
       "workExperience": "- NGO leadership\n- MP\n- outreach.",
-      "otherInformation": "- Europe and Africa advocacy tours."
+      "otherInformation": "- Europe and Africa advocacy tours.",
+      "status": "Current MP"
     },
     {
       "id": 30,
@@ -448,7 +477,8 @@
       "briefBio": "Born 1980 Bir; BA Punjab University; active youth leader; startup founder ‘Tibetfoods’.",
       "educationalBackground": "- BA (Punjab Univ).",
       "workExperience": "- Local Assembly\n- Chushi Gangdruk vice‑president\n- entrepreneur.",
-      "otherInformation": "- Business and social work."
+      "otherInformation": "- Business and social work.",
+      "status": "Current MP"
     },
     {
       "id": 31,
@@ -463,7 +493,8 @@
       "briefBio": "Fled Tibet 2005; taught at schools; editor since 2018 of Tibet Times; MP (Dhomey).",
       "educationalBackground": "- BA Chinese & Tibetan (Sichuan Univ).",
       "workExperience": "- Teacher\n- journalist\n- editorial director Tibet Times.",
-      "otherInformation": "- Strong female media voice."
+      "otherInformation": "- Strong female media voice.",
+      "status": "Current MP"
     },
     {
       "id": 32,
@@ -472,13 +503,14 @@
       "ageGroup": "36-45",
       "gender": "Male",
       "origin": "Labrang, Amdo Province, Tibet",
-      "currentAddress": "—",
+      "currentAddress": "Dharamsala, Himachal Pradesh, India",
       "occupation": "MP, 17th TPiE",
       "representing": "Dhomey",
       "briefBio": "Born 14 Apr 1980 in Labrang, Amdo. Studied Buddhist philosophy, Tibetan lute & medicine; came to exile 2002; teacher, editor, journalist; ex-chief editor of Tibet Times; 16th & 17th MP.",
       "educationalBackground": "- Buddhist & Western philosophy\n- Northwest Minzu University\n- English & computer studies (exile).",
       "workExperience": "- Teacher at Transit School\n- editor\n- reporter & chief editor Tibet Times\n- parliamentary committees.",
-      "otherInformation": "- Journalism background\n- Dhomey representative."
+      "otherInformation": "- Journalism background\n- Dhomey representative.",
+      "status": "Current MP"
     },
     {
       "id": 33,
@@ -487,13 +519,14 @@
       "ageGroup": "Above 55",
       "gender": "Female",
       "origin": "Ngaba, Amdo, Tibet",
-      "currentAddress": "—",
+      "currentAddress": "Dharamsala, Himachal Pradesh, India",
       "occupation": "MP, 17th TPiE",
       "representing": "Dhomey",
       "briefBio": "Born 10 Feb 1969 Ngaba. Translator in Ngaba; exile 1992; journalist (RFA & VOA); CTA officer (Security & DIIR); 16th & 17th MP.",
       "educationalBackground": "- —",
       "workExperience": "- Translator\n- journalist\n- CTA Joint Secretary\n- website editor\n- China desk head.",
-      "otherInformation": "- Translated Dalai Lama’s 'My Land and My People' to Chinese."
+      "otherInformation": "- Translated Dalai Lama’s 'My Land and My People' to Chinese.",
+      "status": "Current MP"
     },
     {
       "id": 34,
@@ -508,7 +541,8 @@
       "briefBio": "Born 1972; hotel management career; GM Hotel Tibet International; MP for Asia seat.",
       "educationalBackground": "- Graduate (1989).",
       "workExperience": "- Hotel manager\n- hospitality leader.",
-      "otherInformation": "- Business‑community link to Tibetans in Nepal."
+      "otherInformation": "- Business‑community link to Tibetans in Nepal.",
+      "status": "Current MP"
     },
     {
       "id": 35,
@@ -517,13 +551,14 @@
       "ageGroup": "36-45",
       "gender": "Male",
       "origin": "Parents from Amdo Sharkock & Labrang Tashi Gomang",
-      "currentAddress": "—",
+      "currentAddress": "Kathmandu, Nepal",
       "occupation": "MP, 17th TPiE",
       "representing": "Dhomey",
       "briefBio": "Born 15 Jul 1980 India. BA Punjab Univ; Senior Consultant RBC (6 yrs); FMFC (4 yrs); NGO education volunteer; 16th & 17th MP.",
       "educationalBackground": "- BA (Punjab Univ).",
       "workExperience": "- Banking & finance\n- NGO education work\n- parliamentarian.",
-      "otherInformation": "- Finance background\n- Dhomey rep."
+      "otherInformation": "- Finance background\n- Dhomey rep.",
+      "status": "Current MP"
     },
     {
       "id": 36,
@@ -532,13 +567,14 @@
       "ageGroup": "Above 55",
       "gender": "Male",
       "origin": "Dhomey, Tibet",
-      "currentAddress": "—",
+      "currentAddress": "Bhandhara",
       "occupation": "MP, 17th TPiE",
       "representing": "Dhomey",
       "briefBio": "Born 1 Jan 1962; school CST Mussoorie (1985); served 12 yrs SFF & 2 yrs security guard for H.H. Dalai Lama; local & traders’ association leader; MP (17th).",
       "educationalBackground": "- CST Mussoorie.",
       "workExperience": "- SFF service\n- Local Assembly chair 12 yrs\n- association president\n- committee member.",
-      "otherInformation": "- Long community service\n- Dhomey focus."
+      "otherInformation": "- Long community service\n- Dhomey focus.",
+      "status": "Current MP"
     },
     {
       "id": 37,
@@ -547,13 +583,14 @@
       "ageGroup": "46-55",
       "gender": "Female",
       "origin": "Dharamsala, India",
-      "currentAddress": "—",
+      "currentAddress": "Dharamsala, Himachal Pradesh, India",
       "occupation": "MP, 17th TPiE",
       "representing": "Dhomey",
       "briefBio": "Born 24 Jan 1971 Dharamsala; TCV school; served RTWA, TWA & Dhomey Association; led peace march 2005; 14th–17th MP.",
       "educationalBackground": "- Schooling TCV Dharamsala.",
       "workExperience": "- RTWA, Central TWA, Dhomey Assoc.\n- MP service.",
-      "otherInformation": "- Women’s rights activist\n- peace advocate."
+      "otherInformation": "- Women’s rights activist\n- peace advocate.",
+      "status": "Current MP"
     },
     {
       "id": 38,
@@ -562,13 +599,14 @@
       "ageGroup": "36-45",
       "gender": "Male",
       "origin": "Rebgong (Rongwo), Tibet",
-      "currentAddress": "—",
+      "currentAddress": "Dharamsala, Himachal Pradesh, India",
       "occupation": "MP, 17th TPiE",
       "representing": "Dhomey",
       "briefBio": "Born 18 Nov 1981 Rebgong; exile 1998; studied social communication Delhi; secretary to Ven. Jigme Rinpoche; Welfare Officer Dhomey Assoc.; MP (17th).",
       "educationalBackground": "- School TCV\n- social communication studies Delhi.",
       "workExperience": "- Secretary & Director Kunphen Rigney School\n- Welfare Officer\n- MP.",
-      "otherInformation": "- Coordinator Dengyab Writers’ Association."
+      "otherInformation": "- Coordinator Dengyab Writers’ Association.",
+      "status": "Current MP"
     },
     {
       "id": 39,
@@ -577,13 +615,14 @@
       "ageGroup": "36-45",
       "gender": "Male",
       "origin": "Ngaba region, Tibet",
-      "currentAddress": "—",
+      "currentAddress": "Dharamsala, Himachal Pradesh, India",
       "occupation": "MP, 17th TPiE",
       "representing": "Dhomey",
       "briefBio": "Born 21 Sep 1982 Ngaba; Geshe degree (2011); NGO leader Mundgod; editor Tibetan Parliamentarian; 16th & 17th MP.",
       "educationalBackground": "- Geshe degree (2011).",
       "workExperience": "- NGO leadership\n- editor\n- association executive.",
-      "otherInformation": "- Published articles\n- Dhomey representative."
+      "otherInformation": "- Published articles\n- Dhomey representative.",
+      "status": "Current MP"
     },
     {
       "id": 40,
@@ -592,13 +631,14 @@
       "ageGroup": "36-45",
       "gender": "Male",
       "origin": "Chenza, Amdo (Tibet)",
-      "currentAddress": "—",
+      "currentAddress": "Dharamsala, Himachal Pradesh, India",
       "occupation": "MP, 17th TPiE",
       "representing": "Dhomey",
       "briefBio": "Born 1 Feb 1989 Chenza; TCV Suja & Gopalpur; BA PolSci (Ramjas DU 2017); MA PolSci (IGNOU 2018); RTYC Secretary; MP (17th).",
       "educationalBackground": "- BA PolSci (DU)\n- MA PolSci (IGNOU).",
       "workExperience": "- Youth leader\n- Global Tibetan People’s Movement\n- Local Assembly Dharamsala.",
-      "otherInformation": "- Young representative\n- focus on education & youth."
+      "otherInformation": "- Young representative\n- focus on education & youth.",
+      "status": "Current MP"
     },
     {
       "id": 41,
@@ -607,13 +647,14 @@
       "ageGroup": "36-45",
       "gender": "Male",
       "origin": "Kathmandu, Nepal",
-      "currentAddress": "USA (North and South Americas)",
+      "currentAddress": "Minnesota, US",
       "occupation": "MP, 17th TPiE",
       "representing": "North and South Americas",
       "briefBio": "Born 1981 Kathmandu; moved to USA (1999); founded Students for a Free Tibet branch; ex‑President Tibetan Youth Congress.",
       "educationalBackground": "- BA Colorado College\n- MA University of Minnesota (ongoing).",
       "workExperience": "- President TYC\n- diaspora youth leadership.",
-      "otherInformation": "- Advocates youth activism internationally."
+      "otherInformation": "- Advocates youth activism internationally.",
+      "status": "Current MP"
     },
     {
       "id": 44,
@@ -622,13 +663,14 @@
       "ageGroup": "46-55",
       "gender": "Male",
       "origin": "Tibet",
-      "currentAddress": "Dharamsala, Himachal Pradesh, India",
+      "currentAddress": "Paris, France",
       "occupation": "MP, 17th TPiE",
       "representing": "Europe and Africa",
       "briefBio": "Born 1971; Buddhist scholar of Prajnaparamita; elected to 17th TPiE.",
       "educationalBackground": "- Advanced monastic studies.",
       "workExperience": "- Religious teaching & administration.",
-      "otherInformation": "- Cultural preservation focus."
+      "otherInformation": "- Cultural preservation focus.",
+      "status": "Current MP"
     },
     {
       "id": 45,
@@ -643,7 +685,8 @@
       "briefBio": "Born 26 Jul 1985; MPhil Political Science (Madras Christian College); student leader & researcher (TCHRD, Tibet Watch); Queensland campaigner 2018‑20; MP (17th).",
       "educationalBackground": "- MPhil Political Science (MCC Chennai).",
       "workExperience": "- Student leader\n- research & advocacy roles\n- MP.",
-      "otherInformation": "- Youth mobilizer & human rights advocate."
+      "otherInformation": "- Youth mobilizer & human rights advocate.",
+      "status": "Current MP"
     },
     {
       "id": 46,
@@ -653,12 +696,13 @@
       "gender": "Male",
       "origin": "Dhomey",
       "currentAddress": "Mysore",
-      "occupation": "Journalist, Voice of Tibet",
+      "occupation": "Lawyer & Researcher",
       "representing": "Dhomey",
-      "briefBio": "Lharong escaped to India at age eight and studied at Tibetan Homes schools. A top student and active youth leader, he has founded student bodies, led major events, and worked to promote civic engagement, education, and youth empowerment.",
-      "educationalBackground": "• Schooling at Tibetan Homes Foundation, Mussoorie & Rajpur\n• Topped CBSE Class XII board exams\n• Recipient of Gaden Phodrang Student Merit Award\n•  Masters in LLM",
-      "workExperience": "• Founding member & first president of AITSAM\n• Organized Tibet Day exhibition at Mysore University\n• General Secretary, International Students’ Forum\n• Represented Tibet in foreign student conferences\n• Co-founded Regional Tibetan Legal Association, Mysore; served as vice-president\n• Organized first legal panel on youth challenges & international cultural exchange programs",
-      "otherInformation": "• Co-founded school environmental club\n• Organized creative Tibetan contests\n• Founded Amay Norbu Book Club\n• Organized fundraising events for civic causes\n• Member of Youth for Democracy; helped host MP debate sessions across settlements"
+      "briefBio": "Young Tibetan legal scholar and community leader raised in exile; known for student leadership, youth advocacy, and democracy-building work.",
+      "educationalBackground": "- Tibetan Homes School, Mussoorie (School Prefect, House Captain; Gaden Phodrang Merit Award)\n- B.A. LL.B. (Hons.), Karnataka State Law University\n- LL.M.\n- Taught Indian Constitution at Dalai Lama Institute for Higher Education",
+      "workExperience": "- Led Mysore Tibetan Students Association\n- President, South Zone Tibetan Legal Association\n- Founder & President, All India Tibetan Student Associations Meet\n- Co-founder, Shenphen Charitable Trust (COVID period)\n- First Director, Mysore Tibetan Community Center\n- Reporter, Voice of Tibet\n- Speaker/trainer at major Tibetan youth and academic conferences\n- V-TAG Coordinator for South India\n- Ran democracy surveys, reports & hosted 2021 Sikyong/Chithue debates",
+      "otherInformation": "- One of CTA's \"Five Youth Ambassadors Under 35\"\n- Participant, Five-Fifty Youth Forum\n- Active in global youth advocacy & international conferences\n- Strong focus on strengthening Tibetan democracy, legal advocacy, and youth empowerment\n- Vision: voice for Tibetans inside Tibet, democratic reforms, legal advocacy, and grassroots youth leadership",
+      "status": ""
     },
     {
       "id": 47,
@@ -673,7 +717,8 @@
       "briefBio": "Former TYC President known for strengthening global youth mobilisation for Tibet through democratic and nonviolent advocacy. Recognised for shaping exile-youth leadership and elevating the Tibetan cause internationally.",
       "educationalBackground": "• Schooling at TCV Ladakh and TCV Gopalpur\n• B.A. (Hons) Political Science, Kirori Mal College, University of Delhi\n• Master’s in Public Policy, O.P. Jindal Global University",
       "workExperience": "• President, Tibetan Youth Congress (2019; re-elected 2022)\n• President, Foreign Student Association, Kirori Mal College\n• President, Tibetan Youth Hostel Student Council, Delhi\n• General Secretary, Regional Tibetan Youth Congress (Rohini)",
-      "otherInformation": "• Former Prefect & House Captain in TCV schools\n• Founding member, Lhaksam Welfare Group\n• Longstanding youth leader committed to community welfare and civic engagement"
+      "otherInformation": "• Former Prefect & House Captain in TCV schools\n• Founding member, Lhaksam Welfare Group\n• Longstanding youth leader committed to community welfare and civic engagement",
+      "status": ""
     },
     {
       "id": 48,
@@ -688,7 +733,8 @@
       "briefBio": "Born in Pemakoed, Tibet, Rigzen studied in exile in Darjeeling. He has served in many senior roles in the Central Tibetan Administration, including Representative, Secretary, Acting Secretary, and Settlement Officer across India.",
       "educationalBackground": "• Completed schooling in Darjeeling, India",
       "workExperience": "• Representative of H.H. the Dalai Lama for Central & Eastern Europe\n• Secretary, Department of Home, CTA\n• Acting Secretary, Department of Health\n• Acting Secretary, Department of Home (2016–2017)\n• Settlement Officer in multiple Tibetan settlements\n• Joined CTA in 1997 as Deputy Secretary, Kashag Secretariat",
-      "otherInformation": "Joined CTA service in January 1997"
+      "otherInformation": "Joined CTA service in January 1997",
+      "status": ""
     },
     {
       "id": 49,
@@ -703,7 +749,8 @@
       "briefBio": "Born in Dharamshala and originally from Dingri Shelkar, she has served nearly 30 years in the CTA. She is known for her strong administrative skills, field experience, and commitment to community welfare and good governance.",
       "educationalBackground": "• Completed schooling at Upper TCV School, Dharamshala\n• Graduated from the University of Vermont, USA",
       "workExperience": "• 28 years of CTA service (1992–2022)\n• Served in: Kashag Office, Permanent Strategy Committee, Department of Home, Department of Security, Department of Personnel & Estate\n• Chief Representative Office, Bangalore\n• Settlement Officer, Darjeeling Tibetan Settlement\n• Settlement Officer, Tezu Dhargyeling Tibetan Settlement",
-      "otherInformation": "• Focus on integrity, transparent administration, and public service within the Tibetan democratic framework"
+      "otherInformation": "• Focus on integrity, transparent administration, and public service within the Tibetan democratic framework",
+      "status": ""
     },
     {
       "id": 50,
@@ -718,7 +765,8 @@
       "briefBio": "A dedicated community member committed to service, unity, and compassion. He has long been engaged with the Tibetan community across the Americas and aims to strengthen solidarity and preserve Tibetan identity through transparent and value-based leadership.",
       "educationalBackground": "• Not specified",
       "workExperience": "• Implied long-term community service\n• Leadership roles within the Tibetan diaspora in the Americas",
-      "otherInformation": "• Campaign goals include strengthening unity, upholding Tibetan values, promoting transparent leadership, and contributing to the Tibetan cause with humility\n• Encourages Tibetans in the Americas to work together for a stronger, more connected community"
+      "otherInformation": "• Campaign goals include strengthening unity, upholding Tibetan values, promoting transparent leadership, and contributing to the Tibetan cause with humility\n• Encourages Tibetans in the Americas to work together for a stronger, more connected community",
+      "status": ""
     },
     {
       "id": 51,
@@ -733,7 +781,8 @@
       "briefBio": "A seasoned Psychiatric/Mental Health Registered Nurse with strong clinical experience, particularly in Electroconvulsive Therapy (ECT). Also an active community educator and organizer, combining medical expertise with grassroots engagement to promote mental health awareness and support.",
       "educationalBackground": "• Bachelor of Science (Registered Nursing)\n• Associate Degree in Nursing",
       "workExperience": "• Psychiatric/Mental Health RN\n• Experience in ECT care and patient management\n• Community mental health educator & organizer",
-      "otherInformation": "• Serving our Youth, Preserving our Heritage, Strengthening our Movement."
+      "otherInformation": "• Serving our Youth, Preserving our Heritage, Strengthening our Movement.",
+      "status": ""
     },
     {
       "id": 52,
@@ -748,7 +797,8 @@
       "briefBio": "A committed community worker actively involved in Tibetan youth, cultural, and social initiatives for over a decade. Known for leadership roles in Chandigarh and continuous service to Tibetan associations.",
       "educationalBackground": "• Not specified",
       "workExperience": "• President, Tibetan Youth Congress Chandigarh (2009 & 2010)\n• President, Tibetan Freedom Movement\n• Executive Member, Buddhist Association Chandigarh (2011–present)\n• Member, Minorities Committee, Govt. of India, Punjab (2013–present)\n• Organised Tibetan cultural song & dance program (2020)\n• Organised ethnic self-introduction events\n• Workshops on H.H. the Dalai Lama’s Four Commitments (since 2018)\n• Volunteer for First Central Tibet Youth Association event, Dharamsala (2025)\n• Active involvement in TYC & TWA activities (2008–present)\n• Assisted in organising Parliamentary tours & official visits in Chandigarh",
-      "otherInformation": "• Strong focus on cultural preservation and youth engagement"
+      "otherInformation": "• Strong focus on cultural preservation and youth engagement",
+      "status": ""
     },
     {
       "id": 53,
@@ -763,7 +813,8 @@
       "briefBio": "",
       "educationalBackground": "",
       "workExperience": "",
-      "otherInformation": ""
+      "otherInformation": "",
+      "status": ""
     },
     {
       "id": 54,
@@ -778,7 +829,8 @@
       "briefBio": "Waho Tenzin is a Tibetan-diaspora entrepreneur and community leader. He began as a road-construction worker in the 1970s and later built Tenzin Construction Company into one of the largest firms in Himachal Pradesh. He is known for both business success and long-term community service.",
       "educationalBackground": "• Not specified in the provided information",
       "workExperience": "• Owner & CEO, Tenzin Construction Company\n• Oversaw major construction projects including universities, hospitals, hotels, and government works\n• Served as Chairman/President of Shimla Local Tibetan Assembly for over 20 years",
-      "otherInformation": "• Associated with Waho Tenzin Restaurant and Tenzin Hospital\n• Known for long involvement in public service and community leadership"
+      "otherInformation": "• Associated with Waho Tenzin Restaurant and Tenzin Hospital\n• Known for long involvement in public service and community leadership",
+      "status": ""
     },
     {
       "id": 55,
@@ -793,7 +845,8 @@
       "briefBio": "Originally from Rewoche and based in Dharamshala, she has served the Tibetan community for over 30 years. She has taken on major leadership roles in educational, social, and business organizations, showing a lifelong commitment to unity and community welfare.",
       "educationalBackground": "• Not specified",
       "workExperience": "• Teacher at Yongling School, Sambhota School Shillong & Nainital (1990–1997)\n• Public Relations Officer, Dharamsala Tibetan Shopkeepers Welfare Society (2002–2006)\n• President, Tibetan Shopkeepers Welfare Society (4 terms: 2009–2021; re-elected 2025)\n• General Secretary, Mcleod Ganj PTA (2008–2010)\n• Executive Member, Indo-Tibet Friendship Association (2010–present)\n• Member, Vice President & President, Dharamshala Local Tibetan Assembly (2010–2019)\n• President, Tibetan Chamber of Commerce, Dharamshala Zone (2007–2010)\n• Vice President, Central Tibetan Chamber of Commerce (2011–2017)\n• Vice President, Central Dho-toe Cholkha (2012–2018, 2022–present)",
-      "otherInformation": "• Over 30 years of community service\n• Advocates for unity, accountability & community welfare\n• Committed to serving with integrity and compassion"
+      "otherInformation": "• Over 30 years of community service\n• Advocates for unity, accountability & community welfare\n• Committed to serving with integrity and compassion",
+      "status": ""
     },
     {
       "id": 56,
@@ -808,7 +861,8 @@
       "briefBio": "",
       "educationalBackground": "",
       "workExperience": "",
-      "otherInformation": ""
+      "otherInformation": "",
+      "status": ""
     },
     {
       "id": 57,
@@ -823,7 +877,8 @@
       "briefBio": "Born in Riwoche, Tibet and now based in Paris, he has over 22 years of dedicated service in Tibetan community organizations across Europe and Africa. He is known for his commitment to unity, cultural preservation, and advocacy for the Tibetan cause.",
       "educationalBackground": "• Not specified",
       "workExperience": "• Former President, Tibetan Community of France\n• Former Vice-Chair, Nepal Chodjor Local Assembly\n• Former Assistant Secretary, Central Executive Committee, Dokham Chushi Gangdruk\n• Former President, France Local Chushi Gangdruk\n• Local Sikyong & Chithue Election Committee Member\n• Election Committee Member, Central & Local Chushi Gangdruk",
-      "otherInformation": "• Committed to representing Tibetans in Europe & Africa without discrimination\n• Advocates for social harmony, cultural development & strengthening the Tibetan movement"
+      "otherInformation": "• Committed to representing Tibetans in Europe & Africa without discrimination\n• Advocates for social harmony, cultural development & strengthening the Tibetan movement",
+      "status": ""
     },
     {
       "id": 58,
@@ -838,7 +893,8 @@
       "briefBio": "Born on 15 March 1974 in Arunachal Pradesh, he is a long-serving community leader with decades of contribution to Tibetan welfare, administration, and leadership. Known for steady service, he has led the Pemakoe Welfare Society across multiple terms and remains active in U-Tsang regional affairs.",
       "educationalBackground": "• Schooling at CST Darjeeling (Secondary & Senior Secondary)\n• High School Diploma in General Studies (1988–1990)\n• All India Senior School Certificate (Humanities) (1990–1992)",
       "workExperience": "• 14+ years service in CTA Delhi (1992–2006)\n• President, Pemakoe Welfare Society (2009–2013; 2016–present)\n• Executive Member, Central U-Tsang Cholkha Committee (2019–present)\n• Led welfare projects, fund management, community events & volunteer mobilization",
-      "otherInformation": "• Active representative of Pemakoe community across India\n• Strong focus on welfare, governance & community unity"
+      "otherInformation": "• Active representative of Pemakoe community across India\n• Strong focus on welfare, governance & community unity",
+      "status": ""
     },
     {
       "id": 59,
@@ -853,7 +909,8 @@
       "briefBio": "A dedicated researcher with strong academic training in History and long-standing involvement in youth leadership and community organizations. Active in research and Tibetan advocacy through academic and institutional work.",
       "educationalBackground": "• PhD, Central University of Gujarat (2020)\n• MPhil, Central University of Gujarat (2014)\n• Master’s in History, M.S. University, Baroda\n• B.A. (Hons) History, University of Delhi",
       "workExperience": "• Researcher, Tibet Watch Research Centre (2018–present)\n• Organizing Committee Member, 5th International Rangzen Conference (2018)\n• Education Secretary, RIYC Dharamshala (2015–2018)\n• Member, Students’ Council, CUG (2013–2014)\n• President, RIYC Baroda (2011–2012)\n• President, RIYC Rohini, Delhi (2009–2010)",
-      "otherInformation": ""
+      "otherInformation": "",
+      "status": ""
     },
     {
       "id": 60,
@@ -868,7 +925,8 @@
       "briefBio": "",
       "educationalBackground": "",
       "workExperience": "",
-      "otherInformation": ""
+      "otherInformation": "",
+      "status": ""
     },
     {
       "id": 61,
@@ -883,7 +941,8 @@
       "briefBio": "",
       "educationalBackground": "",
       "workExperience": "",
-      "otherInformation": ""
+      "otherInformation": "",
+      "status": ""
     },
     {
       "id": 62,
@@ -898,7 +957,8 @@
       "briefBio": "Raised in a politically active Tibetan family, he was inspired by his father’s service and commitment to unity at Hunsur Rabgayling. Known for strong oratory and firm yet calm leadership, he has become a respected voice in Tibetan public affairs in India and abroad.",
       "educationalBackground": "• Completed higher education in Bangalore\n• Served as President, Regional Tibetan Youth Congress during student years",
       "workExperience": "• Hunsur Woolen Handicraft Center (Dept. of Finance) – admin & finance roles\n• Manager, Hotel Tibet, Dharamshala\n• Interim CEO, Federation of Tibetan Cooperatives India Ltd. (FTCI)\n• Vice President, Tibetan Association of Northern California (TANC)\n• President & leading member, General Public Advocacy Body\n• Led hunger strikes & sit-ins advocating reinstatement of the Tibetan Judiciary\n• Key contributor to restoring the Tibetan Judiciary & strengthening CTA democratic accountability",
-      "otherInformation": "• Deep understanding of the three pillars of Tibetan democracy\n• Advocates unity beyond regional/sectarian lines\n• Candidate for 2026 Tibetan Parliament-in-Exile (North & South Americas seat)\n• Pledges to promote integrity, transparency & unity among Tibetans worldwide"
+      "otherInformation": "• Deep understanding of the three pillars of Tibetan democracy\n• Advocates unity beyond regional/sectarian lines\n• Candidate for 2026 Tibetan Parliament-in-Exile (North & South Americas seat)\n• Pledges to promote integrity, transparency & unity among Tibetans worldwide",
+      "status": ""
     },
     {
       "id": 63,
@@ -913,7 +973,8 @@
       "briefBio": "",
       "educationalBackground": "",
       "workExperience": "",
-      "otherInformation": ""
+      "otherInformation": "",
+      "status": ""
     },
     {
       "id": 64,
@@ -928,7 +989,8 @@
       "briefBio": "",
       "educationalBackground": "",
       "workExperience": "",
-      "otherInformation": ""
+      "otherInformation": "",
+      "status": ""
     },
     {
       "id": 65,
@@ -943,7 +1005,8 @@
       "briefBio": "",
       "educationalBackground": "",
       "workExperience": "",
-      "otherInformation": ""
+      "otherInformation": "",
+      "status": ""
     },
     {
       "id": 66,
@@ -958,7 +1021,8 @@
       "briefBio": "Sonam Dorjee is a committed community worker and long-time CTA staff member. Born in Tibet, he worked as an accountant before coming to India in 2000. For over two decades, he has actively served the Tibetan community through leadership, public service, and strong involvement in Rangtsen and Future Tibet advocacy.",
       "educationalBackground": "• Senior school passed\n• Studied English & Tibetan at Sherab Gyatsel Loling (2 years)",
       "workExperience": "• Accountant in Tibet – 3 years\n• Department of Security, CTA – 18 years\n• Vice President, Newcomer Association, Dehradun – 2 years\n• Secretary & Accountant, Sherap Sangpo Society – 6 months",
-      "otherInformation": "• Active Rangtsen (Independence) advocate\n• Committed Future Tibet activist\n• Strong involvement in newcomer support & community welfare"
+      "otherInformation": "• Active Rangtsen (Independence) advocate\n• Committed Future Tibet activist\n• Strong involvement in newcomer support & community welfare",
+      "status": ""
     },
     {
       "id": 67,
@@ -973,7 +1037,8 @@
       "briefBio": "Born in 1962 in Leh, Ladakh, Acharya Yeshi Phuntsok has decades of experience in Tibetan politics, education, advocacy, and international engagement. He is known for his leadership in political parties, academic institutions, and global Tibet support networks.",
       "educationalBackground": "• Graduated from CST Shimla\n• Acharya Degree, CIHTS Varanasi (1988)",
       "workExperience": "• Served at CIHTS (1989–1991)\n• Academic administrator & Tibetan language teacher, TCV Suja (1992–1996)\n• Joint Secretary, National Democratic Party of Tibet (1994–1996)\n• President, National Democratic Party of Tibet (1997–2004)\n• Organizer, 1st International Tibet Support Group Meeting, Dharamshala (1989)\n• President, Ngari Chithun Association\n• Executive Programme Officer, Tibetan Parliamentary & Policy Research Centre\n• Attended UNCHR Sub-Committee Session, Geneva (2000)\n• Attended multiple national & international conferences (1997–2004)",
-      "otherInformation": "• Founder, Bharat Tibet Sahyog Manch (1999)\n• Board Member, Tibetan Culture (2013)\n• Board Member, Central University of Tibetan Studies, Varanasi (2013)\n• Member, Maha Buddhist Society of India (since 2014)\n• Advisor, Sowarigpa Tibetan Medicine (since 2015)\n• Advisor, ITFA Dharamshala (since 2015)\n• Elected Member of 14th & 15th Tibetan Parliament-in-Exile"
+      "otherInformation": "• Founder, Bharat Tibet Sahyog Manch (1999)\n• Board Member, Tibetan Culture (2013)\n• Board Member, Central University of Tibetan Studies, Varanasi (2013)\n• Member, Maha Buddhist Society of India (since 2014)\n• Advisor, Sowarigpa Tibetan Medicine (since 2015)\n• Advisor, ITFA Dharamshala (since 2015)\n• Elected Member of 14th & 15th Tibetan Parliament-in-Exile",
+      "status": ""
     },
     {
       "id": 68,
@@ -988,7 +1053,8 @@
       "briefBio": "",
       "educationalBackground": "",
       "workExperience": "",
-      "otherInformation": ""
+      "otherInformation": "",
+      "status": ""
     },
     {
       "id": 69,
@@ -1003,7 +1069,8 @@
       "briefBio": "A long-serving community leader from Kamrao Tibetan Settlement, deeply dedicated to the Tibetan cause. He has held multiple leadership roles supporting community welfare, cultural preservation, and public service. His founding of the Tibetan Himalayan Public School reflects his strong commitment to education and youth development.",
       "educationalBackground": "• Acharya degree, Varanasi",
       "workExperience": "• Three-term President, Regional Tibetan Parliament (Bhod Chithue)\n• Three-term Executive Member, Chul-Che Gandu\n• President, Tibetan Himalayan Public School\n• Founder, Tibetan Himalayan Public School",
-      "otherInformation": "• Strong advocate for education, culture & community welfare\n• Promotes opportunities for Tibetan & Himalayan children"
+      "otherInformation": "• Strong advocate for education, culture & community welfare\n• Promotes opportunities for Tibetan & Himalayan children",
+      "status": ""
     },
     {
       "id": 70,
@@ -1018,7 +1085,8 @@
       "briefBio": "Born in Amdo (Nagchu Prefecture, Kham), came into exile in 2009. She now lives in Dharamsala and teaches at Norbulingka Institute. She has strong academic training in Tibetan language, philosophy, and culture, and is committed to preserving Tibetan heritage.",
       "educationalBackground": "• Primary School – Amdo County School\n• Middle & High School – Nagchu City School\n• Teacher Training Course – Lhasa Teachers College\n• Sherab Gatsel School (in exile)\n• Advanced studies in Buddhist philosophy, grammar, poetry & history – Gelugpa Nunnery",
       "workExperience": "• Teaching Faculty, Norbulingka Institute (2022–present)\n• Presented research paper at Young Researchers Conference, Tibet Policy Institute\n• Participated in several academic seminars & conferences\n• Trilingual training (Tibetan, Chinese, English) from middle school",
-      "otherInformation": "• Focus areas: preserving Tibetan language, studying Chinese politics, bringing Tibetan issues to global platforms"
+      "otherInformation": "• Focus areas: preserving Tibetan language, studying Chinese politics, bringing Tibetan issues to global platforms",
+      "status": ""
     },
     {
       "id": 71,
@@ -1033,7 +1101,8 @@
       "briefBio": "A dynamic Tibetan professional dedicated to youth empowerment, community development, and public service. Her leadership roles across Delhi, Dharamshala, and Sonada reflect her commitment, compassion, and competence. Her international academic training strengthens her global perspective and community service.",
       "educationalBackground": "• Schooling – CST Paonta\n• B.A. (Hons.) English, SPM College, Delhi University\n• MSc Management Studies, Plymouth University, UK (2016–2017)\n• MA Development Studies, IDS, University of Sussex, UK (2018–2019)",
       "workExperience": "• Vice President, Student Council (TCV Youth Hostel Delhi) & RTYC Rohini (2006–2007)\n• Awarded “Best Girl” of TCV Youth Hostel Delhi (2007)\n• Organisation & Information Secretary, TYC Head Office (2007–2013)\n• Central Executive Member, Tibetan Youth Congress\n• Settlement Officer, Sonada Tashiling (2019–2022)\n• Led welfare projects, secured development funding & directed COVID-19 relief efforts",
-      "otherInformation": "• Advocates for education, gender equality & sustainable development\n• Strong promoter of youth participation & Tibetan unity"
+      "otherInformation": "• Advocates for education, gender equality & sustainable development\n• Strong promoter of youth participation & Tibetan unity",
+      "status": ""
     },
     {
       "id": 72,
@@ -1048,7 +1117,8 @@
       "briefBio": "Born in Dharamsala and originally from Bawa (Dho-Toe), she has dedicated her career to education, youth welfare, and cultural preservation. Based in Mussoorie, she has worked across multiple settlements and schools, focusing on empowerment, heritage, and community well-being.",
       "educationalBackground": "• Master’s in Economics – HNB Garhwal University, Srinagar\n• Bachelor’s in Political Science & Economics – Punjab University, Chandigarh\n• Schooling – Tibetan Homes Foundation, Mussoorie",
       "workExperience": "• Senior Managerial Dept. Head (Sponsorship, Projects & Alumni), THF Mussoorie\n• Secretary & Treasurer – Ngoenga Tibetan Special School\n• Translator & Radio Presenter – Gaweylon Tibetan Radio\n• Projects & Sponsorship Assistant – Kham Kathok Tibetan Settlement, Sataun\n• Project & Secretary Assistant – Phuntsogling Tibetan Settlement, Odisha\n• Languages: Fluent in English, Tibetan & Hindi",
-      "otherInformation": "• Focus areas: youth & women empowerment, cultural preservation, community unity\n• Campaign vision: “Empower, Preserve, Unite”"
+      "otherInformation": "• Focus areas: youth & women empowerment, cultural preservation, community unity\n• Campaign vision: “Empower, Preserve, Unite”",
+      "status": ""
     },
     {
       "id": 73,
@@ -1063,7 +1133,8 @@
       "briefBio": "",
       "educationalBackground": "",
       "workExperience": "",
-      "otherInformation": ""
+      "otherInformation": "",
+      "status": ""
     },
     {
       "id": 74,
@@ -1078,7 +1149,8 @@
       "briefBio": "A long-serving community worker with extensive experience in Tibetan cooperative institutions, youth leadership, and community organizations. Known for his dedicated service in India and North America.",
       "educationalBackground": "• Not specified",
       "workExperience": "• President, Regional Tibetan Youth Congress, Bangalore (1992–1993)\n• Manager, Hunsur Co-operative Handicraft Centre (1994–1995)\n• Cashier & Production Manager, Hunsur Woolen Handicraft (Dept. of Finance) (1995–1997)\n• General Manager, Hotel Tibet, Dharamsala (1997–2006)\n• Interim CEO, FTCI (2004–2005)\n• Board Member, Tibetan Association of Northern California; Vice President (2018–2020)",
-      "otherInformation": "• Known for long-standing service in cooperatives and diaspora organizations"
+      "otherInformation": "• Known for long-standing service in cooperatives and diaspora organizations",
+      "status": ""
     },
     {
       "id": 75,
@@ -1093,7 +1165,8 @@
       "briefBio": "",
       "educationalBackground": "",
       "workExperience": "President of the Tibetan Newcomers Welfare Associattion",
-      "otherInformation": ""
+      "otherInformation": "",
+      "status": ""
     },
     {
       "id": 76,
@@ -1108,7 +1181,8 @@
       "briefBio": "",
       "educationalBackground": "",
       "workExperience": "",
-      "otherInformation": ""
+      "otherInformation": "",
+      "status": ""
     },
     {
       "id": 77,
@@ -1123,7 +1197,8 @@
       "briefBio": "",
       "educationalBackground": "",
       "workExperience": "",
-      "otherInformation": ""
+      "otherInformation": "",
+      "status": ""
     },
     {
       "id": 78,
@@ -1138,7 +1213,8 @@
       "briefBio": "Born in Tibet and later escaped to India, he has dedicated 16 years to Tibetan freedom work, community service, youth engagement, and international advocacy. His travels across settlements and colleges in Asia and North America have given him deep insight into the needs of Tibetans inside Tibet and in the diaspora.",
       "educationalBackground": "• Not specified",
       "workExperience": "• Joined Raise the Tibetan Flag campaign (2008); distributed 5,000+ flags\n• Initiated Talk Tibet weekly awareness forum (2008–2009)\n• General Secretary, RTYC Dharamsala (2009–2013) — led major cultural, social & political programs; chapter awarded Best RTYC among 84 worldwide\n• General Secretary, TYC Central Executive Committee (2013–2019) — strengthened leadership & reunited chapters in India & USA\n• President, RTYC New York & New Jersey (2020–2022) — initiated first Asian American Alliance Conference\n• Member, Future of Tibet initiative (2022–2023); co-organized global conferences\n• Co-founder, Yarlung Center NYC (2024)",
-      "otherInformation": "• Strong commitment to H.H. the Dalai Lama’s guidance & the CTA\n• Focus on youth empowerment, cultural preservation & global Tibetan advocacy"
+      "otherInformation": "• Strong commitment to H.H. the Dalai Lama’s guidance & the CTA\n• Focus on youth empowerment, cultural preservation & global Tibetan advocacy",
+      "status": ""
     },
     {
       "id": 79,
@@ -1153,7 +1229,8 @@
       "briefBio": "",
       "educationalBackground": "",
       "workExperience": "Head of Gangden Jangtse School",
-      "otherInformation": ""
+      "otherInformation": "",
+      "status": ""
     },
     {
       "id": 80,
@@ -1168,7 +1245,8 @@
       "briefBio": "",
       "educationalBackground": "",
       "workExperience": "",
-      "otherInformation": ""
+      "otherInformation": "",
+      "status": ""
     },
     {
       "id": 81,
@@ -1183,7 +1261,8 @@
       "briefBio": "",
       "educationalBackground": "",
       "workExperience": "",
-      "otherInformation": ""
+      "otherInformation": "",
+      "status": ""
     },
     {
       "id": 82,
@@ -1198,7 +1277,8 @@
       "briefBio": "",
       "educationalBackground": "",
       "workExperience": "",
-      "otherInformation": ""
+      "otherInformation": "",
+      "status": ""
     },
     {
       "id": 83,
@@ -1213,7 +1293,8 @@
       "briefBio": "",
       "educationalBackground": "",
       "workExperience": "Advocate of Tibetan Exile Laws & Rules\nFormer journalist of VOA and The Tibet Express.\nEducation Director of TCC, Belgium",
-      "otherInformation": ""
+      "otherInformation": "",
+      "status": ""
     },
     {
       "id": 84,
@@ -1228,7 +1309,8 @@
       "briefBio": "",
       "educationalBackground": "",
       "workExperience": "General Secretary of Chu-Shi-Gangdruk",
-      "otherInformation": ""
+      "otherInformation": "",
+      "status": ""
     },
     {
       "id": 85,
@@ -1243,7 +1325,8 @@
       "briefBio": "",
       "educationalBackground": "",
       "workExperience": "",
-      "otherInformation": ""
+      "otherInformation": "",
+      "status": ""
     },
     {
       "id": 86,
@@ -1258,7 +1341,8 @@
       "briefBio": "Born in Sumpa, Nagshod, Driru, now residing in Dharamshala. A young and active Tibetan lawyer dedicated to justice, human rights, and the Tibetan freedom movement. Since arriving in India in 2006, he has grown from a student activist to a respected legal advocate and community leader, fluent in Tibetan and English.",
       "educationalBackground": "• Class 10 – TCV Suja (2013)\n• Class 12 (Arts) – TCV Suja (2015)\n• BA.LLB – Karnataka Law School (2015–2021)\n• Tibetan Exile Lawyer’s License (2018)",
       "workExperience": "• President, Students’ Rights Association, TCV Suja\n• Led Solidarity for Tibet activities in school\n• Chief Organizer, Peace March (Suja → Lhasa) with 100+ students (2012)\n• President, RTYC Bengaluru — reunited chapter with TYC Centrex\n• Co-organizer, 48th TYC Executive Meeting (2017)\n• Co-led major protest during BRICS Summit (Goa, 2016)\n• President, Bengaluru Tibetan Legal Association\n• Hosted Sikyong Dr. Lobsang Sangay at CMR Law School\n• Executive Member, International Law Students Association, Bengaluru\n• Executive Member, CMR Law School Students Association\n• General Coordinator, All India Tibetan Students Association Meet\n• General Coordinator, 14th Tibetan Higher Education Students’ Conference, Sera Jey\n• Shared information with Human Rights Watch & other bodies\n• Legal training & court experience in Bengaluru\n• Four-year researcher for TCHRD’s Crime Against Humanity in Driru",
-      "otherInformation": "• Committed to advancing Tibet’s independence through international law\n• Promises legal assistance to the Tibetan community\n• Lifelong dedication to the Tibetan cause\n• Campaign Slogan: Uphold Rule of Law; Strengthen Unity; Advance Tibet’s Freedom; Defend Sovereignty"
+      "otherInformation": "• Committed to advancing Tibet’s independence through international law\n• Promises legal assistance to the Tibetan community\n• Lifelong dedication to the Tibetan cause\n• Campaign Slogan: Uphold Rule of Law; Strengthen Unity; Advance Tibet’s Freedom; Defend Sovereignty",
+      "status": ""
     },
     {
       "id": 87,
@@ -1273,7 +1357,8 @@
       "briefBio": "An experienced Tibetan educator serving as the Principal of STS Bylakuppe Camp 1 School, committed to improving educational standards and student development.",
       "educationalBackground": "• MA in Educational Leadership, University of Vermont, USA\n• Bachelor of Education, Varanasi",
       "workExperience": "• Principal, STS Bylakuppe Camp 1 School",
-      "otherInformation": "Committed to advancing Tibet’s independence movement through strategic advocacy\n\nAims to provide legal assistance to the Tibetan community\n\nWill pursue legal challenges against China’s human rights violations when needed\n\nPledges lifelong service to the Tibetan cause in honor of H.H. the Dalai Lama and elder generations\n\nCampaign Slogan: Uphold the Rule of Law; Strengthen Unity and Solidarity"
+      "otherInformation": "Committed to advancing Tibet’s independence movement through strategic advocacy\n\nAims to provide legal assistance to the Tibetan community\n\nWill pursue legal challenges against China’s human rights violations when needed\n\nPledges lifelong service to the Tibetan cause in honor of H.H. the Dalai Lama and elder generations\n\nCampaign Slogan: Uphold the Rule of Law; Strengthen Unity and Solidarity",
+      "status": ""
     },
     {
       "id": 88,
@@ -1288,7 +1373,8 @@
       "briefBio": "A specialist in Chinese language, politics, and international relations with academic training from India and Taiwan. His research focuses on China’s political developments and strategic behavior.",
       "educationalBackground": "• B.A. English Language & Literature – Delhi University (2010–2013)\n• M.A. Chinese & China Studies – JNU (2014–2019)\n• Associate’s Degree in Chinese Studies – National Chengchi University, Taiwan (2019–2020)\n• Associate’s Degree in Chinese Studies – National Taiwan Normal University (2020–2022)",
       "workExperience": "• Researcher, Center for China Analysis and Strategy (April 2024–present)",
-      "otherInformation": "• Specializes in China’s politics, foreign policy & regional strategy\n• Extensive immersion experience in Taiwan for Chinese language and regional studies"
+      "otherInformation": "• Specializes in China’s politics, foreign policy & regional strategy\n• Extensive immersion experience in Taiwan for Chinese language and regional studies",
+      "status": ""
     },
     {
       "id": 89,
@@ -1303,7 +1389,8 @@
       "briefBio": "",
       "educationalBackground": "Doctrate in Philosophy",
       "workExperience": "",
-      "otherInformation": ""
+      "otherInformation": "",
+      "status": ""
     },
     {
       "id": 90,
@@ -1318,7 +1405,8 @@
       "briefBio": "An entrepreneur, translator, and author with a long-standing commitment to Tibetan advocacy. Founding member and first President of the Czech Tibet Association, now serving as its Vice President. Leads Nyampa Lharsö to promote cultural understanding and solidarity for the Tibetan cause.",
       "educationalBackground": "• Not specified",
       "workExperience": "• Founding member & first President, Czech Tibet Association\n• Vice President, Tibetan Association of Czech Republic\n• President, Call of Justice\n• Leader, Nyampa Lharsö",
-      "otherInformation": "• Dedicated to cultural preservation, international advocacy & strengthening support for Tibet"
+      "otherInformation": "• Dedicated to cultural preservation, international advocacy & strengthening support for Tibet",
+      "status": ""
     },
     {
       "id": 91,
@@ -1333,7 +1421,8 @@
       "briefBio": "Born in 1963 in Trogen, Switzerland to Tibetan refugee parents at Kinderdorf Pestalozzi. A lifelong activist, writer, and community leader deeply rooted in Tibetan culture while raised in Europe.",
       "educationalBackground": "• Studied History & Law, University of Zürich\n• Master’s degree (phil. I), University of Zürich (1997)",
       "workExperience": "• Member, Tibetan Parliament-in-Exile (Europe constituency), elected 2014\n• President, Tibetan Youth Association Europe (1986–1990)\n• Co-founder, STAFT student group (1989)\n• Co-editor, Bod Shon magazine (1989–1995)\n• Media officer, Greenpeace Switzerland\n• Spokesperson & Party Secretary, Green Party of Switzerland (Canton Zürich) (1997–1999)\n• Co-founder/Contributor to: Lamtön Refugee Advice Center, Tibetan Freedom Radio, Filming for Tibet, Tibet Film Festival (2009)\n• Conducted first Tiananmen Square protest by an exile Tibetan (2006)\n• Freelance consultant in public affairs, communications & film",
-      "otherInformation": "• Author of scholarly and advocacy works\n• Wrote monograph on Tibetan political elite (2000)\n• Contributed chapter “Between Cultures: Young Tibetans in Europe” (2003)\n• Co-authored environmental report for Greenpeace Switzerland (2006)\n• Influential voice in European Tibet advocacy, culture, media & youth engagement"
+      "otherInformation": "• Author of scholarly and advocacy works\n• Wrote monograph on Tibetan political elite (2000)\n• Contributed chapter “Between Cultures: Young Tibetans in Europe” (2003)\n• Co-authored environmental report for Greenpeace Switzerland (2006)\n• Influential voice in European Tibet advocacy, culture, media & youth engagement",
+      "status": ""
     },
     {
       "id": 92,
@@ -1348,7 +1437,8 @@
       "briefBio": "A community leader with experience in education and public service. He has worked within the Central Tibetan Administration and contributed to strengthening Tibetan community life in Australia.",
       "educationalBackground": "• Studied at SRCC, Delhi University\n• Schooling at Tibetan Homes School",
       "workExperience": "• Worked at Central Tibetan Administration\n• Former Commerce Teacher, Tibetan Homes School",
-      "otherInformation": "• Actively leads and represents the Tibetan community in Canberra"
+      "otherInformation": "• Actively leads and represents the Tibetan community in Canberra",
+      "status": ""
     },
     {
       "id": 93,
@@ -1363,7 +1453,8 @@
       "briefBio": "With over 26 years of dedicated service, she has held major leadership roles including Vice President of Tibetan Women’s Association and President of the Bharat-Tibet Support Women’s Wing. She is committed to the Umay Lam (Middle Way) approach and works for the welfare of the entire Tibetan community under the guidance of His Holiness the Dalai Lama.",
       "educationalBackground": "• Not specified",
       "workExperience": "• Former Vice President, Tibetan Women’s Association\n• President, Bharat-Tibet Support Women’s Wing\n• 26+ years in community service and grassroots welfare programs\n• Leadership roles promoting women’s empowerment and Indo-Tibet cooperation",
-      "otherInformation": "• Strong advocate of Umay Lam (Middle Way)\n• Known for long-term dedication to public service & support for vulnerable groups\n• Focus on women’s empowerment, social welfare & community unity"
+      "otherInformation": "• Strong advocate of Umay Lam (Middle Way)\n• Known for long-term dedication to public service & support for vulnerable groups\n• Focus on women’s empowerment, social welfare & community unity",
+      "status": ""
     }
   ]
 }
