@@ -153,7 +153,7 @@
     {
       "id": 11,
       "photo": "../../images/candidates/11.jpg",
-      "name": "Ms. Dolma Tsering Teykhang",
+      "name": "Dolma Tsering Teykhang",
       "ageGroup": "Above 55",
       "gender": "Female",
       "origin": "Dagne, Tibet",
@@ -168,7 +168,7 @@
     {
       "id": 12,
       "photo": "../../images/candidates/12.jpg",
-      "name": "Mr. Migyur Dorjee",
+      "name": "Migyur Dorjee",
       "ageGroup": "Above 55",
       "gender": "Male",
       "origin": "Thoding, Ngari Province, Tibet",
@@ -183,7 +183,7 @@
     {
       "id": 13,
       "photo": "../../images/candidates/13.jpg",
-      "name": "Mr. Ngodup Dorjee",
+      "name": "Ngodup Dorjee",
       "ageGroup": "Above 55",
       "gender": "Male",
       "origin": "Tibet",
@@ -198,7 +198,7 @@
     {
       "id": 14,
       "photo": "../../images/candidates/14.jpg",
-      "name": "Mr. Lobsang Gyatso Sithar",
+      "name": "Lobsang Gyatso Sithar",
       "ageGroup": "36-45",
       "gender": "Male",
       "origin": "Dharamsala (exile‑born)",
@@ -228,7 +228,7 @@
     {
       "id": 16,
       "photo": "../../images/candidates/16.jpg",
-      "name": "Mr. Rigzin Lhundup",
+      "name": "Rigzin Lhundup",
       "ageGroup": "36-45",
       "gender": "Male",
       "origin": "—",
@@ -258,7 +258,7 @@
     {
       "id": 18,
       "photo": "../../images/candidates/18.jpg",
-      "name": "Mr. Dawa Tsering",
+      "name": "Dawa Tsering",
       "ageGroup": "Above 55",
       "gender": "Male",
       "origin": "Dhingri Rachu, Tibet",
@@ -273,7 +273,7 @@
     {
       "id": 19,
       "photo": "../../images/candidates/19.jpg",
-      "name": "Ms. Tenzin Choezin",
+      "name": "Tenzin Choezin",
       "ageGroup": "25-35",
       "gender": "Female",
       "origin": "Dharamshala, India",
@@ -288,7 +288,7 @@
     {
       "id": 20,
       "photo": "../../images/candidates/20.jpg",
-      "name": "Ms. Samten Chodon",
+      "name": "Samten Chodon",
       "ageGroup": "46-55",
       "gender": "Female",
       "origin": "Bylakuppe Tibetan Settlement",
@@ -303,7 +303,7 @@
     {
       "id": 21,
       "photo": "../../images/candidates/21.jpg",
-      "name": "Mr. Dorjee Tseten",
+      "name": "Dorjee Tseten",
       "ageGroup": "36-45",
       "gender": "Male",
       "origin": "Bir, Himachal Pradesh, India",
@@ -318,7 +318,7 @@
     {
       "id": 22,
       "photo": "../../images/candidates/22.jpg",
-      "name": "Ms. Youdon Aukatsang",
+      "name": "Youdon Aukatsang",
       "ageGroup": "46-55",
       "gender": "Female",
       "origin": "—",
@@ -333,7 +333,7 @@
     {
       "id": 23,
       "photo": "../../images/candidates/23.jpg",
-      "name": "Ms. Juchen Kunchok Chodon",
+      "name": "Juchen Kunchok Chodon",
       "ageGroup": "46-55",
       "gender": "Female",
       "origin": "Bylakuppe, India",
@@ -348,7 +348,7 @@
     {
       "id": 24,
       "photo": "../../images/candidates/24.jpg",
-      "name": "Mr. Tenzin Jigdal",
+      "name": "Tenzin Jigdal",
       "ageGroup": "36-45",
       "gender": "Male",
       "origin": "Dharamsala, India",
@@ -363,7 +363,7 @@
     {
       "id": 25,
       "photo": "../../images/candidates/25.jpg",
-      "name": "Mr. Serta Tsultrim",
+      "name": "Serta Tsultrim",
       "ageGroup": "46-55",
       "gender": "Male",
       "origin": "Serta (Kham), Tibet",
@@ -378,7 +378,7 @@
     {
       "id": 26,
       "photo": "../../images/candidates/26.jpg",
-      "name": "Mr. Choephel Thupten",
+      "name": "Choephel Thupten",
       "ageGroup": "Above 55",
       "gender": "Male",
       "origin": "Bylakuppe, India",
@@ -393,7 +393,7 @@
     {
       "id": 27,
       "photo": "../../images/candidates/27.jpg",
-      "name": "Ms. Tsering Dolma",
+      "name": "Tsering Dolma",
       "ageGroup": "46-55",
       "gender": "Female",
       "origin": "Dhotoe (Tibet origin)",
@@ -408,7 +408,7 @@
     {
       "id": 28,
       "photo": "../../images/candidates/28.jpg",
-      "name": "Mr. Phurpa Dorjee Gyaldhong",
+      "name": "Phurpa Dorjee Gyaldhong",
       "ageGroup": "36-45",
       "gender": "Male",
       "origin": "Minyak, Tibet",
@@ -423,7 +423,7 @@
     {
       "id": 29,
       "photo": "../../images/candidates/29.jpg",
-      "name": "Mr. Konchok Yangphel",
+      "name": "Konchok Yangphel",
       "ageGroup": "46-55",
       "gender": "Male",
       "origin": "Dhotoe (Tibet/exile)",
@@ -438,7 +438,7 @@
     {
       "id": 30,
       "photo": "../../images/candidates/30.jpg",
-      "name": "Mr. Wangdue Dorjee",
+      "name": "Wangdue Dorjee",
       "ageGroup": "36-45",
       "gender": "Male",
       "origin": "Bir (exile Tibetan family)",
@@ -453,7 +453,7 @@
     {
       "id": 31,
       "photo": "../../images/candidates/31.jpg",
-      "name": "Ms. Pema Tso",
+      "name": "Pema Tso",
       "ageGroup": "36-45",
       "gender": "Female",
       "origin": "Amdo (Mewa), Tibet",
@@ -468,7 +468,7 @@
     {
       "id": 32,
       "photo": "../../images/candidates/32.jpg",
-      "name": "Mr. Dhondup Tashi",
+      "name": "Dhondup Tashi",
       "ageGroup": "36-45",
       "gender": "Male",
       "origin": "Labrang, Amdo Province, Tibet",
@@ -483,7 +483,7 @@
     {
       "id": 33,
       "photo": "../../images/candidates/33.jpg",
-      "name": "Ms. Tsering Lhamo",
+      "name": "Tsering Lhamo",
       "ageGroup": "Above 55",
       "gender": "Female",
       "origin": "Ngaba, Amdo, Tibet",
@@ -498,7 +498,7 @@
     {
       "id": 34,
       "photo": "../../images/candidates/34.jpg",
-      "name": "Mr. Serta Tashi Dhondup",
+      "name": "Serta Tashi Dhondup",
       "ageGroup": "46-55",
       "gender": "Male",
       "origin": "Mustang, Nepal (Tibetan heritage)",
@@ -513,7 +513,7 @@
     {
       "id": 35,
       "photo": "../../images/candidates/35.jpg",
-      "name": "Mr. Sonam Norbu Ratsa",
+      "name": "Sonam Norbu Ratsa",
       "ageGroup": "36-45",
       "gender": "Male",
       "origin": "Parents from Amdo Sharkock & Labrang Tashi Gomang",
@@ -528,7 +528,7 @@
     {
       "id": 36,
       "photo": "../../images/candidates/36.jpg",
-      "name": "Mr. Karma Gelek",
+      "name": "Karma Gelek",
       "ageGroup": "Above 55",
       "gender": "Male",
       "origin": "Dhomey, Tibet",
@@ -543,7 +543,7 @@
     {
       "id": 37,
       "photo": "../../images/candidates/37.jpg",
-      "name": "Ms. Yeshi Dolma",
+      "name": "Yeshi Dolma",
       "ageGroup": "46-55",
       "gender": "Female",
       "origin": "Dharamsala, India",
@@ -558,7 +558,7 @@
     {
       "id": 38,
       "photo": "../../images/candidates/38.jpg",
-      "name": "Mr. Lobsang Thupten",
+      "name": "Lobsang Thupten",
       "ageGroup": "36-45",
       "gender": "Male",
       "origin": "Rebgong (Rongwo), Tibet",
@@ -588,7 +588,7 @@
     {
       "id": 40,
       "photo": "../../images/candidates/40.png",
-      "name": "Mr. Choedak Gyatso Shinglo",
+      "name": "Choedak Gyatso Shinglo",
       "ageGroup": "36-45",
       "gender": "Male",
       "origin": "Chenza, Amdo (Tibet)",
@@ -603,7 +603,7 @@
     {
       "id": 41,
       "photo": "../../images/candidates/41.jpg",
-      "name": "Mr. Tenzing Jigme",
+      "name": "Tenzing Jigme",
       "ageGroup": "36-45",
       "gender": "Male",
       "origin": "Kathmandu, Nepal",
@@ -618,7 +618,7 @@
     {
       "id": 44,
       "photo": "../../images/candidates/44.jpg",
-      "name": "Mr. Thupten Gyatso",
+      "name": "Thupten Gyatso",
       "ageGroup": "46-55",
       "gender": "Male",
       "origin": "Tibet",
@@ -633,7 +633,7 @@
     {
       "id": 45,
       "photo": "../../images/candidates/45.jpg",
-      "name": "Mr. Tenzin Phunstok Doring",
+      "name": "Tenzin Phunstok Doring",
       "ageGroup": "36-45",
       "gender": "Male",
       "origin": "—",
@@ -685,7 +685,7 @@
       "currentAddress": "Europe and Africa",
       "occupation": "Former Representative of H.H. the Dalai Lama for Central & Eastern Europe",
       "representing": "Europe and Africa",
-      "briefBio": "Born in Pemakoed, Tibet, Mr. Rigzen studied in exile in Darjeeling. He has served in many senior roles in the Central Tibetan Administration, including Representative, Secretary, Acting Secretary, and Settlement Officer across India.",
+      "briefBio": "Born in Pemakoed, Tibet, Rigzen studied in exile in Darjeeling. He has served in many senior roles in the Central Tibetan Administration, including Representative, Secretary, Acting Secretary, and Settlement Officer across India.",
       "educationalBackground": "• Completed schooling in Darjeeling, India",
       "workExperience": "• Representative of H.H. the Dalai Lama for Central & Eastern Europe\n• Secretary, Department of Home, CTA\n• Acting Secretary, Department of Health\n• Acting Secretary, Department of Home (2016–2017)\n• Settlement Officer in multiple Tibetan settlements\n• Joined CTA in 1997 as Deputy Secretary, Kashag Secretariat",
       "otherInformation": "Joined CTA service in January 1997"
