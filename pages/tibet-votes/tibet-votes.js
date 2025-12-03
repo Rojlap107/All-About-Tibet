@@ -158,7 +158,7 @@ function displayCandidates() {
 
                 <div class="candidate-badges">
                     <div class="candidate-badge">${candidate.representing}</div>
-                    ${candidate.status ? `<div class="candidate-badge status-badge">${candidate.status}</div>` : ''}
+                    ${candidate.status ? `<div class="candidate-badge status-badge ${candidate.status === 'New' ? 'status-new' : 'status-current-mp'}">${candidate.status}</div>` : ''}
                 </div>
 
                 <div class="candidate-details">
@@ -643,7 +643,7 @@ function openCandidateModal(candidateId) {
             <div class="modal-section verified-notice">
                 <div style="display: flex; align-items: center; gap: 10px; padding: 15px; background: rgba(46, 204, 113, 0.1); border-left: 4px solid #2ecc71; border-radius: 8px;">
                     <i class="fas fa-check-circle" style="color: #2ecc71; font-size: 1.5rem;"></i>
-                    <p style="margin: 0; color: #2ecc71; font-weight: 500;">The information above is verified by the candidate.</p>
+                    <p style="margin: 0; color: #2ecc71; font-weight: 500;">Verified by the Candidate.</p>
                 </div>
             </div>
             ` : ''}
