@@ -300,6 +300,8 @@ function updateFilterLabel(filterType) {
         labelText = count > 0 ? `Age Group (${count})` : 'Age Group';
     } else if (filterType === 'gender') {
         labelText = count > 0 ? `Gender (${count})` : 'Gender';
+    } else if (filterType === 'status') {
+        labelText = count > 0 ? `Status (${count})` : 'Status';
     }
 
     label.textContent = labelText;
@@ -316,6 +318,9 @@ function applyFilters() {
 
     const genderCheckboxes = document.querySelectorAll('#gender-dropdown input[type="checkbox"]:checked');
     const genderFilters = Array.from(genderCheckboxes).map(cb => cb.value);
+
+    const statusCheckboxes = document.querySelectorAll('#status-dropdown input[type="checkbox"]:checked');
+    const statusFilters = Array.from(statusCheckboxes).map(cb => cb.value);
 
     const searchQuery = document.getElementById('name-search').value.toLowerCase().trim();
 
@@ -337,6 +342,11 @@ function applyFilters() {
 
         // Filter by gender (multi-select - show if ANY selected value matches)
         if (genderFilters.length > 0 && !genderFilters.includes(candidate.gender)) {
+            return false;
+        }
+
+        // Filter by status (multi-select - show if ANY selected value matches)
+        if (statusFilters.length > 0 && !statusFilters.includes(candidate.status)) {
             return false;
         }
 
@@ -380,6 +390,7 @@ function clearAllFilters() {
     document.getElementById('representing-label').textContent = 'Representation';
     document.getElementById('age-label').textContent = 'Age Group';
     document.getElementById('gender-label').textContent = 'Gender';
+    document.getElementById('status-label').textContent = 'Status';
 
     // Apply filters (which will show all candidates)
     applyFilters();

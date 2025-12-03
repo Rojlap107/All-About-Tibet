@@ -1635,6 +1635,26 @@
                                     </div>
                                 </div>
 
+                                <!-- Status Filter -->
+                                <div class="filter-group">
+                                    <div class="custom-dropdown">
+                                        <div class="dropdown-header" onclick="toggleDropdown('status-dropdown')">
+                                            <span id="status-label">Status</span>
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                        <div class="dropdown-menu" id="status-dropdown">
+                                            <label class="checkbox-option">
+                                                <input type="checkbox" value="Current MP" onchange="updateFilterLabel('status')">
+                                                <span>Current MP</span>
+                                            </label>
+                                            <label class="checkbox-option">
+                                                <input type="checkbox" value="New" onchange="updateFilterLabel('status')">
+                                                <span>New</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
                                 <!-- Search Button -->
                                 <div class="filter-group">
                                     <button class="search-filter-btn" onclick="applyFilters()">
