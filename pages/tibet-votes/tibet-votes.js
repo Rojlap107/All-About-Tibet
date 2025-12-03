@@ -151,6 +151,7 @@ function displayCandidates() {
         <div class="candidate-card">
             <div class="candidate-photo" onclick="openCandidateModal(${candidate.id})" style="cursor: pointer;">
                 ${candidate.photo ? `<img src="${candidate.photo}" alt="${candidate.name}" onerror="this.style.display='none'; this.parentElement.innerHTML='<i class=\\'fas fa-user\\'></i>';">` : '<i class="fas fa-user"></i>'}
+                ${candidate.verified ? `<div style="position: absolute; top: 10px; right: 10px; background: #2ecc71; color: white; border-radius: 50%; width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 8px rgba(0,0,0,0.2);" title="Verified Candidate"><i class="fas fa-check" style="font-size: 0.9rem;"></i></div>` : ''}
             </div>
             <div class="candidate-info">
                 <div class="candidate-name">${candidate.name}</div>
@@ -461,6 +462,7 @@ function createCompareCard(candidate) {
             <div class="compare-card-header">
                 <h3>${candidate.name}</h3>
                 <div class="compare-representing">${candidate.representing}</div>
+                ${candidate.verified ? `<div style="display: flex; align-items: center; gap: 5px; margin-top: 8px; color: #2ecc71; font-size: 0.9rem;"><i class="fas fa-check-circle"></i><span>Verified</span></div>` : ''}
             </div>
             <div class="compare-details">
                 <div class="compare-detail-row">
@@ -626,6 +628,14 @@ function openCandidateModal(candidateId) {
                 <h3><i class="fas fa-info-circle"></i> Other Information</h3>
                 <div>${formatBulletPoints(candidate.otherInformation)}</div>
             </div>
+            ${candidate.verified ? `
+            <div class="modal-section verified-notice">
+                <div style="display: flex; align-items: center; gap: 10px; padding: 15px; background: rgba(46, 204, 113, 0.1); border-left: 4px solid #2ecc71; border-radius: 8px;">
+                    <i class="fas fa-check-circle" style="color: #2ecc71; font-size: 1.5rem;"></i>
+                    <p style="margin: 0; color: #2ecc71; font-weight: 500;">The information above is verified by the candidate.</p>
+                </div>
+            </div>
+            ` : ''}
         </div>
     `;
 
