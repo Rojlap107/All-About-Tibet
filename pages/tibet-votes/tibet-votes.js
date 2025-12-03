@@ -471,6 +471,9 @@ function createCompareCard(candidate) {
     return `
         <div class="candidate-compare-card">
             <div class="compare-card-header">
+                <div class="compare-photo">
+                    ${candidate.photo ? `<img src="${candidate.photo}" alt="${candidate.name}" onerror="this.style.display='none'; this.parentElement.innerHTML='<i class=\\'fas fa-user\\'></i>';">` : '<i class="fas fa-user"></i>'}
+                </div>
                 <h3>${candidate.name}</h3>
                 <div class="compare-representing">${candidate.representing}</div>
                 ${candidate.verified ? `<div style="display: flex; align-items: center; gap: 5px; margin-top: 8px; color: #2ecc71; font-size: 0.9rem;"><i class="fas fa-check-circle"></i><span>Verified</span></div>` : ''}
