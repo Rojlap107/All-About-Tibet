@@ -151,8 +151,8 @@ function displayCandidates() {
         <div class="candidate-card">
             <div class="candidate-photo" onclick="openCandidateModal(${candidate.id})" style="cursor: pointer;">
                 ${candidate.photo ? `<img src="${candidate.photo}" alt="${candidate.name}" onerror="this.style.display='none'; this.parentElement.innerHTML='<i class=\\'fas fa-user\\'></i>';">` : '<i class="fas fa-user"></i>'}
-                ${candidate.verified ? `<div style="position: absolute; top: 10px; right: 10px; background: #2ecc71; color: white; border-radius: 50%; width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 8px rgba(0,0,0,0.2);" title="Verified Candidate"><i class="fas fa-check" style="font-size: 0.9rem;"></i></div>` : ''}
             </div>
+            ${candidate.verified ? `<div class="verified-tag" style="background: #2ecc71; color: white; padding: 4px 12px; border-radius: 4px; font-size: 0.85rem; font-weight: 500; text-align: center; margin-top: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">Verified</div>` : ''}
             <div class="candidate-info">
                 <div class="candidate-name">${candidate.name}</div>
 
@@ -476,16 +476,13 @@ function createCompareCard(candidate) {
                 </div>
                 <h3>${candidate.name}</h3>
                 <div class="compare-representing">${candidate.representing}</div>
+                ${candidate.status ? `<div class="candidate-badge status-badge ${candidate.status === 'New' ? 'status-new' : 'status-current-mp'}" style="margin-top: 8px;">${candidate.status}</div>` : ''}
                 ${candidate.verified ? `<div style="display: flex; align-items: center; gap: 5px; margin-top: 8px; color: #2ecc71; font-size: 0.9rem;"><i class="fas fa-check-circle"></i><span>Verified</span></div>` : ''}
             </div>
             <div class="compare-details">
                 <div class="compare-detail-row">
                     <div class="compare-detail-label">Age Group</div>
                     <div class="compare-detail-value">${candidate.ageGroup}</div>
-                </div>
-                <div class="compare-detail-row">
-                    <div class="compare-detail-label">Gender</div>
-                    <div class="compare-detail-value">${candidate.gender}</div>
                 </div>
                 <div class="compare-detail-row">
                     <div class="compare-detail-label">Origin</div>
@@ -604,7 +601,7 @@ function openCandidateModal(candidateId) {
             <h2 class="modal-name">${candidate.name}</h2>
             <div class="modal-badges">
                 <div class="modal-badge">${candidate.representing}</div>
-                <div class="modal-badge">${candidate.gender}</div>
+                ${candidate.status ? `<div class="modal-badge status-badge ${candidate.status === 'New' ? 'status-new' : 'status-current-mp'}">${candidate.status}</div>` : ''}
             </div>
             <div class="modal-quick-info">
                 <div class="modal-info-item">
