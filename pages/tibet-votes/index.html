@@ -106,7 +106,7 @@
 
         /* Content Section */
         .content-section {
-            padding: 60px 20px;
+            padding: 20px 20px;
             position: relative;
             z-index: 10;
             backdrop-filter: blur(2px);
@@ -124,7 +124,7 @@
             display: flex;
             gap: 40px;
             justify-content: center;
-            margin-bottom: 40px;
+            margin-bottom: 20px;
             position: sticky;
             top: 0;
             z-index: 100;
@@ -250,6 +250,161 @@
 
         .search-bar button:active {
             transform: scale(0.98);
+        }
+
+        /* New Search and Filter Layout */
+        .search-filter-container {
+            margin-bottom: 20px;
+        }
+
+        .search-filter-row {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            flex-wrap: nowrap;
+            margin-bottom: 15px;
+        }
+
+        @media screen and (min-width: 769px) {
+            .search-filter-container {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+            }
+
+            .search-filter-row {
+                flex: 1;
+                margin-bottom: 0;
+            }
+
+            .clear-filter-btn-inline {
+                flex-shrink: 0;
+            }
+        }
+
+        .search-box-wrapper {
+            position: relative;
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .search-box-wrapper input {
+            width: 100%;
+            padding: 15px 20px;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 177, 0, 0.3);
+            background-color: rgba(40, 40, 40, 0.7);
+            color: var(--white);
+            font-size: 1rem;
+            font-weight: 400;
+            transition: all 0.3s ease;
+        }
+
+        .search-box-wrapper input:focus {
+            outline: none;
+            border-color: var(--secondary-1);
+            background-color: rgba(40, 40, 40, 0.9);
+        }
+
+        .search-box-wrapper input::placeholder {
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .filter-toggle-btn-new {
+            padding: 15px 25px;
+            background-color: var(--secondary-1);
+            border: none;
+            border-radius: 8px;
+            color: var(--black);
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            white-space: nowrap;
+        }
+
+        .filter-toggle-btn-new:hover {
+            background-color: var(--white);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(255, 177, 0, 0.4);
+        }
+
+        .filter-toggle-btn-new.active {
+            background-color: var(--white);
+        }
+
+        #filter-arrow {
+            transition: transform 0.3s ease;
+            font-size: 0.9rem;
+        }
+
+        .filter-toggle-btn-new.active #filter-arrow {
+            transform: rotate(180deg);
+        }
+
+        /* Filter Panel (Collapsible) */
+        .filter-panel {
+            background-color: rgba(40, 40, 40, 0.5);
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 30px;
+            border: 1px solid rgba(255, 177, 0, 0.2);
+            animation: slideDown 0.3s ease;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .filter-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .filter-group-select {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .filter-group-select label {
+            color: var(--secondary-1);
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .filter-group-select select {
+            padding: 12px 15px;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 177, 0, 0.3);
+            background-color: rgba(40, 40, 40, 0.7);
+            color: var(--white);
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .filter-group-select select:focus {
+            outline: none;
+            border-color: var(--secondary-1);
+            background-color: rgba(40, 40, 40, 0.9);
+        }
+
+        .filter-group-select select option {
+            background-color: rgba(40, 40, 40, 0.95);
+            color: var(--white);
+            padding: 10px;
         }
 
         .filter-bar {
@@ -412,28 +567,29 @@
         /* Clear Filter Button (Inline with Search) */
         .clear-filter-btn-inline {
             width: auto;
-            padding: 12px 16px;
-            background-color: rgba(128, 128, 128, 0.7);
+            padding: 12px 20px;
+            background-color: #dc3545;
             border: none;
             border-radius: 8px;
             color: var(--white);
             font-weight: 600;
             cursor: pointer;
             transition: all 0.3s ease;
-            font-size: 1.1rem;
+            font-size: 1rem;
             display: flex;
             align-items: center;
             justify-content: center;
+            gap: 8px;
         }
 
         .clear-filter-btn-inline:hover {
-            background-color: rgba(128, 128, 128, 0.9);
+            background-color: #c82333;
             transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(128, 128, 128, 0.4);
+            box-shadow: 0 4px 15px rgba(220, 53, 69, 0.4);
         }
 
         .clear-filter-btn-inline i {
-            margin: 0;
+            font-size: 1rem;
         }
 
         /* Mobile Clear Filter Button */
@@ -1287,6 +1443,42 @@
                 padding: 25px;
             }
 
+            /* Mobile Filter Styles */
+            .search-filter-container {
+                display: block;
+            }
+
+            .search-filter-row {
+                flex-wrap: nowrap;
+                gap: 10px;
+                margin-bottom: 10px;
+            }
+
+            .search-box-wrapper {
+                flex: 1;
+                min-width: 0;
+            }
+
+            .filter-toggle-btn-new {
+                flex-shrink: 0;
+                padding: 12px 16px;
+                font-size: 0.9rem;
+            }
+
+            .clear-filter-btn-inline {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .filter-grid {
+                grid-template-columns: 1fr;
+            }
+
+            /* Hide labels on mobile - dropdown text is self-explanatory */
+            .filter-group-select label {
+                display: none;
+            }
+
             .candidates-grid {
                 grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
             }
@@ -1540,169 +1732,88 @@
                     <!-- Candidates Tab Content -->
                     <div class="tab-content active" id="candidates-tab">
                         <div class="tab-scroll-content">
-                            <!-- Search Bar -->
-                            <div class="search-bar-container">
-                                <div class="search-bar" style="display: flex; gap: 15px; align-items: center;">
-                                    <div style="position: relative; flex: 1;">
+                            <!-- Search and Filter Bar -->
+                            <div class="search-filter-container">
+                                <div class="search-filter-row">
+                                    <!-- Search Box -->
+                                    <div class="search-box-wrapper">
                                         <input type="text" id="name-search" placeholder="Search by candidate name..."
-                                            onkeypress="if(event.key === 'Enter') applyFilters()"
-                                            oninput="toggleClearButton()"
+                                            oninput="applyFiltersInstant()"
                                             style="width: 100%; padding-right: 40px;">
                                         <button id="clear-search-btn" class="clear-search-btn" onclick="clearSearchInput()" style="display: none;">
                                             <i class="fas fa-times"></i>
                                         </button>
                                     </div>
-                                    <!-- Filter Toggle Button (Mobile Only) -->
-                                    <button id="filter-toggle-btn" class="filter-toggle-btn" onclick="toggleFilters()">
-                                        <i class="fas fa-filter"></i> Filters
+
+                                    <!-- Filter Toggle Button -->
+                                    <button id="filter-toggle-btn" class="filter-toggle-btn-new" onclick="toggleFilters()">
+                                        <i class="fas fa-filter"></i>
+                                        <span>Filters</span>
+                                        <i class="fas fa-chevron-down" id="filter-arrow"></i>
                                     </button>
                                 </div>
+
+                                <!-- Clear All Button -->
+                                <button class="clear-filter-btn-inline" onclick="clearAllFilters()">
+                                    <i class="fas fa-filter-circle-xmark"></i>
+                                    <span>Clear All</span>
+                                </button>
                             </div>
 
-                            <!-- Filter Bar -->
-                            <div class="filter-bar" id="filter-bar">
-                                <!-- Representation Filter -->
-                                <div class="filter-group">
-                                    <div class="custom-dropdown">
-                                        <div class="dropdown-header" onclick="toggleDropdown('representing-dropdown')">
-                                            <span id="representing-label">Representation</span>
-                                            <i class="fas fa-chevron-down"></i>
-                                        </div>
-                                        <div class="dropdown-menu" id="representing-dropdown">
-                                            <label class="checkbox-option">
-                                                <input type="checkbox" value="Dotoe" onchange="updateFilterLabel('representing')">
-                                                <span>Dotoe</span>
-                                            </label>
-                                            <label class="checkbox-option">
-                                                <input type="checkbox" value="Dhomey" onchange="updateFilterLabel('representing')">
-                                                <span>Dhomey</span>
-                                            </label>
-                                            <label class="checkbox-option">
-                                                <input type="checkbox" value="Utsang" onchange="updateFilterLabel('representing')">
-                                                <span>Utsang</span>
-                                            </label>
-                                            <label class="checkbox-option">
-                                                <input type="checkbox" value="Nyingma" onchange="updateFilterLabel('representing')">
-                                                <span>Nyingma</span>
-                                            </label>
-                                            <label class="checkbox-option">
-                                                <input type="checkbox" value="Kagyu" onchange="updateFilterLabel('representing')">
-                                                <span>Kagyu</span>
-                                            </label>
-                                            <label class="checkbox-option">
-                                                <input type="checkbox" value="Sakya" onchange="updateFilterLabel('representing')">
-                                                <span>Sakya</span>
-                                            </label>
-                                            <label class="checkbox-option">
-                                                <input type="checkbox" value="Gelug" onchange="updateFilterLabel('representing')">
-                                                <span>Gelug</span>
-                                            </label>
-                                            <label class="checkbox-option">
-                                                <input type="checkbox" value="Bon" onchange="updateFilterLabel('representing')">
-                                                <span>Bon</span>
-                                            </label>
-                                            <label class="checkbox-option">
-                                                <input type="checkbox" value="North and South Americas" onchange="updateFilterLabel('representing')">
-                                                <span>North and South Americas</span>
-                                            </label>
-                                            <label class="checkbox-option">
-                                                <input type="checkbox" value="Europe and Africa" onchange="updateFilterLabel('representing')">
-                                                <span>Europe and Africa</span>
-                                            </label>
-                                            <label class="checkbox-option">
-                                                <input type="checkbox" value="Australia & Asia" onchange="updateFilterLabel('representing')">
-                                                <span>Australia & Asia</span>
-                                            </label>
-                                        </div>
+                            <!-- Collapsible Filter Section -->
+                            <div class="filter-panel" id="filter-panel" style="display: none;">
+                                <div class="filter-grid">
+                                    <!-- Representation Filter -->
+                                    <div class="filter-group-select">
+                                        <label for="representing-select">Representation</label>
+                                        <select id="representing-select" onchange="applyFiltersInstant()">
+                                            <option value="">All Representation</option>
+                                            <option value="Dotoe">Dotoe</option>
+                                            <option value="Dhomey">Dhomey</option>
+                                            <option value="Utsang">Utsang</option>
+                                            <option value="Nyingma">Nyingma</option>
+                                            <option value="Kagyu">Kagyu</option>
+                                            <option value="Sakya">Sakya</option>
+                                            <option value="Gelug">Gelug</option>
+                                            <option value="Bon">Bon</option>
+                                            <option value="North and South Americas">North and South Americas</option>
+                                            <option value="Europe and Africa">Europe and Africa</option>
+                                            <option value="Australia & Asia">Australia & Asia</option>
+                                        </select>
+                                    </div>
+
+                                    <!-- Age Group Filter -->
+                                    <div class="filter-group-select">
+                                        <label for="age-select">Age Group</label>
+                                        <select id="age-select" onchange="applyFiltersInstant()">
+                                            <option value="">All Age</option>
+                                            <option value="25-35">25-35</option>
+                                            <option value="36-45">36-45</option>
+                                            <option value="46-55">46-55</option>
+                                            <option value="Above 55">Above 55</option>
+                                        </select>
+                                    </div>
+
+                                    <!-- Gender Filter -->
+                                    <div class="filter-group-select">
+                                        <label for="gender-select">Gender</label>
+                                        <select id="gender-select" onchange="applyFiltersInstant()">
+                                            <option value="">All Gender</option>
+                                            <option value="Male">Male</option>
+                                            <option value="Female">Female</option>
+                                        </select>
+                                    </div>
+
+                                    <!-- Status Filter -->
+                                    <div class="filter-group-select">
+                                        <label for="status-select">Status</label>
+                                        <select id="status-select" onchange="applyFiltersInstant()">
+                                            <option value="">All Status</option>
+                                            <option value="Current MP">Current MP</option>
+                                            <option value="New">New</option>
+                                        </select>
                                     </div>
                                 </div>
-
-                                <!-- Age Group Filter -->
-                                <div class="filter-group">
-                                    <div class="custom-dropdown">
-                                        <div class="dropdown-header" onclick="toggleDropdown('age-dropdown')">
-                                            <span id="age-label">Age Group</span>
-                                            <i class="fas fa-chevron-down"></i>
-                                        </div>
-                                        <div class="dropdown-menu" id="age-dropdown">
-                                            <label class="checkbox-option">
-                                                <input type="checkbox" value="25-35" onchange="updateFilterLabel('age')">
-                                                <span>25-35</span>
-                                            </label>
-                                            <label class="checkbox-option">
-                                                <input type="checkbox" value="36-45" onchange="updateFilterLabel('age')">
-                                                <span>36-45</span>
-                                            </label>
-                                            <label class="checkbox-option">
-                                                <input type="checkbox" value="46-55" onchange="updateFilterLabel('age')">
-                                                <span>46-55</span>
-                                            </label>
-                                            <label class="checkbox-option">
-                                                <input type="checkbox" value="Above 55" onchange="updateFilterLabel('age')">
-                                                <span>Above 55</span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Gender Filter -->
-                                <div class="filter-group">
-                                    <div class="custom-dropdown">
-                                        <div class="dropdown-header" onclick="toggleDropdown('gender-dropdown')">
-                                            <span id="gender-label">Gender</span>
-                                            <i class="fas fa-chevron-down"></i>
-                                        </div>
-                                        <div class="dropdown-menu" id="gender-dropdown">
-                                            <label class="checkbox-option">
-                                                <input type="checkbox" value="Male" onchange="updateFilterLabel('gender')">
-                                                <span>Male</span>
-                                            </label>
-                                            <label class="checkbox-option">
-                                                <input type="checkbox" value="Female" onchange="updateFilterLabel('gender')">
-                                                <span>Female</span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Status Filter -->
-                                <div class="filter-group">
-                                    <div class="custom-dropdown">
-                                        <div class="dropdown-header" onclick="toggleDropdown('status-dropdown')">
-                                            <span id="status-label">Status</span>
-                                            <i class="fas fa-chevron-down"></i>
-                                        </div>
-                                        <div class="dropdown-menu" id="status-dropdown">
-                                            <label class="checkbox-option">
-                                                <input type="checkbox" value="Current MP" onchange="updateFilterLabel('status')">
-                                                <span>Current MP</span>
-                                            </label>
-                                            <label class="checkbox-option">
-                                                <input type="checkbox" value="New" onchange="updateFilterLabel('status')">
-                                                <span>New</span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Search Button -->
-                                <div class="filter-group">
-                                    <button class="search-filter-btn" onclick="applyFilters()">
-                                        <i class="fas fa-search"></i> Search
-                                    </button>
-                                </div>
-
-                                <!-- Clear Filter Button -->
-                                <div class="filter-group">
-                                    <button class="clear-filter-btn-inline" onclick="clearAllFilters()">
-                                        <i class="fas fa-filter-circle-xmark"></i>
-                                    </button>
-                                </div>
-
-                                <!-- Mobile Clear Filter Button (inside collapsible section) -->
-                                <button class="clear-filter-btn-mobile" onclick="clearAllFilters()">
-                                    <i class="fas fa-filter-circle-xmark"></i> Clear Filters
-                                </button>
                             </div>
 
                             <div class="candidates-grid" id="candidates-grid">

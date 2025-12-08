@@ -32,18 +32,66 @@ function formatBulletPoints(text) {
     }
 }
 
-// Toggle filters visibility (for mobile)
+// Toggle filters visibility
 function toggleFilters() {
-    const filterBar = document.getElementById('filter-bar');
+    const filterPanel = document.getElementById('filter-panel');
     const toggleBtn = document.getElementById('filter-toggle-btn');
 
-    if (filterBar.classList.contains('active')) {
-        filterBar.classList.remove('active');
-        toggleBtn.innerHTML = '<i class="fas fa-filter"></i> Filters';
+    if (filterPanel.style.display === 'none' || filterPanel.style.display === '') {
+        filterPanel.style.display = 'block';
+        toggleBtn.classList.add('active');
     } else {
-        filterBar.classList.add('active');
-        toggleBtn.innerHTML = '<i class="fas fa-times"></i> Close';
+        filterPanel.style.display = 'none';
+        toggleBtn.classList.remove('active');
     }
+}
+
+// Apply filters instantly (no search button needed)
+function applyFiltersInstant() {
+    // Get selected values from select dropdowns
+    const representingFilter = document.getElementById('representing-select')?.value || '';
+    const ageFilter = document.getElementById('age-select')?.value || '';
+    const genderFilter = document.getElementById('gender-select')?.value || '';
+    const statusFilter = document.getElementById('status-select')?.value || '';
+    const searchQuery = document.getElementById('name-search')?.value.toLowerCase().trim() || '';
+
+    // Update clear button visibility
+    toggleClearButton();
+
+    filteredCandidates = allCandidates.filter(candidate => {
+        // Filter by name search
+        if (searchQuery && !candidate.name.toLowerCase().includes(searchQuery)) {
+            return false;
+        }
+
+        // Filter by representing (single select)
+        if (representingFilter && candidate.representing !== representingFilter) {
+            return false;
+        }
+
+        // Filter by age group (single select)
+        if (ageFilter && candidate.ageGroup !== ageFilter) {
+            return false;
+        }
+
+        // Filter by gender (single select)
+        if (genderFilter && candidate.gender !== genderFilter) {
+            return false;
+        }
+
+        // Filter by status (single select)
+        if (statusFilter && candidate.status !== statusFilter) {
+            return false;
+        }
+
+        return true;
+    });
+
+    // Reset to page 1 when filters change
+    currentPage = 1;
+
+    // Display filtered candidates
+    displayCandidates();
 }
 
 // Switch between tabs
@@ -148,8 +196,8 @@ function displayCandidates() {
     const paginatedCandidates = filteredCandidates.slice(startIndex, endIndex);
 
     grid.innerHTML = paginatedCandidates.map(candidate => `
-        <div class="candidate-card">
-            <div class="candidate-photo" onclick="openCandidateModal(${candidate.id})" style="cursor: pointer;">
+        <div class="candidate-card" onclick="openCandidateModal(${candidate.id})" style="cursor: pointer;">
+            <div class="candidate-photo">
                 ${candidate.photo ? `<img src="${candidate.photo}" alt="${candidate.name}" onerror="this.style.display='none'; this.parentElement.innerHTML='<i class=\\'fas fa-user\\'></i>';">` : '<i class="fas fa-user"></i>'}
             </div>
             ${candidate.verified ? `<div class="verified-tag" style="background: #2ecc71; color: white; padding: 4px 12px; border-radius: 4px; font-size: 0.85rem; font-weight: 500; text-align: center; margin-top: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">Verified</div>` : ''}
@@ -178,7 +226,7 @@ function displayCandidates() {
 
                 <div class="candidate-brief">${candidate.briefBio}</div>
 
-                <button class="know-more-btn" onclick="openCandidateModal(${candidate.id})">
+                <button class="know-more-btn" onclick="event.stopPropagation(); openCandidateModal(${candidate.id})">
                     Know More
                 </button>
             </div>
@@ -379,21 +427,26 @@ function applyFilters() {
 // Clear all filters and reset to default
 function clearAllFilters() {
     // Reset search input
-    document.getElementById('name-search').value = '';
+    const nameSearch = document.getElementById('name-search');
+    if (nameSearch) nameSearch.value = '';
 
-    // Clear all checkboxes
-    document.querySelectorAll('.dropdown-menu input[type="checkbox"]').forEach(checkbox => {
-        checkbox.checked = false;
-    });
+    // Reset all select dropdowns to "All"
+    const representingSelect = document.getElementById('representing-select');
+    const ageSelect = document.getElementById('age-select');
+    const genderSelect = document.getElementById('gender-select');
+    const statusSelect = document.getElementById('status-select');
 
-    // Reset all filter labels
-    document.getElementById('representing-label').textContent = 'Representation';
-    document.getElementById('age-label').textContent = 'Age Group';
-    document.getElementById('gender-label').textContent = 'Gender';
-    document.getElementById('status-label').textContent = 'Status';
+    if (representingSelect) representingSelect.value = '';
+    if (ageSelect) ageSelect.value = '';
+    if (genderSelect) genderSelect.value = '';
+    if (statusSelect) statusSelect.value = '';
+
+    // Hide clear search button
+    const clearSearchBtn = document.getElementById('clear-search-btn');
+    if (clearSearchBtn) clearSearchBtn.style.display = 'none';
 
     // Apply filters (which will show all candidates)
-    applyFilters();
+    applyFiltersInstant();
 }
 
 // Populate compare candidate selectors
@@ -764,6 +817,15 @@ function toggleClearButton() {
     }
 }
 
+// Initialize toggle clear button visibility on page load
+document.addEventListener('DOMContentLoaded', () => {
+    const nameSearch = document.getElementById('name-search');
+    if (nameSearch) {
+        // Update clear button on input
+        nameSearch.addEventListener('input', toggleClearButton);
+    }
+});
+
 // Clear search input
 function clearSearchInput() {
     const searchInput = document.getElementById('name-search');
@@ -777,6 +839,9 @@ function clearSearchInput() {
     if (clearButton) {
         clearButton.style.display = 'none';
     }
+
+    // Apply filters instantly
+    applyFiltersInstant();
 }
 
 // Load candidates when page loads
