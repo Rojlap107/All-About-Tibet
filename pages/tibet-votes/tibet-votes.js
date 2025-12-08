@@ -639,6 +639,40 @@ function openCandidateModal(candidateId) {
                 <h3><i class="fas fa-info-circle"></i> Other Information</h3>
                 <div>${formatBulletPoints(candidate.otherInformation)}</div>
             </div>
+            ${candidate.socialMedia && (candidate.socialMedia.facebook || candidate.socialMedia.instagram || candidate.socialMedia.linkedin) ? `
+            <div class="modal-section">
+                <h3><i class="fas fa-share-alt"></i> Connect on Social Media</h3>
+                <div style="display: flex; gap: 15px; align-items: center; flex-wrap: wrap;">
+                    ${candidate.socialMedia.facebook ? `
+                    <a href="${candidate.socialMedia.facebook}" target="_blank" rel="noopener noreferrer"
+                       style="display: flex; align-items: center; gap: 8px; padding: 10px 20px; background: #1877F2; color: white; border-radius: 8px; text-decoration: none; font-weight: 500; transition: transform 0.2s, box-shadow 0.2s;"
+                       onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 4px 12px rgba(24, 119, 242, 0.4)';"
+                       onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">
+                        <i class="fab fa-facebook-f" style="font-size: 1.2rem;"></i>
+                        <span>Facebook</span>
+                    </a>
+                    ` : ''}
+                    ${candidate.socialMedia.instagram ? `
+                    <a href="${candidate.socialMedia.instagram}" target="_blank" rel="noopener noreferrer"
+                       style="display: flex; align-items: center; gap: 8px; padding: 10px 20px; background: linear-gradient(45deg, #F58529, #DD2A7B, #8134AF, #515BD4); color: white; border-radius: 8px; text-decoration: none; font-weight: 500; transition: transform 0.2s, box-shadow 0.2s;"
+                       onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 4px 12px rgba(221, 42, 123, 0.4)';"
+                       onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">
+                        <i class="fab fa-instagram" style="font-size: 1.2rem;"></i>
+                        <span>Instagram</span>
+                    </a>
+                    ` : ''}
+                    ${candidate.socialMedia.linkedin ? `
+                    <a href="${candidate.socialMedia.linkedin}" target="_blank" rel="noopener noreferrer"
+                       style="display: flex; align-items: center; gap: 8px; padding: 10px 20px; background: #0A66C2; color: white; border-radius: 8px; text-decoration: none; font-weight: 500; transition: transform 0.2s, box-shadow 0.2s;"
+                       onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 4px 12px rgba(10, 102, 194, 0.4)';"
+                       onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">
+                        <i class="fab fa-linkedin-in" style="font-size: 1.2rem;"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    ` : ''}
+                </div>
+            </div>
+            ` : ''}
             ${candidate.verified ? `
             <div class="modal-section verified-notice">
                 <div style="display: flex; align-items: center; gap: 10px; padding: 15px; background: rgba(46, 204, 113, 0.1); border-left: 4px solid #2ecc71; border-radius: 8px;">
