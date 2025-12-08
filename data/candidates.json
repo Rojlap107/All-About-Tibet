@@ -753,8 +753,8 @@
       "name": "Lharong",
       "ageGroup": "25-35",
       "gender": "Male",
-      "origin": "Dhomey",
-      "currentAddress": "Mysore",
+      "origin": "Amdo Ngawa",
+      "currentAddress": "Mysore City",
       "occupation": "Lawyer & Researcher",
       "representing": "Dhomey",
       "briefBio": "Lharong escaped to India at age eight and studied at Tibetan Homes schools. A top student and active youth leader, he has founded student bodies, led major events, and worked to promote civic engagement, education, and youth empowerment.",
@@ -1605,6 +1605,22 @@
       "educationalBackground": "",
       "workExperience": "",
       "otherInformation": "",
+      "status": "New"
+    },
+    {
+      "id": 95,
+      "photo": "../../images/candidates/95.jpg",
+      "name": "Lhathog Sangye Dorjee",
+      "ageGroup": "",
+      "gender": "Male",
+      "origin": "Lhathong",
+      "currentAddress": "Tashi Jong",
+      "occupation": "General Secretary, Chushi Gangdruk",
+      "representing": "Dotoe",
+      "briefBio": "",
+      "educationalBackground": "• Studied in Tibetan schools up to secondary level\n• Studied Buddhist philosophy for about 10 years\n• Joined Sarah College for Higher Tibetan Studies in 2012\n• Graduated with a BA in Tibetan Studies (2017)\n• Studied advanced poetry at Mindroling Monastery\n• Received cultural training at Library of Tibetan Works & Archives\n• Completed leadership training with Tibetan Youth Congress",
+      "workExperience": "",
+      "otherInformation": "Slogan: United Together, Bridging Tibetans, Building Self-Reliance",
       "status": "New"
     }
   ]
