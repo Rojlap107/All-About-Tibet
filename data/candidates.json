@@ -571,14 +571,14 @@
       "name": "Dhondup Tashi",
       "ageGroup": "36-45",
       "gender": "Male",
-      "origin": "Achog",
+      "origin": "Labrang, Amdo",
       "currentAddress": "Dharamsala",
       "occupation": "Member of the 17th TPiE; Former Chief Editor, Tibet Times",
       "representing": "Dhomey",
-      "briefBio": "Born in 1980 in Labrang, he studied Buddhist philosophy, music, medicine, and later Western philosophy and social sciences. After exile, he worked in teaching, writing, and journalism, rising to Chief Editor of Tibet Times and serving in Tibetan Parliament.",
-      "educationalBackground": "• Studied Buddhist philosophy, Tibetan lute & medicine at Labrang Tashi Kyil (from 1997)\n• Correspondence studies in history & ancient orthography\n• Western philosophy & social science, Northwest Minzu University (2000)\n• English, computer studies at Tibetan Transit School",
-      "workExperience": "• Tibetan language teacher & school magazine editor, Tibetan Transit School\n• Editor, Dhomey Den-gyab Writers Club\n• Vice President, Tibetan Journalist Association\n• Reporter, Tibet Times (2007) → Chief Editor\n• Member, 16th Tibetan Parliament-in-Exile\n• Member, Standing Committee (three consecutive terms)\n• Member, Budget Estimate Committee",
-      "otherInformation": "• Active participant in university co-curricular activities\n• Continues to serve the Tibetan community through journalism and Parliament",
+      "briefBio": "Born on April 14, 1980 in Labrang, Amdo Province. Studied Buddhist philosophy, Tibetan lute, medicine, and Western philosophy. After coming into exile in 2002, worked in teaching, journalism, and editing. Served as Chief Editor of Tibet Times and member of 16th & 17th Tibetan Parliament-in-Exile.",
+      "educationalBackground": "• Buddhist philosophy, Tibetan lute & medicine, Labrang Tashi Kyil (from 1997)\n• Correspondence studies in history & ancient orthography\n• Western philosophy & contemporary social science, Northwest Minzu University (2000)\n• English & computer studies, Tibetan Transit School",
+      "workExperience": "• Member, 17th Tibetan Parliament-in-Exile\n• Member, 16th Tibetan Parliament-in-Exile\n• Chief Editor, Tibet Times\n• Reporter, Tibet Times (started 2007)\n• Vice President, Tibetan Journalist Association\n• Editor, Dhomey Den-gyab Writers Club\n• Tibetan language teacher & school magazine editor, Tibetan Transit School",
+      "otherInformation": "• Member of Standing Committee (three consecutive terms)\n• Member of Budget Estimate Committee\n• Active participation in university co-curricular activities\n• Came into exile in 2002",
       "status": "Current MP"
     },
     {
@@ -1445,7 +1445,7 @@
       "workExperience": "General Secretary of Chu-Shi-Gangdruk",
       "otherInformation": "",
       "status": "New",
-      "verified": true,
+      "verified": false,
       "socialMedia": {
         "facebook": "https://www.facebook.com/skrpt"
       }
@@ -1628,7 +1628,7 @@
       "id": 95,
       "photo": "../../images/candidates/95.jpg",
       "name": "Lhathog Sangye Dorjee",
-      "ageGroup": "",
+      "ageGroup": "25-35",
       "gender": "Male",
       "origin": "Lhathong",
       "currentAddress": "Tashi Jong",
