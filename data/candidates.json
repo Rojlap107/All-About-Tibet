@@ -1311,7 +1311,10 @@
       "educationalBackground": "",
       "workExperience": "",
       "otherInformation": "",
-      "status": "New"
+      "status": "New",
+      "socialMedia": {
+        "facebook": "https://www.facebook.com/godrukkalsang"
+      }
     },
     {
       "id": 78,
