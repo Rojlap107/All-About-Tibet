@@ -964,13 +964,16 @@
       "gender": "Male",
       "origin": "Tsang Lhatse",
       "currentAddress": "Dharamshala",
-      "occupation": "Executive Member of U-Tsang, President, Dharamsala Local Assembly",
+      "occupation": "President, Dharamsala Local Assembly",
       "representing": "Utsang",
       "briefBio": "",
       "educationalBackground": "",
       "workExperience": "",
       "otherInformation": "",
-      "status": "New"
+      "status": "New",
+      "socialMedia": {
+        "facebook": "https://www.facebook.com/dawa.tseringg"
+      }
     },
     {
       "id": 57,
