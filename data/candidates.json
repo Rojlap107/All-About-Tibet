@@ -1276,6 +1276,7 @@
       "workExperience": "• President, Regional Tibetan Youth Congress, Bangalore (1992–1993)\n• Manager, Hunsur Co-operative Handicraft Centre (1994–1995)\n• Cashier & Production Manager, Hunsur Woolen Handicraft (Dept. of Finance) (1995–1997)\n• General Manager, Hotel Tibet, Dharamsala (1997–2006)\n• Interim CEO, FTCI (2004–2005)\n• Board Member, Tibetan Association of Northern California; Vice President (2018–2020)",
       "otherInformation": "• Known for long-standing service in cooperatives and diaspora organizations",
       "status": "New",
+      "hidden": true,
       "socialMedia": {
         "facebook": "https://www.facebook.com/profile.php?id=61574908806061"
       }
@@ -1533,13 +1534,14 @@
       "gender": "Male",
       "origin": "Dzoge",
       "currentAddress": "Czech Republic ",
-      "occupation": "Vice President, Tibetan Association of Czech Republic",
+      "occupation": "Vice President, Tibetan Association of Czech Republic; President of Nympa Lharso",
       "representing": "Europe and Africa",
       "briefBio": "An entrepreneur, translator, and author with a long-standing commitment to Tibetan advocacy. Founding member and first President of the Czech Tibet Association, now serving as its Vice President. Leads Nyampa Lharsö to promote cultural understanding and solidarity for the Tibetan cause.",
       "educationalBackground": "• Not specified",
-      "workExperience": "• Founding member & first President, Czech Tibet Association\n• Vice President, Tibetan Association of Czech Republic\n• President, Call of Justice\n• Leader, Nyampa Lharsö",
+      "workExperience": "• Vice President, Tibetan Association of Czech Republic\n• President, Call of Justice\n• President of Nyampa Lharsö\n• Founding member & first President, Czech Tibet Association\n",
       "otherInformation": "• Dedicated to cultural preservation, international advocacy & strengthening support for Tibet",
       "status": "New"
+      "verified": true
     },
     {
       "id": 91,
