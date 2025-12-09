@@ -627,7 +627,11 @@
       "educationalBackground": "• Graduate, Punjab University",
       "workExperience": "• Senior Consultant, Royal Bank of Canada (6 years)\n• Worked with FMFC, an ISO 2007-certified American financial company (4 years)\n• Volunteer work with Indian NGOs providing free education\n• Member, 16th TPiE\n• Member, 17th TPiE",
       "otherInformation": "• Experience working with Tibetan, Indian, and international communities\n• Strong background in finance and social service",
-      "status": "Current MP"
+      "status": "Current MP",
+      "verified": true,
+      "socialMedia": {
+        "facebook": "https://www.facebook.com/norburatsa"
+      }
     },
     {
       "id": 36,
