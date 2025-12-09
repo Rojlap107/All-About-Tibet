@@ -560,7 +560,8 @@
       "educationalBackground": "• Primary and higher education in Kakhok Dzong, Ngaba.\n• Cleared entrance exam for Sichuan Province’s Tibetan Language School (2002).\n• Studied Tibetan & Chinese translation.\n• Received a three-year scholarship for academic excellence.\n• Awarded “Excellent Student Award” during college.\n• Bachelor’s degree in Tibetan Language (2005).",
       "workExperience": "• Editor for magazines at Siling Pangen Printing Press (2005).\n• Teacher at Sherab Gatseling School, Suja School & Drikong Monastery School.\n• Reporter, Tibet Post International (2009).\n• Editor, Shambala Tibetan website.\n• Editorial Director, Tibet Times (2018–present).\n• Member, 17th Tibetan Parliament-in-Exile.",
       "otherInformation": "• Executive member, Tibetan Journalist Association.\n• Executive member, Pen Tibetan Writers’ Association.\n• Ranked first in class and high achiever in regional essay competition.",
-      "status": "Current MP"
+      "status": "Current MP",
+      "verified": true
     },
     {
       "id": 32,
@@ -696,15 +697,16 @@
       "name": "Choedak Gyatso Shinglo",
       "ageGroup": "36-45",
       "gender": "Male",
-      "origin": "Chentsa",
+      "origin": "Chantsa",
       "currentAddress": "Dharamsala",
       "occupation": "Member of the 17th TPiE",
       "representing": "Dhomey",
-      "briefBio": "Born on 1 February 1989 in Chenza, Amdo, Tibet. Exile since 2005. Strong academic performer and active in youth, community, and political organisations.",
+      "briefBio": "Born on 1 February 1989 in Chantsa, Amdo, Tibet. Exile since 2005. Strong academic performer and active in youth, community, and political organisations.",
       "educationalBackground": "• Completed middle school in Chenza, Amdo, Tibet.\n• Joined TCV Suja in 2005 after exile.\n• Continued studies at TCV Gopalpur.\n• Secured top position in the 12th AISSCE at TCV Gopalpur (2014).\n• B.A. in Political Science, Ramjas College, Delhi University (2017).\n• M.A. in Political Science, IGNOU (2018).",
       "workExperience": "• Secretary, Regional Tibetan Youth Congress, Rohini, Delhi (2016).\n• Librarian, Tibetan Youth Hostel, Delhi (2016).\n• Executive member, Global Tibetan People’s Movement for the Middle Way Approach (2018–2022).\n• Member, Tibetan Local Assembly of Dharamsala (2019).\n• Member, 17th Tibetan Parliament-in-Exile representing Dhomey province.",
       "otherInformation": "• Took major responsibilities while still a student.\n• Played an active role in promoting the Middle Way Approach movement globally.",
-      "status": "Current MP"
+      "status": "Current MP",
+      "verified": true
     },
     {
       "id": 41,
@@ -741,18 +743,19 @@
     {
       "id": 45,
       "photo": "../../images/candidates/45.jpg",
-      "name": "Tenzin Phunstok Doring",
+      "name": "Tenzin Phuntsok Doring",
       "ageGroup": "36-45",
       "gender": "Male",
       "origin": "Lhasa",
       "currentAddress": "Brisbane, Australia",
       "occupation": "Member of the 17th TPiE",
       "representing": "Australia & Asia",
-      "briefBio": "A Tibetan exile and politician born on 26 July 1985. Educated in India; active in student leadership, human-rights work, and Tibetan community organising.",
-      "educationalBackground": "• Studied at Tibetan Homes Foundation School, Mussoorie after arriving in India in 1994. \n• Master of Philosophy (M.Phil) in Political Science, Madras Christian College.",
-      "workExperience": "• School captain (2007). \n• Executive-committee member & President, Madras Tibetan Students Association (2008 & 2012). \n• Organising committee member, All-India Tibetan student uprising. \n• Chief coordinator, 3rd Tibetan College Students Conference (2009). \n• General-Secretary & executive-committee member, National Democratic Party of Tibet. \n• Assistant researcher, Tibetan Centre for Human Rights and Democracy. • English researcher, Tibet Watch. \n• Tibetan advocacy work in Queensland, Australia (from 2018). \n• President & executive-committee member, Queensland Tibetan Community (2019). \n• Elected to the 17th Tibetan Parliament-in-Exile (2021).",
-      "otherInformation": "• Organised the first-ever scholar's talk on Tibet at Madras Christian College (2013). \n• Active advocate for Tibetan rights in the global diaspora.",
+      "briefBio": "Born on 26 July 1985. After coming to India in 1994, he was admitted to Tibetan Homes Foundation School in Mussoorie. He completed his Master of Philosophy in Political Science from Madras Christian College. Active in student leadership, human rights work, and Tibetan advocacy in Australia. Currently serving as a Member of the 17th Tibetan Parliament-in-Exile representing Australasia and Asia (excluding India, Nepal, and Bhutan).",
+      "educationalBackground": "• Arrived in India in 1994\n• Tibetan Homes Foundation School, Mussoorie\n• Master of Philosophy (M.Phil) in Political Science, Madras Christian College",
+      "workExperience": "• 2007: School Captain\n• 2008: Executive Committee Member, Madras Tibetan Students Association\n• 2008 & 2012: President, Madras Tibetan Students Association\n• 2009: Member, Organizing Committee of All-India Tibetan Student Uprising\n• 2009: Chief Coordinator, 3rd Tibetan College Students Conference\n• General Secretary & Executive Committee Member, National Democratic Party of Tibet\n• Assistant Researcher, Tibetan Centre for Human Rights and Democracy\n• English Researcher, Tibet Watch\n• 2018-2020: Campaigned for Tibet's issue in Queensland, Australia\n• 2019: President & Executive Committee Member, Queensland Tibetan Community\n• 2021: Elected to the 17th Tibetan Parliament-in-Exile",
+      "otherInformation": "• 2013: Organized first-ever scholar's talk on Tibet at Madras Christian College\n• Imparted Tibet's issues to Indian and international students in different Indian colleges\n• Organized campaigns with Uyghurs, Hongkongers, and Vietnamese on Tibet-related issues\n• Met numerous Federal & State parliamentarians, city councillors, and activists in Australia to advocate for Tibet\n• Made history as first Tibetan in Australia to address Brisbane City Council members during their session\n• Visited Japan and New Zealand to participate in conferences on Tibet issue\n• Actively participated in House debates, discussions, and bringing bills during parliamentary term",
       "status": "Current MP",
+      "verified": true,
       "socialMedia": {
         "facebook": "https://www.facebook.com/profile.php?id=100003620833983",
         "instagram": "https://www.instagram.com/tenzinphuntsokdoring/"
@@ -1434,7 +1437,7 @@
       "id": 84,
       "photo": "../../images/candidates/84.jpg",
       "name": "Sangyal Dorjee",
-      "ageGroup": "",
+      "ageGroup": "25-35",
       "gender": "Male",
       "origin": "Lhatok",
       "currentAddress": "Tashijong",
@@ -1445,6 +1448,7 @@
       "workExperience": "General Secretary of Chu-Shi-Gangdruk",
       "otherInformation": "",
       "status": "New",
+      "verified":true,
       "socialMedia": {
         "facebook": "https://www.facebook.com/skrpt"
       }
