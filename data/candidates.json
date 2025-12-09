@@ -1296,23 +1296,7 @@
       "otherInformation": "",
       "status": "New"
     },
-    {
-      "id": 76,
-      "photo": "../../images/candidates/76.jpg",
-      "name": "Sonam Tsering",
-      "ageGroup": "25-35",
-      "gender": "Male",
-      "origin": "Drongpa",
-      "currentAddress": "Dharamshala ",
-      "occupation": "",
-      "representing": "Dotoe",
-      "briefBio": "",
-      "educationalBackground": "",
-      "workExperience": "",
-      "otherInformation": "",
-      "status": "New",
-      "hidden": true
-    },
+
     {
       "id": 77,
       "photo": "../../images/candidates/77.jpg",
