@@ -786,7 +786,7 @@
     {
       "id": 47,
       "photo": "../../images/candidates/47.jpg",
-      "name": "Gonpo Dhundup ",
+      "name": "Gonpo Dhundup",
       "ageGroup": "25-35",
       "gender": "Male",
       "origin": "Ngari, Utsang",
@@ -1191,7 +1191,7 @@
     {
       "id": 69,
       "photo": "../../images/candidates/69.jpg",
-      "name": "Ngawang Lodoe ",
+      "name": "Ngawang Lodoe",
       "ageGroup": "",
       "gender": "Male",
       "origin": "Gapa",
@@ -1210,7 +1210,7 @@
     {
       "id": 70,
       "photo": "../../images/candidates/70.jpg",
-      "name": "Gyaltsen Choekyi ",
+      "name": "Gyaltsen Choekyi",
       "ageGroup": "25-35",
       "gender": "Female",
       "origin": "Nagchu",
@@ -1230,7 +1230,7 @@
       "ageGroup": "",
       "gender": "Female",
       "origin": "Kongpo",
-      "currentAddress": "Darjeeling ",
+      "currentAddress": "Darjeeling",
       "occupation": "Community leader & former Settlement Officer, Sonada Tashiling",
       "representing": "Utsang",
       "briefBio": "A dynamic Tibetan professional dedicated to youth empowerment, community development, and public service. Her leadership roles across Delhi, Dharamshala, and Sonada reflect her commitment, compassion, and competence. Her international academic training strengthens her global perspective and community service.",
@@ -1249,7 +1249,7 @@
       "ageGroup": "",
       "gender": "Female",
       "origin": "Bawa",
-      "currentAddress": "Mussoorie ",
+      "currentAddress": "Mussoorie",
       "occupation": "Community Worker, Educator",
       "representing": "Dotoe",
       "briefBio": "Born in Dharamsala and originally from Bawa (Dho-Toe), she has dedicated her career to education, youth welfare, and cultural preservation. Based in Mussoorie, she has worked across multiple settlements and schools, focusing on empowerment, heritage, and community well-being.",
@@ -1289,7 +1289,7 @@
       "gender": "Male",
       "origin": "Zachukha",
       "currentAddress": "Bylakuppee",
-      "occupation": "Community Worker and Craftman ",
+      "occupation": "Community Worker and Craftman",
       "representing": "Dotoe",
       "briefBio": "",
       "educationalBackground": "",
@@ -1297,7 +1297,6 @@
       "otherInformation": "",
       "status": "New"
     },
-
     {
       "id": 77,
       "photo": "../../images/candidates/77.jpg",
@@ -1437,7 +1436,7 @@
       "workExperience": "General Secretary of Chu-Shi-Gangdruk",
       "otherInformation": "",
       "status": "New",
-      "verified":true,
+      "verified": true,
       "socialMedia": {
         "facebook": "https://www.facebook.com/skrpt"
       }
@@ -1469,7 +1468,7 @@
       "gender": "Male",
       "origin": "Driru",
       "currentAddress": "Dharamsala",
-      "occupation": "Lawyer ",
+      "occupation": "Lawyer",
       "representing": "Dotoe",
       "briefBio": "Born in Sumpa, Nagshod, Driru, now residing in Dharamshala. A young and active Tibetan lawyer dedicated to justice, human rights, and the Tibetan freedom movement. Since arriving in India in 2006, he has grown from a student activist to a respected legal advocate and community leader, fluent in Tibetan and English.",
       "educationalBackground": "• Class 10 – TCV Suja (2013)\n• Class 12 (Arts) – TCV Suja (2015)\n• BA.LLB – Karnataka Law School (2015–2021)\n• Tibetan Exile Lawyer's License (2018)",
@@ -1497,10 +1496,10 @@
     {
       "id": 88,
       "photo": "../../images/candidates/88.jpg",
-      "name": "Tsering Tharchin ",
+      "name": "Tsering Tharchin",
       "ageGroup": "36-45",
       "gender": "Male",
-      "origin": "Lhokha Lhodrak ",
+      "origin": "Lhokha Lhodrak",
       "currentAddress": "Dharamsala",
       "occupation": "Independent Researcher on China",
       "representing": "Utsang",
@@ -1539,12 +1538,12 @@
       "ageGroup": "46-55",
       "gender": "Male",
       "origin": "Dzoge",
-      "currentAddress": "Czech Republic ",
+      "currentAddress": "Czech Republic",
       "occupation": "Vice President, Tibetan Association of Czech Republic; President of Nympa Lharso",
       "representing": "Europe and Africa",
       "briefBio": "An entrepreneur, translator, and author with a long-standing commitment to Tibetan advocacy. Founding member and first President of the Czech Tibet Association, now serving as its Vice President. Leads Nyampa Lharsö to promote cultural understanding and solidarity for the Tibetan cause.",
       "educationalBackground": "• Not specified",
-      "workExperience": "• Vice President, Tibetan Association of Czech Republic\n• President, Call of Justice\n• President of Nyampa Lharsö\n• Founding member & first President, Czech Tibet Association\n",
+      "workExperience": "• Vice President, Tibetan Association of Czech Republic\n• President, Call of Justice\n• President of Nyampa Lharsö\n• Founding member & first President, Czech Tibet Association",
       "otherInformation": "• Dedicated to cultural preservation, international advocacy & strengthening support for Tibet",
       "status": "New",
       "verified": true
