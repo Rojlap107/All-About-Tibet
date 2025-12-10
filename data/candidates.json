@@ -316,15 +316,16 @@
       "name": "Dawa Tsering",
       "ageGroup": "Above 55",
       "gender": "Male",
-      "origin": "Lhatse",
+      "origin": "Rachu",
       "currentAddress": "Dharamsala",
       "occupation": "Member of the 17th TPiE",
       "representing": "Utsang",
-      "briefBio": "Born in 1954, he is a long-serving Tibetan community leader known for his social work, settlement leadership, education initiatives, and active involvement in Tibetan democratic and civil society movements.",
+      "briefBio": "Born in Rachu in 1954, he is 71 years old and one of the long-serving Tibetan community leader known for his social work, settlement leadership, education initiatives, and active involvement in Tibetan democratic and civil society movements.",
       "educationalBackground": "• Schooling: C.S.T Dalhousie & C.S.T Shimla (served as group leader & school captain)",
-      "workExperience": "• Peon at TYC office\n• Executive Member – RTYC Dharamsala & Mcleod Youth Association\n• Founder – Yongling School\n• Accountant & Cashier – UTCV branch of Men-Tsee-Khang\n• Secretary (Advisory) – National Democratic Party of Tibet\n• Settlement Officer, Dharamsala (twice)\n• Vice President & Advisor – Indo-Tibetan Friendship Association\n• Founder – Parents Association (secured school bus)\n• Led Gujarat 2001 earthquake relief volunteers\n• Active in adult education, Buddhist education, and youth empowerment\n• Founder – Tibetan People’s Movement for Middle Way Policy (2008)\n• Founder – DharamsalaPeace & Compassion Promotion Group (2020)",
-      "otherInformation": "• Nominated by His Holiness the Dalai Lama for the 13th Assembly (2001)\n• Elected to the 14th, 15th & 16th TPiE\n• Current MP of the 17th TPiE from Utsang province",
+      "workExperience": "• Elected to the 12th, 14th, 15th, 16th & 17th TPiE\n• Nominated by His Holiness the Dalai Lama for the 13th Assembly (2001)• Executive Member – RTYC Dharamsala & Mcleod Youth Association\n• Founder of the Yongling School, Dharamsala\n• Accountant & Cashier of McLeod Branch Men-Tsee-Khang\n• Secretary and Whip of the National Democratic Party of Tibet\n• Settlement Officer, Dharamsala (elected three times)\n• Board Member & Director of the Kunphen Centre and Recovery\n• Founder of the Tibetan Unemployment Society\n• Member of the Bharat Tibbat Sahyog Manch\n• Vice President & Advisor of the Indo-Tibetan Friendship Association\n• Founder – Tibetan People's Movement for Middle Way Policy (2008)\n• Founder – Dharamsala Peace & Compassion Promotion Group (2020)",
+      "otherInformation": "\n• Led Gujarat 2001 earthquake relief volunteers\n• Active in adult education, Buddhist education, and youth empowerment",
       "status": "Current MP",
+      "verified": true,
       "socialMedia": {
         "facebook": "https://www.facebook.com/share/1J5nZi4RZK/?mibextid=wwXIfr"
       }
@@ -663,9 +664,10 @@
       "representing": "Dhomey",
       "briefBio": "Born on 24 January 1971 in Dharamshala. Long-time women’s rights advocate and community leader with decades of service in Tibetan associations.",
       "educationalBackground": "• Completed schooling at TCV Dharamshala.",
-      "workExperience": "• Executive Member, Regional Tibetan Women’s Association, Dharamshala (1996–1999).\n• Cashier, Regional Dhomey Association, Dharamshala (2003).\n• Executive Member, Central Tibetan Women’s Association (2003–2006; re-elected 2006–2009).\n• Led 170 participants in All India Peace March from Dehradun to Delhi (2005).\n• Disseminated TWA projects across 18 Tibetan settlements.\n• Executive Member and President, 14th Central Dhomey Association (2009).\n• Organizing Committee Member, 5th World Parliamentarians Convention on Tibet, Italy (2009).\n• Chairperson, Peace March of 100 monks of Kirti Monastery from Dharamsala to Delhi (2011).\n• Cashier for the 80th Birthday celebration of His Holiness the Dalai Lama.\n• Member of the 14th, 15th, and 16th Tibetan Parliament-in-Exile.\n• Current Member, 17th Tibetan Parliament-in-Exile.",
+      "workExperience": "• Executive Member, Regional Tibetan Women's Association, Dharamshala (1996–1999).\n• Cashier, Regional Dhomey Association, Dharamshala (2003).\n• Executive Member, Central Tibetan Women's Association (2003–2006; re-elected 2006–2009).\n• Led 170 participants in All India Peace March from Dehradun to Delhi (2005).\n• Disseminated TWA projects across 18 Tibetan settlements.\n• Executive Member and President, 14th Central Dhomey Association (2009).\n• Organizing Committee Member, 5th World Parliamentarians Convention on Tibet, Italy (2009).\n• Chairperson, Peace March of 100 monks of Kirti Monastery from Dharamsala to Delhi (2011).\n• Cashier for the 80th Birthday celebration of His Holiness the Dalai Lama.\n• Member of the 14th, 15th, and 16th Tibetan Parliament-in-Exile.\n• Current Member, 17th Tibetan Parliament-in-Exile.\n• Vice Chair, Ghoton Organizing Committee, Dhomey Association (2025)",
       "otherInformation": "• Lifelong advocate for women’s empowerment and community mobilization.\n• Has held leadership roles across major Tibetan women’s and regional associations.",
-      "status": "Current MP"
+      "status": "Current MP",
+      "verified": true
     },
     {
       "id": 38,
@@ -746,7 +748,8 @@
       "educationalBackground": "• Master of Prajnaparamita (Buddhist Philosophy) at Mugye Monastery, Tibet.\n• Studied at TCV School Suja, India (after exile in 1991).\n• Studied at Central Institute of Higher Tibetan Studies (CIHTS), Varanasi.\n• Studied French in France and completed diploma equivalent to 12th standard (2002).\n• Studied Law at Sorbonne University, Paris.\n• Studied Traditional Chinese Medicine in France (2011–2015).",
       "workExperience": "• President, French Tibetan Association (2003–2015).\n• President, France Dhomey Association (2017–2019).\n• Director, Jamtse School (France).\n• Elected Member of the 17th Tibetan Parliament-in-Exile (2021).",
       "otherInformation": "• Active in Tibetan community work, advocacy, and cultural preservation.",
-      "status": "Current MP"
+      "status": "Current MP",
+      "verified": true
     },
     {
       "id": 45,
@@ -858,13 +861,14 @@
       "gender": "Male",
       "origin": "Toe Ngari",
       "currentAddress": "New York",
-      "occupation": "President, Central Executive of Ngatri Tsokpa",
+      "occupation": "President, Central Ngari Chithun Tsokpa; Licensed Real Estate Agent",
       "representing": "North and South Americas",
-      "briefBio": "A dedicated community member committed to service, unity, and compassion. He has long been engaged with the Tibetan community across the Americas and aims to strengthen solidarity and preserve Tibetan identity through transparent and value-based leadership.",
-      "educationalBackground": "• Not specified",
-      "workExperience": "• Implied long-term community service\n• Leadership roles within the Tibetan diaspora in the Americas",
-      "otherInformation": "• Campaign goals include strengthening unity, upholding Tibetan values, promoting transparent leadership, and contributing to the Tibetan cause with humility\n• Encourages Tibetans in the Americas to work together for a stronger, more connected community",
+      "briefBio": "Kunga Thinley has served the Tibetan community for more than three decades across Nepal and the Americas. Beginning as a youth and alumni leader in Nepal, he continued his work after immigrating to the United States in 2000, first becoming President of the Tibetan Youth Congress of New York & New Jersey and later President of the Tibetan Community of NY/NJ. He went on to lead multiple regional and central Ngari Chithun associations and played key roles in long-life offerings for His Holiness the Dalai Lama. His leadership focuses on strengthening Tibetan institutions, supporting community welfare, and promoting unity through accountable service.",
+      "educationalBackground": "• Namgyal School under the Central Tibetan Administration",
+      "workExperience": "• Over 30 years of political and community leadership\n• President, Tibetan Youth Congress of New York & New Jersey\n• President, Tibetan Community NY/NJ\n• President, Regional and Central Ngari Chithun Association\n• President, 4th Ngari Tenshug",
+      "otherInformation": "• Core Values: Integrity - Committed to transparent, accountable, and ethical leadership\n• Unity - Dedicated to strengthening harmony among Tibetans across all regions and generations\n• Resistance - Upholds the Tibetan identity and contributes to the global movement for freedom, rights, and cultural preservation",
       "status": "New",
+      "verified": true,
       "socialMedia": {
         "facebook": "https://www.facebook.com/kunga.thinley.7"
       }
@@ -1058,15 +1062,16 @@
       "name": "Tenzin Chokey",
       "ageGroup": "46-55",
       "gender": "Female",
-      "origin": "",
+      "origin": "Gongjo",
       "currentAddress": "New York",
-      "occupation": "Digital Creator",
+      "occupation": "Social Media Ambassador, Exile Voice, New York",
       "representing": "North and South Americas",
-      "briefBio": "",
-      "educationalBackground": "",
-      "workExperience": "",
-      "otherInformation": "",
+      "briefBio": "Born in North East Shillong, Meghalaya, India, she has dedicated her career to community service, cultural preservation, and public engagement. She began as a teacher in Nepal before pursuing music and the arts, using composition, performance, and cultural exchange to strengthen Tibetan identity across India, Nepal, and the United States. She has represented Tibetan culture at major venues and remains committed to advancing the community with integrity, dedication, and deep respect for cultural roots.",
+      "educationalBackground": "• Not specified",
+      "workExperience": "• Teacher, Nepal (early career)\n• Artist, Ambassador & Executive Member, Tibet India Foundation (2004–2008)\n• Represented Tibetan culture at Kala Ghoda Arts Festival, Mumbai\n• Performed at various Tibetan festivals worldwide across India, Nepal, and the United States\n• Social Media Ambassador, Exile Voice, New York (Sep 2022 - Present)\n• Digital Creator and Cultural Ambassador through music, composition, and performance",
+      "otherInformation": "• Uses music and arts for cultural preservation and strengthening Tibetan identity\n• Active in cultural exchange programs across multiple countries\n• Amplifies Tibetan voices and promotes heritage on global platforms\n• Committed to advancing the Tibetan community with integrity and dedication",
       "status": "New",
+      "verified": true,
       "socialMedia": {
         "facebook": "https://www.facebook.com/CHOK3Y"
       }
@@ -1115,15 +1120,16 @@
       "name": "Sonam Tsering",
       "ageGroup": "",
       "gender": "Male",
-      "origin": "Drongpa",
+      "origin": "Bhongpa",
       "currentAddress": "Upper TCV",
-      "occupation": "Teacher",
+      "occupation": "Teacher, UTCV School Dharamsala",
       "representing": "Utsang",
-      "briefBio": "",
-      "educationalBackground": "",
-      "workExperience": "",
-      "otherInformation": "",
-      "status": "New"
+      "briefBio": "An experienced educator and dedicated community leader with extensive background in teaching, social service, and Tibetan democratic institutions. He has served in various leadership roles including positions in the National Democratic Party of Tibet, Dharamsala Tibetan Local Assembly, and Central Ngari Chithun Association. Since 2004, he has been working as a teacher at UTCV School, Dharamsala, combining his passion for education with active community engagement.",
+      "educationalBackground": "• Class 10, TCV School, Dharamsala\n• Shastri degree, CIHTS, Sarnath\n• Bachelor of Education (BEd), CIHTS, Sarnath\n• Master of Arts (MA), CIHTS, Sarnath",
+      "workExperience": "• President, Student Drama Club at CIHTS, Sarnath (1995)\n• Secretary, TCV Alumni Association in Varanasi (1996)\n• Treasurer, Local Tibetan Freedom Movement Committee (1999)\n• Teacher, Srongtsen Bhrikuti Boarding High School, Nepal (2001)\n• Volunteer, Kalachakra Initiations in Bodhgaya organized by Tibetan Youth Congress (2002, 2003, 2006 - 27th, 28th, and 30th initiations)\n• Teacher, UTCV School, Dharamsala (2004 - Present)\n• Member, Dharamsala Tibetan Local Assembly (2007-2019, 12 years across 6th to 9th terms)\n• Joint Secretary, National Democratic Party of Tibet (NDPT) (Sep 2008 - Sep 2011)\n• Secretary, Central Ngari Chithun Association (2017-2022, six years)",
+      "otherInformation": "• Possesses extensive experience and knowledge in various social service and community leadership fields\n• Active in Tibetan democratic institutions and cultural organizations\n• Long-term commitment to education and youth development",
+      "status": "New",
+      "verified": true
     },
     {
       "id": 65,
@@ -1246,9 +1252,10 @@
       "representing": "Utsang",
       "briefBio": "A dynamic Tibetan professional dedicated to youth empowerment, community development, and public service. Her leadership roles across Delhi, Dharamshala, and Sonada reflect her commitment, compassion, and competence. Her international academic training strengthens her global perspective and community service.",
       "educationalBackground": "• Schooling – CST Paonta\n• B.A. (Hons.) English, SPM College, Delhi University\n• MSc Management Studies, Plymouth University, UK (2016–2017)\n• MA Development Studies, IDS, University of Sussex, UK (2018–2019)",
-      "workExperience": "• Vice President, Student Council (TCV Youth Hostel Delhi) & RTYC Rohini (2006–2007)\n• Awarded “Best Girl” of TCV Youth Hostel Delhi (2007)\n• Organisation & Information Secretary, TYC Head Office (2007–2013)\n• Central Executive Member, Tibetan Youth Congress\n• Settlement Officer, Sonada Tashiling (2019–2022)\n• Led welfare projects, secured development funding & directed COVID-19 relief efforts",
+      "workExperience": "• Joint Secretary, RTYC Rohini (2005–2006)\n• Vice President, Student Council (TCV Youth Hostel Delhi) & RTYC Rohini (2006–2007)\n• Awarded \"Best Girl\" of TCV Youth Hostel Delhi (2007)\n• Organisation & Information Secretary, TYC Head Office (2007–2013)\n• Central Executive Member, Tibetan Youth Congress\n• Settlement Officer, Sonada Tashiling (2019–2022)\n• Led welfare projects, secured development funding & directed COVID-19 relief efforts",
       "otherInformation": "• Advocates for education, gender equality & sustainable development\n• Strong promoter of youth participation & Tibetan unity",
       "status": "New",
+      "verified": true,
       "socialMedia": {
         "facebook": "https://www.facebook.com/Tenzin.Yangzom.2035"
       }
@@ -1455,18 +1462,19 @@
     {
       "id": 85,
       "photo": "../../images/candidates/85.jpg",
-      "name": "Ugen Tashi",
+      "name": "Urgen Tashi",
       "ageGroup": "",
       "gender": "Male",
-      "origin": "Dayap",
+      "origin": "Drak-yap",
       "currentAddress": "Bir BTS",
-      "occupation": "Member of Local Assembly BTS\nSecretary of Bir Tibetan Shopkeepers Association",
+      "occupation": "Member of Local Assembly, Bir; Secretary, Bir Tibetan Shopkeeper's Association",
       "representing": "Dotoe",
-      "briefBio": "",
-      "educationalBackground": "",
-      "workExperience": "",
-      "otherInformation": "",
+      "briefBio": "Born in Pemakoe, Tibet, Ugen Tashi was raised at Tibetan Homes Foundation Mussoorie by the grace of His Holiness the Dalai Lama. His father was from Kham Dayap Bugon Tsang. After completing his education and secretarial training, he served as school office secretary at THF and later as Head Administrator of Bir New Tibetan School during its establishment in 1985. He handed over the school management to the Kashag in 1986 and returned to THF before eventually resigning on health grounds. Currently residing at Bir Tibetan Society, he runs a garments business while actively serving in multiple community leadership roles. He is committed to working for the unity of Cholkhas and bringing together people with different ideologies during this crucial time in His Holiness the Dalai Lama's era.",
+      "educationalBackground": "• Schooling at Tibetan Homes Foundation Mussoorie\n• Secretarial courses of PA/PS",
+      "workExperience": "• School Office Secretary, Tibetan Homes Foundation\n• Head Administrator, Bir New Tibetan School (1985-1986) - played key role in establishing the school for 70 Tibetan youths who arrived from Tibet during the 1985 Kalachakra teaching at Bodhgaya\n• Returned to Tibetan Homes Foundation (1986)\n• Garments Business Owner, Bir Tibetan Society (current)\n• Member, Local Tibetan Assembly at BTS (many years)\n• Chief Secretary, Bir Tibetan Business Welfare Association - representing all four Tibetan settlements (BTS, Nangchen Division, Dege Division, and Lily Division)\n• President, Dotoe Cholkha of BTS\n• Working Member, Centre Dotoe Cholkha\n• Previously worked at local Bod Rangwang Dephel",
+      "otherInformation": "• Played instrumental role in establishing the Bir Tibetan Business Welfare Association consisting of all four Tibetan settlements\n• Committed to working for the unity of Cholkhas and bridging ideological differences\n• Believes it is crucial to work wholeheartedly during His Holiness the Dalai Lama's era\n• Seeks to fulfill the wishes of the people and serve the exile government with the experience and dignity earned through years of service\n• Vision: \"Tibet needs me at these crucial times to work for the country\"",
       "status": "New",
+      "verified": true,
       "socialMedia": {
         "facebook": "https://www.facebook.com/ugen.tashi.988883"
       }
@@ -1515,7 +1523,7 @@
       "occupation": "Independent Researcher on China",
       "representing": "Utsang",
       "briefBio": "A specialist in Chinese language, politics, and international relations with academic training from India and Taiwan. His research focuses on China’s political developments and strategic behavior.",
-      "educationalBackground": "• B.A. English Language & Literature – Delhi University (2010–2013)\n• M.A. Chinese & China Studies – JNU (2014–2019)\n• Associate’s Degree in Chinese Studies – National Chengchi University, Taiwan (2020–2023)\n• Associate’s Degree in Chinese Studies – National Taiwan Normal University (2020–2022)",
+      "educationalBackground": "• B.A. English Language & Literature – Delhi University (2010–2013)\n• M.A. Chinese & China Studies – JNU (2014–2019)\n• Associate’s Degree in Chinese Studies – National Chengchi University, Taiwan (2019–2020)\n• Associate’s Degree in Chinese Studies – National Taiwan Normal University (2020–2023)",
       "workExperience": "• Independent Researcher on China (2024–present)\n• General Secretary, RTYC Dharamshala (2025–present)\n• Researcher, Centre for China Analysis and Strategy (2023–2024, 2017–2019)\n• News Presenter, All India Radio (2014–2019)",
       "otherInformation": "• Life long Tibetan Freedom Activist\n• Specializes in China's politics, foreign policy & regional strategy\n• Extensive immersion experience in Taiwan for Chinese language and regional studies",
       "status": "New",
@@ -1571,9 +1579,10 @@
       "representing": "Europe and Africa",
       "briefBio": "Born in 1963 in Trogen, Switzerland to Tibetan refugee parents at Kinderdorf Pestalozzi. A lifelong activist, writer, and community leader deeply rooted in Tibetan culture while raised in Europe.",
       "educationalBackground": "• Studied History & Law, University of Zürich\n• Master’s degree (phil. I), University of Zürich (1997)",
-      "workExperience": "• Member, Tibetan Parliament-in-Exile (Europe constituency), elected 2014\n• President, Tibetan Youth Association Europe (1986–1990)\n• Co-founder, STAFT student group (1989)\n• Co-editor, Bod Shon magazine (1989–1995)\n• Media officer, Greenpeace Switzerland\n• Spokesperson & Party Secretary, Green Party of Switzerland (Canton Zürich) (1997–1999)\n• Co-founder/Contributor to: Lamtön Refugee Advice Center, Tibetan Freedom Radio, Filming for Tibet, Tibet Film Festival (2009)\n• Conducted first Tiananmen Square protest by an exile Tibetan (2006)\n• Freelance consultant in public affairs, communications & film",
+      "workExperience": "• Executive Director, International Campaign for Tibet (Oct 2021 - Present)\n• Managing Owner, Tethong Kommunikation (Jan 2014 - Present)\n• Advocacy and Multistakeholder Dialogue, SWISSAID, Part-time (Jan 2019 - Sep 2021, Bern, Switzerland)\n• Member, Tibetan Parliament-in-Exile (Europe constituency), elected 2014\n• Senior Consultant, Campaignforum Ltd. /Kampagnenforum GmbH (2008–2013) - Project Development, Campaigning, Media and PR\n• Head Communication Department, Zürcher Lehrinnenverband (Mar 2007 - 2007, Zürich Area, Switzerland)\n• Spokesperson & Party Secretary, Green Party of Switzerland (Canton Zürich) (1997–1999)\n• Media Officer, Greenpeace Switzerland\n• Co-editor, Bod Shon magazine (1989–1995)\n• Co-founder, STAFT student group (1989)\n• President, Tibetan Youth Association Europe (1986–1990)\n• Co-founder/Contributor to: Lamtön Refugee Advice Center, Tibetan Freedom Radio, Filming for Tibet, Tibet Film Festival (2009)\n• Conducted first Tiananmen Square protest by an exile Tibetan (2006)\n• Freelance consultant in public affairs, communications & film",
       "otherInformation": "• Author of scholarly and advocacy works\n• Wrote monograph on Tibetan political elite (2000)\n• Contributed chapter “Between Cultures: Young Tibetans in Europe” (2003)\n• Co-authored environmental report for Greenpeace Switzerland (2006)\n• Influential voice in European Tibet advocacy, culture, media & youth engagement",
       "status": "New",
+      "verified": true,
       "socialMedia": {
         "facebook": "https://www.facebook.com/wangpo.tethong"
       }
@@ -1608,7 +1617,8 @@
       "educationalBackground": "• Not specified",
       "workExperience": "• Former Vice President, Tibetan Women’s Association\n• President, Bharat-Tibet Support Women’s Wing\n• 26+ years in community service and grassroots welfare programs\n• Leadership roles promoting women’s empowerment and Indo-Tibet cooperation",
       "otherInformation": "• Strong advocate of Umay Lam (Middle Way)\n• Known for long-term dedication to public service & support for vulnerable groups\n• Focus on women's empowerment, social welfare & community unity",
-      "status": "New"
+      "status": "New",
+      "verified": true
     },
     {
       "id": 94,
@@ -1640,6 +1650,55 @@
       "educationalBackground": "• Studied in Tibetan schools up to secondary level\n• Studied Buddhist philosophy for about 10 years\n• Joined Sarah College for Higher Tibetan Studies in 2012\n• Graduated with a BA in Tibetan Studies (2017)\n• Studied advanced poetry at Mindroling Monastery\n• Received cultural training at Library of Tibetan Works & Archives\n• Completed leadership training with Tibetan Youth Congress",
       "workExperience": "• General Student Representative, Sarah College\n• Editorial member of Gangga's Laughter\n• Liaison Officer & Vice-President, Sarah Local Youth Group\n• Vice-President, 3rd Session of Lha-thog National Association\n• Secretary, Dharamsala Local Youth Group\n• President, 17th Session of Dharamsala Local Youth Group\n• Secretary, Tibetan Youth Congress Executive Committee & General Assembly\n• Basic Education Teacher, Drung-kar College, Bhutan\n• Member, Review Committee for Chhu-bzhi-sgang-drug Constitution\n• Secretary, Reception Committee for Long-Life Prayer Ceremony\n• 23rd General Secretary, Chushi Gangdruk",
       "otherInformation": "Slogan: United Together, Bridging Tibetans, Building Self-Reliance",
+      "status": "New"
+    },
+    {
+      "id": 96,
+      "photo": "../../images/candidates/96.jpg",
+      "name": "Lhamo Kyab",
+      "ageGroup": "",
+      "gender": "Male",
+      "origin": "འབའ་མང་ར།",
+      "currentAddress": "Bangalore",
+      "occupation": "Assistant Professor, MVJ College (Department of Forensic Science)",
+      "representing": "Dhomey",
+      "briefBio": "Lhamo Kyab arrived in India at the age of five. He completed his secondary education at TCV Suja and pursued his senior secondary education at TCV Bylakuppe. He subsequently obtained a Bachelor's degree in Forensic Science from Jain University, followed by a Master's degree in Forensic Science from Christ University. Upon the completion of his studies, he joined Infinity College of Education in Trivandrum, Kerala, as a lecturer. He is currently serving as an Assistant Professor in Forensic Science at MVJ College in Bangalore.",
+      "educationalBackground": "• Secondary education at TCV Suja\n• Senior secondary education at TCV Bylakuppe\n• Bachelor's degree in Forensic Science, Jain University\n• Master's degree in Forensic Science, Christ University",
+      "workExperience": "• Lecturer, Infinity College of Education, Trivandrum, Kerala\n• Assistant Professor, Department of Forensic Science, MVJ College, Bangalore (current)",
+      "otherInformation": "• Goals/Commitments:\n• To actively engage in Tibetan public affairs in alignment with the guidance and aspirations of His Holiness the 14th Dalai Lama\n• To uphold a principled and firm position on the Tibet–China issue, based on the real situation and grounded in peaceful and non-violent dialogue\n• To contribute toward improving living conditions and reducing poverty within the Tibetan exile community, with particular attention to the welfare of both the elderly and the youth\n• To advocate for women, children, orphans, and vulnerable or marginalized young Tibetans newly arrived from Tibet\n• To promote awareness and deeper understanding of the Tibetan cause among students in Indian universities through bilingual education in English and Hindi",
+      "status": "New",
+      "verified": true
+    },
+    {
+      "id": 97,
+      "photo": "../../images/candidates/97.jpg",
+      "name": "Karma Tenpa Wangchuk",
+      "ageGroup": "",
+      "gender": "Male",
+      "origin": "",
+      "currentAddress": "Gangtok",
+      "occupation": "",
+      "representing": "Kagyu",
+      "briefBio": "",
+      "educationalBackground": "",
+      "workExperience": "",
+      "otherInformation": "",
+      "status": "New"
+    },
+    {
+      "id": 98,
+      "photo": "../../images/candidates/98.jpg",
+      "name": "Dawa Tsering",
+      "ageGroup": "",
+      "gender": "Male",
+      "origin": "",
+      "currentAddress": "Dharamsala",
+      "occupation": "Former Representative of Office of Tibet Taiwan",
+      "representing": "Dotoe",
+      "briefBio": "",
+      "educationalBackground": "",
+      "workExperience": "• Former Representative, Office of Tibet Taiwan",
+      "otherInformation": "",
       "status": "New"
     }
   ]
