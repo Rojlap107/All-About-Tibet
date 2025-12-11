@@ -67,6 +67,7 @@
       "workExperience": "• Editor at the Department of Religion and Culture, CTA\n• Edited three volumes on the history of 300+ Tibetan monasteries\n• Member of the 15th TPiE (2011)\n• Re-elected to the 16th TPiE (2016)\n• Member of the 17th TPiE\n• Member of the Standing Committee",
       "otherInformation": "• Actively involved in parliamentary work, settlement visits, and Tibet outreach programs",
       "status": "Current MP",
+      "verified": true,
       "socialMedia": {
         "facebook": "https://www.facebook.com/share/1BpGe1QZKw/",
         "instagram": "https://www.instagram.com/yarphel888?utm_source=qr&igsh=eWtpZG0xbDF6bG0z"
@@ -119,6 +120,7 @@
       "workExperience": "• Oversaw construction of monks’ quarters and monastery hall\n• President of Regional Tibetan Freedom Movement (Mundgod) for two terms\n• Deputy Secretary, Local Tibetan Assembly, Mundgod\n• Executive member, Central Dhokham Chushi Gangdrung (two terms)\n• Member of the 16th TPiE\n• Member of the 17th TPiE & Standing Committee",
       "otherInformation": "• Escaped into exile in 1992\n• Active in official visitations and outreach programs in India and abroad\n• Participated in the 7th World Parliamentarians Convention on Tibet (Latvia, 2019)\n• Worked in many other campaigns and conventions",
       "status": "Current MP",
+      "verified": true,
       "socialMedia": {
         "facebook": "https://www.facebook.com/share/1C7ynMZkWs/?mibextid=wwXIfr"
       }
@@ -1186,6 +1188,7 @@
       "workExperience": "• Tibetan Language Teacher, Government School, Sikkim (age 18, served 3 years)\n• Served in Tibetan Army (10 years) with loyalty, discipline, and dedication\n• President and General Secretary, Tibetan Regional Freedom Movement Subcommittee (2000-2014, 14 years)\n• Learned computer hardware and technology (2007)\n• Founder and Publisher, Special Buddhist Calendar (SBC) (initiated 1999, nearly 28 years of service)",
       "otherInformation": "• Special Buddhist Calendar (SBC) created specially for Tibetans, Sikkimese, and entire Himalayan region, designed for day-to-day life use\n• SBC has flourished each year with community support for nearly 28 years\n• Worked to strengthen regional initiatives, preserve Tibetan identity, and promote unity\n• Committed to serving the community with honesty and a vision for collective progress\n• Believes unity is the greatest strength\n• Campaign message: Vote with unity, honesty, and shared hope for a brighter future",
       "status": "New",
+      "verified":true,
       "socialMedia": {
         "facebook": "https://www.facebook.com/tsangdrak"
       }
@@ -1576,7 +1579,7 @@
     {
       "id": 92,
       "photo": "../../images/candidates/92.jpg",
-      "name": "Kalsang Tsering Derab",
+      "name": "Kalsang Tsering",
       "ageGroup": "46-55",
       "gender": "Male",
       "origin": "Tibet",
@@ -1588,6 +1591,7 @@
       "workExperience": "• School Prefect and Captain, Tibetan Homes School (1995-1997)\n• Treasurer and President, Regional Tibetan Youth Congress, Delhi (2000-2002)\n• Commerce Teacher, Tibetan Homes School (2002-2003)\n• Rehabilitation Officer, Bureau of His Holiness the Dalai Lama (2003-2004)\n• Protocol Officer, Bureau of His Holiness the Dalai Lama (2004-2005)\n• Officer in Charge, Visa & Identity Certificate, Bureau of His Holiness the Dalai Lama (2004-2005)\n• Secretariat, Task Force on Sino-Tibetan Negotiations, Kashag Office, CTA Dharamsala (2005-2019) - part of negotiation team in historic Eighth Round of Talks\n• President, ACT Tibetan Community (2021-2023)\n• Chair, Australian Tibetan Communities Association (2021-2023)\n• Client Service Officer, Public Trustee and Guardian, ACT Government, Australia (2022-present)\n• Board of Directors, Australia Tibet Council (ATC) (2024-present)\n• Tibetan Language Teacher, Thonmie Bhod-kad Lobling Weekend Language School, Canberra (2023-present)",
       "otherInformation": "• Awards: Best Boy (Bum Kyon Sumdrel) Award by Department of Education CTA, Meritorious Award CBSE New Delhi, Best Boy Award Tibetan Youth Hostel Delhi\n• Member School Green Peace Club (1993-1997), School Editorial Board (1995-1997)\n• Organized Tibet Festival at Delhi University\n• Coordinated first-ever GCM Team from Australia\n• Co-led Australia Tibet Council's Little Tibet Tour\n• Actively participates in Tibet Lobby Days, engaging with Australian parliamentarians\n• Immigrated to Australia (2020) through resettlement program for former Tibetan political prisoners and their families",
       "status": "New",
+      "verified": true,
       "socialMedia": {
         "facebook": "https://www.facebook.com/kalsangtderab",
         "instagram": "https://www.instagram.com/kalsang_derab/"
@@ -1689,6 +1693,22 @@
       "educationalBackground": "• Not specified",
       "workExperience": "• Researcher, Tibet Study Branch, Department of Security, CTA (1993)\n• Chinese Coordinator, Department of Information and International Relations, CTA (1995)\n• Founding Head of the Chinese Desk, CTA\n• First Editor, Chinese edition of Tibet Bulletin\n• Special Coordinator for Sino-Tibetan Dialogue (2007) - facilitated contact between Tibetan Government-in-Exile and Chinese government officials\n• Representative of His Holiness the Dalai Lama in Taiwan (2008-2021) - established Tibetan Publishing House of Snowy Land\n• Successfully defended Tibetan Buddhism and His Holiness the Dalai Lama against defamatory accusations in Taiwan courts\n• Director, Tibetan Policy Institute of CTA (2022-2025)\n• Member, Permanent Strategic Committee on Sino-Tibet\n• Retired from public service in 2025",
       "otherInformation": "Publications:\n  - Offering Warm Blood to the Snowy Landscape (Fifty Years of Tibetan Resistance against Forced Chinese Invasion)\n  - Transparent Mirror: A Comprehensive Study of Tibetan Population Growth and Decline in Tibet\n  - My Guru and the Dream of My Motherland (compilation of articles published in Taiwan and Hong Kong)\n  - Tibet and Taiwan: Twenty Years of Shared Journeys\n  - Co-author of Fifty Years of the History of Exile Tibetans\n  - Translator of Michael C. van Walt van Praag's The Tibetan Situation into Chinese\n• Notable Achievement: Successfully defended Tibetan Buddhism against heretical accusations by controversial figures and Chinese organizations in Taiwan, protecting His Holiness the Dalai Lama's reputation\n• Known for independent thinking, historical knowledge, and courageous conviction\n• First profound experience upon arrival in India: meeting His Holiness the 14th Dalai Lama\n• Recommended by Lobsang Tenje for the 18th Parliamentary Election",
+      "status": "New"
+    },
+    {
+      "id": 99,
+      "photo": "../../images/candidates/99.jpg",
+      "name": "Jamyang Sherab",
+      "ageGroup": "25-35",
+      "gender": "Male",
+      "origin": "Chushul, Ladakh",
+      "currentAddress": "Leh-Ladakh",
+      "occupation": "Community Development Worker",
+      "representing": "Utsang",
+      "briefBio": "Born on April 8, 1990, in a Tibetan nomadic and agricultural family in Chushul, Ladakh. He served four years in the Central Tibetan Administration in the Departments of Education and Health, pioneering the Online Scholarship Application system and implementing projects benefiting Tibetan communities across 27 settlements. He volunteered as a frontline worker during COVID-19 and ran as a candidate for the 17th TPiE from U-Tsang in 2021. Currently focused on grassroots development, he works with local organizations improving livelihoods of mountain communities including Tibetan nomadic populations.",
+      "educationalBackground": "• Primary to Grade 10: SOS TCV Ladakh School\n• Grade 12 Science (PCM): CST Herbertpur School\n• Bachelor of Computer Application (BCA), St Aloysius College, Mangalore, Karnataka (2013)\n• Master of Public Administration (MPA), IGNOU University (2018)",
+      "workExperience": "• Social service member and voluntary campaigns during school and college\n• Active member, Tibetan Student Association, Mangalore\n• Worked at MenTseeKhang and Tibet Action Institute (Tibetan NGOs)\n• Department of Education, CTA (4 years total) - Pioneered Online Scholarship Application system and database reform\n• Department of Health, CTA - Implemented projects benefitting 16 northern settlements, 3 northeastern settlements, and 8 southern central settlements; COVID-19 frontline volunteer\n• Candidate for 17th Central Tibetan Parliament from U-Tsang (2021)\n• Candidate for Chief Representative Officer, Ladakh Sonamling Settlement\n• President, Ladakh TCV Alumni Association (LTCVAA) (2021-2025)\n• Member, Local Tibetan Assembly, Leh-Ladakh (current)\n• Community Development Worker, local organization in Ladakh (2021-present) - improving livelihoods of far-flung mountain communities including Tibetan nomadic population\n• Participated in Tibetan Rural Green Business Training exchange program in USA",
+      "otherInformation": "• Pioneer of Online Scholarship Application system in Department of Education against all odds\n• Database reform initiatives in Department of Education, CTA\n• COVID-19 frontline volunteer serving the Tibetan community during pandemic\n• Focused on grassroots polity and disadvantaged community service\n• Learned about entrepreneurship scope within Tibetan Community in Exile through USA exchange program\n• Mission: Serve the disadvantaged community with knowledge, experience, and expertise gained under guidance of His Holiness the Dalai Lama and CTA",
       "status": "New"
     }
   ]
