@@ -232,6 +232,7 @@
       "workExperience": "• Cybersecurity researcher with global experts\n• Worked extensively at Tibet Action Institute\n• Director of Technology, Tibet Action Institute (current)\n• Advisory Board Member, Citizen Clinic, UC Berkeley (2018–2020)\n• Member of the 17th TPiE",
       "otherInformation": "• Featured in Wired UK 2021 Smart List as one of 32 innovators building a better future\n• Over 15 years of working on cybersecurity issues in the Tibetan community\n• Published \"Exile\" - A photo journal documenting how the first generation of Tibetans under the leadership of His Holiness the Dalai Lama re-established the Tibetan community in Exile\n• Interviewed widely by Tibetan and international media on internet freedom issues",
       "status": "Current MP",
+      "verified": true,
       "socialMedia": {
         "facebook": "https://www.facebook.com/share/17ZjWbfVEe/?mibextid=wwXIfr"
       }
@@ -495,11 +496,12 @@
       "currentAddress": "Dharamsala",
       "occupation": "Member of the 17th TPiE",
       "representing": "Dotoe",
-      "briefBio": "Born in 1989 in Minyak, Tibet. He completed his schooling in Tibet and later continued studies in India, earning a BA in Tibetan language. He has worked as a researcher and journalist before entering Parliament.",
+      "briefBio": "Born in 1989 in Minyak, Tibet. He completed his schooling in Tibet and later continued studies in India, earning a BA in Tibetan Studies. He has worked as a researcher and journalist before entering Parliament.",
       "educationalBackground": "• Primary & secondary education in Minyak, Tibet\n• Sheng Zangxiao School, Dartse Do, Kham\n• BA (Tibet), institution unspecified\n• English studies at Tibetan Transit School\n• BA in Tibetan Language, College for Higher Tibetan Studies, Sarah",
       "workExperience": "• Researcher (History of Kham) for Gaden Phodrang project (2015–2018)\n• Reporter & Editor, Chinese Section, Voice of Tibet (2018–2021)\n• Member, 17th Tibetan Parliament-in-Exile",
       "otherInformation": "Focused on historical research and media work before Parliament",
       "status": "Current MP",
+      "verified": true,
       "socialMedia": {
         "facebook": "https://www.facebook.com/share/1AwWPGXk6d/?mibextid=wwXIfr",
         "instagram": "https://www.instagram.com/phurdhor?igsh=MTJpdGYwenBodWw1cw=="
@@ -1289,6 +1291,7 @@
       "workExperience": "• President, Tibetan Community in Switzerland & Liechtenstein\n• Vice President, Europe Dhokham Chushi Gangdrug in Switzerland\n• Coordinated long-life prayers for His Holiness the 14th Dalai Lama's visit to Switzerland in 2024\n• Early student activism and community leadership",
       "otherInformation": "• Committed to strengthening Tibetan unity and solidarity within the community\n• Working with youth and creating space for leadership and engagement\n• Preserving and promoting Tibetan language, religion, and culture\n• Pledges to continue serving the Tibetan people and freedom struggle with determination and responsibility",
       "status": "New",
+      "verified":true,
       "socialMedia": {
         "facebook": "https://www.facebook.com/profile.php?id=100076647973823"
       }
@@ -1402,17 +1405,18 @@
       "id": 82,
       "photo": "../../images/candidates/82.jpg",
       "name": "Lobsang Samdup",
-      "ageGroup": "",
+      "ageGroup":"46-55",
       "gender": "Male",
       "origin": "Nagchuw",
       "currentAddress": "Sera Jey",
       "occupation": "Former President of The Call of General Public",
       "representing": "Utsang",
-      "briefBio": "",
-      "educationalBackground": "",
-      "workExperience": "",
-      "otherInformation": "",
-      "status": "New"
+      "briefBio": "Born into a nomadic family in Amdo Country, Nagchu Northern Tibet. At the age of nine, enrolled at Thongkar Gon Phuntsok Dhargyeling Monastery, successfully completing trainings on various religious practices, Dharma Protectors (Gon Chos Lha Nam), Tantric cycles, and the ritual empowerment of the three front vases. Mastered the chanting melodies, ritual procedures, and music (blowing, striking, and playing instruments) of the monastery, and served as the Great Chant Master (Oum Ze Chen Mo) of the Monastery. In 1998, due to strict restrictions by the Chinese, left homeland at the age of twenty-two and made the journey towards the Himalayan mountains.",
+      "educationalBackground": "• 1998-2021: Studied at Serjey Hardong Khangtsen\n• Obtained degrees in Madhyamaka Rabjampa (Middle Way), Prajnaparamita Rabjampa (Perfection of Wisdom), and Abhidharma Rabjampa (Treasury of Knowledge)\n• 2022: Conferred the degree of Geshe\n• 2023: Joined Palden Gyuto Tantric College, attended summer session for one year and received certificate of completion\n• April 2025: Attended Secret Mantra Class (Gang Ngag 'Zin Dar) for six months, completing various stages of great canonical studies\n• Studied Tibetan grammar and spelling (Sum Tag Dayg Sum)\n• Completed three-year Mind and Life Philosophy Class (Sem, Dang Sog Gi Tsen Rig 'Zin Dar)\n• Received three years of English language training organized by Serjey Library\n• Certificate in basic computer skills from Eptic Company\n• Certificate in Adobe InDesign training from Career Guidance Cell of CTA\n• Completed computer training at Institute of Buddhist Dialectics (IBD) in Dharamsala",
+      "workExperience": "• Elected as representative to Serjey General Assembly (Gros Tshogs) for three terms, serving as council member for ten years\n• Khangtsen Head (Khantsen Gan) for one year\n• Chant Master (Dbu Mdzad) for two years (elected by vote)\n• General Secretary (Sp'yi Roan) for three years, recognized for excellent performance\n• October 1, 2022: Co-founded the Grassroots Public Appeal Group (Shi Rim Mimang Re 'bod Tsogs Pa)",
+      "otherInformation": "On October 7, 2022, released a public appeal to Tibet's Parliament in Exile on four key points regarding the need to reinstate the Supreme Justice Commission. Collected views of 5,700 individuals based on their Green Book records and submitted them to Parliament.\n\nThe four key points were:\n1. Members of Parliament who brought back Document 39 should resign on grounds of moral conduct\n2. Parliamentary rules, especially regarding qualifications of Chief Justice Commissioner, must be revised promptly\n3. Equal rights for both monastic and lay communities to elect Religious Representatives\n4. Religious Representatives in Standing Committee (Gyun Las) must be appointed in proportion to their percentage in General Assembly",
+      "status": "New",
+      "verified": true
     },
     {
       "id": 83,
@@ -1543,7 +1547,8 @@
       "educationalBackground": "Doctrate in Philosophy",
       "workExperience": "• Vision to promote awareness of Tibet's past and political issues internationally\n• Focus on educating young Indians about pre-1959 Tibetan history\n• Plans to preserve and promote Tibetan language\n• Intends to encourage patriotism among Tibetan youth\n• Aims to strengthen ties between the exile Tibetan government and the Tibetan community",
       "otherInformation": "",
-      "status": "New"
+      "status": "New",
+      "verified": true
     },
     {
       "id": 90,
