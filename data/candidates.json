@@ -1327,6 +1327,7 @@
       "workExperience": "• President, Tibetan Youth Congress (2001-2007)\n• Lifelong dedication to Tibetan freedom struggle and community service",
       "otherInformation": "• During his 2001 acceptance speech as TYC President, he said: 'I stand here today, that destitute child who was offered to His Holiness thirty years ago, as a two-winged individual, the wings of knowledge and dedication. With resolution, I offer myself to serve and restore freedom to my country and to my people.",
       "status": "New",
+      "verified": true,
       "socialMedia": {
         "facebook": "https://www.facebook.com/godrukkalsang"
       }
@@ -1721,6 +1722,39 @@
       "workExperience": "• Social service member and voluntary campaigns during school and college\n• Active member, Tibetan Student Association, Mangalore\n• Worked at MenTseeKhang and Tibet Action Institute (Tibetan NGOs)\n• Department of Education, CTA (4 years total) - Pioneered Online Scholarship Application system and database reform\n• Department of Health, CTA - Implemented projects benefitting 16 northern settlements, 3 northeastern settlements, and 8 southern central settlements; COVID-19 frontline volunteer\n• Candidate for 17th Central Tibetan Parliament from U-Tsang (2021)\n• Candidate for Chief Representative Officer, Ladakh Sonamling Settlement\n• President, Ladakh TCV Alumni Association (LTCVAA) (2021-2025)\n• Member, Local Tibetan Assembly, Leh-Ladakh (current)\n• Community Development Worker, local organization in Ladakh (2021-present) - improving livelihoods of far-flung mountain communities including Tibetan nomadic population\n• Participated in Tibetan Rural Green Business Training exchange program in USA",
       "otherInformation": "• Pioneer of Online Scholarship Application system in Department of Education against all odds\n• Database reform initiatives in Department of Education, CTA\n• COVID-19 frontline volunteer serving the Tibetan community during pandemic\n• Focused on grassroots polity and disadvantaged community service\n• Learned about entrepreneurship scope within Tibetan Community in Exile through USA exchange program\n• Mission: Serve the disadvantaged community with knowledge, experience, and expertise gained under guidance of His Holiness the Dalai Lama and CTA",
       "status": "New"
+    },
+    {
+      "id": 100,
+      "photo": "../../images/candidates/100.jpg",
+      "name": "Tenzin Choedak",
+      "ageGroup": "36-45",
+      "gender": "Male",
+      "origin": "Karang, Amdo",
+      "currentAddress": "Delhi",
+      "occupation": "Social Worker/Lawyer",
+      "representing": "Dhomey",
+      "briefBio": "",
+      "educationalBackground": "",
+      "workExperience": "",
+      "otherInformation": "Language known: Tibetan, English, Hindi, French",
+      "status": "New"
+    },
+    {
+      "id": 101,
+      "photo": "../../images/candidates/101.jpg",
+      "name": "Penpa Tsering Ngoche",
+      "ageGroup": "35-40",
+      "gender": "Male",
+      "origin": "Nangchen, Kham, Tibet",
+      "currentAddress": "Dharamshala",
+      "occupation": "General Secretary, Central Welfare Society of Nangchen Nyernga",
+      "representing": "Dotoe",
+      "briefBio": "Born on 1st July, 1990. Since arriving in India in 2000, I completed schooling in Tibetan Homes School, Mussoorie and Bachelor and post graduate in economics in PU. I have served 14 years in RTYC, TYC and Nangchen nyernga central.",
+      "educationalBackground": "• 10th from Tibetan Homes School Mussoorie\n• 12th from Tibetan Homes School Mussoorie\n• Bachelor in Economics in DAV, PU\n• Post Graduate Economics in PU",
+      "workExperience": "• Tibetan Homes School Prefect\n• General Secretary of the Tibetan Freedom Movement, Chandigarh\n• President of Regional Tibetan Youth Congress, Chandigarh\n• Organizational Secretary of the Tibetan Youth Congress Central Executive\n• Organizational cum Intral Secretary of the Tibetan Youth Congress Central Executive Committee\n• General Secretary of the Central Welfare Society of Nangchen Nyernga\n• President of the Himachal Nangchen Nyernga Association",
+      "otherInformation": "",
+      "status": "New",
+      "verified": true
     }
   ]
 }
