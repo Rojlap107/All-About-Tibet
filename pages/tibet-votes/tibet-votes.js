@@ -167,8 +167,10 @@ async function loadCandidates() {
     try {
         const response = await fetch('../../data/candidates.json');
         const data = await response.json();
-        // Sort candidates alphabetically by name (default sort)
-        allCandidates = data.candidates.sort((a, b) => a.name.localeCompare(b.name));
+        // Sort candidates alphabetically by name (default sort) and filter out hidden candidates
+        allCandidates = data.candidates
+            .filter(candidate => !candidate.hidden)
+            .sort((a, b) => a.name.localeCompare(b.name));
         filteredCandidates = [...allCandidates];
         displayCandidates();
         populateCompareSelectors();
@@ -185,6 +187,7 @@ function displayCandidates() {
 
     if (filteredCandidates.length === 0) {
         grid.innerHTML = '<p style="color: rgba(255, 255, 255, 0.6); text-align: center; padding: 40px; grid-column: 1 / -1;">No candidates found matching your filters.</p>';
+        updatePaginationInfo();
         updatePagination();
         return;
     }
@@ -233,7 +236,35 @@ function displayCandidates() {
         </div>
     `).join('');
 
+    updatePaginationInfo();
     updatePagination();
+}
+
+// Update pagination info display
+function updatePaginationInfo() {
+    const paginationInfo = document.getElementById('pagination-info');
+
+    if (!paginationInfo) return;
+
+    const total = filteredCandidates.length;
+    const totalAll = allCandidates.filter(c => !c.hidden).length;
+
+    if (total === 0) {
+        paginationInfo.innerHTML = 'No candidates found';
+        return;
+    }
+
+    const startIndex = (currentPage - 1) * candidatesPerPage + 1;
+    const endIndex = Math.min(startIndex + candidatesPerPage - 1, total);
+
+    let infoText = `Showing ${startIndex}-${endIndex} of ${total} candidate${total !== 1 ? 's' : ''}`;
+
+    // If filters are applied, show total available
+    if (total !== totalAll) {
+        infoText += ` (${totalAll} total available)`;
+    }
+
+    paginationInfo.innerHTML = infoText;
 }
 
 // Update pagination controls

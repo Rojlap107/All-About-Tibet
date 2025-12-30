@@ -428,6 +428,7 @@
       "workExperience": "• President – SFT U.K. (3 years)\n• Program Director – SFT India (3 years)\n• Consultant – Tibet Action Institute (3 years)\n• Secretary – 1066 Rotaract (Rotary) Club, Hastings, UK (2 years)\n• International Coordinator – International Tibet Network (8+ years)\n• Member of the 17th Tibetan Parliament-in-Exile from Dhotoe province\n• Global advocacy for human rights and nonviolent struggle",
       "otherInformation": "• Dhokham Chushi Gangdruk 9th Election Commission\n• Over a decade of experience in non-profit management\n• Specialized in advocacy for Tibet and global human rights\n• Built strategic partnerships with Tibetan civil societies, CTA, and global support networks\n• Expertise in international campaigns, capacity-building, and policy advocacy",
       "status": "Current MP",
+      "hidden": true,
       "verified": true,
       "socialMedia": {
         "facebook": "https://www.facebook.com/share/17iUZE1qwW/?mibextid=wwXIfr",
@@ -449,6 +450,7 @@
       "workExperience": "• Editor & researcher at Dept. of Religion and Culture, CTA\n• Researcher at Norbulingka's Cultural & Literary Research Centre\n• Executive Director, Khawa Karpo Tibet Culture Centre\n• Tibetan Editor-in-Chief at The Tibet Express\n• Former Member: 14th, 15th, 16th Tibetan Parliament-in-Exile",
       "otherInformation": "• Writer of articles, poetry, research works, and books\n• Editor of bimonthly magazine Ngagyur Rigney (50+ issues since 2012)\n• Served on Standing Committee & various parliamentary committees\n• Active in settlement visits & Tibet outreach programs",
       "status": "Current MP",
+      "verified": true,
       "socialMedia": {
         "facebook": "https://www.facebook.com/share/17oznSV4QD/?mibextid=wwXIfr",
         "instagram": "https://www.instagram.com/sertatoktsatsang?igsh=MTJnc3FzM2FiMjllMA=="
@@ -501,6 +503,7 @@
       "workExperience": "• Researcher (History of Kham) for Gaden Phodrang project (2015–2018)\n• Reporter & Editor, Chinese Section, Voice of Tibet (2018–2021)\n• Member, 17th Tibetan Parliament-in-Exile",
       "otherInformation": "Focused on historical research and media work before Parliament",
       "status": "Current MP",
+      "hidden": true,
       "verified": true,
       "socialMedia": {
         "facebook": "https://www.facebook.com/share/1AwWPGXk6d/?mibextid=wwXIfr",
@@ -666,15 +669,16 @@
       "name": "Lobsang Thupten",
       "ageGroup": "36-45",
       "gender": "Male",
-      "origin": "Rekong",
+      "origin": "Rebkong",
       "currentAddress": "Dharamsala",
       "occupation": "Member of the 17th TPiE; Coordinator of the Dengyab Writers’ Association",
       "representing": "Dhomey",
       "briefBio": "Born on 18 November 1981 in Rebgong, Tibet. Exile since 1998. Active in education, community service, and welfare organisations.",
       "educationalBackground": "• Completed schooling at Tibetan Children’s Village (TCV) School, India.\n• Studied Social Communication at Mother’s International School, Delhi (2003–2004).",
-      "workExperience": "• Personal Secretary to Ven. Jigme Rinpoche (2005–2012).\n• Supported underprivileged individuals and students through private donor assistance.\n• Secretary, Kunphen Rigney School (2010–2014).\n• Director, Kunphen Rigney School (from 2014).\n• Managed accommodation and transportation for guests during the 80th Birthday Celebration of His Holiness the Dalai Lama.\n• Welfare Officer, Central Dhomey Association Executive Committee (2016–2018).\n• Member of the 17th Tibetan Parliament-in-Exile.",
-      "otherInformation": "• Actively engaged in community welfare work.\n• Coordinator of the Dengyab Writers’ Association.",
-      "status": "Current MP"
+      "workExperience": "• Personal Secretary to Ven. Jigme Rinpoche (2005–2012).\n• Supported underprivileged individuals and students through private donor assistance.\n• Secretary, Kunpan Cultural School (2010–2014).\n• Director, Kunphen Rigney School (from 2014).\n• Managed accommodation and transportation for guests during the 80th Birthday Celebration of His Holiness the Dalai Lama.\n• Welfare Officer, Central Dhomey Association Executive Committee (2016–2018).\n• Member of the 17th Tibetan Parliament-in-Exile.",
+      "otherInformation": "• Member of 90th birthday celebration of Dhomay Goton Organizer Committee.\n• Actively engaged in community welfare work.\n• Coordinator of the Dengyab Writers' Association.",
+      "status": "Current MP",
+      "verified":true
     },
     {
       "id": 39,
@@ -684,13 +688,14 @@
       "gender": "Male",
       "origin": "Ngaba region",
       "currentAddress": "Dharamsala",
-      "occupation": "Member of the 17th TPiE; President, 17th Central Dhomey Association’s Executive Committee",
+      "occupation": "Member of the 17th TPiE; President",
       "representing": "Dhomey",
       "briefBio": "Born on 21 September 1982 in Ngaba, Tibet. A Geshe scholar and long-time community leader actively serving the Tibetan cause since 2005.",
       "educationalBackground": "• Earned the Geshe Degree (equivalent to Ph.D.) from Drepung Monastery in 2011.",
       "workExperience": "• Served as Chairperson, Vice-Chairperson, and Secretary in multiple Tibetan NGOs.\n• Member, Tibetan Local Assembly of Mundgod.\n• Participated in the all-India cycle rally and march for Tibet awareness (2009).\n• Editor and distributor of the “Tibetan Parliamentarian” newspaper during the Sikyong and Parliamentary elections (2010).\n• Executive member, Mundgod Regional Dhomey Association.\n• Executive member, 15th Central Dhomey Association.\n• Organising committee member, 80th Birthday Celebration of His Holiness the Dalai Lama.\n• Member, 16th Tibetan Parliament-in-Exile.\n• President, 16th Central Dhomey Association Executive Committee.\n• Member of the 17th Tibetan Parliament-in-Exile.",
       "otherInformation": "• Has published multiple research articles across newspapers, magazines, and online platforms.\n• Known for his active advocacy and leadership for the Tibetan cause.",
-      "status": "Current MP"
+      "status": "Current MP",
+      "verified": true
     },
     {
       "id": 40,
@@ -1303,14 +1308,15 @@
       "ageGroup": "46-55",
       "gender": "Male",
       "origin": "Zachukha",
-      "currentAddress": "Bylakuppee",
-      "occupation": "Community Worker and Craftman",
+      "currentAddress": "Bylakuppe",
+      "occupation": "Cultural Heritage Artisan / Social Worker",
       "representing": "Dotoe",
-      "briefBio": "",
-      "educationalBackground": "",
-      "workExperience": "President of the Tibetan Newcomers Welfare Associattion",
+      "briefBio": "A cultural heritage artisan and social worker from Zachukha, now based in Bylakuppe with thirty years of experience in exile. President of the Tibetan Newcomer Welfare Society, he has dedicated his life to supporting new arrivals from all three provinces of Tibet. With extensive experience in embroidery innovation and photography entrepreneurship, he promotes traditional craftsmanship and cultural preservation.",
+      "educationalBackground": "• Completed 12 years of study in Buddhist Philosophy in Tibet\n• Studied Tibetan and English at Sherab Gatsel Lobling School\n• Over 26 years of experience in embroidery innovation and entrepreneurship, promoting traditional craftmanship and sustainable livelihood\n• 17 years of experience in photography and graphic design entrepreneurship, advancing creative expression and cultural preservation",
+      "workExperience": "• President of Tibetan Newcomer Welfare Society\n• Taught Buddhist Philosophy at Kharnang Monastery in Tibet for over four years\n• Served as Vice President of the Regional Tibetan Youth Congress, Bylakuppe\n• Provided voluntary assistance to new arrivals from Tibet in India, Nepal, and Bhutan for four years, helping them overcome early challenges in exile\n• Founded the Tibetan Newcomer Welfare Society to support newcomers from all three provinces of Tibet\n• Served as President of the 1st Tibetan Newcomer Welfare Society for three years\n• Served as President of the 3rd Tibetan Newcomer Welfare Society for three years\n• Currently serving as President of the 5th Tibetan Newcomer Welfare Society\n• Served as a committed member of Regional Tibetan Freedom Movement, Dekyi Larsoe for five years\n• Served as Vice-President of the 1st Zachukha Association of South India for three years\n• Currently serving as Vice-President and Accountant of the 2nd Zachukha Association of South India",
       "otherInformation": "",
-      "status": "New"
+      "status": "New",
+      "verified": true
     },
     {
       "id": 77,
@@ -1390,15 +1396,15 @@
       "id": 81,
       "photo": "../../images/candidates/81.jpg",
       "name": "Tenzin Gyurmey",
-      "ageGroup": "",
+      "ageGroup": "Above 55",
       "gender": "Male",
-      "origin": "Ngari",
+      "origin": "Tsang Gyangtse",
       "currentAddress": "Gangtok",
-      "occupation": "General Secretary, Gangtok U-Tsang Association",
+      "occupation": "Central Executive Committee U-TSANG Chokha",
       "representing": "Utsang",
       "briefBio": "",
       "educationalBackground": "",
-      "workExperience": "",
+      "workExperience": "• Central Executive Committee U-TSANG Chokha.\n• President of Gangtok Tibetan Traditional Circle Dance Tsokpa.\n• General Secretary of Gangtok U-tsang Association \n• Former President of Gangtok U-tsang Association",
       "otherInformation": "",
       "status": "New"
     },
@@ -1656,7 +1662,8 @@
       "educationalBackground": "• Studied in Tibetan schools up to secondary level\n• Studied Buddhist philosophy for about 10 years\n• Joined Sarah College for Higher Tibetan Studies in 2012\n• Graduated with a BA in Tibetan Studies (2017)\n• Studied advanced poetry at Mindroling Monastery\n• Received cultural training at Library of Tibetan Works & Archives\n• Completed leadership training with Tibetan Youth Congress",
       "workExperience": "• General Student Representative, Sarah College\n• Editorial member of Gangga's Laughter\n• Liaison Officer & Vice-President, Sarah Local Youth Group\n• Vice-President, 3rd Session of Lha-thog National Association\n• Secretary, Dharamsala Local Youth Group\n• President, 17th Session of Dharamsala Local Youth Group\n• Secretary, Tibetan Youth Congress Executive Committee & General Assembly\n• Basic Education Teacher, Drung-kar College, Bhutan\n• Member, Review Committee for Chhu-bzhi-sgang-drug Constitution\n• Secretary, Reception Committee for Long-Life Prayer Ceremony\n• 23rd General Secretary, Chushi Gangdruk",
       "otherInformation": "Slogan: United Together, Bridging Tibetans, Building Self-Reliance",
-      "status": "New"
+      "status": "New",
+      "verified": true
     },
     {
       "id": 96,
@@ -1721,7 +1728,8 @@
       "educationalBackground": "• Primary to Grade 10: SOS TCV Ladakh School\n• Grade 12 Science (PCM): CST Herbertpur School\n• Bachelor of Computer Application (BCA), St Aloysius College, Mangalore, Karnataka (2013)\n• Master of Public Administration (MPA), IGNOU University (2018)",
       "workExperience": "• Social service member and voluntary campaigns during school and college\n• Active member, Tibetan Student Association, Mangalore\n• Worked at MenTseeKhang and Tibet Action Institute (Tibetan NGOs)\n• Department of Education, CTA (4 years total) - Pioneered Online Scholarship Application system and database reform\n• Department of Health, CTA - Implemented projects benefitting 16 northern settlements, 3 northeastern settlements, and 8 southern central settlements; COVID-19 frontline volunteer\n• Candidate for 17th Central Tibetan Parliament from U-Tsang (2021)\n• Candidate for Chief Representative Officer, Ladakh Sonamling Settlement\n• President, Ladakh TCV Alumni Association (LTCVAA) (2021-2025)\n• Member, Local Tibetan Assembly, Leh-Ladakh (current)\n• Community Development Worker, local organization in Ladakh (2021-present) - improving livelihoods of far-flung mountain communities including Tibetan nomadic population\n• Participated in Tibetan Rural Green Business Training exchange program in USA",
       "otherInformation": "• Pioneer of Online Scholarship Application system in Department of Education against all odds\n• Database reform initiatives in Department of Education, CTA\n• COVID-19 frontline volunteer serving the Tibetan community during pandemic\n• Focused on grassroots polity and disadvantaged community service\n• Learned about entrepreneurship scope within Tibetan Community in Exile through USA exchange program\n• Mission: Serve the disadvantaged community with knowledge, experience, and expertise gained under guidance of His Holiness the Dalai Lama and CTA",
-      "status": "New"
+      "status": "New",
+      "verified": true
     },
     {
       "id": 100,
