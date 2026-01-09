@@ -360,6 +360,7 @@
                 opacity: 0;
                 transform: translateY(-10px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -749,6 +750,7 @@
             color: var(--white);
             font-weight: 200;
         }
+
         .candidate-badge.status-new {
             background-color: #347a37;
         }
@@ -1680,6 +1682,7 @@
                         <li><a href="../heroes/">Heroes of Tibet</a></li>
                         <li><a href="../blog/">Blog</a></li>
                         <li><a href="./">Tibet Votes</a></li>
+                        <li><a href="../know-cta/">Know Your CTA</a></li>
                     </ul>
                 </li>
                 <li><a href="../contact">Newsletter</a></li>
@@ -1738,15 +1741,16 @@
                                     <!-- Search Box -->
                                     <div class="search-box-wrapper">
                                         <input type="text" id="name-search" placeholder="Search by candidate name..."
-                                            oninput="applyFiltersInstant()"
-                                            style="width: 100%; padding-right: 40px;">
-                                        <button id="clear-search-btn" class="clear-search-btn" onclick="clearSearchInput()" style="display: none;">
+                                            oninput="applyFiltersInstant()" style="width: 100%; padding-right: 40px;">
+                                        <button id="clear-search-btn" class="clear-search-btn"
+                                            onclick="clearSearchInput()" style="display: none;">
                                             <i class="fas fa-times"></i>
                                         </button>
                                     </div>
 
                                     <!-- Filter Toggle Button -->
-                                    <button id="filter-toggle-btn" class="filter-toggle-btn-new" onclick="toggleFilters()">
+                                    <button id="filter-toggle-btn" class="filter-toggle-btn-new"
+                                        onclick="toggleFilters()">
                                         <i class="fas fa-filter"></i>
                                         <span>Filters</span>
                                         <i class="fas fa-chevron-down" id="filter-arrow"></i>
@@ -1817,7 +1821,9 @@
                             </div>
 
                             <!-- Pagination Info -->
-                            <div id="pagination-info" style="text-align: center; margin: 20px 0; color: rgba(255, 255, 255, 0.8); font-size: 0.95rem; font-weight: 500;"></div>
+                            <div id="pagination-info"
+                                style="text-align: center; margin: 20px 0; color: rgba(255, 255, 255, 0.8); font-size: 0.95rem; font-weight: 500;">
+                            </div>
 
                             <div class="candidates-grid" id="candidates-grid">
                                 <!-- Candidates will be loaded here dynamically -->

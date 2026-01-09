@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QQQZNDHKSZ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QQQZNDHKSZ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'G-QQQZNDHKSZ');
-</script>
+        gtag('config', 'G-QQQZNDHKSZ');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - All About Tibet</title>
@@ -25,34 +26,34 @@
         body {
             background-color: #fff6d1;
         }
-        
+
         .contact-section {
             padding: 120px 5% 80px;
         }
-        
+
         .contact-section h1 {
             font-size: 2.5rem;
             color: var(--primary);
             margin-bottom: 20px;
         }
-        
+
         .contact-description {
             max-width: 700px;
             margin-bottom: 40px;
         }
-        
+
         .contact-description p {
             font-size: 1.1rem;
             line-height: 1.7;
             color: #444;
         }
-        
+
         .contact-container {
             display: flex;
             flex-direction: column;
             gap: 40px;
         }
-        
+
         .contact-form-container {
             background-color: var(--primary);
             padding: 40px;
@@ -60,30 +61,30 @@
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
             color: var(--white);
         }
-        
+
         .contact-form {
             display: flex;
             flex-direction: column;
             gap: 20px;
         }
-        
+
         .form-group {
             display: flex;
             flex-direction: column;
             gap: 8px;
         }
-        
+
         .form-group label {
             font-weight: 600;
             color: var(--white);
         }
-        
+
         .required::after {
             content: " *";
             color: #ff4c4c;
             font-weight: bold;
         }
-        
+
         .form-group input,
         .form-group textarea {
             padding: 12px 15px;
@@ -92,18 +93,18 @@
             font-size: 1rem;
             transition: border-color 0.3s ease;
         }
-        
+
         .form-group input:focus,
         .form-group textarea:focus {
             border-color: var(--primary);
             outline: none;
         }
-        
+
         .form-group textarea {
             min-height: 150px;
             resize: vertical;
         }
-        
+
         .submit-button {
             padding: 15px 25px;
             background-color: var(--white);
@@ -116,74 +117,75 @@
             transition: background-color 0.3s ease;
             align-self: flex-start;
         }
-        
+
         .submit-button:hover {
             background-color: var(--secondary-1);
             color: var(--black);
         }
-        
+
         .contact-info-container {
             background-color: var(--primary);
             color: var(--white);
             padding: 40px;
             border-radius: 8px;
         }
-        
+
         .contact-info-container h2 {
             font-size: 1.8rem;
             margin-bottom: 30px;
             color: var(--secondary-1);
         }
-        
+
         .contact-info-list {
             display: flex;
             flex-direction: column;
             gap: 25px;
         }
-        
+
         .contact-info-item {
             display: flex;
             align-items: flex-start;
             gap: 15px;
         }
-        
+
         .contact-info-item i {
             font-size: 1.5rem;
             color: var(--secondary-1);
             min-width: 30px;
         }
-        
+
         .contact-info-item div h3 {
             font-size: 1.2rem;
             margin-bottom: 8px;
         }
-        
+
         .contact-info-item div p,
         .contact-info-item div a {
             color: rgba(255, 255, 255, 0.9);
             line-height: 1.6;
         }
-        
+
         .contact-info-item div a:hover {
             color: var(--secondary-1);
         }
-        
+
         /* Responsive styles */
         @media screen and (min-width: 768px) {
             .contact-container {
                 flex-direction: row;
             }
-            
+
             .contact-form-container {
                 flex: 2;
             }
-            
+
             .contact-info-container {
                 flex: 1;
             }
         }
     </style>
 </head>
+
 <body>
     <!-- Header & Navigation -->
     <header>
@@ -205,6 +207,7 @@
                         <li><a href="heroes/">Heroes of Tibet</a></li>
                         <li><a href="blog/">Blog</a></li>
                         <li><a href="tibet-votes/">Tibet Votes</a></li>
+                        <li><a href="know-cta/">Know Your CTA</a></li>
                     </ul>
                 </li>
                 <li><a href="contact">Newsletter</a></li>
@@ -216,19 +219,21 @@
         <section class="contact-section">
             <h1>Newsletter Subscription</h1>
             <div class="contact-description">
-                <p>Subscribe to our newsletter to receive the latest updates about Tibet's culture, history, and current events. Stay informed and connected with our community.</p>
+                <p>Subscribe to our newsletter to receive the latest updates about Tibet's culture, history, and current
+                    events. Stay informed and connected with our community.</p>
             </div>
-            
+
             <div class="contact-container">
                 <!-- Contact Form -->
                 <div class="contact-form-container">
-                    <iframe id="google-form-iframe" src="https://docs.google.com/forms/d/e/1FAIpQLSeSWNlzn4acmAm1ifHpzIklyXvFZ6gIjZFJoXv8y9q_yl7gnw/viewform?embedded=true" 
-                        frameborder="0" marginheight="0" marginwidth="0" 
+                    <iframe id="google-form-iframe"
+                        src="https://docs.google.com/forms/d/e/1FAIpQLSeSWNlzn4acmAm1ifHpzIklyXvFZ6gIjZFJoXv8y9q_yl7gnw/viewform?embedded=true"
+                        frameborder="0" marginheight="0" marginwidth="0"
                         style="width: 100%; height: 600px; border: none;">
                         Loading…
                     </iframe>
                 </div>
-                
+
                 <!-- Contact Information -->
                 <div class="contact-info-container">
                     <h2>Newsletter Benefits</h2>
@@ -237,31 +242,35 @@
                             <i class="fas fa-newspaper"></i>
                             <div>
                                 <h3>Latest Updates</h3>
-                                <p>Receive the latest articles, stories, and news about Tibetan culture, history, and current events.</p>
+                                <p>Receive the latest articles, stories, and news about Tibetan culture, history, and
+                                    current events.</p>
                             </div>
                         </div>
-                        
+
                         <div class="contact-info-item">
                             <i class="fas fa-calendar-alt"></i>
                             <div>
                                 <h3>Event Notifications</h3>
-                                <p>Be the first to know about upcoming events, webinars, and cultural celebrations related to Tibet.</p>
+                                <p>Be the first to know about upcoming events, webinars, and cultural celebrations
+                                    related to Tibet.</p>
                             </div>
                         </div>
-                        
+
                         <div class="contact-info-item">
                             <i class="fas fa-user-shield"></i>
                             <div>
                                 <h3>Data Privacy</h3>
-                                <p>We respect your privacy and will never share your personal information with third parties without your consent.</p>
+                                <p>We respect your privacy and will never share your personal information with third
+                                    parties without your consent.</p>
                             </div>
                         </div>
-                        
+
                         <div class="contact-info-item">
                             <i class="fas fa-paper-plane"></i>
                             <div>
                                 <h3>Frequency</h3>
-                                <p>Our newsletter is sent monthly, with occasional special editions for important announcements.</p>
+                                <p>Our newsletter is sent monthly, with occasional special editions for important
+                                    announcements.</p>
                             </div>
                         </div>
                     </div>
@@ -278,16 +287,23 @@
                 <p>Email: <a href="mailto:contact@allabouttibet.com">contact@allabouttibet.com</a></p>
             </div>
             <div class="social-links">
-                <a href="https://www.instagram.com/AATibet" aria-label="Instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.facebook.com/AATibet/" aria-label="Facebook" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="https://www.linkedin.com/company/AATibet" aria-label="LinkedIn" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="https://x.com/AATibet" aria-label="X" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-                <a href="https://www.youtube.com/@AATibet" aria-label="YouTube" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-                <a href="https://www.threads.net/@AATibet" aria-label="Threads" target="_blank"><i class="fa-brands fa-threads"></i></a>
+                <a href="https://www.instagram.com/AATibet" aria-label="Instagram" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/AATibet/" aria-label="Facebook" target="_blank"><i
+                        class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/company/AATibet" aria-label="LinkedIn" target="_blank"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://x.com/AATibet" aria-label="X" target="_blank"><i
+                        class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.youtube.com/@AATibet" aria-label="YouTube" target="_blank"><i
+                        class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.threads.net/@AATibet" aria-label="Threads" target="_blank"><i
+                        class="fa-brands fa-threads"></i></a>
             </div>
             <div class="copyright">
                 <p>&copy; 2025 All About Tibet. All rights reserved.</p>
-                <p>Website Developed by <a href="https://norzinconsultancy.com/" target="_blank" rel="noopener">Norzin Consultancy</a>.</p>
+                <p>Website Developed by <a href="https://norzinconsultancy.com/" target="_blank" rel="noopener">Norzin
+                        Consultancy</a>.</p>
             </div>
         </div>
     </footer>
@@ -295,7 +311,7 @@
     <script src="../js/main.js"></script>
     <script>
         // No additional JavaScript needed as Google Form handles all the form processing
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             // Adjust iframe height if needed for responsiveness
             function adjustIframeHeight() {
                 const iframe = document.getElementById('google-form-iframe');
@@ -305,7 +321,7 @@
                     iframe.style.height = '600px';
                 }
             }
-            
+
             // Call on load and on resize
             adjustIframeHeight();
             window.addEventListener('resize', adjustIframeHeight);
@@ -317,23 +333,23 @@
             align-items: flex-start;
             gap: 10px;
         }
-        
+
         .checkbox-group input {
             margin-top: 5px;
         }
-        
+
         .checkbox-group label {
             flex: 1;
             font-size: 0.9rem;
             line-height: 1.4;
         }
-        
+
         .form-status {
             margin-top: 20px;
             padding: 15px;
             border-radius: 4px;
         }
-        
+
         .success-message {
             color: #155724;
             background-color: #d4edda;
@@ -341,7 +357,7 @@
             padding: 10px;
             border-radius: 4px;
         }
-        
+
         .error-message {
             color: #721c24;
             background-color: #f8d7da;
@@ -351,4 +367,5 @@
         }
     </style>
 </body>
+
 </html>

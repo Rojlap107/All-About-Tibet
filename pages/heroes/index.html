@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QQQZNDHKSZ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QQQZNDHKSZ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'G-QQQZNDHKSZ');
-</script>
+        gtag('config', 'G-QQQZNDHKSZ');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Heroes of Tibet - All About Tibet</title>
@@ -28,7 +29,7 @@
             margin: 0;
             padding: 0;
         }
-        
+
         header {
             background-color: transparent;
             position: absolute;
@@ -37,23 +38,23 @@
             width: 100%;
             z-index: 1000;
         }
-        
+
         .logo img {
             max-height: 60px;
             width: auto;
             transition: max-height 0.3s ease;
         }
-        
+
         .hamburger,
         .hamburger::before,
         .hamburger::after {
             background-color: var(--white);
         }
-        
+
         .heroes-section {
             padding-top: 0;
         }
-        
+
         .hero-video-container {
             position: relative;
             height: 100vh;
@@ -64,7 +65,7 @@
             justify-content: center;
             align-items: center;
         }
-        
+
         .hero-video {
             position: absolute;
             top: 0;
@@ -74,18 +75,20 @@
             object-fit: cover;
             margin-top: 0;
         }
-        
+
         .video-overlay {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.22); /* 22% black overlay */
+            background-color: rgba(0, 0, 0, 0.22);
+            /* 22% black overlay */
             z-index: 1;
-            pointer-events: none; /* Ensures the overlay doesn't block interactions */
+            pointer-events: none;
+            /* Ensures the overlay doesn't block interactions */
         }
-        
+
         .hero-content {
             position: absolute;
             z-index: 2;
@@ -97,14 +100,15 @@
             transform: translate(-50%, -50%);
             width: 80%;
         }
-        
+
         .hero-content h1 {
             font-size: 4.5rem;
             margin-bottom: 20px;
             color: var(--white);
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Adding a subtle shadow for better visibility */
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+            /* Adding a subtle shadow for better visibility */
         }
-        
+
         /* Highlighting animation for the title */
         .highlight-title {
             position: relative;
@@ -117,18 +121,20 @@
             padding: 0 10px;
             box-decoration-break: clone;
             -webkit-box-decoration-break: clone;
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7); /* Enhanced shadow for better visibility */
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+            /* Enhanced shadow for better visibility */
         }
-        
+
         @keyframes fillFromLeft {
             0% {
                 background-size: 0% 100%;
             }
+
             100% {
                 background-size: 100% 100%;
             }
         }
-        
+
         .highlight-title::after {
             content: '';
             position: absolute;
@@ -142,16 +148,17 @@
             animation: underlineAnimation 1.5s 1s forwards;
             border-radius: 3px;
         }
-        
+
         @keyframes underlineAnimation {
             0% {
                 transform: scaleX(0);
             }
+
             100% {
                 transform: scaleX(1);
             }
         }
-        
+
         .hero-content p {
             font-size: 1.2rem;
             margin-top: 50px;
@@ -162,9 +169,9 @@
             margin-right: auto;
             color: var(--white);
             text-shadow: none;
-            
+
         }
-        
+
         .filter-container {
             background-color: transparent;
             padding: 20px 0;
@@ -179,15 +186,15 @@
             position: relative;
             z-index: 3;
         }
-        
+
         .filter-group {
             display: flex;
             align-items: center;
             gap: 10px;
         }
-        
+
         /* Removed label styles as labels have been removed */
-        
+
         .filter-group select {
             padding: 8px 15px;
             border-radius: 4px;
@@ -198,7 +205,7 @@
             opacity: 0.6;
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
         }
-        
+
         .filter-group select:hover {
             background-color: var(--secondary-1);
             color: var(--black);
@@ -206,7 +213,7 @@
             opacity: 1;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         }
-        
+
         /* New heroes grid with alternating layout */
         .heroes-grid {
             display: flex;
@@ -220,7 +227,7 @@
             background-color: rgba(0, 0, 0, 0.7);
             padding: 40px 0;
         }
-        
+
         /* Black background that extends to the footer */
         .footer-extension {
             width: 100%;
@@ -231,7 +238,7 @@
             z-index: 2;
             padding-bottom: 40px;
         }
-        
+
         /* Hero section - contains container for each hero */
         .hero-section {
             width: 100%;
@@ -241,6 +248,7 @@
             min-height: 280px;
             padding: 30px 0;
         }
+
         /* Container for each hero's image and details */
         .hero-container {
             position: relative;
@@ -253,7 +261,7 @@
             padding: px 0;
             margin: 0 auto;
         }
-        
+
         /* Hero image styling */
         .hero-image {
             width: 240px;
@@ -268,7 +276,7 @@
             transition: all 0.4s ease;
             position: relative;
         }
-        
+
         .hero-image img {
             width: 100%;
             height: 100%;
@@ -276,7 +284,7 @@
             object-position: center;
             transition: transform 0.5s ease;
         }
-        
+
         /* Content side styling */
         .hero-content-side {
             width: 50%;
@@ -291,39 +299,39 @@
             transition: none !important;
             animation: none !important;
         }
-        
+
         .hero-content-inner {
             width: 100%;
             transition: none !important;
             animation: none !important;
         }
-        
+
         /* Left side positioning */
         .hero-section.left .hero-container {
             justify-content: flex-start;
         }
-        
+
         .hero-section.left .hero-content-side {
             left: 260px;
         }
-        
+
         /* Right side positioning */
         .hero-section.right .hero-container {
             justify-content: flex-end;
         }
-        
+
         .hero-section.right .hero-content-side {
             right: 260px;
             left: auto;
             text-align: right;
             top: 50%;
         }
-        
+
         /* Hover effects */
         .hero-section:hover .hero-image img {
             transform: scale(1.05);
         }
-        
+
         /* Content styling */
         .hero-content-side h3 {
             font-size: 2.2rem;
@@ -333,7 +341,7 @@
             opacity: 1;
             transition: opacity 0.3s ease;
         }
-        
+
         .hero-meta {
             display: flex;
             gap: 15px;
@@ -344,11 +352,11 @@
             text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
             transition: opacity 0.5s ease 0.2s;
         }
-        
+
         .hero-section.right .hero-meta {
             justify-content: flex-end;
         }
-        
+
         .hero-brief {
             color: var(--white);
             font-size: 0.9rem;
@@ -359,11 +367,11 @@
             opacity: 0.1;
             transition: opacity 0.5s ease 0.2s;
         }
-        
+
         .hero-section.left .hero-brief {
             text-align: left;
         }
-        
+
         .view-profile-btn {
             display: inline-block;
             padding: 10px 20px;
@@ -374,34 +382,34 @@
             border-radius: 4px;
             text-decoration: none;
         }
-        
+
         .hero-section:hover .hero-meta,
         .hero-section:hover .hero-brief {
             opacity: 0.7;
         }
-        
+
         .hero-section:hover .view-profile-btn {
             opacity: 1;
         }
-        
+
 
         .hero-section.right .hero-content-inner {
             display: flex;
             flex-direction: column;
             align-items: flex-end;
         }
-        
+
         .hero-section.right .hero-brief {
             text-align: right;
         }
-        
+
         .view-profile-btn:hover {
             background-color: var(--white);
             transform: translateY(-2px);
         }
-        
+
         /* Removed fade-in classes to simplify */
-        
+
         .loading-indicator {
             grid-column: 1 / -1;
             display: flex;
@@ -411,7 +419,7 @@
             padding: 40px 0;
             color: var(--white);
         }
-        
+
         .spinner {
             width: 40px;
             height: 40px;
@@ -421,23 +429,25 @@
             animation: spin 1s ease-in-out infinite;
             margin-bottom: 15px;
         }
-        
+
         @keyframes spin {
-            to { transform: rotate(360deg); }
+            to {
+                transform: rotate(360deg);
+            }
         }
-        
+
         .error-message {
             text-align: center;
             padding: 40px 0;
             color: var(--secondary-1);
         }
-        
+
         @media screen and (max-width: 1200px) {
             .heroes-grid {
                 grid-template-columns: repeat(3, 1fr);
             }
         }
-        
+
         @media screen and (max-width: 900px) {
             .heroes-grid {
                 grid-template-columns: repeat(2, 1fr);
@@ -450,11 +460,11 @@
                 gap: 100px;
                 padding: 60px 0;
             }
-            
+
             .hero-container {
                 min-height: 450px;
             }
-            
+
             .hero-image {
                 width: 240px;
                 height: 240px;
@@ -463,28 +473,29 @@
                 max-width: 240px;
                 max-height: 240px;
             }
-            
+
             .hero-content-side h3 {
                 font-size: 2rem;
             }
-            
+
             .hero-brief {
                 font-size: 1rem;
             }
         }
-        
+
         @media screen and (max-width: 992px) {
             .heroes-grid {
                 gap: 50px;
                 padding: 50px 0;
                 width: 100%;
             }
+
             .hero-container {
                 justify-content: center;
                 height: 100%;
                 padding: 0;
             }
-            
+
             .hero-image {
                 width: 220px;
                 height: 220px;
@@ -493,7 +504,7 @@
                 max-width: 220px;
                 max-height: 220px;
             }
-            
+
             .hero-section.left .hero-content-side {
                 width: 60%;
                 left: 240px;
@@ -502,7 +513,7 @@
                 transform: translateY(-50%);
                 text-align: left;
             }
-            
+
             .hero-section.right .hero-content-side {
                 width: 60%;
                 right: 240px;
@@ -511,42 +522,44 @@
                 transform: translateY(-50%);
                 text-align: right;
             }
-            
+
             .hero-content-side h3 {
                 font-size: 1.8rem;
             }
         }
-        
+
         @media screen and (max-width: 768px) {
             .hero-content h1 {
                 font-size: 3rem;
             }
-            
+
             .hero-content p {
                 font-size: 1.1rem;
                 line-height: 1.4;
             }
-            
+
             .hero-video-container {
-                height: 100vh; /* Ensure full height on mobile */
+                height: 100vh;
+                /* Ensure full height on mobile */
             }
-            
+
             .hero-video {
                 width: 100%;
                 height: 100%;
-                object-fit: cover; /* Cover the entire container */
+                object-fit: cover;
+                /* Cover the entire container */
             }
-            
+
             .filter-container {
                 flex-direction: column;
                 align-items: flex-start;
             }
-            
+
             .heroes-grid {
                 gap: 40px;
                 padding: 40px 0;
             }
-            
+
             .hero-image {
                 width: 200px;
                 height: 200px;
@@ -555,13 +568,13 @@
                 max-width: 200px;
                 max-height: 200px;
             }
-            
+
             .hero-section {
                 height: auto;
                 min-height: 350px;
                 padding: 25px 0;
             }
-            
+
             .hero-section.left .hero-content-side {
                 width: 65%;
                 left: 210px;
@@ -570,7 +583,7 @@
                 transform: translateY(-50%);
                 text-align: left;
             }
-            
+
             .hero-section.right .hero-content-side {
                 width: 65%;
                 right: 210px;
@@ -579,34 +592,34 @@
                 transform: translateY(-50%);
                 text-align: right;
             }
-            
+
             .hero-content-side h3 {
                 font-size: 1.6rem;
                 margin-bottom: 10px;
             }
-            
+
             .hero-meta {
                 margin-bottom: 15px;
                 font-size: 0.9rem;
             }
-            
+
             .hero-brief {
                 font-size: 0.8rem;
                 line-height: 1.5;
                 margin-bottom: 20px;
             }
-            
+
             .view-profile-btn {
                 padding: 8px 16px;
                 font-size: 0.9rem;
             }
         }
-        
+
         @media screen and (max-width: 576px) {
             .heroes-grid {
                 gap: 30px;
             }
-            
+
             .hero-image {
                 width: 140px;
                 height: 140px;
@@ -617,14 +630,14 @@
                 position: relative;
                 margin: 0 auto;
             }
-            
+
             .hero-section {
                 height: auto;
                 min-height: 320px;
                 position: relative;
                 padding: 25px 0;
             }
-            
+
             .hero-container {
                 flex-direction: column;
                 align-items: center;
@@ -632,7 +645,7 @@
                 position: relative;
                 height: auto;
             }
-            
+
             .hero-section.left .hero-content-side,
             .hero-section.right .hero-content-side {
                 width: 90%;
@@ -646,33 +659,34 @@
                 text-align: center;
                 display: block;
             }
-            
+
             .hero-section.right .hero-content-inner,
             .hero-section.left .hero-content-inner {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
             }
-            
+
             .hero-section.right .hero-meta,
             .hero-section.left .hero-meta {
                 justify-content: center;
             }
-            
+
             .hero-section.right .hero-brief,
             .hero-section.left .hero-brief {
                 text-align: center;
             }
-            
+
             .hero-content-side h3 {
                 font-size: 1.4rem;
             }
-            
+
             .hero-brief {
                 font-size: 0.75rem;
                 max-width: 100%;
             }
         }
+
         /* Pagination styles */
         .pagination-container {
             display: flex;
@@ -681,7 +695,7 @@
             margin: 40px 0 20px;
             padding: 0 20px;
         }
-        
+
         .pagination {
             display: flex;
             gap: 10px;
@@ -689,7 +703,7 @@
             justify-content: center;
             flex-wrap: wrap;
         }
-        
+
         .pagination-button {
             display: inline-flex;
             align-items: center;
@@ -705,25 +719,25 @@
             transition: all 0.3s ease;
             font-size: 0.9rem;
         }
-        
+
         .pagination-button:hover {
             background-color: rgba(255, 177, 0, 0.2);
             border-color: var(--secondary-1);
         }
-        
+
         .pagination-button.active {
             background-color: var(--secondary-1);
             color: var(--black);
             border-color: var(--secondary-1);
             font-weight: bold;
         }
-        
+
         .pagination-button.disabled {
             opacity: 0.5;
             cursor: not-allowed;
             pointer-events: none;
         }
-        
+
         .pagination-info {
             color: var(--white);
             font-size: 0.9rem;
@@ -731,12 +745,12 @@
             text-align: center;
             opacity: 0.7;
         }
-        
+
         @media screen and (max-width: 576px) {
             .pagination {
                 gap: 5px;
             }
-            
+
             .pagination-button {
                 padding: 6px 10px;
                 min-width: 35px;
@@ -746,6 +760,7 @@
         }
     </style>
 </head>
+
 <body>
     <!-- Header & Navigation -->
     <header>
@@ -767,6 +782,7 @@
                         <li><a href="./">Heroes of Tibet</a></li>
                         <li><a href="../blog/">Blog</a></li>
                         <li><a href="../tibet-votes/">Tibet Votes</a></li>
+                        <li><a href="../know-cta/">Know Your CTA</a></li>
                     </ul>
                 </li>
                 <li><a href="../contact">Newsletter</a></li>
@@ -784,11 +800,14 @@
             <div class="video-overlay"></div>
             <div class="hero-content">
                 <h1 class="highlight-title">Heroes of Tibet</h1>
-                <p>The Heroes of Tibet collection honors remarkable individuals whose unwavering commitment to Tibetan heritage has shaped history. Through comprehensive profiles, rare photographs, and documented testimonies,
-                    we preserve their legacies of resilience, wisdom, and cultural stewardship for future generations.</p>
+                <p>The Heroes of Tibet collection honors remarkable individuals whose unwavering commitment to Tibetan
+                    heritage has shaped history. Through comprehensive profiles, rare photographs, and documented
+                    testimonies,
+                    we preserve their legacies of resilience, wisdom, and cultural stewardship for future generations.
+                </p>
             </div>
         </div>
-        
+
         <!-- Filter Controls -->
         <div class="filter-container">
             <!-- Province filter hidden temporarily
@@ -809,7 +828,7 @@
                 </select>
             </div>
         </div>
-        
+
         <!-- Heroes Grid - Will be populated dynamically from heroes.json -->
         <div class="heroes-grid">
             <!-- Loading indicator -->
@@ -837,16 +856,23 @@
                 <p>Email: <a href="mailto:contact@allabouttibet.com">contact@allabouttibet.com</a></p>
             </div>
             <div class="social-links">
-                <a href="https://www.instagram.com/AATibet" aria-label="Instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.facebook.com/AATibet/" aria-label="Facebook" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="https://www.linkedin.com/company/AATibet" aria-label="LinkedIn" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="https://x.com/AATibet" aria-label="X" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-                <a href="https://www.youtube.com/@AATibet" aria-label="YouTube" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-                <a href="https://www.threads.net/@AATibet" aria-label="Threads" target="_blank"><i class="fa-brands fa-threads"></i></a>
+                <a href="https://www.instagram.com/AATibet" aria-label="Instagram" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/AATibet/" aria-label="Facebook" target="_blank"><i
+                        class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/company/AATibet" aria-label="LinkedIn" target="_blank"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://x.com/AATibet" aria-label="X" target="_blank"><i
+                        class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.youtube.com/@AATibet" aria-label="YouTube" target="_blank"><i
+                        class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.threads.net/@AATibet" aria-label="Threads" target="_blank"><i
+                        class="fa-brands fa-threads"></i></a>
             </div>
             <div class="copyright">
                 <p>&copy; 2025 All About Tibet. All rights reserved.</p>
-                <p>Website Developed by <a href="https://norzinconsultancy.com/" target="_blank" rel="noopener">Norzin Consultancy</a>.</p>
+                <p>Website Developed by <a href="https://norzinconsultancy.com/" target="_blank" rel="noopener">Norzin
+                        Consultancy</a>.</p>
             </div>
         </div>
     </footer>
@@ -854,4 +880,5 @@
     <script src="../../js/main.js"></script>
     <script src="heroes.js"></script>
 </body>
+
 </html>

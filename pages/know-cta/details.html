@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTA Details - All About Tibet</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../images/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="../../images/favicon_io/site.webmanifest">
+    <link rel="icon" href="../../images/favicon_io/favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            background-color: #000;
+            color: var(--white);
+            margin: 0;
+            padding: 0;
+        }
+
+        .details-hero {
+            height: 60vh;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: flex-end;
+            padding: 50px 5%;
+            position: relative;
+        }
+
+        .details-hero::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top, rgba(0, 0, 0, 1), transparent);
+        }
+
+        .hero-title-container {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-title-container h1 {
+            font-size: 3.5rem;
+            color: var(--secondary-1);
+            margin-bottom: 10px;
+        }
+
+        .breadcrumb {
+            margin-bottom: 20px;
+            font-size: 0.9rem;
+        }
+
+        .breadcrumb a {
+            color: var(--secondary-2);
+        }
+
+        .details-content-section {
+            padding: 60px 5%;
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 60px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .sidebar {
+            position: sticky;
+            top: 100px;
+            height: fit-content;
+        }
+
+        .sidebar h2 {
+            color: var(--secondary-1);
+            font-size: 1.5rem;
+            margin-bottom: 25px;
+            border-bottom: 2px solid var(--secondary-1);
+            padding-bottom: 10px;
+        }
+
+        .nav-list {
+            list-style: none;
+        }
+
+        .nav-item {
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .nav-item:hover,
+        .nav-item.active {
+            color: var(--secondary-1);
+        }
+
+        .main-details {
+            line-height: 1.8;
+        }
+
+        .section-block {
+            margin-bottom: 60px;
+            animation: fadeIn 0.8s ease;
+        }
+
+        .section-block h2 {
+            color: var(--secondary-1);
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+        }
+
+        .section-block p {
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 20px;
+        }
+
+        .dept-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .dept-card {
+            background: rgba(30, 30, 30, 0.5);
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 177, 0, 0.1);
+        }
+
+        .dept-card h3 {
+            color: var(--secondary-1);
+            margin-bottom: 15px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media screen and (max-width: 992px) {
+            .details-content-section {
+                grid-template-columns: 1fr;
+            }
+
+            .sidebar {
+                position: static;
+                margin-bottom: 40px;
+            }
+
+            .hero-title-container h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="../../">
+                <img src="../../images/AAT_Logo_website.png" alt="All About Tibet Logo">
+            </a>
+        </div>
+        <div class="menu-toggle">
+            <div class="hamburger"></div>
+        </div>
+        <nav class="overlay-menu">
+            <ul>
+                <li><a href="../../">Home</a></li>
+                <li><a href="../../pages/about">About</a></li>
+                <li class="dropdown">
+                    <a href="#">Our Initiatives</a>
+                    <ul class="submenu">
+                        <li><a href="../../pages/heroes/">Heroes of Tibet</a></li>
+                        <li><a href="../../pages/blog/">Blog</a></li>
+                        <li><a href="../../pages/tibet-votes/">Tibet Votes</a></li>
+                        <li><a href="./">Know Your CTA</a></li>
+                    </ul>
+                </li>
+                <li><a href="../../pages/contact">Newsletter</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="details-container">
+        <!-- Content will be injected by JavaScript -->
+        <div style="height: 100vh; display: flex; align-items: center; justify-content: center;">
+            <div class="spinner"></div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Contact Us</h3>
+                <p>Email: <a href="mailto:contact@allabouttibet.com">contact@allabouttibet.com</a></p>
+            </div>
+            <div class="social-links">
+                <a href="https://www.instagram.com/AATibet" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/AATibet/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/company/AATibet" target="_blank"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://x.com/AATibet" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.youtube.com/@AATibet" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 All About Tibet. All rights reserved.</p>
+                <p>Website Developed by <a href="https://norzinconsultancy.com/" target="_blank">Norzin Consultancy</a>.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const sectionId = urlParams.get('section');
+            const container = document.getElementById('details-container');
+
+            if (!sectionId) {
+                location.href = './';
+                return;
+            }
+
+            fetch('../../data/cta_data.json')
+                .then(res => res.json())
+                .then(data => {
+                    const section = data.cta_structure.find(s => s.id === sectionId);
+                    if (!section) {
+                        location.href = './';
+                        return;
+                    }
+
+                    renderDetails(section);
+                })
+                .catch(err => {
+                    console.error('Error loading data:', err);
+                    container.innerHTML = '<p style="text-align:center; padding: 100px;">Error loading content. Please try again later.</p>';
+                });
+
+            function renderDetails(section) {
+                document.title = `${section.title} - All About Tibet`;
+
+                const renderSubsection = (sub) => `
+                    <div class="section-block" id="${sub.title.replace(/\s+/g, '-').toLowerCase()}">
+                        <h2>${sub.title}</h2>
+                        <p>${sub.content}</p>
+                        ${sub.details ? `
+                            <div class="dept-grid">
+                                ${sub.details.map(d => `
+                                    <div class="dept-card">
+                                        <h3>${d.title}</h3>
+                                        <p>${d.content}</p>
+                                    </div>
+                                `).join('')}
+                            </div>
+                        ` : ''}
+                    </div>
+                `;
+
+                const renderDepartment = (dept) => `
+                    <div class="section-block" id="${dept.title.replace(/\s+/g, '-').toLowerCase()}">
+                        <h2>${dept.title}</h2>
+                        ${dept.full_name ? `<p><strong>Full Name:</strong> ${dept.full_name}</p>` : ''}
+                        <p>${dept.content}</p>
+                        ${dept.subsections ? `
+                            <div class="dept-grid">
+                                ${dept.subsections.map(sub => `
+                                    <div class="dept-card">
+                                        <h3>${sub.title}</h3>
+                                        <p>${sub.content}</p>
+                                    </div>
+                                `).join('')}
+                            </div>
+                        ` : ''}
+                    </div>
+                `;
+
+                let contentHtml = '';
+                if (section.subsections) {
+                    contentHtml += section.subsections.map(renderSubsection).join('');
+                }
+                if (section.departments) {
+                    contentHtml += section.departments.map(renderDepartment).join('');
+                }
+
+                let sidebarHtml = `
+                    <div class="sidebar">
+                        <h2>Exploration</h2>
+                        <ul class="nav-list">
+                            <li class="nav-item" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">Overview</li>
+                            ${section.subsections ? section.subsections.map(sub => `
+                                <li class="nav-item" onclick="document.getElementById('${sub.title.replace(/\s+/g, '-').toLowerCase()}').scrollIntoView({behavior: 'smooth'})">${sub.title}</li>
+                            `).join('') : ''}
+                            ${section.departments ? section.departments.map(dept => `
+                                <li class="nav-item" onclick="document.getElementById('${dept.title.replace(/\s+/g, '-').toLowerCase()}').scrollIntoView({behavior: 'smooth'})">${dept.title}</li>
+                            `).join('') : ''}
+                        </ul>
+                    </div>
+                `;
+
+                container.innerHTML = `
+                    <section class="details-hero" style="background-image: url('../../images/cta/${section.id}.png')">
+                        <div class="hero-title-container">
+                            <div class="breadcrumb">
+                                <a href="../../">Home</a> / <a href="./">Know Your CTA</a> / ${section.title}
+                            </div>
+                            <h1>${section.title}</h1>
+                        </div>
+                    </section>
+
+                    <div class="details-content-section">
+                        ${sidebarHtml}
+                        <div class="main-details">
+                            <div class="section-block">
+                                <h2>Overview</h2>
+                                <p>${section.long_description}</p>
+                            </div>
+                            ${contentHtml}
+                            <div style="margin-top: 40px;">
+                                <a href="./" class="cta-button" style="background-color: transparent; border: 1px solid var(--secondary-1); color: var(--secondary-1);">
+                                    <i class="fa-solid fa-arrow-left"></i> Back to Overview
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }
+        });
+    </script>
+</body>
+
+</html>

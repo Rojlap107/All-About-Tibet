@@ -1,0 +1,231 @@
+{
+    "cta_structure": [
+        {
+            "id": "tsjc",
+            "title": "Tibetan Supreme Justice Commission (TSJC)",
+            "short_description": "The highest judicial authority of the Central Tibetan Administration, responsible for upholding the rule of law and ensuring justice.",
+            "long_description": "The Tibetan Supreme Justice Commission (TSJC) is the highest judicial authority of the Central Tibetan Administration. It is responsible for upholding the rule of law, interpreting Tibetan laws, and ensuring justice within the Tibetan exile community. Functioning independently from the executive (Kashag) and legislative (Parliament) branches, the TSJC safeguards judicial independence and ensures that legal processes remain fair, impartial, and consistent with democratic principles and Tibetan values.",
+            "icon": "fa-solid fa-scale-balanced",
+            "subsections": [
+                {
+                    "title": "Justice Secretariat",
+                    "content": "The Justice Secretariat serves as the administrative and operational backbone of the TSJC. It supports the Commission by managing case documentation, coordinating hearings, maintaining judicial records, and facilitating communication between different justice bodies under the Tibetan judicial system. The Secretariat ensures the smooth functioning of the courts and assists in implementing judicial decisions."
+                },
+                {
+                    "title": "Tibetan Circuit Justice Commission (TCJC)",
+                    "content": "The TCJC operates as a mobile judicial body under the TSJC. Its primary role is to bring justice closer to Tibetan communities by conducting hearings directly in settlements and regions that are geographically distant from the central judiciary. This system ensures access to justice for all Tibetans in exile, regardless of location, and helps resolve civil disputes in a timely and accessible manner.",
+                    "details": [
+                        {
+                            "title": "TCJC – Dekyiling",
+                            "content": "Functions as a regional base for circuit justice activities in North India, conducting hearings for nearby settlements."
+                        }
+                    ]
+                },
+                {
+                    "title": "Tibetan Local Justice Commission (TLJC)",
+                    "content": "Handles minor civil disputes, mediation, and community-level legal matters. Emphasizing reconciliation and amicable settlement, the TLJC plays an important role in maintaining harmony within Tibetan communities.",
+                    "details": [
+                        {
+                            "title": "Northern Region (Dekyiling)",
+                            "content": "Serves Tibetan settlements across North India, providing accessible justice and mediation services."
+                        },
+                        {
+                            "title": "Southern Region (Bylakuppe)",
+                            "content": "Caters to one of the largest Tibetan settlement areas in South India, resolving community disputes."
+                        },
+                        {
+                            "title": "Ladakh Region",
+                            "content": "Serves Tibetan communities in Ladakh, addressing justice needs in this unique high-altitude region."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "tpie",
+            "title": "Tibetan Parliament-in-Exile (TPIE)",
+            "short_description": "The democratically elected legislative body representing Tibetans globally, responsible for enacting laws and holding the Kashag accountable.",
+            "long_description": "The Tibetan Parliament-in-Exile (TPIE) is the democratically elected legislative body of the Central Tibetan Administration. It represents Tibetans living in exile across India, Nepal, Bhutan, and the global diaspora. The Parliament is responsible for enacting laws, debating policies, passing resolutions, approving budgets, and holding the executive branch (the Kashag) accountable.",
+            "icon": "fa-solid fa-landmark",
+            "subsections": [
+                {
+                    "title": "Parliamentary Secretariat",
+                    "content": "Provides administrative, procedural, and technical support to the TPIE. It assists in organizing sessions, committee meetings, documentation, and coordination between MPs and CTA departments."
+                },
+                {
+                    "title": "Local Tibetan Assemblies (40 Locations)",
+                    "content": "Grassroots democratic institutions enabling Tibetans at the local level to discuss community issues and elect representatives."
+                },
+                {
+                    "title": "Tibetan Freedom Movement Sub-Committees (BRDL - 148 Locations)",
+                    "content": "Functioning globally in 148 locations, these committees mobilize Tibetans and supporters for advocacy, awareness, and democratic engagement."
+                }
+            ]
+        },
+        {
+            "id": "kashag",
+            "title": "Kashag (Cabinet)",
+            "short_description": "The executive branch of the CTA, headed by the Sikyong, responsible for daily governance and administration.",
+            "long_description": "The Kashag is the executive branch of the Central Tibetan Administration and is responsible for the day-to-day governance and administration of the Tibetan community in exile. It is headed by the Sikyong, who serves as the political leader and head of the executive. The Kashag consists of seven Kalons (Cabinet Ministers), each responsible for overseeing one or more CTA departments.",
+            "icon": "fa-solid fa-users-gear",
+            "departments": [
+                {
+                    "title": "Department of Religion and Culture",
+                    "content": "Responsible for preserving, protecting, and promoting Tibetan religion, culture, language, and identity. Works to ensure the continuity of Tibetan traditions while adapting to contemporary contexts.",
+                    "subsections": [
+                        {
+                            "title": "Monasteries (259)",
+                            "content": "Oversees and supports spiritual, educational, and cultural centers for the Tibetan community."
+                        },
+                        {
+                            "title": "Nunneries (36)",
+                            "content": "Dedicated to religious education and empowerment of Tibetan nuns."
+                        },
+                        {
+                            "title": "Cultural Institutions",
+                            "content": "Key bodies include TIPA (Performing Arts), CUTS (Higher Education), LTWA (Library & Archives), and Norbulingka Institute (Traditional Arts)."
+                        }
+                    ]
+                },
+                {
+                    "title": "Department of Home",
+                    "content": "Responsible for welfare, rehabilitation, and socio-economic development of Tibetan communities. Acts as the primary link between the CTA and everyday lives of Tibetans.",
+                    "subsections": [
+                        {
+                            "title": "Settlement Offices (TSO)",
+                            "content": "36 TSOs in India, 7 in Nepal, and 1 in Bhutan implementing CTA policies at the local level."
+                        },
+                        {
+                            "title": "Agricultural Section",
+                            "content": "Supports farming-based livelihoods and strengthened food security."
+                        },
+                        {
+                            "title": "Real Estate & Welfare Sections",
+                            "content": "Manages community assets and focuses on social protection for vulnerable groups."
+                        },
+                        {
+                            "title": "Community Care",
+                            "content": "Oversees Old Age Homes for elderly and Baby Crèches for early childhood care."
+                        }
+                    ]
+                },
+                {
+                    "title": "Department of Finance",
+                    "content": "Manages financial administration, revenue systems, and budgeting. Ensures financial sustainability, transparency, and transparency.",
+                    "subsections": [
+                        {
+                            "title": "Green Book & Chatrel",
+                            "content": "Manages Tibetan Green Books (civic identity) and Chatrel voluntary contributions."
+                        },
+                        {
+                            "title": "Economic & Tech Support",
+                            "content": "Includes TCRC (Tech Resources), SARD (Development Fund), and GDF (Development Finance)."
+                        },
+                        {
+                            "title": "Engagement & Service",
+                            "content": "Includes Women Empowerment Desk, Tibet Corps (Volunteer Program), and the Blue Book for global supporters."
+                        }
+                    ]
+                },
+                {
+                    "title": "Department of Education",
+                    "content": "Responsible for the overall educational system, from primary to higher education. Balances modern knowledge with Tibetan language, culture, and values.",
+                    "subsections": [
+                        {
+                            "title": "Academic Sections",
+                            "content": "Covers Traditional (Language, History, Philosophy) and Modern (Science, Math, Vocational) studies."
+                        },
+                        {
+                            "title": "Student Support",
+                            "content": "Administers Scholarships and financial assistance for higher education in India and abroad."
+                        },
+                        {
+                            "title": "Guidance & Policy",
+                            "content": "Includes the Education Council (Policy), Counselling Section (Career/Psychosocial), and Terminology Section (Modern terms)."
+                        }
+                    ]
+                },
+                {
+                    "title": "Department of Security",
+                    "content": "Responsible for community security, refugee reception, and the security of His Holiness the Dalai Lama. Handles sensitive coordination and travel documentation.",
+                    "subsections": [
+                        {
+                            "title": "Reception Centers",
+                            "content": "Operating in Kathmandu, Delhi, and Dharamshala as the first point of contact for new arrivals from Tibet."
+                        },
+                        {
+                            "title": "Documentation Support",
+                            "content": "Assists with Registration Certificates (RC) and Identity Certificates (IC) for residence and travel."
+                        },
+                        {
+                            "title": "Sensitive Coordination",
+                            "content": "Maintains contact with Tibetans inside Tibet and manages HH the Dalai Lama's security."
+                        }
+                    ]
+                },
+                {
+                    "title": "DIIR",
+                    "full_name": "Department of Information and International Relations",
+                    "content": "The voice of the Tibetan people to the world, responsible for public information, international advocacy, and diplomacy.",
+                    "subsections": [
+                        {
+                            "title": "Information & Media",
+                            "content": "Manages Tibet News Bureau, Tibet TV, CTA Website, and news in Tibetan and English."
+                        },
+                        {
+                            "title": "International Relations",
+                            "content": "Oversees 13 Offices of Tibet (Global Dip. Missions) and desks for Human Rights, UN/EU, and TSG."
+                        },
+                        {
+                            "title": "Cultural Preservation",
+                            "content": "Includes the Tibet Museum (Modern History) and Narthang Press (Official Publishing Arm)."
+                        },
+                        {
+                            "title": "Research",
+                            "content": "Contains the Tibet Policy Institute (TPI), the core think tank for evidence-based analysis."
+                        }
+                    ]
+                },
+                {
+                    "title": "Department of Health",
+                    "content": "Safeguards physical and mental health. Coordinates healthcare services across India, Nepal, and Bhutan, combining modern and traditional medicine.",
+                    "subsections": [
+                        {
+                            "title": "Health Centers",
+                            "content": "Manages 12 Hospitals/PHCs, 33 Clinics, and 1 Mobile Clinic for remote areas."
+                        },
+                        {
+                            "title": "Affiliated Orgs",
+                            "content": "Collaborates with Delek Hospital, Men-Tsee-Khang (Traditional Medicine), and Ngoenga School."
+                        },
+                        {
+                            "title": "Community Well-being",
+                            "content": "Includes the Tibetan National Sports Association (TNSA) for physical fitness and youth engagement."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "autonomous",
+            "title": "Autonomous Bodies",
+            "short_description": "Independent institutions ensuring democratic integrity and accountability within the CTA.",
+            "long_description": "Autonomous Bodies are constitutionally independent institutions functioning separately from the executive branch. Heads are elected by the Parliament to ensure impartiality and independence.",
+            "icon": "fa-solid fa-gavel",
+            "subsections": [
+                {
+                    "title": "Election Commission",
+                    "content": "Responsible for conducting free, fair, and transparent elections for the Sikyong, Parliament, and Local Assemblies."
+                },
+                {
+                    "title": "Public Service Commission (PSC)",
+                    "content": "Responsible for the merit-based recruitment, examination, and appointment of civil servants within the CTA."
+                },
+                {
+                    "title": "Office of the Auditor General",
+                    "content": "The highest financial oversight authority, auditing accounts and ensuring transparency across all CTA institutions."
+                }
+            ]
+        }
+    ]
+}

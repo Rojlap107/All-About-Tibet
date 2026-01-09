@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QQQZNDHKSZ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QQQZNDHKSZ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'G-QQQZNDHKSZ');
-</script>
+        gtag('config', 'G-QQQZNDHKSZ');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hero Name 1 - Heroes of Tibet</title>
@@ -26,30 +27,30 @@
             background-color: #000;
             color: var(--white);
         }
-        
+
         header {
             background-color: rgba(0, 0, 0, 0.8);
         }
-        
+
         .logo img {
             max-height: 60px;
             width: auto;
             transition: max-height 0.3s ease;
         }
-        
+
         .hamburger,
         .hamburger::before,
         .hamburger::after {
             background-color: var(--white);
         }
-        
+
         /* Main hero profile container */
         .hero-profile-section {
             padding: 120px 5% 80px;
             max-width: 1000px;
             margin: 0 auto;
         }
-        
+
         /* Hero header with image and intro */
         .hero-header {
             display: flex;
@@ -57,60 +58,60 @@
             gap: 30px;
             margin-bottom: 60px;
         }
-        
+
         .hero-header-content {
             display: flex;
             flex-direction: column;
             gap: 20px;
         }
-        
+
         .hero-title {
             color: var(--secondary-1);
         }
-        
+
         .hero-title h1 {
             font-size: 2.8rem;
             margin-bottom: 10px;
         }
-        
+
         .hero-life-span {
             font-size: 1.2rem;
             color: var(--secondary-2);
         }
-        
+
         .hero-meta {
             display: flex;
             gap: 15px;
             flex-wrap: wrap;
         }
-        
+
         .hero-meta-item {
             display: flex;
             align-items: center;
             gap: 8px;
         }
-        
+
         .hero-meta-item i {
             color: var(--secondary-1);
         }
-        
+
         .hero-image {
             width: 100%;
             height: 400px;
             border-radius: 8px;
             overflow: hidden;
         }
-        
+
         .hero-image img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
-        
+
         .hero-bio {
             margin-bottom: 40px;
         }
-        
+
         .hero-bio h2 {
             color: var(--secondary-1);
             font-size: 2rem;
@@ -118,7 +119,7 @@
             position: relative;
             padding-bottom: 10px;
         }
-        
+
         .hero-bio h2::after {
             content: '';
             position: absolute;
@@ -128,18 +129,18 @@
             height: 3px;
             background-color: var(--secondary-1);
         }
-        
+
         .hero-bio p {
             font-size: 1.1rem;
             line-height: 1.8;
             margin-bottom: 15px;
         }
-        
+
         /* Vertical hero sections */
         .hero-sections {
             width: 100%;
         }
-        
+
         .profile-section {
             background-color: rgba(255, 255, 255, 0.05);
             border-radius: 8px;
@@ -149,7 +150,7 @@
             min-height: auto;
             overflow: visible;
         }
-        
+
         .section-title h2 {
             color: var(--secondary-1);
             font-size: 2.2rem;
@@ -157,7 +158,7 @@
             position: relative;
             padding-bottom: 15px;
         }
-        
+
         .section-title h2::after {
             content: '';
             position: absolute;
@@ -167,7 +168,7 @@
             height: 3px;
             background-color: var(--secondary-1);
         }
-        
+
         .section-content p {
             font-size: 1rem;
             line-height: 1.6;
@@ -175,43 +176,43 @@
             word-wrap: break-word;
             overflow-wrap: break-word;
         }
-        
+
         /* Other heroes section */
         .other-heroes {
             margin-top: 80px;
         }
-        
+
         .other-heroes h2 {
             font-size: 2rem;
             margin-bottom: 30px;
             color: var(--secondary-1);
         }
-        
+
         .other-heroes-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
             gap: 20px;
         }
-        
+
         .other-hero-card {
             background-color: rgba(255, 255, 255, 0.05);
             border-radius: 8px;
             overflow: hidden;
             transition: transform 0.3s ease;
         }
-        
+
         .other-hero-card:hover {
             transform: translateY(-5px);
             background-color: rgba(255, 255, 255, 0.1);
         }
-        
+
         .other-hero-card .other-hero-img {
             position: relative;
             width: 100%;
             aspect-ratio: 3 / 4;
             overflow: hidden;
         }
-        
+
         .other-hero-card img {
             width: 100%;
             height: 100%;
@@ -221,55 +222,55 @@
             top: 0;
             left: 0;
         }
-        
+
         .other-hero-card-content {
             padding: 15px;
         }
-        
+
         .other-hero-card-content h3 {
             font-size: 1.3rem;
             margin-bottom: 5px;
             color: var(--secondary-1);
         }
-        
+
         .other-hero-card-content .hero-meta-mini {
             font-size: 0.9rem;
             color: #aaa;
             margin-bottom: 10px;
         }
-        
+
         /* Responsive styles */
         /* Mobile styles */
         @media screen and (max-width: 767px) {
             .hero-profile-section {
                 padding: 100px 4% 60px;
             }
-            
+
             .profile-section {
                 padding: 30px 20px;
             }
-            
+
             .section-title h2 {
                 font-size: 1.8rem;
                 margin-bottom: 20px;
             }
-            
+
             .section-content p {
                 font-size: 0.9rem;
                 line-height: 1.5;
             }
         }
-        
+
         /* Desktop styles */
         @media screen and (min-width: 768px) {
             .hero-header {
                 flex-direction: row;
             }
-            
+
             .hero-header-content {
                 flex: 1;
             }
-            
+
             .hero-image {
                 flex: 1;
                 max-width: 500px;
@@ -277,6 +278,7 @@
         }
     </style>
 </head>
+
 <body>
     <!-- Header & Navigation -->
     <header>
@@ -298,6 +300,7 @@
                         <li><a href="./">Heroes of Tibet</a></li>
                         <li><a href="../blog/">Blog</a></li>
                         <li><a href="../tibet-votes/">Tibet Votes</a></li>
+                        <li><a href="../know-cta/">Know Your CTA</a></li>
                     </ul>
                 </li>
                 <li><a href="../contact">Newsletter</a></li>
@@ -326,58 +329,76 @@
                     </div>
                     <div class="hero-bio">
                         <h2>Brief Introduction</h2>
-                        <p>Brief introduction about this Tibetan hero and their contribution to the Tibetan cause and culture.</p>
+                        <p>Brief introduction about this Tibetan hero and their contribution to the Tibetan cause and
+                            culture.</p>
                     </div>
                 </div>
                 <div class="hero-image">
                     <img src="../../images/heroes/hero1.jpg" alt="Hero Name 1">
                 </div>
             </div>
-            
+
             <!-- Hero Detailed Sections - VERTICAL LAYOUT -->
             <!-- Back to heroes link -->
             <div style="margin-bottom: 30px;">
-                <a href="." style="display: inline-flex; align-items: center; color: var(--secondary-1); text-decoration: none;">
+                <a href="."
+                    style="display: inline-flex; align-items: center; color: var(--secondary-1); text-decoration: none;">
                     <i class="fas fa-arrow-left" style="margin-right: 10px;"></i>
                     Back to Heroes of Tibet
                 </a>
             </div>
-            
+
             <div class="hero-sections">
                 <div class="profile-section">
                     <div class="section-title">
                         <h2>Early Childhood</h2>
                     </div>
                     <div class="section-content">
-                        <p>This section contains information about the hero's early life and formative experiences. Where and when they were born, their family background, education, and any significant childhood events that shaped their future path.</p>
-                        <p>Ut cursus, nulla ac ultricies tempor, sapien massa placerat metus, at finibus massa arcu quis magna. Vestibulum vel magna in elit maximus facilisis vel sit amet eros. Nulla facilisi. In hac habitasse platea dictumst.</p>
-                        <p>Quisque porta cursus ligula, sit amet lacinia neque laoreet id. Morbi eleifend fringilla enim, vel commodo risus ultrices et. Vivamus elementum neque at quam sagittis aliquam.</p>
+                        <p>This section contains information about the hero's early life and formative experiences.
+                            Where and when they were born, their family background, education, and any significant
+                            childhood events that shaped their future path.</p>
+                        <p>Ut cursus, nulla ac ultricies tempor, sapien massa placerat metus, at finibus massa arcu quis
+                            magna. Vestibulum vel magna in elit maximus facilisis vel sit amet eros. Nulla facilisi. In
+                            hac habitasse platea dictumst.</p>
+                        <p>Quisque porta cursus ligula, sit amet lacinia neque laoreet id. Morbi eleifend fringilla
+                            enim, vel commodo risus ultrices et. Vivamus elementum neque at quam sagittis aliquam.</p>
                     </div>
                 </div>
-                
+
                 <div class="profile-section">
                     <div class="section-title">
                         <h2>Impact on Tibetan Struggle</h2>
                     </div>
                     <div class="section-content">
-                        <p>This section details the hero's specific contributions to the Tibetan cause, their role in the struggle for preservation of Tibetan identity, and the lasting impact they have had on Tibetan history and culture.</p>
-                        <p>Donec in auctor sapien, ac consequat mauris. Pellentesque bibendum lacus sit amet mauris facilisis bibendum. Suspendisse pellentesque eros at est egestas dictum. Quisque eget velit vel arcu molestie tincidunt quis sed justo.</p>
-                        <p>Integer porta mattis odio, eget imperdiet dolor consequat quis. Suspendisse ac risus neque. Phasellus ac odio id justo fermentum maximus. Nullam a semper lectus, et rhoncus sapien.</p>
+                        <p>This section details the hero's specific contributions to the Tibetan cause, their role in
+                            the struggle for preservation of Tibetan identity, and the lasting impact they have had on
+                            Tibetan history and culture.</p>
+                        <p>Donec in auctor sapien, ac consequat mauris. Pellentesque bibendum lacus sit amet mauris
+                            facilisis bibendum. Suspendisse pellentesque eros at est egestas dictum. Quisque eget velit
+                            vel arcu molestie tincidunt quis sed justo.</p>
+                        <p>Integer porta mattis odio, eget imperdiet dolor consequat quis. Suspendisse ac risus neque.
+                            Phasellus ac odio id justo fermentum maximus. Nullam a semper lectus, et rhoncus sapien.</p>
                     </div>
                 </div>
-                
+
                 <div class="profile-section">
                     <div class="section-title">
                         <h2>Legacy</h2>
                     </div>
                     <div class="section-content">
-                        <p>This section explores how the hero is remembered today, their ongoing influence on Tibetan society, and any tributes, monuments, or institutional recognitions that honor their memory and contributions.</p>
-                        <p>Quisque urna dolor, bibendum eget ornare nec, pretium et odio. Nunc quis vehicula nulla. Suspendisse in justo eu nulla efficitur ullamcorper. Mauris vitae vehicula augue. Morbi lacinia orci id ex vestibulum sollicitudin.</p>
-                        <p>Cras euismod convallis felis, non pretium lectus convallis id. Fusce faucibus tellus eget leo convallis, sit amet convallis turpis finibus. Aenean pellentesque mauris vel nisl dapibus, eu scelerisque arcu dignissim.</p>
+                        <p>This section explores how the hero is remembered today, their ongoing influence on Tibetan
+                            society, and any tributes, monuments, or institutional recognitions that honor their memory
+                            and contributions.</p>
+                        <p>Quisque urna dolor, bibendum eget ornare nec, pretium et odio. Nunc quis vehicula nulla.
+                            Suspendisse in justo eu nulla efficitur ullamcorper. Mauris vitae vehicula augue. Morbi
+                            lacinia orci id ex vestibulum sollicitudin.</p>
+                        <p>Cras euismod convallis felis, non pretium lectus convallis id. Fusce faucibus tellus eget leo
+                            convallis, sit amet convallis turpis finibus. Aenean pellentesque mauris vel nisl dapibus,
+                            eu scelerisque arcu dignissim.</p>
                     </div>
                 </div>
             </div>
-            
+
             <!-- Other Heroes Section -->
             <div id="other-heroes" class="other-heroes">
                 <h2>Explore More Heroes</h2>
@@ -395,7 +416,7 @@
                             </div>
                         </a>
                     </div>
-                    
+
                     <div class="other-hero-card">
                         <a href="hero?id=3">
                             <div class="other-hero-img">
@@ -409,7 +430,7 @@
                             </div>
                         </a>
                     </div>
-                    
+
                     <div class="other-hero-card">
                         <a href="hero?id=4">
                             <div class="other-hero-img">
@@ -444,11 +465,13 @@
             </div>
             <div class="copyright">
                 <p>&copy; 2025 All About Tibet. All rights reserved.</p>
-                <p>Website Developed by <a href="https://norzinconsultancy.com/" target="_blank" rel="noopener">Norzin Consultancy</a>.</p>
+                <p>Website Developed by <a href="https://norzinconsultancy.com/" target="_blank" rel="noopener">Norzin
+                        Consultancy</a>.</p>
             </div>
         </div>
     </footer>
 
     <script src="../../js/main.js"></script>
 </body>
+
 </html>

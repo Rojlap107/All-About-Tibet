@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QQQZNDHKSZ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QQQZNDHKSZ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'G-QQQZNDHKSZ');
-</script>
+        gtag('config', 'G-QQQZNDHKSZ');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Post - All About Tibet</title>
@@ -25,26 +26,26 @@
         body {
             background-color: #fff6d1;
         }
-        
+
         .blog-post-section {
             padding: 120px 5% 80px;
         }
-        
+
         .blog-post-container {
             max-width: 800px;
             margin: 0 auto;
         }
-        
+
         .blog-post-header {
             margin-bottom: 40px;
         }
-        
+
         .blog-post-header h1 {
             font-size: 2.5rem;
             color: var(--primary);
             margin-bottom: 20px;
         }
-        
+
         .blog-post-meta {
             display: flex;
             justify-content: space-between;
@@ -53,12 +54,12 @@
             color: #777;
             font-size: 0.9rem;
         }
-        
+
         .blog-post-meta .author-date {
             display: flex;
             gap: 15px;
         }
-        
+
         .blog-post-image {
             width: 100%;
             overflow: hidden;
@@ -67,7 +68,7 @@
             position: relative;
             aspect-ratio: 16 / 9;
         }
-        
+
         .blog-post-image img {
             width: 100%;
             height: 100%;
@@ -77,39 +78,39 @@
             top: 0;
             left: 0;
         }
-        
+
         .blog-post-content {
             font-size: 1.1rem;
             line-height: 1.8;
             color: #333;
         }
-        
+
         .blog-post-content p {
             margin-bottom: 20px;
         }
-        
+
         .blog-post-content h2 {
             font-size: 1.8rem;
             color: var(--primary);
             margin: 40px 0 20px;
         }
-        
+
         .blog-post-content h3 {
             font-size: 1.4rem;
             color: var(--primary);
             margin: 30px 0 15px;
         }
-        
-        .blog-post-content ul, 
+
+        .blog-post-content ul,
         .blog-post-content ol {
             margin-bottom: 20px;
             padding-left: 20px;
         }
-        
+
         .blog-post-content li {
             margin-bottom: 10px;
         }
-        
+
         .blog-post-content blockquote {
             border-left: 4px solid var(--secondary-1);
             padding-left: 20px;
@@ -117,26 +118,26 @@
             margin: 30px 0;
             color: #555;
         }
-        
+
         .author-bio {
             margin-top: 40px;
             padding-top: 30px;
             border-top: 1px solid #eee;
             margin-bottom: 30px;
         }
-        
+
         .author-info h3 {
             font-size: 1.2rem;
             margin-bottom: 10px;
             color: var(--primary);
         }
-        
+
         .author-info p {
             font-size: 0.95rem;
             color: #555;
             line-height: 1.6;
         }
-        
+
         .share-post {
             margin-top: 40px;
             padding: 20px;
@@ -144,18 +145,18 @@
             border-radius: 8px;
             text-align: center;
         }
-        
+
         .share-post h3 {
             margin-bottom: 15px;
             color: var(--primary);
         }
-        
+
         .share-links {
             display: flex;
             justify-content: center;
             gap: 15px;
         }
-        
+
         .share-links a {
             display: flex;
             justify-content: center;
@@ -167,28 +168,28 @@
             border-radius: 50%;
             transition: background-color 0.3s ease;
         }
-        
+
         .share-links a:hover {
             background-color: var(--secondary-1);
             color: var(--black);
         }
-        
+
         .related-posts {
             margin-top: 60px;
         }
-        
+
         .related-posts h2 {
             font-size: 1.8rem;
             color: var(--primary);
             margin-bottom: 30px;
         }
-        
+
         .related-posts-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
             gap: 30px;
         }
-        
+
         .related-post-card {
             background-color: var(--white);
             border-radius: 8px;
@@ -196,17 +197,17 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
         }
-        
+
         .related-post-card:hover {
             transform: translateY(-5px);
         }
-        
+
         .related-post-image {
             overflow: hidden;
             position: relative;
             aspect-ratio: 16 / 9;
         }
-        
+
         .related-post-image img {
             width: 100%;
             height: 100%;
@@ -216,23 +217,23 @@
             top: 0;
             left: 0;
         }
-        
+
         .related-post-content {
             padding: 15px;
         }
-        
+
         .related-post-content h3 {
             font-size: 1.1rem;
             margin-bottom: 10px;
             color: var(--primary);
         }
-        
+
         .related-post-content .post-meta {
             font-size: 0.8rem;
             color: #777;
         }
-        
-        
+
+
         .loading-indicator {
             width: 100%;
             display: flex;
@@ -241,7 +242,7 @@
             justify-content: center;
             padding: 60px 0;
         }
-        
+
         .spinner {
             width: 40px;
             height: 40px;
@@ -251,29 +252,32 @@
             animation: spin 1s ease-in-out infinite;
             margin-bottom: 15px;
         }
-        
+
         @keyframes spin {
-            to { transform: rotate(360deg); }
+            to {
+                transform: rotate(360deg);
+            }
         }
-        
+
         .error-message {
             text-align: center;
             padding: 40px 0;
             color: #d32f2f;
         }
-        
+
         /* Responsive styles */
         @media screen and (max-width: 768px) {
             .blog-post-header h1 {
                 font-size: 2rem;
             }
-            
+
             .blog-post-image {
                 height: 250px;
             }
         }
     </style>
 </head>
+
 <body>
     <!-- Header & Navigation -->
     <header>
@@ -295,6 +299,7 @@
                         <li><a href="../heroes/">Heroes of Tibet</a></li>
                         <li><a href="./">Blog</a></li>
                         <li><a href="../tibet-votes/">Tibet Votes</a></li>
+                        <li><a href="../know-cta/">Know Your CTA</a></li>
                     </ul>
                 </li>
                 <li><a href="../contact">Newsletter</a></li>
@@ -312,7 +317,7 @@
                         <p>Loading article...</p>
                     </div>
                 </div>
-                
+
                 <!-- Related Posts -->
                 <div id="related-posts" class="related-posts">
                     <h2>Related Articles</h2>
@@ -332,27 +337,34 @@
                 <p>Email: <a href="mailto:contact@allabouttibet.com">contact@allabouttibet.com</a></p>
             </div>
             <div class="social-links">
-                <a href="https://www.instagram.com/AATibet" aria-label="Instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.facebook.com/AATibet/" aria-label="Facebook" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="https://www.linkedin.com/company/AATibet" aria-label="LinkedIn" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="https://x.com/AATibet" aria-label="X" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-                <a href="https://www.youtube.com/@AATibet" aria-label="YouTube" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-                <a href="https://www.threads.net/@AATibet" aria-label="Threads" target="_blank"><i class="fa-brands fa-threads"></i></a>
+                <a href="https://www.instagram.com/AATibet" aria-label="Instagram" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/AATibet/" aria-label="Facebook" target="_blank"><i
+                        class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/company/AATibet" aria-label="LinkedIn" target="_blank"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://x.com/AATibet" aria-label="X" target="_blank"><i
+                        class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.youtube.com/@AATibet" aria-label="YouTube" target="_blank"><i
+                        class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.threads.net/@AATibet" aria-label="Threads" target="_blank"><i
+                        class="fa-brands fa-threads"></i></a>
             </div>
             <div class="copyright">
                 <p>&copy; 2025 All About Tibet. All rights reserved.</p>
-                <p>Website Developed by <a href="https://norzinconsultancy.com/" target="_blank" rel="noopener">Norzin Consultancy</a>.</p>
+                <p>Website Developed by <a href="https://norzinconsultancy.com/" target="_blank" rel="noopener">Norzin
+                        Consultancy</a>.</p>
             </div>
         </div>
     </footer>
 
     <script src="../../js/main.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             // Get post ID from URL parameter (e.g., post.html?id=1)
             const urlParams = new URLSearchParams(window.location.search);
             const postId = urlParams.get('id');
-            
+
             if (!postId) {
                 document.getElementById('blog-post-container').innerHTML = `
                     <div class="error-message">
@@ -361,7 +373,7 @@
                 `;
                 return;
             }
-            
+
             // Load blog data from JSON file
             const loadBlogs = fetch('../../data/blogs.json')
                 .then(response => {
@@ -370,12 +382,12 @@
                     }
                     return response.json();
                 });
-            
+
             loadBlogs
                 .then(data => {
                     // Find the requested post
                     const post = data.blogs.find(blog => blog.id == postId);
-                    
+
                     if (!post) {
                         document.getElementById('blog-post-container').innerHTML = `
                             <div class="error-message">
@@ -384,10 +396,10 @@
                         `;
                         return;
                     }
-                    
+
                     // Update document title
                     document.title = `${post.title} - All About Tibet`;
-                    
+
                     // Calculate reading time if not already provided
                     let readTime = post.readTime;
                     if (post.content && (!post.readTime || post.readTime === '')) {
@@ -396,11 +408,11 @@
                         const minutes = Math.ceil(wordCount / 200);
                         readTime = `${minutes} min read`;
                     }
-                    
+
                     // Get current page URL for sharing
                     const currentPageUrl = encodeURIComponent(window.location.href);
                     const pageTitle = encodeURIComponent(post.title);
-                    
+
                     // Populate the blog post content
                     document.getElementById('blog-post-container').innerHTML = `
                         <div class="blog-post-header">
@@ -440,12 +452,12 @@
                         </div>
                         
                     `;
-                    
+
                     // Populate related posts (excluding current post)
                     const relatedPosts = data.blogs
                         .filter(blog => blog.id != postId)
                         .slice(0, 3);  // Get up to 3 related posts
-                    
+
                     const relatedPostsHTML = relatedPosts.map(relatedPost => `
                         <div class="related-post-card">
                             <div class="related-post-image">
@@ -461,9 +473,9 @@
                             </div>
                         </div>
                     `).join('');
-                    
+
                     document.getElementById('related-posts-grid').innerHTML = relatedPostsHTML;
-                    
+
                     // If no related posts, hide the section
                     if (relatedPosts.length === 0) {
                         document.getElementById('related-posts').style.display = 'none';
@@ -477,8 +489,9 @@
                         </div>
                     `;
                 });
-                
+
         });
     </script>
 </body>
+
 </html>
