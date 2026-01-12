@@ -141,19 +141,31 @@
                 {
                     "title": "Department of Religion and Culture",
                     "url": "https://chorig.org/",
-                    "content": "The Department of Religion and Culture is one of the key departments under the Kashag of the Central Tibetan Administration. Its primary responsibility is to preserve, protect, and promote Tibetan religion, culture, language, and identity in exile. It provides policy guidance, administrative support, and coordination for monasteries, nunneries, and cultural institutions affiliated with the CTA.",
+                    "content": "The Department of Religion and Culture is one of the key departments under the Kashag of the Central Tibetan Administration. Its primary responsibility is to preserve, protect, and promote Tibetan religion, culture, language, and identity in exile. The department works to ensure the continuity of Tibetan Buddhist traditions, cultural practices, and scholarly heritage while also adapting them to contemporary global contexts. It provides policy guidance, administrative support, and coordination for monasteries, nunneries, and cultural institutions affiliated with the CTA.",
                     "subsections": [
                         {
-                            "title": "Monasteries & Nunneries",
-                            "content": "The department oversees 259 Tibetan monasteries and 36 nunneries in exile. These institutions serve as spiritual, educational, and cultural centers, preserving Buddhist philosophy, ritual practices, and traditional learning systems while empowered Tibetan women within religious life."
+                            "title": "Monasteries (259)",
+                            "content": "The department oversees and supports 259 Tibetan monasteries in exile, which serve as spiritual, educational, and cultural centers for the Tibetan community. These monasteries play a central role in preserving Buddhist philosophy, monastic discipline, ritual practices, and traditional learning systems that have been passed down for centuries."
+                        },
+                        {
+                            "title": "Nunneries (36)",
+                            "content": "There are 36 nunneries under the department’s purview, dedicated to the religious education, spiritual development, and empowerment of Tibetan nuns. In recent decades, these nunneries have also become important centers for advancing educational opportunities and leadership roles for women within Tibetan religious life."
                         },
                         {
                             "title": "Cultural Institutions",
-                            "content": "Supports major institutions that safeguard Tibetan heritage and promote it globally, ensuring that Tibetan culture remains a living tradition rather than a static legacy.",
+                            "content": "The Department of Religion and Culture supports several major cultural and academic institutions that safeguard Tibetan heritage and promote it globally. These institutions include bodies dedicated to performing arts, higher education, archives, traditional arts and crafts, and cultural research. Through these institutions, the department ensures that Tibetan culture remains a living tradition rather than a static legacy.",
                             "details": [
                                 {
                                     "title": "Tibetan Institute of Performing Arts (TIPA)",
-                                    "content": "Preserves traditional Tibetan music, dance, and opera."
+                                    "content": "Dedicated to preserving and promoting traditional Tibetan music, dance, and opera."
+                                },
+                                {
+                                    "title": "Tibet House Society",
+                                    "content": "Promoting Tibetan culture and scholarship internationally."
+                                },
+                                {
+                                    "title": "Central University of Tibetan Studies (CUTS)",
+                                    "content": "A center for higher education in Tibetan and Buddhist studies."
                                 },
                                 {
                                     "title": "Library of Tibetan Works and Archives (LTWA)",
@@ -161,11 +173,11 @@
                                 },
                                 {
                                     "title": "Norbulingka Institute",
-                                    "content": "Preserves traditional arts, crafts, and provides cultural education."
+                                    "content": "Preserving Tibetan arts, crafts, and cultural education."
                                 },
                                 {
-                                    "title": "CUTS & Tibet House",
-                                    "content": "Central University of Tibetan Studies (CUTS) and Tibet House Society promote scholarship and culture internationally."
+                                    "title": "Manjushree Center of Tibetan Culture",
+                                    "content": "Promoting Tibetan cultural learning and awareness."
                                 }
                             ]
                         }
