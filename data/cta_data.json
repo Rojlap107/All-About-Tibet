@@ -47,19 +47,79 @@
             "title": "Tibetan Parliament-in-Exile (TPiE)",
             "url": "https://tibetanparliament.org/",
             "short_description": "The unicameral legislative body and highest representative institution representing Tibetans globally.",
-            "long_description": "The Tibetan Parliament-in-Exile (TPiE) is the unicameral legislative body and highest representative institution of the Central Tibetan Administration (CTA)—the democratically elected government of Tibetans living in exile. It embodies the democratic aspirations of the global Tibetan community and functions as a central pillar of Tibetan governance alongside the Judiciary and Executive. Established as part of the structures developed by H.H. the Dalai Lama, it has evolved into a fully modern legislature representing all tradition provinces and religious schools.",
+            "long_description": "The Tibetan Parliament-in Exile (TPiE) is the unicameral legislative body and highest representative institution of the Central Tibetan Administration (CTA)—the democratically elected government of Tibetans living in exile. It embodies the democratic aspirations of the global Tibetan community and functions as a central pillar of Tibetan governance alongside the Judiciary and Executive.\n\nEstablished as part of the democratic structures developed by His Holiness the 14th Dalai Lama, the Tibetan Parliament in Exile evolved from early representative bodies into a fully modern legislature. Democratic governance in exile began soon after the Tibetan government was reconstituted in India following the 1959 uprising and subsequent exile, with formal legislative powers progressively strengthened through the Charter of the Tibetans in Exile.",
             "icon": "fa-solid fa-landmark",
             "subsections": [
                 {
+                    "title": "Location and Significance",
+                    "content": "The Parliament sits in Dharamshala, India, in the foothills of the Himalayas, a place often referred to as 'Little Lhasa'. Its position in exile underscores both the ongoing Tibetan struggle for freedom and the resilience of its democratic institutions."
+                },
+                {
+                    "title": "Composition and Representation",
+                    "content": "The 17th Tibetan Parliament in Exile comprises 45 members from across the Tibetan diaspora. Representatives include ten members each from the three traditional provinces of Tibet (Ü-Tsang, Kham, and Amdo), members from the four major schools of Tibetan Buddhism and the Bon religion, and representatives of Tibetans living in North America, Europe, Australasia, and other regions. This structure ensures both cultural diversity and geographic representation within the legislature."
+                },
+                {
+                    "title": "Leadership and Electoral Process",
+                    "content": "Parliamentarians elect among themselves a Speaker and Deputy Speaker to preside over sessions. Elections are held every five years, with all Tibetans in exile aged 18 and above eligible to vote and those aged 25 and above eligible to contest. Sessions are typically convened bi-annually."
+                },
+                {
+                    "title": "Functions and Role",
+                    "content": "The TPiE has several key responsibilities within the Central Tibetan Administration:",
+                    "details": [
+                        {
+                            "title": "Legislative Authority",
+                            "content": "To enact laws, frame rules and regulations, and amend policies in accordance with the Charter of the Tibetans in Exile."
+                        },
+                        {
+                            "title": "Oversight",
+                            "content": "To supervise the administration's finances and public expenditure."
+                        },
+                        {
+                            "title": "Advocacy and Liaison",
+                            "content": "To engage with governments, parliaments, NGOs and civil society worldwide to garner support for the Tibetan cause and international advocacy."
+                        },
+                        {
+                            "title": "Representation",
+                            "content": "To bring the concerns and aspirations of the global Tibetan diaspora into policy debates at the highest level."
+                        }
+                    ]
+                },
+                {
+                    "title": "Democratic Resilience & Engagement",
+                    "content": "Despite operating in exile, the Tibetan Parliament continues to uphold democratic norms and processes, reflecting the enduring commitment of the Tibetan people to self-governance, freedom, and non-violent advocacy. Its activities extend beyond law-making to include cultural preservation, community outreach, and international diplomacy."
+                },
+                {
                     "title": "Parliamentary Secretariat",
-                    "content": "The administrative and operational backbone of the TPiE. It provides the professional, non-partisan support that enables Parliament to discharge its legislative, oversight, and representative responsibilities effectively. It manages sessions, records, documentation, and coordination between MPs and CTA departments."
+                    "content": "The Parliament Secretariat is the administrative and operational backbone of the TPiE, responsible for ensuring the smooth functioning, continuity, and institutional integrity of the Parliament. While the MPs serve as elected representatives, the Secretariat provides the professional, non-partisan support that enables Parliament to discharge its constitutional and democratic responsibilities effectively.",
+                    "details": [
+                        {
+                            "title": "Role and Mandate",
+                            "content": "Functions as the permanent administrative body of the Tibetan Parliament-in-Exile, assisting in its legislative, oversight, and representative functions in accordance with the Charter."
+                        },
+                        {
+                            "title": "Legislative Support",
+                            "content": "Organizes parliamentary sessions, prepares agendas, records proceedings, and maintains official transcripts and resolutions."
+                        },
+                        {
+                            "title": "Documentation",
+                            "content": "Maintains laws passed, debates, and archival records, serving as the democratic memory of the Tibetan people in exile."
+                        },
+                        {
+                            "title": "Liaison",
+                            "content": "Acts as a bridge between MPs, CTA departments, and external stakeholders, coordinating delegations and international outreach."
+                        },
+                        {
+                            "title": "Structure",
+                            "content": "Operates under the Speaker, headed by a Secretary-level official and staffed by neutral, professional civil servants."
+                        }
+                    ]
                 },
                 {
                     "title": "Local Tibetan Assemblies (40 Locations)",
                     "content": "Grassroots democratic institutions functioning as the local representative bodies of the Tibetan people in exile, ensuring democratic participation extends beyond Dharamshala to settlements across India."
                 },
                 {
-                    "title": "Tibetan Freedom Movement Sub-Committees (BRDL - 148 Locations)",
+                    "title": "Freedom Movement Sub-Committees (BRDL)",
                     "content": "Functioning globally in 148 locations, these committees mobilize Tibetans and supporters for advocacy, awareness, and democratic engagement. They also support the grassroots collection of the Tibetan Chatrel contributions."
                 }
             ]

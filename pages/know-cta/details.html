@@ -2,9 +2,30 @@
 <html lang="en">
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QQQZNDHKSZ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-QQQZNDHKSZ');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CTA Details - All About Tibet</title>
+    <meta name="description"
+        content="Detailed information about the departments and autonomous bodies of the Central Tibetan Administration (CTA).">
+    <meta name="keywords"
+        content="CTA departments, Tibetan administration, Kashag details, TPiE sessions, TSJC jurisdiction">
+    <meta name="author" content="All About Tibet">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="CTA Details - Central Tibetan Administration">
+    <meta property="og:description"
+        content="Explore in-depth details about the specific branches and departments of the Tibetan government in exile.">
+    <meta property="og:image" content="https://allabouttibet.com/images/cta/hero.png">
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="apple-touch-icon" sizes="180x180" href="../../images/favicon_io/apple-touch-icon.png">
@@ -254,18 +275,37 @@
                 });
 
             function renderDetails(section) {
-                document.title = `${section.title} - All About Tibet`;
+                const fullTitle = `${section.title} - All About Tibet`;
+                document.title = fullTitle;
+
+                // Update Meta Tags dynamically
+                const metaDesc = document.querySelector('meta[name="description"]');
+                if (metaDesc) metaDesc.setAttribute('content', section.long_description.substring(0, 160) + '...');
+
+                const ogTitle = document.querySelector('meta[property="og:title"]');
+                if (ogTitle) ogTitle.setAttribute('content', fullTitle);
+
+                const ogDesc = document.querySelector('meta[property="og:description"]');
+                if (ogDesc) ogDesc.setAttribute('content', section.long_description.substring(0, 160) + '...');
+
+                const ogImage = document.querySelector('meta[property="og:image"]');
+                if (ogImage) ogImage.setAttribute('content', `https://allabouttibet.com/images/cta/${section.id === 'autonomous' ? 'autonomous.png' : section.id + '.jpg'}`);
+
+                const formatContent = (text) => {
+                    if (!text) return '';
+                    return text.split('\n\n').map(p => `<p>${p.replace(/\n/g, '<br>')}</p>`).join('');
+                };
 
                 const renderSubsection = (sub) => `
                     <div class="section-block" id="${sub.title.replace(/\s+/g, '-').toLowerCase()}">
                         <h2>${sub.title}</h2>
-                        <p>${sub.content}</p>
+                        ${formatContent(sub.content)}
                         ${sub.details ? `
                             <div class="dept-grid">
                                 ${sub.details.map(d => `
                                     <div class="dept-card">
                                         <h3>${d.title}</h3>
-                                        <p>${d.content}</p>
+                                        ${formatContent(d.content)}
                                     </div>
                                 `).join('')}
                             </div>
@@ -284,13 +324,13 @@
                             ` : ''}
                         </div>
                         ${dept.full_name ? `<p><strong>Full Name:</strong> ${dept.full_name}</p>` : ''}
-                        <p>${dept.content}</p>
+                        ${formatContent(dept.content)}
                         ${dept.subsections ? `
                             <div class="dept-grid">
                                 ${dept.subsections.map(sub => `
                                     <div class="dept-card">
                                         <h3>${sub.title}</h3>
-                                        <p>${sub.content}</p>
+                                        ${formatContent(sub.content)}
                                     </div>
                                 `).join('')}
                             </div>
@@ -341,7 +381,14 @@
                         <div class="main-details">
                             <div class="section-block">
                                 <h2>Overview</h2>
-                                <p>${section.long_description}</p>
+                                ${formatContent(section.long_description)}
+                                ${section.url ? `
+                                    <div style="margin-top: 15px;">
+                                        <a href="${section.url}" target="_blank" style="color: var(--secondary-1); text-decoration: none; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">
+                                            <i class="fa-solid fa-link"></i> Visit Official Website: ${section.url.replace('https://', '')}
+                                        </a>
+                                    </div>
+                                ` : ''}
                             </div>
                             ${contentHtml}
                             <div style="margin-top: 40px;">
