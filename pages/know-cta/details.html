@@ -296,16 +296,18 @@
                     return text.split('\n\n').map(p => `<p>${p.replace(/\n/g, '<br>')}</p>`).join('');
                 };
 
-                const renderSubsection = (sub) => `
+                const renderSubsection = (sub, titleLevel = 'h2') => `
                     <div class="section-block" id="${sub.title.replace(/\s+/g, '-').toLowerCase()}">
-                        <h2>${sub.title}</h2>
+                        <${titleLevel}>${sub.title}</${titleLevel}>
                         ${formatContent(sub.content)}
                         ${sub.details ? `
-                            <div class="dept-grid">
+                            <div class="details-paragraph-list" style="margin-top: 20px;">
                                 ${sub.details.map(d => `
-                                    <div class="dept-card">
-                                        <h3>${d.title}</h3>
-                                        ${formatContent(d.content)}
+                                    <div style="margin-bottom: 20px;">
+                                        ${d.content.startsWith('http') ?
+                        `<a href="${d.content}" target="_blank" style="color: var(--secondary-1); font-weight: 500;"><i class="fa-solid fa-link"></i> ${d.title}</a>` :
+                        `<strong>${d.title}</strong>${d.content ? ` – ${d.content}` : ''}`
+                    }
                                     </div>
                                 `).join('')}
                             </div>
@@ -325,16 +327,7 @@
                         </div>
                         ${dept.full_name ? `<p><strong>Full Name:</strong> ${dept.full_name}</p>` : ''}
                         ${formatContent(dept.content)}
-                        ${dept.subsections ? `
-                            <div class="dept-grid">
-                                ${dept.subsections.map(sub => `
-                                    <div class="dept-card">
-                                        <h3>${sub.title}</h3>
-                                        ${formatContent(sub.content)}
-                                    </div>
-                                `).join('')}
-                            </div>
-                        ` : ''}
+                        ${dept.subsections ? dept.subsections.map(sub => renderSubsection(sub, 'h3')).join('') : ''}
                     </div>
                 `;
 
