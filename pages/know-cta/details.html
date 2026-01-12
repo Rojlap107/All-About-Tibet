@@ -291,26 +291,43 @@
                 const ogImage = document.querySelector('meta[property="og:image"]');
                 if (ogImage) ogImage.setAttribute('content', `https://allabouttibet.com/images/cta/${section.id === 'autonomous' ? 'autonomous.png' : section.id + '.jpg'}`);
 
-                const formatContent = (text) => {
-                    if (!text) return '';
-                    return text.split('\n\n').map(p => `<p>${p.replace(/\n/g, '<br>')}</p>`).join('');
+                const formatContent = (content, asParagraphs = true) => {
+                    if (!content) return '';
+                    const linkRegex = /(https?:\/\/[^\s]+)/g;
+                    const linkReplacer = '<a href="$1" target="_blank" style="color: var(--secondary-1); text-decoration: underline;">$1</a>';
+
+                    if (!asParagraphs) {
+                        return content.replace(/\n/g, '<br>').replace(linkRegex, linkReplacer);
+                    }
+
+                    return content.split(/\n\n+/).map(para => {
+                        let formattedPara = para.replace(linkRegex, linkReplacer);
+                        return `<p style="margin-bottom: 15px;">${formattedPara.replace(/\n/g, '<br>')}</p>`;
+                    }).join('');
                 };
 
                 const renderSubsection = (sub, titleLevel = 'h2') => `
                     <div class="section-block" id="${sub.title.replace(/\s+/g, '-').toLowerCase()}">
-                        <${titleLevel}>${sub.title}</${titleLevel}>
+                        <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 20px;">
+                            <${titleLevel}>${sub.title}</${titleLevel}>
+                            ${sub.url ? `
+                                <a href="${sub.url}" target="_blank" class="cta-button" style="font-size: 0.8rem; padding: 6px 15px;">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Visit Website
+                                </a>
+                            ` : ''}
+                        </div>
                         ${formatContent(sub.content)}
                         ${sub.details ? `
-                            <div class="details-paragraph-list" style="margin-top: 20px;">
+                            <ul class="details-bullet-list" style="margin-top: 20px; padding-left: 20px; list-style-type: disc;">
                                 ${sub.details.map(d => `
-                                    <div style="margin-bottom: 20px;">
+                                    <li style="margin-bottom: 12px; line-height: 1.6;">
                                         ${d.content.startsWith('http') ?
                         `<a href="${d.content}" target="_blank" style="color: var(--secondary-1); font-weight: 500;"><i class="fa-solid fa-link"></i> ${d.title}</a>` :
-                        `<strong>${d.title}</strong>${d.content ? ` – ${d.content}` : ''}`
+                        `<strong>${d.title}</strong>${d.content ? ` – ${formatContent(d.content, false)}` : ''}`
                     }
-                                    </div>
+                                    </li>
                                 `).join('')}
-                            </div>
+                            </ul>
                         ` : ''}
                     </div>
                 `;
@@ -333,10 +350,10 @@
 
                 let contentHtml = '';
                 if (section.subsections) {
-                    contentHtml += section.subsections.map(renderSubsection).join('');
+                    contentHtml += section.subsections.map(sub => renderSubsection(sub)).join('');
                 }
                 if (section.departments) {
-                    contentHtml += section.departments.map(renderDepartment).join('');
+                    contentHtml += section.departments.map(dept => renderDepartment(dept)).join('');
                 }
 
                 let sidebarHtml = `

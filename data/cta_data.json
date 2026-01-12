@@ -18,25 +18,25 @@
                     "details": [
                         {
                             "title": "TCJC – Dekyiling",
-                            "content": "Functions as a regional base for circuit justice activities in North India, conducting hearings for nearby settlements, reducing travel for litigants."
+                            "content": "The TCJC at Dekyiling functions as a regional base for circuit justice activities in North India. From this location, the Circuit Justice Commission conducts hearings and judicial proceedings for nearby Tibetan settlements, reducing the burden on litigants who would otherwise need to travel long distances for legal redress."
                         }
                     ]
                 },
                 {
                     "title": "Tibetan Local Justice Commission (TLJC)",
-                    "content": "Handles minor civil disputes, mediation, and community-level legal matters. Emphasizing reconciliation and amicable settlement, the TLJC plays an important role in maintaining harmony within Tibetan communities by resolving conflicts at the grassroots level.",
+                    "content": "The Tibetan Local Justice Commission (TLJC) handles minor civil disputes, mediation, and community-level legal matters. Emphasizing reconciliation and amicable settlement, the TLJC plays an important role in maintaining harmony within Tibetan communities by resolving conflicts at the grassroots level, often using mediation informed by Tibetan customary practices.",
                     "details": [
                         {
                             "title": "Northern Region (Dekyiling)",
-                            "content": "Serves Tibetan settlements across North India, providing accessible justice and mediation services within the community."
+                            "content": "The Northern Region TLJC, based in Dekyiling, serves Tibetan settlements across North India. It addresses local disputes and minor legal cases, providing accessible justice and mediation services within the community."
                         },
                         {
                             "title": "Southern Region (Bylakuppe)",
-                            "content": "Caters to one of the largest Tibetan settlement areas in South India, resolving community disputes and maintaining social harmony."
+                            "content": "The Southern Region TLJC, located in Bylakuppe, caters to one of the largest Tibetan settlement areas in South India. It plays a crucial role in resolving community disputes and maintaining social harmony among a large resident population."
                         },
                         {
                             "title": "Ladakh Region",
-                            "content": "Serves Tibetan communities in Ladakh, addressing local justice needs while considering the unique high-altitude context."
+                            "content": "The TLJC in Ladakh serves Tibetan communities living in the Ladakh region. It addresses local justice needs while taking into account the unique geographic, cultural, and social context of Tibetans living in this high-altitude border region."
                         }
                     ]
                 }
@@ -186,129 +186,347 @@
                 {
                     "title": "Department of Home",
                     "url": "https://centraltibetanreliefcommittee.net/",
-                    "content": "Responsible for the administration, welfare, rehabilitation, and socio-economic development of Tibetan communities in exile. It works closely with Tibetan settlements across India, Nepal, and Bhutan to support livelihoods, community infrastructure, and social welfare services.",
+                    "content": "The Department of Home is one of the largest and most people-facing departments under the Kashag of the Central Tibetan Administration. It is responsible for the administration, welfare, rehabilitation, and socio-economic development of Tibetan communities in exile. The department works closely with Tibetan settlements across India, Nepal, and Bhutan to support livelihoods, community infrastructure, social welfare services, and overall settlement governance. In many ways, it acts as the primary link between the CTA and the everyday lives of Tibetans in exile.",
                     "subsections": [
                         {
-                            "title": "Settlement Offices (TSO)",
-                            "content": "Oversees Settlement Offices (36 in India, 7 in Nepal, 1 in Bhutan) which function as local administrative units implementing CTA policies and managing community affairs at the ground level."
+                            "title": "Tibetan Settlement Offices (TSO)",
+                            "content": "The Department of Home oversees Tibetan Settlement Offices (TSOs), which function as local administrative units within Tibetan settlements. TSOs implement CTA policies at the ground level, manage settlement affairs, coordinate welfare and development programs, and serve as the first point of contact between the community and the central administration.",
+                            "details": [
+                                {
+                                    "title": "India",
+                                    "content": "36 TSOs"
+                                },
+                                {
+                                    "title": "Nepal",
+                                    "content": "7 TSOs"
+                                },
+                                {
+                                    "title": "Bhutan",
+                                    "content": "1 TSO"
+                                }
+                            ]
                         },
                         {
-                            "title": "Welfare & Infrastructure",
-                            "content": "The Agricultural Section supports farming-based livelihoods, while the Real Estate Section manages land and housing. The Welfare Section ensures the needs of vulnerable groups are met through programs like Old Age Homes and Baby Crèches."
+                            "title": "Agricultural Section",
+                            "content": "The Agricultural Section supports farming-based livelihoods within Tibetan settlements. It works to improve agricultural productivity, promote sustainable practices, and strengthen food security for settlement communities that depend on agriculture as a primary source of income."
+                        },
+                        {
+                            "title": "Welfare Section",
+                            "content": "The Welfare Section focuses on social protection and community well-being. It supports vulnerable groups, coordinates assistance programs, and ensures that basic welfare needs of the Tibetan population—especially those facing hardship—are addressed."
+                        },
+                        {
+                            "title": "Real Estate Section",
+                            "content": "The Real Estate Section manages land, housing, and property-related matters within Tibetan settlements. It plays a crucial role in safeguarding settlement assets and ensuring proper use and maintenance of community property."
+                        },
+                        {
+                            "title": "Old Age Homes",
+                            "content": "The Department of Home oversees Old Age Homes that provide care, shelter, and support to elderly Tibetans who may not have family support. These facilities ensure dignity, care, and security for senior members of the community."
+                        },
+                        {
+                            "title": "Baby Crèches",
+                            "content": "Baby Crèches under the Department of Home provide early childhood care and support for young children, particularly in settlements where parents are engaged in work. These centers contribute to child welfare and early development while supporting working families."
                         }
                     ]
                 },
                 {
                     "title": "Department of Finance",
-                    "content": "Responsible for managing financial administration, revenue systems, budgeting, and development financing. It ensures financial sustainability, transparency, and accountability across CTA institutions and programs.",
+                    "content": "The Department of Finance is responsible for managing the financial administration, revenue systems, budgeting, and development financing of the Central Tibetan Administration. It plays a central role in ensuring financial sustainability, transparency, and accountability across CTA institutions and programs. The department oversees public funds, community contribution systems, development finance mechanisms, and capacity-building initiatives that support long-term self-reliance of the Tibetan community in exile.",
                     "subsections": [
                         {
-                            "title": "Budget & Civic Participation",
-                            "content": "Handles the annual CTA budget and manages the Green Book (civic record) and Chatrel (voluntary contribution) sections to sustain the Tibetan freedom movement and administration."
+                            "title": "Budget Section",
+                            "content": "The Budget Section prepares, allocates, and monitors the annual CTA budget. It coordinates with all departments and offices to ensure that public funds are used efficiently and in line with approved priorities, and that expenditures follow established financial rules and procedures."
                         },
                         {
-                            "title": "Development & Empowerment",
-                            "content": "Mobilizes resources through SARD (Social and Resource Development Fund) and GDF (Gangjong Development Finance). It also includes the Women Empowerment Desk to strengthen female institutional participation.",
+                            "title": "Green Book Section",
+                            "content": "The Green Book Section is responsible for the issuance, registration, and maintenance of Tibetan Green Books. The Green Book serves as an official record of an individual Tibetan’s civic status and participation in the Tibetan democratic and freedom movement. This section manages Green Book documentation, records, renewals, and verification, ensuring that each registered Tibetan has an official and traceable Green Book identity within the CTA system."
+                        },
+                        {
+                            "title": "Chatrel Section",
+                            "content": "The Chatrel Section is responsible for collecting Green Book contributions from Tibetans in exile. These contributions are voluntary but strongly encouraged as a form of civic responsibility and support for the Tibetan freedom struggle and the functioning of the CTA. The Chatrel Section records contributions, issues receipts, and coordinates with settlement offices and other collection points to ensure proper accounting and transparency."
+                        },
+                        {
+                            "title": "Women Empowerment Desk",
+                            "content": "The Women Empowerment Desk works to strengthen the economic and institutional participation of Tibetan women. It supports initiatives focused on financial inclusion, skills development, and empowerment of women within the community."
+                        },
+                        {
+                            "title": "Tibetan Computer Resource Center (TCRC)",
+                            "content": "The Tibetan Computer Resource Center (TCRC) focuses on building digital capacity within CTA institutions and the Tibetan community. It supports ICT systems, digital literacy, and technology-driven solutions for administration and development."
+                        },
+                        {
+                            "title": "Social and Resource Development Fund (SARD)",
+                            "content": "The Social and Resource Development Fund (SARD) mobilizes and manages development resources for Tibetan welfare and community projects. It works closely with donors and partners to implement programs in areas such as livelihoods, education, and social development.",
                             "details": [
                                 {
-                                    "title": "SARD Fund",
+                                    "title": "Official Website",
                                     "content": "https://sardfund.org/"
-                                },
-                                {
-                                    "title": "Tibet Corps",
-                                    "content": "https://tibetcorps.org/"
-                                },
-                                {
-                                    "title": "GDF",
-                                    "content": "Gangjong Development Finance supports entrepreneurship."
-                                },
-                                {
-                                    "title": "Blue Book",
-                                    "content": "Official mechanism for non-Tibetans to support the Tibetan cause."
                                 }
                             ]
+                        },
+                        {
+                            "title": "Blue Book",
+                            "content": "The Blue Book system records contributions made by non-Tibetans who wish to support the Tibetan cause. It provides an official mechanism for global supporters to contribute financially to Tibetan institutions and initiatives."
+                        },
+                        {
+                            "title": "Tibet Corps",
+                            "content": "Tibet Corps is a volunteer and service-oriented initiative that engages Tibetan youth in community service, skill-building, and nation-building activities. It promotes civic responsibility and leadership among young Tibetans.",
+                            "details": [
+                                {
+                                    "title": "Official Website",
+                                    "content": "https://tibetcorps.org/"
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Gangjong Development Finance (GDF)",
+                            "content": "Gangjong Development Finance (GDF) functions as a financial institution supporting Tibetan entrepreneurship and economic development. It provides loans and financial services to help Tibetan businesses grow and strengthen community livelihoods."
                         }
                     ]
                 },
                 {
                     "title": "Department of Education",
                     "url": "https://sherig.org/",
-                    "content": "The Department of Education is responsible for the overall education system in exile, from primary schooling to higher education. It ensures that students receive quality education that balances modern knowledge with Tibetan language, culture, and values.",
+                    "content": "The Department of Education is responsible for the overall education system of Tibetans in exile, from primary schooling to higher education, scholarships, and student support services. Operating under the Kashag of the Central Tibetan Administration, the department works to ensure that Tibetan children and youth receive quality education that balances modern knowledge with Tibetan language, culture, and values. It plays a crucial role in shaping the future leadership, skills, and identity of the Tibetan community.",
                     "subsections": [
                         {
-                            "title": "Academic Standard & Tradition",
-                            "content": "The Academic Section oversees standards, while the Traditional Academic Section focuses on language and Buddhist studies. The Modern Academic Section prepares students for science, math, and vocational fields."
+                            "title": "Academic Section",
+                            "content": "The Academic Section oversees curriculum planning, academic standards, and coordination with Tibetan schools and institutions. It ensures consistency and quality in teaching and learning across the Tibetan school system."
                         },
                         {
-                            "title": "Student Support",
-                            "content": "Provides scholarships for higher education, academic counselling, and professional guidance. The Terminology Section develops standardized Tibetan terms for modern concepts."
+                            "title": "Traditional Academic Section",
+                            "content": "The Traditional Academic Section focuses on Tibetan language, literature, history, philosophy, and Buddhist studies. Its role is to preserve and strengthen traditional knowledge systems and ensure their transmission to younger generations."
+                        },
+                        {
+                            "title": "Modern Academic Section",
+                            "content": "The Modern Academic Section manages subjects related to contemporary education, including science, mathematics, social sciences, and vocational learning. It ensures that Tibetan students are equipped to compete and succeed in modern educational and professional environments."
+                        },
+                        {
+                            "title": "Scholarship Section",
+                            "content": "The Scholarship Section administers scholarships and financial assistance programs for Tibetan students pursuing higher education in India and abroad. It helps expand access to education and supports students based on merit, need, and strategic human resource priorities."
+                        },
+                        {
+                            "title": "Education Council",
+                            "content": "The Education Council functions as an advisory and policy-guiding body on educational matters. It brings together expertise to review policies, recommend reforms, and guide the long-term direction of Tibetan education in exile."
+                        },
+                        {
+                            "title": "Counselling Section",
+                            "content": "The Counselling Section provides academic, career, and psychosocial guidance to students. It supports student well-being, helps young people navigate educational and career choices, and addresses challenges related to stress, adjustment, and personal development."
+                        },
+                        {
+                            "title": "Terminology Section",
+                            "content": "The Terminology Section is responsible for developing and standardizing Tibetan terminology, particularly for modern subjects and concepts. This work is essential for strengthening Tibetan as a living language capable of expressing contemporary knowledge and ideas."
                         }
                     ]
                 },
                 {
                     "title": "Department of Security",
-                    "content": "Responsible for community security, refugee reception, legal documentation, and coordination. A critical mandate is ensuring the security of His Holiness the Dalai Lama and safeguarding Tibetans in exile.",
+                    "content": "The Department of Security is responsible for matters related to community security, refugee reception, legal documentation, and sensitive coordination within the Central Tibetan Administration. One of its most critical responsibilities is ensuring the security of His Holiness the Dalai Lama, including coordination related to his residence, public engagements, and travel. The department also works to safeguard the security of Tibetans living in exile and plays a discreet but important role in maintaining contact with Tibetans inside Tibet.",
                     "subsections": [
                         {
-                            "title": "Reception & Transit",
-                            "content": "Operates centers in Kathmandu, Delhi, and Dharamshala that serve as the first point of contact for newly arrived Tibetans, providing shelter, registration, and documentation support."
+                            "title": "Reception Centers",
+                            "content": "The Department of Security operates Reception Centers that serve as the first point of contact for newly arrived Tibetans from Tibet. These centers provide temporary shelter, basic assistance, and coordination for registration, documentation, and onward rehabilitation.",
+                            "details": [
+                                {
+                                    "title": "Kathmandu Reception Center",
+                                    "content": "Supports Tibetans arriving via Nepal and facilitates initial processing"
+                                },
+                                {
+                                    "title": "Delhi Reception Center",
+                                    "content": "Assists with transit, documentation, and coordination"
+                                },
+                                {
+                                    "title": "Dharamshala Reception Center",
+                                    "content": "Handles registration and coordination with central CTA offices"
+                                }
+                            ]
                         },
                         {
-                            "title": "Legal & Identity",
-                            "content": "Handles internal security procedures and provides essential services for legal identity, including Registration Certificates (RC) and Identity Certificates (IC) for travel."
+                            "title": "Administration",
+                            "content": "The Administration Section handles internal administrative functions of the Department of Security only. It manages departmental records, internal coordination, staffing, and implementation of security-related procedures. This section also plays a role in monitoring and addressing security-related concerns affecting Tibetans in exile, ensuring that community safety issues are addressed in coordination with relevant bodies."
+                        },
+                        {
+                            "title": "Other Functions",
+                            "content": "Under its other key responsibilities, the Department of Security provides support and services related to legal identity and travel documentation for Tibetans in exile. This includes assistance with the Registration Certificate (RC), which allows Tibetans to legally reside in India as foreigners, and support for the Identity Certificate (IC), which serves as a travel document enabling Tibetans to travel outside India. Additionally, the department maintains communication and information links with Tibetans inside Tibet, handling these matters with sensitivity due to their security implications."
                         }
                     ]
                 },
                 {
                     "title": "Department of Information and International Relations (DIIR)",
-                    "content": "The voice of the Tibetan people, responsible for media engagement, international advocacy, and diplomacy. It communicates Tibetan perspectives on democracy, human rights, and the environment to the global public.",
+                    "content": "The Department of Information and International Relations (DIIR) is responsible for public information, media engagement, international advocacy, diplomacy, and global coordination of the Central Tibetan Administration. DIIR serves as the voice of the Tibetan people to the world, communicating Tibetan perspectives on Tibet, democracy, human rights, environment, and culture. It also manages relations with governments, parliaments, international institutions, and Tibet support groups worldwide, while keeping Tibetans in exile informed about national and international developments.",
                     "subsections": [
                         {
-                            "title": "Media & Publication",
-                            "content": "Manages news through the Tibet News Bureau, Tibet TV, Narthang Press, and various bulletins. The Information Section keeps both the diaspora and the international community informed.",
+                            "title": "Information Section",
+                            "content": "The Information Section handles news production, publications, digital communication, and public outreach. It ensures that accurate and timely information about Tibet and the CTA reaches Tibetans in exile, Tibetans inside Tibet (where possible), and the global public.",
                             "details": [
                                 {
+                                    "title": "Tibet News Bureau",
+                                    "content": "Produces daily news and official reports related to CTA activities, Tibetan political developments, and international Tibet-related events."
+                                },
+                                {
+                                    "title": "Tibetan Sheja",
+                                    "content": "Publishes news and articles in Tibetan, focusing on community affairs, governance, and national issues."
+                                },
+                                {
+                                    "title": "Tibetan Freedom",
+                                    "content": "Focuses on advocacy-related content, highlighting issues concerning Tibet’s political status, human rights, and freedom movement."
+                                },
+                                {
+                                    "title": "English Tibetan Bulletin",
+                                    "content": "Provides English-language updates, making Tibetan issues accessible to international audiences, researchers, policymakers, and supporters."
+                                },
+                                {
+                                    "title": "Website",
+                                    "content": "DIIR manages the official CTA website, which serves as a central platform for news, documents, statements, and public information."
+                                },
+                                {
+                                    "title": "China Desk",
+                                    "content": "Monitors political, social, and policy developments related to Tibet inside the People’s Republic of China and provides analysis and information relevant to advocacy and policymaking."
+                                },
+                                {
+                                    "title": "Audio Visual Section",
+                                    "content": "The Audio-Visual Section produces video, visual, and multimedia content for outreach, documentation, and education."
+                                },
+                                {
                                     "title": "Tibet TV",
-                                    "content": "https://www.tibetonline.tv/"
+                                    "content": "Official Website: https://www.tibetonline.tv/ \n\nTibet TV is the official audiovisual media platform of the Department of Information and International Relations (DIIR) of the Central Tibetan Administration. Its primary role is to produce and disseminate video-based news, documentaries, interviews, educational programs, and special features related to Tibet, Tibetan governance, culture, and the Tibetan freedom movement. Tibet TV serves both Tibetan-speaking and international audiences by creating content in Tibetan and other languages, helping bridge the gap between the Tibetan community and the global public. Through digital platforms such as television broadcasts, YouTube, and social media, Tibet TV plays a crucial role in shaping narratives, preserving historical memory, amplifying Tibetan voices, and countering misinformation with factual, first-hand reporting."
                                 },
                                 {
                                     "title": "Tibet Museum",
-                                    "content": "https://tibetmuseum.org/"
-                                },
-                                {
-                                    "title": "Narthang Press",
-                                    "content": "Official publishing arm for policy and historical texts."
+                                    "content": "Official Website: https://tibetmuseum.org/ \n\nThe Tibet Museum is an educational and historical institution under DIIR dedicated to documenting, preserving, and presenting the modern history of Tibet and the Tibetan exile experience. Through permanent and temporary exhibitions, archival materials, photographs, videos, and interactive displays, the museum provides visitors with a comprehensive understanding of Tibet’s political history, cultural heritage, and the impact of Chinese policies in Tibet. Located in Dharamshala, the Tibet Museum serves as a key space for public education, awareness-building, and dialogue, welcoming students, researchers, diplomats, tourists, and Tibet supporters from around the world. It plays an important role in ensuring that the Tibetan narrative is preserved, accurately represented, and passed on to future generations."
                                 }
                             ]
                         },
                         {
-                            "title": "International Advocacy",
-                            "content": "Oversees the Offices of Tibet (de facto diplomatic missions) globally. Engages with the UN, EU, and international human rights mechanisms through specialized desks and support groups.",
+                            "title": "Translation, Publication & Media",
+                            "content": "This section handles translation of official documents, statements, and publications into multiple languages, ensuring consistent messaging across global audiences. The Media Coordination Desk manages relations with journalists and media organizations, with a Press Officer coordinating press briefings, media queries, and official communications with national and international media."
+                        },
+                        {
+                            "title": "International Relations Section",
+                            "content": "The International Relations Section manages diplomatic outreach and engagement with governments, parliaments, international institutions, and civil society. DIIR oversees Offices of Tibet across the world, which function as de facto diplomatic missions representing His Holiness the Dalai Lama and the CTA.",
                             "details": [
                                 {
-                                    "title": "TPI Think Tank",
-                                    "content": "https://tibetpolicy.net/"
+                                    "title": "New Delhi",
+                                    "content": "Bureau of His Holiness the Dalai Lama"
                                 },
                                 {
-                                    "title": "Offices of Tibet",
-                                    "content": "Missions in New Delhi, Washington DC, Geneva, London, Brussels, Tokyo, and more."
+                                    "title": "Kathmandu",
+                                    "content": "Tibetan Refugee Welfare Office"
+                                },
+                                {
+                                    "title": "Geneva",
+                                    "content": "The Tibet Bureau"
+                                },
+                                {
+                                    "title": "Washington DC",
+                                    "content": "The Office of Tibet"
+                                },
+                                {
+                                    "title": "Tokyo",
+                                    "content": "Liaison Office of His Holiness the Dalai Lama"
+                                },
+                                {
+                                    "title": "London",
+                                    "content": "The Office of Tibet"
+                                },
+                                {
+                                    "title": "Brussels",
+                                    "content": "Bureau du Tibet"
+                                },
+                                {
+                                    "title": "Canberra",
+                                    "content": "Tibet Information Office"
+                                },
+                                {
+                                    "title": "Moscow",
+                                    "content": "Tibet Culture and Information Center"
+                                },
+                                {
+                                    "title": "Taipei",
+                                    "content": "Religious Foundation of His Holiness the Dalai Lama"
+                                },
+                                {
+                                    "title": "Pretoria",
+                                    "content": "The Office of Tibet"
+                                },
+                                {
+                                    "title": "São Paulo",
+                                    "content": "Tibet House"
+                                },
+                                {
+                                    "title": "Paris",
+                                    "content": "Bureau du Tibet (under Brussels)"
                                 }
                             ]
+                        },
+                        {
+                            "title": "International Advocacy Desks",
+                            "content": "The Tibet Support Group Desk coordinates with Tibet support groups, advocacy networks, and solidarity organizations around the world. The UN, EU and Human Rights Desk engages with international human rights mechanisms, including the United Nations and European Union, to raise Tibet-related concerns. The Protocol Section manages official visits, formal engagements, and diplomatic protocol related to CTA leadership and international guests."
+                        },
+                        {
+                            "title": "Narthang Press",
+                            "content": "Narthang Press is the official publishing arm of the Department of Information and International Relations of the Central Tibetan Administration. It is responsible for publishing books, policy documents, research reports, official statements, educational materials, and historical texts related to Tibet, Tibetan governance, culture, and the freedom movement. Narthang Press plays a vital role in preserving Tibetan intellectual heritage while also ensuring that accurate, authoritative information about Tibet reaches scholars, policymakers, and the general public. Through its publications in Tibetan, English, and other languages, Narthang Press supports informed discourse, documentation of the Tibetan struggle, and long-term knowledge preservation."
+                        },
+                        {
+                            "title": "Tibet Policy Institute (TPI)",
+                            "content": "Official Website: https://tibetpolicy.net/ \n\nThe Tibet Policy Institute (TPI) is the research and policy think tank under DIIR. Its core mandate is to conduct independent, evidence-based research and policy analysis on issues related to Tibet, including politics, governance, human rights, environment, China-Tibet relations, and international affairs. TPI provides analytical support to CTA leadership and DIIR, helping inform advocacy strategies, diplomatic engagement, and public communication. Through research papers, briefings, seminars, and publications, TPI contributes to shaping informed global understanding of Tibet and strengthens the intellectual foundation of Tibetan policy and advocacy work."
                         }
                     ]
                 },
                 {
                     "title": "Department of Health",
                     "url": "https://tibetanhealth.org/",
-                    "content": "Safeguards the physical and mental health of the community by combining modern medical services with traditional Tibetan medicine (Sowa Rigpa) across India, Nepal, and Bhutan.",
+                    "content": "The Department of Health is responsible for safeguarding the physical and mental health of Tibetans in exile. Operating under the Kashag of the Central Tibetan Administration, the department plans, coordinates, and oversees healthcare services across Tibetan settlements in India, Nepal, and Bhutan. Its work combines modern medical services and traditional Tibetan medicine, ensuring accessible, affordable, and culturally appropriate healthcare for the community.",
                     "subsections": [
                         {
-                            "title": "Health Infrastructure",
-                            "content": "Manages 12 hospitals/PHCs, 33 clinics, and mobile units. Coordinates with Delek Hospital, Men-Tsee-Khang (Traditional medicine), and Ngoenga School for special needs."
+                            "title": "Administration",
+                            "content": "The Administration Section manages the overall functioning of the Department of Health, including policy coordination, staffing, financial oversight, and liaison with affiliated institutions and settlement-level health facilities."
                         },
                         {
-                            "title": "Sports & Well-being",
-                            "content": "The Tibetan National Sports Association (TNSA) promotes healthy lifestyles and youth engagement, viewing sports as a tool for discipline and community cohesion."
+                            "title": "Projects",
+                            "content": "The Projects Section designs and implements health-related programs focused on preventive care, public health awareness, maternal and child health, disease prevention, mental health, and community well-being. These projects often work in collaboration with partner organizations and donors."
+                        },
+                        {
+                            "title": "Affiliated Organisations",
+                            "content": "The Department of Health oversees and coordinates with several key health and medical institutions:",
+                            "details": [
+                                {
+                                    "title": "Delek Hospital",
+                                    "content": "A major hospital in Dharamshala providing modern medical services to Tibetans and others."
+                                },
+                                {
+                                    "title": "Men-Tsee-Khang (Tibetan Medical & Astro Institute)",
+                                    "content": "Preserves and practices traditional Tibetan medicine and astrology, with clinics across settlements."
+                                },
+                                {
+                                    "title": "Ngoenga School",
+                                    "content": "Provides specialized education and care for children with special needs."
+                                },
+                                {
+                                    "title": "Central Council of Tibetan Medicine",
+                                    "content": "Regulates and promotes standards in Tibetan medical practice."
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Health Centers",
+                            "content": "The department manages a network of health facilities to ensure basic healthcare access across settlements:",
+                            "details": [
+                                {
+                                    "title": "Hospitals and PHCs",
+                                    "content": "12 Hospitals and Primary Health Centers (PHCs) providing comprehensive medical care."
+                                },
+                                {
+                                    "title": "Clinics",
+                                    "content": "33 Clinics offering localized health services."
+                                },
+                                {
+                                    "title": "Mobile Clinic",
+                                    "content": "1 Mobile Clinic, which serves remote and hard-to-reach areas."
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Tibetan National Sports Association (TNSA)",
+                            "content": "The Tibetan National Sports Association (TNSA) functions under the Department of Health of the Central Tibetan Administration and is responsible for promoting sports, physical fitness, and healthy lifestyles among Tibetans in exile. TNSA organizes and coordinates sporting activities, tournaments, and training programs across Tibetan settlements, with a strong focus on youth engagement. Beyond physical health, TNSA views sports as a tool for discipline, teamwork, leadership development, and community cohesion. It also plays an important role in fostering national identity and unity by bringing together Tibetan youth from different regions through sports events, while encouraging lifelong habits of physical activity and well-being."
                         }
                     ]
                 }
@@ -318,21 +536,25 @@
             "id": "autonomous",
             "title": "Autonomous Bodies",
             "short_description": "Independent institutions ensuring democratic integrity and accountability within the CTA.",
-            "long_description": "Autonomous Bodies are constitutionally independent institutions functioning separately from the executive branch. Their heads are elected by the Parliament to ensure non-partisan staffing and financial transparency, serving as core pillars of Tibetan democracy in exile.",
+            "long_description": "Autonomous Bodies are constitutionally independent institutions that function separately from the executive branch (Kashag). Their independence ensures free elections, a professional civil service, and financial accountability, which are core pillars of Tibetan democracy in exile.",
             "icon": "fa-solid fa-gavel",
             "subsections": [
                 {
+                    "title": "Appointment of Heads of the Autonomous Bodies",
+                    "content": "The Presidents / Heads of the three Autonomous Bodies — the Election Commission, the Public Service Commission, and the Office of the Auditor General — are elected by the Tibetan Parliament-in-Exile. This process ensures that these bodies remain independent of the executive branch (Kashag) while still being democratically accountable to the elected legislature.\n\nBy vesting the power of election in the Parliament, the Tibetan democratic system strengthens institutional independence, checks and balances, and public trust. Once elected, the heads of these bodies function autonomously and are expected to carry out their duties impartially, without political interference."
+                },
+                {
                     "title": "Election Commission",
                     "url": "https://tibetanelection.net/",
-                    "content": "Responsible for conducting free, fair, and transparent elections for the Sikyong, Tibetan Parliament-in-Exile, and Local Assemblies."
+                    "content": "The Election Commission is responsible for conducting free, fair, and transparent elections for all major Tibetan democratic institutions. This includes elections for the Sikyong, Tibetan Parliament-in-Exile, and Local Tibetan Assemblies.\n\nThe Commission prepares electoral rules, manages voter registration, oversees nomination processes, conducts polling, and declares results. It also addresses electoral complaints and disputes to ensure credibility and public trust in the democratic process. By operating independently from political influence, the Election Commission safeguards the legitimacy of Tibetan self-governance and democratic continuity in exile."
                 },
                 {
                     "title": "Public Service Commission (PSC)",
-                    "content": "Responsible for merit-based recruitment, examination, and appointment of civil servants within the CTA, ensuring institutional efficiency."
+                    "content": "The Public Service Commission (PSC) is responsible for the recruitment, examination, and appointment of civil servants within the CTA. Its primary mandate is to ensure that CTA staffing is based on merit, fairness, and transparency, rather than political influence or favoritism.\n\nThe PSC conducts competitive examinations, interviews, and selection processes for various grades of CTA service. It also advises on service rules, promotions, and disciplinary matters. By maintaining a professional and impartial civil service, the PSC strengthens institutional capacity and ensures continuity and efficiency in CTA administration."
                 },
                 {
                     "title": "Office of the Auditor General",
-                    "content": "The highest financial oversight authority, auditing accounts and ensuring transparency across all CTA departments and affiliated institutions."
+                    "content": "The Office of the Auditor General is the highest financial oversight authority of the CTA. Its role is to audit accounts, review financial management, and ensure accountability and transparency across all CTA departments, offices, and affiliated institutions.\n\nThe Auditor General examines whether public funds are used according to approved budgets, financial rules, and established procedures. Audit reports are submitted to the Tibetan Parliament-in-Exile, enabling legislative oversight of public spending. Through independent auditing and reporting, this office helps prevent misuse of funds, strengthens financial discipline, and builds public confidence in CTA institutions."
                 }
             ]
         }
