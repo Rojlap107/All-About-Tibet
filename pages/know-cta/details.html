@@ -322,7 +322,7 @@
                 `;
 
                 container.innerHTML = `
-                    <section class="details-hero" style="background-image: url('../../images/cta/${section.id}.png')">
+                    <section class="details-hero" style="background-image: url('../../images/cta/${section.id === 'autonomous' ? 'autonomous.png' : section.id + '.jpg'}')">
                         <div class="hero-title-container">
                             <div class="breadcrumb">
                                 <a href="../../">Home</a> / <a href="./">Know Your CTA</a> / ${section.title}
