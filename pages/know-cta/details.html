@@ -275,7 +275,14 @@
 
                 const renderDepartment = (dept) => `
                     <div class="section-block" id="${dept.title.replace(/\s+/g, '-').toLowerCase()}">
-                        <h2>${dept.title}</h2>
+                        <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 20px;">
+                            <h2>${dept.title}</h2>
+                            ${dept.url ? `
+                                <a href="${dept.url}" target="_blank" class="cta-button" style="font-size: 0.8rem; padding: 6px 15px;">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Visit Website
+                                </a>
+                            ` : ''}
+                        </div>
                         ${dept.full_name ? `<p><strong>Full Name:</strong> ${dept.full_name}</p>` : ''}
                         <p>${dept.content}</p>
                         ${dept.subsections ? `
@@ -321,6 +328,11 @@
                                 <a href="../../">Home</a> / <a href="./">Know Your CTA</a> / ${section.title}
                             </div>
                             <h1>${section.title}</h1>
+                            ${section.url ? `
+                                <a href="${section.url}" target="_blank" class="cta-button" style="display: inline-block; margin-top: 15px; font-size: 0.9rem; padding: 8px 20px;">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Visit Official Website
+                                </a>
+                            ` : ''}
                         </div>
                     </section>
 
