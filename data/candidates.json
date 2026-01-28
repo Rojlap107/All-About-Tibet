@@ -161,7 +161,6 @@
         "facebook": "https://www.facebook.com/share/17DofBAQwv/?mibextid=wwXIfr"
       }
     },
-   
     {
       "id": 11,
       "photo": "../../images/candidates/11.jpg",
@@ -370,7 +369,7 @@
       "otherInformation": "• Recognized for inspiring students and young activists\n• Strong role in international Tibet movement",
       "status": "Current MP",
       "verified": true,
-      "hidden":true,
+      "hidden": true,
       "socialMedia": {
         "facebook": "https://www.facebook.com/share/1H3PTVYeVM/?mibextid=wwXIfr",
         "instagram": "https://www.instagram.com/do_tseten?igsh=MTF1Zzd3NTdmc3R5NA=="
@@ -487,7 +486,8 @@
       "educationalBackground": "Central School for Tibetan, Darjeeling\n• Bachelor’s degree, North-Eastern Hill University (NEHU)",
       "workExperience": "• Member, Executive Member & Secretary, RTYC\n• Member & Secretary, Regional Tibetan Women’s Association\n• Member of Chushi Gangdruk, Shillong\n• Dhotoe member of Shillong Regional Election Commission\n• Active participation in government & NGO campaigns",
       "otherInformation": "• Played major role in Kashag & Parliament political campaign (2013)\n• Strong commitment to Tibetan cause following guidance of H.H. the Dalai Lama",
-      "status": "Current MP"
+      "status": "Current MP",
+      "hidden": true
     },
     {
       "id": 28,
@@ -679,7 +679,7 @@
       "workExperience": "• Personal Secretary to Ven. Jigme Rinpoche (2005–2012).\n• Supported underprivileged individuals and students through private donor assistance.\n• Secretary, Kunpan Cultural School (2010–2014).\n• Director, Kunphen Rigney School (from 2014).\n• Managed accommodation and transportation for guests during the 80th Birthday Celebration of His Holiness the Dalai Lama.\n• Welfare Officer, Central Dhomey Association Executive Committee (2016–2018).\n• Member of the 17th Tibetan Parliament-in-Exile.",
       "otherInformation": "• Member of 90th birthday celebration of Dhomay Goton Organizer Committee.\n• Actively engaged in community welfare work.\n• Coordinator of the Dengyab Writers' Association.",
       "status": "Current MP",
-      "verified":true
+      "verified": true
     },
     {
       "id": 39,
@@ -962,7 +962,7 @@
       "workExperience": "• Teacher at Yongling School, Sambhota School Shillong & Nainital (1990–1997)\n• Public Relations Officer, Dharamsala Tibetan Shopkeepers Welfare Society (2002–2006)\n• President, Tibetan Shopkeepers Welfare Society (4 terms: 2009–2021; re-elected 2025)\n• General Secretary, Mcleod Ganj PTA (2008–2010)\n• Executive Member, Indo-Tibet Friendship Association (2010–present)\n• Member, Vice President & President, Dharamshala Local Tibetan Assembly (2010–2019)\n• President, Tibetan Chamber of Commerce, Dharamshala Zone (2007–2010)\n• Vice President, Central Tibetan Chamber of Commerce (2011–2017)\n• Vice President, Central Dho-toe Cholkha (2012–2018, 2022–present)",
       "otherInformation": "• Over 30 years of community service\n• Advocates for unity, accountability & community welfare\n• Committed to serving with integrity and compassion",
       "status": "New",
-      "verified":true,
+      "verified": true,
       "socialMedia": {
         "instagram": "https://www.instagram.com/tyangzom7404/"
       }
@@ -1120,7 +1120,7 @@
       "id": 64,
       "photo": "../../images/candidates/64.jpg",
       "name": "Sonam Tsering",
-      "ageGroup":"46-55",
+      "ageGroup": "46-55",
       "gender": "Male",
       "origin": "Bhongpa",
       "currentAddress": "Upper TCV",
@@ -1203,7 +1203,7 @@
       "workExperience": "• Tibetan Language Teacher, Government School, Sikkim (age 18, served 3 years)\n• Served in Tibetan Army (10 years) with loyalty, discipline, and dedication\n• President and General Secretary, Tibetan Regional Freedom Movement Subcommittee (2000-2014, 14 years)\n• Learned computer hardware and technology (2007)\n• Founder and Publisher, Special Buddhist Calendar (SBC) (initiated 1999, nearly 28 years of service)",
       "otherInformation": "• Special Buddhist Calendar (SBC) created specially for Tibetans, Sikkimese, and entire Himalayan region, designed for day-to-day life use\n• SBC has flourished each year with community support for nearly 28 years\n• Worked to strengthen regional initiatives, preserve Tibetan identity, and promote unity\n• Committed to serving the community with honesty and a vision for collective progress\n• Believes unity is the greatest strength\n• Campaign message: Vote with unity, honesty, and shared hope for a brighter future",
       "status": "New",
-      "verified":true,
+      "verified": true,
       "socialMedia": {
         "facebook": "https://www.facebook.com/tsangdrak"
       }
@@ -1299,7 +1299,7 @@
       "workExperience": "• President, Tibetan Community in Switzerland & Liechtenstein\n• Vice President, Europe Dhokham Chushi Gangdrug in Switzerland\n• Coordinated long-life prayers for His Holiness the 14th Dalai Lama's visit to Switzerland in 2024\n• Early student activism and community leadership",
       "otherInformation": "• Committed to strengthening Tibetan unity and solidarity within the community\n• Working with youth and creating space for leadership and engagement\n• Preserving and promoting Tibetan language, religion, and culture\n• Pledges to continue serving the Tibetan people and freedom struggle with determination and responsibility",
       "status": "New",
-      "verified":true,
+      "verified": true,
       "socialMedia": {
         "facebook": "https://www.facebook.com/profile.php?id=100076647973823"
       }
@@ -1415,7 +1415,7 @@
       "id": 82,
       "photo": "../../images/candidates/82.jpg",
       "name": "Lobsang Samdup",
-      "ageGroup":"46-55",
+      "ageGroup": "46-55",
       "gender": "Male",
       "origin": "Nagchuw",
       "currentAddress": "Sera Jey",
@@ -1766,6 +1766,103 @@
       "otherInformation": "",
       "status": "New",
       "verified": true
+    },
+    {
+      "id": 102,
+      "photo": "../../images/candidates/102.jpg",
+      "name": "Lhamo Tashi",
+      "ageGroup": "30-35",
+      "gender": "Male",
+      "origin": "Amdo Machu",
+      "currentAddress": "Dharamsala",
+      "occupation": "Former President, Central Dhomay Cholkha Association",
+      "representing": "Dhomay",
+      "briefBio": "Hails from a village in Amdo Machu and grew up in exile in India. A dedicated community leader and social entrepreneur who has served in various leadership roles including President of Regional and Central Dhomay Cholkha Associations, and founder of social enterprises focused on Tibetan culture and environmental conservation.",
+      "educationalBackground": "• Tibetan Homes School, Mussoorie (completed 2010, commerce stream)\n• College studies in Bangalore and Dehradun",
+      "workExperience": "• School Prefect, Tibetan Homes School\n• Executive Member, Environment Club\n• Founding Member, Students' General Improvement Group (SGIG, 2008)\n• Accountant, Bangalore Regional Chapter of SGIG (3 years)\n• President, Dehradun Chapter of SGIG (2015-2017)\n• Co-founder, Keraa Fashion (2016) - awarded Entrepreneurship Award by Department of Finance, CTA\n• President, Regional Dhondupling Dhomay Cholkha, Dehradun (2017-2022, elected twice)\n• President, Dehradun Tibetan Newcomers' Welfare Association (2019)\n• Founder, Environment Care (2021) - social media initiative for environmental conservation\n• Regional Election Commissioner, CTA (2021, Sikyong and 17th Parliament elections)\n• Active Member, VTAG (Voluntary Tibet Advocacy Group) since 2023\n• President, Central Dhomay Cholkha Association, Dharamsala (July 1, 2022 - October 31, 2025)",
+      "otherInformation": "• Led career talks in Tibetan schools and college student programs including cultural performances, essay competitions, and mentorship programs\n• Published magazine 'Generation of Youth' in honor of His Holiness the 14th Dalai Lama's 80th birthday\n• Led major community events including the 30th death anniversary of the 10th Panchen Lama, attended by prominent religious and political leaders\n• Organized photo exhibitions on the life and works of Je Tsongkhapa and seventeen great scholars of India during the 600th anniversary commemoration\n• Successfully hosted the grand 90th birthday celebration of His Holiness the 14th Dalai Lama from June 30th to July 2nd, 2025\n• Offered long life prayer to Pal Sakya Gongma Trichen Rinpoche during his 80th birthday celebration in 2023\n• Keraa Fashion, his social enterprise, is dedicated to preserving Tibetan culture and traditional attire in exile",
+      "status": "New",
+      "verified": true
+    },
+    {
+      "id": 103,
+      "photo": "../../images/candidates/103.jpg",
+      "name": "Tenzin Pelmo Thondup",
+      "ageGroup": "36-45",
+      "gender": "Female",
+      "origin": "Amdo",
+      "currentAddress": "Darjeeling",
+      "occupation": "Small Business Owner",
+      "representing": "Dhomey",
+      "briefBio": "A Tibetan living in Darjeeling, India, running for Amdo Chithue. A dedicated community volunteer and small business owner who believes in protecting Tibetan democracy, unity, and serving the community with integrity and honesty. Committed to overcoming internal divisions and placing the Tibetan people above personal interest.",
+      "educationalBackground": "",
+      "workExperience": "• Volunteered in a Tibetan centre in Darjeeling for the last ten years, serving the local community directly\n• Currently operates a small business",
+      "otherInformation": "• Strong advocate for Tibetan unity and democratic values\n• Committed to transparency, respect, and responsibility in public service",
+      "status": "New"
+    },
+    {
+      "id": 104,
+      "photo": "../../images/candidates/104.jpg",
+      "name": "Jigme",
+      "ageGroup": "",
+      "gender": "Male",
+      "origin": "Lhasa",
+      "currentAddress": "Delhi",
+      "occupation": "Researcher",
+      "representing": "Utsang",
+      "briefBio": "",
+      "educationalBackground": "",
+      "workExperience": "",
+      "otherInformation": "",
+      "status": "New"
+    },
+    {
+      "id": 105,
+      "photo": "../../images/candidates/105.jpg",
+      "name": "Sherab Dorjee",
+      "ageGroup": "",
+      "gender": "Male",
+      "origin": "Amdo Chabcha",
+      "currentAddress": "Mumbai",
+      "occupation": "Businessman & Stock Investor",
+      "representing": "Dhomey",
+      "briefBio": "",
+      "educationalBackground": "",
+      "workExperience": "",
+      "otherInformation": "",
+      "status": "New"
+    },
+    {
+      "id": 106,
+      "photo": "../../images/candidates/106.jpg",
+      "name": "Tenzin Palmo Dhondup",
+      "ageGroup": "",
+      "gender": "Female",
+      "origin": "Taktser",
+      "currentAddress": "Darjeeling",
+      "occupation": "Voluntary Social Service",
+      "representing": "Dhomey",
+      "briefBio": "",
+      "educationalBackground": "",
+      "workExperience": "",
+      "otherInformation": "",
+      "status": "New"
+    },
+    {
+      "id": 107,
+      "photo": "../../images/candidates/107.jpg",
+      "name": "Yangchen Dolkar",
+      "ageGroup": "",
+      "gender": "Female",
+      "origin": "Dege",
+      "currentAddress": "Shillong",
+      "occupation": "Former MP",
+      "representing": "Dotoe",
+      "briefBio": "",
+      "educationalBackground": "",
+      "workExperience": "",
+      "otherInformation": "",
+      "status": "New"
     }
   ]
 }
