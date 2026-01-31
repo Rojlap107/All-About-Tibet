@@ -1449,26 +1449,6 @@
       }
     },
     {
-      "id": 84,
-      "photo": "../../images/candidates/84.jpg",
-      "name": "Sangyal Dorjee",
-      "ageGroup": "25-35",
-      "gender": "Male",
-      "origin": "Lhatok",
-      "currentAddress": "Tashijong",
-      "occupation": "",
-      "representing": "Dotoe",
-      "briefBio": "",
-      "educationalBackground": "",
-      "workExperience": "General Secretary of Chu-Shi-Gangdruk",
-      "otherInformation": "",
-      "status": "New",
-      "verified": false,
-      "socialMedia": {
-        "facebook": "https://www.facebook.com/skrpt"
-      }
-    },
-    {
       "id": 85,
       "photo": "../../images/candidates/85.jpg",
       "name": "Ugen Tashi",
@@ -1867,7 +1847,7 @@
     {
       "id": 109,
       "photo": "../../images/candidates/109.jpg",
-      "name": "Kelsang Jinpa (Kelsang Amchok)",
+      "name": "Kalsang Amchok",
       "ageGroup": "",
       "gender": "Male",
       "origin": "Amchok",
