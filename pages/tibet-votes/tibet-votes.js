@@ -167,10 +167,10 @@ async function loadCandidates() {
     try {
         const response = await fetch('../../data/candidates.json');
         const data = await response.json();
-        // Sort candidates alphabetically by name (default sort) and filter out hidden candidates
+        // Sort candidates by preliminary votes (descending) and filter out hidden candidates
         allCandidates = data.candidates
             .filter(candidate => !candidate.hidden)
-            .sort((a, b) => a.name.localeCompare(b.name));
+            .sort((a, b) => (b.preliminaryVotes || 0) - (a.preliminaryVotes || 0));
         filteredCandidates = [...allCandidates];
         displayCandidates();
         populateCompareSelectors();
@@ -211,6 +211,17 @@ function displayCandidates() {
                     <div class="candidate-badge">${candidate.representing}</div>
                     ${candidate.status ? `<div class="candidate-badge status-badge ${candidate.status === 'New' ? 'status-new' : 'status-current-mp'}">${candidate.status}</div>` : ''}
                 </div>
+                ${candidate.preliminaryVotes ? `
+                <div class="preliminary-votes" style="display: flex; align-items: center; gap: 8px; margin-top: 10px; padding: 8px 12px; background: linear-gradient(135deg, rgba(46, 204, 113, 0.15), rgba(39, 174, 96, 0.1)); border-radius: 8px; border: 1px solid rgba(46, 204, 113, 0.3);">
+                    <i class="fas fa-vote-yea" style="color: #2ecc71; font-size: 1rem;"></i>
+                    <span style="color: #2ecc71; font-weight: 600; font-size: 0.95rem;">Prelim Votes: ${candidate.preliminaryVotes.toLocaleString()}</span>
+                </div>
+                ` : `
+                <div class="not-qualified" style="display: flex; align-items: center; gap: 8px; margin-top: 10px; padding: 8px 12px; background: linear-gradient(135deg, rgba(231, 76, 60, 0.15), rgba(192, 57, 43, 0.1)); border-radius: 8px; border: 1px solid rgba(231, 76, 60, 0.3);">
+                    <i class="fas fa-times-circle" style="color: #e74c3c; font-size: 1rem;"></i>
+                    <span style="color: #e74c3c; font-weight: 600; font-size: 0.9rem;">Not qualified for Final Election</span>
+                </div>
+                `}
 
                 <div class="candidate-details">
                     <div class="detail-row">
@@ -562,6 +573,7 @@ function createCompareCard(candidate) {
                 <div class="compare-representing">${candidate.representing}</div>
                 ${candidate.status ? `<div class="candidate-badge status-badge ${candidate.status === 'New' ? 'status-new' : 'status-current-mp'}" style="margin-top: 8px;">${candidate.status}</div>` : ''}
                 ${candidate.verified ? `<div style="display: flex; align-items: center; gap: 5px; margin-top: 8px; color: #2ecc71; font-size: 0.9rem;"><i class="fas fa-check-circle"></i><span>Verified</span></div>` : ''}
+                ${candidate.preliminaryVotes ? `<div style="display: flex; align-items: center; gap: 6px; margin-top: 10px; padding: 8px 14px; background: rgba(46, 204, 113, 0.15); border-radius: 6px; border: 1px solid rgba(46, 204, 113, 0.3);"><i class="fas fa-vote-yea" style="color: #2ecc71;"></i><span style="color: #2ecc71; font-weight: 600;">Prelim: ${candidate.preliminaryVotes.toLocaleString()}</span></div>` : `<div style="display: flex; align-items: center; gap: 6px; margin-top: 10px; padding: 8px 14px; background: rgba(231, 76, 60, 0.15); border-radius: 6px; border: 1px solid rgba(231, 76, 60, 0.3);"><i class="fas fa-times-circle" style="color: #e74c3c;"></i><span style="color: #e74c3c; font-weight: 600; font-size: 0.85rem;">Not qualified for Final Election</span></div>`}
             </div>
             <div class="compare-details">
                 <div class="compare-detail-row">
@@ -687,6 +699,17 @@ function openCandidateModal(candidateId) {
                 <div class="modal-badge">${candidate.representing}</div>
                 ${candidate.status ? `<div class="modal-badge status-badge ${candidate.status === 'New' ? 'status-new' : 'status-current-mp'}">${candidate.status}</div>` : ''}
             </div>
+            ${candidate.preliminaryVotes ? `
+            <div class="preliminary-votes-modal" style="display: flex; align-items: center; justify-content: center; gap: 10px; margin-top: 15px; padding: 12px 20px; background: linear-gradient(135deg, rgba(46, 204, 113, 0.2), rgba(39, 174, 96, 0.15)); border-radius: 10px; border: 1px solid rgba(46, 204, 113, 0.4);">
+                <i class="fas fa-vote-yea" style="color: #2ecc71; font-size: 1.2rem;"></i>
+                <span style="color: #2ecc71; font-weight: 700; font-size: 1.1rem;">Preliminary Votes: ${candidate.preliminaryVotes.toLocaleString()}</span>
+            </div>
+            ` : `
+            <div class="not-qualified-modal" style="display: flex; align-items: center; justify-content: center; gap: 10px; margin-top: 15px; padding: 12px 20px; background: linear-gradient(135deg, rgba(231, 76, 60, 0.2), rgba(192, 57, 43, 0.15)); border-radius: 10px; border: 1px solid rgba(231, 76, 60, 0.4);">
+                <i class="fas fa-times-circle" style="color: #e74c3c; font-size: 1.2rem;"></i>
+                <span style="color: #e74c3c; font-weight: 700; font-size: 1.1rem;">Not qualified for Final Election</span>
+            </div>
+            `}
             <div class="modal-quick-info">
                 <div class="modal-info-item">
                     <span class="modal-info-label">Age Group:</span>
